@@ -1,0 +1,1978 @@
+{
+  "meta": {
+    "version": "0.2",
+    "last_updated": "FJU_108",
+    "note": "概念庫採累積式擴充——每處理一份新試題即追加新概念並補強既有條目的 related/confusable_with"
+  },
+  "concepts": [
+    {
+      "id": "frontal_lobe",
+      "term_zh": "額葉",
+      "term_en": "Frontal Lobe",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "大腦四大葉之一，位於腦前部，負責運動、執行功能、語言產生與高階認知。",
+      "keywords": [
+        "運動皮質",
+        "前額葉",
+        "Broca區",
+        "執行功能"
+      ],
+      "related": [
+        "motor_cortex",
+        "prefrontal_cortex",
+        "broca_area",
+        "executive_function"
+      ],
+      "confusable_with": [
+        "parietal_lobe"
+      ],
+      "examples": [
+        "Phineas Gage 案例顯示前額葉與人格決策相關"
+      ],
+      "common_mistakes": [
+        "額葉運動皮質與頂葉體感覺皮質僅隔中央溝，易混淆"
+      ],
+      "exam_appearances": [
+        "FJU_107_02",
+        "FJU_107_03"
+      ]
+    },
+    {
+      "id": "temporal_lobe",
+      "term_zh": "顳葉",
+      "term_en": "Temporal Lobe",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [
+        "Wernicke"
+      ],
+      "definition_short": "大腦四大葉之一，位於兩側耳朵附近，負責聽覺處理、語言理解與部分記憶功能。",
+      "keywords": [
+        "聽覺皮質",
+        "Wernicke區",
+        "顳上回"
+      ],
+      "related": [
+        "wernicke_area",
+        "auditory_cortex",
+        "hippocampus"
+      ],
+      "confusable_with": [
+        "frontal_lobe"
+      ],
+      "examples": [
+        "左顳葉受損 → Wernicke 失語症（語言理解障礙）"
+      ],
+      "common_mistakes": [
+        "Wernicke（顳葉，理解）與 Broca（額葉，產生）易搞混"
+      ],
+      "exam_appearances": [
+        "FJU_107_01"
+      ]
+    },
+    {
+      "id": "parietal_lobe",
+      "term_zh": "頂葉",
+      "term_en": "Parietal Lobe",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "大腦四大葉之一，位於頭頂，主要負責體感覺與空間注意力。",
+      "keywords": [
+        "體感覺皮質",
+        "中央後回",
+        "空間認知",
+        "半側忽略症"
+      ],
+      "related": [
+        "somatosensory_cortex",
+        "hemispatial_neglect",
+        "attention"
+      ],
+      "confusable_with": [
+        "frontal_lobe",
+        "occipital_lobe"
+      ],
+      "examples": [
+        "右頂葉損傷 → 左側半側忽略症"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_107_04",
+        "FJU_107_10"
+      ]
+    },
+    {
+      "id": "occipital_lobe",
+      "term_zh": "枕葉",
+      "term_en": "Occipital Lobe",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [
+        "Hubel",
+        "Wiesel"
+      ],
+      "definition_short": "大腦四大葉之一，位於腦後部，負責視覺處理。",
+      "keywords": [
+        "V1",
+        "初級視覺皮質"
+      ],
+      "related": [
+        "visual_cortex"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Hubel & Wiesel 對 V1 細胞的研究獲諾貝爾獎"
+      ],
+      "common_mistakes": [
+        "視覺處理起點在枕葉，但腹側流（What）延伸至顳葉、背側流（Where）延伸至頂葉"
+      ],
+      "exam_appearances": [
+        "FJU_107_08"
+      ]
+    },
+    {
+      "id": "thalamus",
+      "term_zh": "視丘",
+      "term_en": "Thalamus",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "皮質下結構，是除嗅覺外所有感覺訊息送往大腦皮質的中繼站。",
+      "keywords": [
+        "感覺中繼",
+        "皮質下"
+      ],
+      "related": [
+        "hypothalamus"
+      ],
+      "confusable_with": [
+        "hypothalamus"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "視丘≠下視丘。視丘=感覺中繼；下視丘=體溫、飢渴、自律神經"
+      ],
+      "exam_appearances": [
+        "FJU_107_09"
+      ]
+    },
+    {
+      "id": "hypothalamus",
+      "term_zh": "下視丘",
+      "term_en": "Hypothalamus",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "皮質下小結構，控制體溫、飢渴、生殖、內分泌與自律神經系統。",
+      "keywords": [
+        "體溫",
+        "飢渴",
+        "內分泌",
+        "腦下垂體"
+      ],
+      "related": [
+        "thalamus",
+        "limbic_system"
+      ],
+      "confusable_with": [
+        "thalamus"
+      ],
+      "examples": [],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "hippocampus",
+      "term_zh": "海馬回",
+      "term_en": "Hippocampus",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [
+        "Scoville",
+        "Milner"
+      ],
+      "definition_short": "邊緣系統一部分，位於顳葉內側，負責外顯記憶的形成與固化。",
+      "keywords": [
+        "記憶固化",
+        "外顯記憶",
+        "H.M.病例"
+      ],
+      "related": [
+        "anterograde_amnesia",
+        "consolidation",
+        "explicit_memory",
+        "limbic_system",
+        "retrograde_amnesia"
+      ],
+      "confusable_with": [
+        "amygdala"
+      ],
+      "examples": [
+        "H.M. 切除雙側海馬迴後出現順行性失憶"
+      ],
+      "common_mistakes": [
+        "海馬回負責記憶形成與固化，但長期記憶儲存於皮質"
+      ],
+      "exam_appearances": [
+        "FJU_107_07",
+        "FJU_108_02"
+      ]
+    },
+    {
+      "id": "amygdala",
+      "term_zh": "杏仁核",
+      "term_en": "Amygdala",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [
+        "LeDoux"
+      ],
+      "definition_short": "邊緣系統核心結構，位於顳葉內側，主導恐懼、情緒記憶與威脅偵測。",
+      "keywords": [
+        "恐懼",
+        "情緒記憶",
+        "邊緣系統"
+      ],
+      "related": [
+        "limbic_system",
+        "emotion",
+        "fear_conditioning"
+      ],
+      "confusable_with": [
+        "hippocampus"
+      ],
+      "examples": [
+        "LeDoux 的恐懼制約研究"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_107_05"
+      ]
+    },
+    {
+      "id": "basal_ganglia",
+      "term_zh": "基底核",
+      "term_en": "Basal Ganglia",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "皮質下核團，負責動作的啟動、抑制與精細調節，與多種運動障礙相關。",
+      "keywords": [
+        "巴金森氏症",
+        "亨丁頓舞蹈症",
+        "多巴胺",
+        "紋狀體"
+      ],
+      "related": [
+        "motor_control",
+        "dopamine"
+      ],
+      "confusable_with": [
+        "cerebellum"
+      ],
+      "examples": [
+        "巴金森氏症：黑質多巴胺退化；舞蹈症：紋狀體萎縮"
+      ],
+      "common_mistakes": [
+        "基底核負責啟動/抑制；小腦負責協調/平衡"
+      ],
+      "exam_appearances": [
+        "FJU_107_06"
+      ]
+    },
+    {
+      "id": "prefrontal_cortex",
+      "term_zh": "前額葉皮質",
+      "term_en": "Prefrontal Cortex",
+      "category": "neuroanatomy",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "額葉前部皮質，負責執行功能：計畫、決策、抑制、彈性、工作記憶。",
+      "keywords": [
+        "執行功能",
+        "計畫",
+        "決策"
+      ],
+      "related": [
+        "frontal_lobe",
+        "executive_function",
+        "somatic_marker_hypothesis"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Phineas Gage 案例",
+        "Iowa Gambling Task"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_107_03"
+      ]
+    },
+    {
+      "id": "hemispatial_neglect",
+      "term_zh": "半側忽略症",
+      "term_en": "Hemispatial Neglect",
+      "category": "neuropsychology",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "因頂葉（多為右側）損傷導致的注意力障礙，病人忽略受損腦區對側的空間。",
+      "keywords": [
+        "右頂葉",
+        "注意力",
+        "空間認知"
+      ],
+      "related": [
+        "parietal_lobe",
+        "attention"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "畫鐘只畫右半邊；吃飯只吃右半盤"
+      ],
+      "common_mistakes": [
+        "不是視覺缺損——病人視野完整，是注意力分配問題"
+      ],
+      "exam_appearances": [
+        "FJU_107_10"
+      ]
+    },
+    {
+      "id": "piaget_cognitive_development",
+      "term_zh": "Piaget 認知發展論",
+      "term_en": "Piaget's Theory of Cognitive Development",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 主張兒童透過同化與調適，依序經歷四個質性不同的認知發展階段。",
+      "keywords": [
+        "同化",
+        "調適",
+        "基模",
+        "四階段"
+      ],
+      "related": [
+        "accommodation",
+        "assimilation",
+        "concrete_operational_stage",
+        "formal_operational_stage",
+        "preoperational_stage",
+        "sensorimotor_stage"
+      ],
+      "confusable_with": [
+        "vygotsky_zpd"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "並非所有成人皆達形式運思期"
+      ],
+      "exam_appearances": [
+        "FJU_107_11",
+        "FJU_107_12",
+        "FJU_107_13",
+        "FJU_107_14",
+        "FJU_107_15",
+        "FJU_108_10"
+      ]
+    },
+    {
+      "id": "sensorimotor_stage",
+      "term_zh": "感覺運動期",
+      "term_en": "Sensorimotor Stage",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展第一階段（0-2歲），以感官與動作探索世界，發展物體恆存性。",
+      "keywords": [
+        "物體恆存性",
+        "0-2歲"
+      ],
+      "related": [
+        "piaget_cognitive_development",
+        "object_permanence"
+      ],
+      "confusable_with": [
+        "preoperational_stage"
+      ],
+      "examples": [
+        "8-12 個月發展物體恆存性"
+      ],
+      "common_mistakes": [
+        "物體恆存（嬰兒期）≠守恆概念（兒童期）"
+      ],
+      "exam_appearances": [
+        "FJU_107_12"
+      ]
+    },
+    {
+      "id": "preoperational_stage",
+      "term_zh": "前運思期",
+      "term_en": "Preoperational Stage",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展第二階段（2-7歲），以自我中心、泛靈論為特徵，未具守恆概念。",
+      "keywords": [
+        "自我中心",
+        "泛靈論",
+        "三山實驗",
+        "2-7歲"
+      ],
+      "related": [
+        "piaget_cognitive_development",
+        "egocentrism"
+      ],
+      "confusable_with": [
+        "concrete_operational_stage"
+      ],
+      "examples": [
+        "三山實驗（不能採取他人觀點）"
+      ],
+      "common_mistakes": [
+        "自我中心≠自私；是認知能力限制，不是道德品格"
+      ],
+      "exam_appearances": [
+        "FJU_107_13"
+      ]
+    },
+    {
+      "id": "concrete_operational_stage",
+      "term_zh": "具體運思期",
+      "term_en": "Concrete Operational Stage",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展第三階段（7-11歲），可進行邏輯運算與守恆，但限於具體事物。",
+      "keywords": [
+        "守恆概念",
+        "可逆性",
+        "去集中化",
+        "7-11歲"
+      ],
+      "related": [
+        "piaget_cognitive_development",
+        "conservation"
+      ],
+      "confusable_with": [
+        "formal_operational_stage"
+      ],
+      "examples": [
+        "數量、質量、體積守恆"
+      ],
+      "common_mistakes": [
+        "仍無法處理抽象規則或假設性命題"
+      ],
+      "exam_appearances": [
+        "FJU_107_11",
+        "FJU_107_15"
+      ]
+    },
+    {
+      "id": "formal_operational_stage",
+      "term_zh": "形式運思期",
+      "term_en": "Formal Operational Stage",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展第四階段（11歲以上），能進行抽象推理與假設演繹推理。",
+      "keywords": [
+        "假設演繹推理",
+        "抽象思考",
+        "命題思考"
+      ],
+      "related": [
+        "piaget_cognitive_development"
+      ],
+      "confusable_with": [
+        "concrete_operational_stage"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "並非所有成人都達此階段"
+      ],
+      "exam_appearances": [
+        "FJU_107_14"
+      ]
+    },
+    {
+      "id": "object_permanence",
+      "term_zh": "物體恆存性",
+      "term_en": "Object Permanence",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "知道物體即使看不到仍持續存在的能力，發展於感覺運動期。",
+      "keywords": [
+        "感覺運動期",
+        "8-12個月"
+      ],
+      "related": [
+        "sensorimotor_stage"
+      ],
+      "confusable_with": [
+        "conservation"
+      ],
+      "examples": [
+        "躲貓貓遊戲在此能力出現後才有趣"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_107_12"
+      ]
+    },
+    {
+      "id": "egocentrism",
+      "term_zh": "自我中心",
+      "term_en": "Egocentrism",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "前運思期兒童無法區分自己與他人觀點的認知特性。",
+      "keywords": [
+        "前運思期",
+        "三山實驗"
+      ],
+      "related": [
+        "preoperational_stage"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "三山實驗"
+      ],
+      "common_mistakes": [
+        "此處的「自我中心」是認知能力，非道德判斷"
+      ],
+      "exam_appearances": [
+        "FJU_107_13"
+      ]
+    },
+    {
+      "id": "conservation",
+      "term_zh": "守恆概念",
+      "term_en": "Conservation",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "理解物體的數量、質量、體積等屬性不因外觀變化而改變的能力。",
+      "keywords": [
+        "具體運思期",
+        "可逆性",
+        "去集中化"
+      ],
+      "related": [
+        "concrete_operational_stage"
+      ],
+      "confusable_with": [
+        "object_permanence"
+      ],
+      "examples": [
+        "水從高瘦杯倒入矮胖杯，水量不變"
+      ],
+      "common_mistakes": [
+        "守恆順序：數量→質量→重量→體積"
+      ],
+      "exam_appearances": [
+        "FJU_107_15"
+      ]
+    },
+    {
+      "id": "james_lange_theory",
+      "term_zh": "James-Lange 理論",
+      "term_en": "James-Lange Theory of Emotion",
+      "category": "emotion",
+      "school": "behavioral_physiological",
+      "scholars": [
+        "James",
+        "Lange"
+      ],
+      "definition_short": "情緒是對自身生理反應（心跳、肌肉、內臟變化）的知覺結果。",
+      "keywords": [
+        "周邊論",
+        "先生理後情緒"
+      ],
+      "related": [
+        "cannon_bard_theory",
+        "schachter_singer_theory"
+      ],
+      "confusable_with": [
+        "cannon_bard_theory"
+      ],
+      "examples": [
+        "「我們因為哭所以悲傷，因為發抖所以害怕」"
+      ],
+      "common_mistakes": [
+        "被 Cannon 反駁：不同情緒生理反應差異不大、生理反應太慢"
+      ],
+      "exam_appearances": [
+        "FJU_107_17"
+      ]
+    },
+    {
+      "id": "cannon_bard_theory",
+      "term_zh": "Cannon-Bard 理論",
+      "term_en": "Cannon-Bard Theory of Emotion",
+      "category": "emotion",
+      "school": "physiological",
+      "scholars": [
+        "Cannon",
+        "Bard"
+      ],
+      "definition_short": "刺激同時引發生理反應與情緒體驗，兩者由視丘並行傳達，互不依賴。",
+      "keywords": [
+        "中樞論",
+        "視丘",
+        "同時並行"
+      ],
+      "related": [
+        "james_lange_theory",
+        "schachter_singer_theory",
+        "thalamus"
+      ],
+      "confusable_with": [
+        "james_lange_theory"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "強調「同時」與「獨立」，與 J-L 的「先後」相對"
+      ],
+      "exam_appearances": [
+        "FJU_107_20"
+      ]
+    },
+    {
+      "id": "schachter_singer_theory",
+      "term_zh": "認知激發理論（兩因論）",
+      "term_en": "Schachter-Singer Two-Factor Theory",
+      "category": "emotion",
+      "school": "cognitive",
+      "scholars": [
+        "Schachter",
+        "Singer"
+      ],
+      "definition_short": "情緒 = 生理激發 + 對情境的認知標籤；認知解釋是情緒分化的關鍵。",
+      "keywords": [
+        "兩因論",
+        "生理激發",
+        "認知標籤",
+        "腎上腺素實驗"
+      ],
+      "related": [
+        "james_lange_theory",
+        "cannon_bard_theory",
+        "excitation_transfer"
+      ],
+      "confusable_with": [
+        "james_lange_theory"
+      ],
+      "examples": [
+        "Schachter & Singer (1962) 腎上腺素實驗"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_107_16",
+        "FJU_107_18"
+      ]
+    },
+    {
+      "id": "excitation_transfer",
+      "term_zh": "興奮轉移",
+      "term_en": "Excitation Transfer",
+      "category": "emotion",
+      "school": "cognitive",
+      "scholars": [
+        "Zillmann"
+      ],
+      "definition_short": "前一情境殘存的生理激發被錯誤歸因到後續情緒事件，使該情緒被放大。",
+      "keywords": [
+        "錯誤歸因",
+        "殘存激發"
+      ],
+      "related": [
+        "schachter_singer_theory"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Dutton & Aron (1974) 吊橋實驗——心跳被誤歸因為對異性的吸引"
+      ],
+      "common_mistakes": [
+        "建立在 Schachter 兩因論之上，非獨立理論"
+      ],
+      "exam_appearances": [
+        "FJU_107_16"
+      ]
+    },
+    {
+      "id": "somatic_marker_hypothesis",
+      "term_zh": "軀體標記假說",
+      "term_en": "Somatic Marker Hypothesis",
+      "category": "emotion",
+      "school": "biological_cognitive",
+      "scholars": [
+        "Damasio"
+      ],
+      "definition_short": "Damasio 提出，情緒透過身體訊號（軀體標記）影響並引導理性決策。",
+      "keywords": [
+        "前額葉腹內側",
+        "vmPFC",
+        "決策",
+        "Iowa Gambling Task"
+      ],
+      "related": [
+        "prefrontal_cortex"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Iowa Gambling Task；vmPFC 損傷者決策困難"
+      ],
+      "common_mistakes": [
+        "反對「情緒干擾理性」的傳統觀點，主張情緒是理性決策的必要組成"
+      ],
+      "exam_appearances": [
+        "FJU_107_19"
+      ]
+    },
+    {
+      "id": "implicit_memory",
+      "term_zh": "內隱記憶",
+      "term_en": "Implicit Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Squire"
+      ],
+      "definition_short": "無意識、不需言語表達的記憶，包含程序記憶、促發效應、古典制約。",
+      "keywords": [
+        "程序記憶",
+        "促發",
+        "無意識"
+      ],
+      "related": [
+        "anterograde_amnesia",
+        "explicit_memory",
+        "procedural_memory"
+      ],
+      "confusable_with": [
+        "explicit_memory"
+      ],
+      "examples": [
+        "騎腳踏車、打字技能"
+      ],
+      "common_mistakes": [
+        "失憶症患者外顯記憶受損但內隱記憶保留（如 H.M. 仍能學會新動作）"
+      ],
+      "exam_appearances": [
+        "FJU_107_23",
+        "FJU_108_02"
+      ]
+    },
+    {
+      "id": "working_memory",
+      "term_zh": "工作記憶",
+      "term_en": "Working Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Baddeley",
+        "Hitch"
+      ],
+      "definition_short": "Baddeley & Hitch 提出，強調主動運作與訊息組織，相對於被動的短期記憶。",
+      "keywords": [
+        "中央執行",
+        "語音迴路",
+        "視空間模板",
+        "情節緩衝區"
+      ],
+      "related": [
+        "short_term_memory",
+        "executive_function"
+      ],
+      "confusable_with": [
+        "short_term_memory"
+      ],
+      "examples": [
+        "心算、跟讀、邊聽邊做筆記"
+      ],
+      "common_mistakes": [
+        "工作記憶≠短期記憶。短期是被動儲存，工作是主動運作"
+      ],
+      "exam_appearances": [
+        "FJU_107_24"
+      ]
+    },
+    {
+      "id": "short_term_memory",
+      "term_zh": "短期記憶",
+      "term_en": "Short-Term Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Atkinson",
+        "Shiffrin"
+      ],
+      "definition_short": "Atkinson-Shiffrin 模型中的暫存系統，容量約 7±2，被動維持訊息。",
+      "keywords": [
+        "7±2",
+        "Miller",
+        "被動儲存"
+      ],
+      "related": [
+        "working_memory",
+        "long_term_memory"
+      ],
+      "confusable_with": [
+        "working_memory"
+      ],
+      "examples": [],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "semantic_memory",
+      "term_zh": "語意記憶",
+      "term_en": "Semantic Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Tulving"
+      ],
+      "definition_short": "對世界的事實、概念與一般知識的記憶，去脈絡化，屬外顯記憶。",
+      "keywords": [
+        "事實",
+        "知識",
+        "外顯記憶"
+      ],
+      "related": [
+        "episodic_memory",
+        "explicit_memory"
+      ],
+      "confusable_with": [
+        "episodic_memory"
+      ],
+      "examples": [
+        "「台灣首都是台北」"
+      ],
+      "common_mistakes": [
+        "失憶症患者可能保有事實知識但忘記個人經歷"
+      ],
+      "exam_appearances": [
+        "FJU_107_22"
+      ]
+    },
+    {
+      "id": "episodic_memory",
+      "term_zh": "情境記憶",
+      "term_en": "Episodic Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Tulving"
+      ],
+      "definition_short": "個人特定時空脈絡下的經驗記憶，含人事時地物，屬外顯記憶。",
+      "keywords": [
+        "自傳式",
+        "人事時地物",
+        "外顯記憶"
+      ],
+      "related": [
+        "semantic_memory",
+        "explicit_memory"
+      ],
+      "confusable_with": [
+        "semantic_memory",
+        "short_term_memory"
+      ],
+      "examples": [
+        "「上週生日吃了什麼蛋糕」"
+      ],
+      "common_mistakes": [
+        "情境記憶≠短期記憶，可保留多年"
+      ],
+      "exam_appearances": [
+        "FJU_107_21"
+      ]
+    },
+    {
+      "id": "defense_mechanism",
+      "term_zh": "防衛機轉",
+      "term_en": "Defense Mechanism",
+      "category": "personality",
+      "school": "psychodynamic",
+      "scholars": [
+        "Freud",
+        "Anna Freud"
+      ],
+      "definition_short": "Freud 提出，自我為化解本我與超我衝突所引發的焦慮所採用的潛意識心理策略。",
+      "keywords": [
+        "壓抑",
+        "否認",
+        "投射",
+        "合理化",
+        "反向作用",
+        "退化",
+        "昇華"
+      ],
+      "related": [
+        "freud_personality",
+        "id_ego_superego",
+        "rationalization"
+      ],
+      "confusable_with": [
+        "coping_strategy"
+      ],
+      "examples": [
+        "壓抑（repression）、投射（projection）、昇華（sublimation）"
+      ],
+      "common_mistakes": [
+        "防衛機轉是潛意識的，不同於有意識的因應策略"
+      ],
+      "exam_appearances": [
+        "FJU_107_25",
+        "FJU_108_11"
+      ]
+    },
+    {
+      "id": "perceptual_constancy",
+      "term_zh": "知覺恆常性",
+      "term_en": "Perceptual Constancy",
+      "category": "perception",
+      "school": "cognitive",
+      "scholars": [],
+      "definition_short": "刺激在視網膜的投影改變，但知覺系統仍將物體知覺為穩定不變的特性。",
+      "keywords": [
+        "大小恆常",
+        "形狀恆常",
+        "明度恆常",
+        "顏色恆常"
+      ],
+      "related": [
+        "inattentional_blindness"
+      ],
+      "confusable_with": [
+        "perceptual_illusion"
+      ],
+      "examples": [
+        "遠處的人在視網膜投影較小但仍知覺為正常大小"
+      ],
+      "common_mistakes": [
+        "恆常性≠錯覺。恆常性維持真實知覺，錯覺是知覺與物理刺激不一致"
+      ],
+      "exam_appearances": [
+        "FJU_107_26",
+        "FJU_108_14"
+      ]
+    },
+    {
+      "id": "cognitive_dissonance",
+      "term_zh": "認知失調",
+      "term_en": "Cognitive Dissonance",
+      "category": "social",
+      "school": "social_cognitive",
+      "scholars": [
+        "Festinger",
+        "Carlsmith"
+      ],
+      "definition_short": "Festinger (1957) 提出，個體持有矛盾認知時產生不舒服感，並引發降低失調的動機。",
+      "keywords": [
+        "Festinger",
+        "矛盾",
+        "態度改變",
+        "1美元實驗"
+      ],
+      "related": [
+        "attitude_change"
+      ],
+      "confusable_with": [
+        "cognitive_bias"
+      ],
+      "examples": [
+        "Festinger & Carlsmith (1959) 1 美元 vs 20 美元枯燥實驗"
+      ],
+      "common_mistakes": [
+        "認知失調是動機歷程，與認知偏誤（訊息處理偏差）不同"
+      ],
+      "exam_appearances": [
+        "FJU_107_27"
+      ]
+    },
+    {
+      "id": "learned_helplessness",
+      "term_zh": "習得無助感",
+      "term_en": "Learned Helplessness",
+      "category": "motivation_emotion",
+      "school": "cognitive_behavioral",
+      "scholars": [
+        "Seligman",
+        "Maier",
+        "Abramson"
+      ],
+      "definition_short": "Seligman & Maier (1967) 提出，反覆面對不可控負向事件後，個體學到「努力無用」而放棄嘗試。",
+      "keywords": [
+        "Seligman",
+        "不可控",
+        "歸因",
+        "憂鬱"
+      ],
+      "related": [
+        "attribution_theory",
+        "depression_cognitive_model"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Seligman 狗實驗（電擊不可避免後即使可逃也不逃）"
+      ],
+      "common_mistakes": [
+        "後 Abramson 等人擴充為歸因理論版本（內在/穩定/整體歸因）"
+      ],
+      "exam_appearances": [
+        "FJU_107_28"
+      ]
+    },
+    {
+      "id": "fluid_intelligence",
+      "term_zh": "流體智慧",
+      "term_en": "Fluid Intelligence",
+      "category": "intelligence",
+      "school": "psychometric",
+      "scholars": [
+        "Cattell",
+        "Horn"
+      ],
+      "definition_short": "Cattell 提出，處理新穎問題、抽象推理與發現規則的能力，主要依賴生理機制。",
+      "keywords": [
+        "Cattell-Horn",
+        "新穎問題",
+        "抽象推理",
+        "老化下降"
+      ],
+      "related": [
+        "crystallized_intelligence",
+        "cattell_horn_carroll_theory"
+      ],
+      "confusable_with": [
+        "crystallized_intelligence"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "青年期達高峰後隨年齡下降；晶體智慧則持續增加"
+      ],
+      "exam_appearances": [
+        "FJU_107_29"
+      ]
+    },
+    {
+      "id": "crystallized_intelligence",
+      "term_zh": "晶體智慧",
+      "term_en": "Crystallized Intelligence",
+      "category": "intelligence",
+      "school": "psychometric",
+      "scholars": [
+        "Cattell",
+        "Horn"
+      ],
+      "definition_short": "Cattell 提出，透過學習與經驗累積的知識，較不受老化影響。",
+      "keywords": [
+        "Cattell-Horn",
+        "知識累積",
+        "老化保留"
+      ],
+      "related": [
+        "fluid_intelligence",
+        "cattell_horn_carroll_theory"
+      ],
+      "confusable_with": [
+        "fluid_intelligence"
+      ],
+      "examples": [
+        "詞彙量、常識、專業知識"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "serial_position_effect",
+      "term_zh": "系列位置效應",
+      "term_en": "Serial Position Effect",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Murdock",
+        "Ebbinghaus"
+      ],
+      "definition_short": "系列項目記憶測驗中，開頭與末尾項目回憶較佳、中間較差的 U 形曲線。",
+      "keywords": [
+        "首因效應",
+        "新近效應",
+        "U 形曲線"
+      ],
+      "related": [
+        "primacy_effect",
+        "recency_effect",
+        "atkinson_shiffrin_model"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "記單字清單時，第一個和最後一個最容易記住"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_108_01"
+      ]
+    },
+    {
+      "id": "recency_effect",
+      "term_zh": "新近效應",
+      "term_en": "Recency Effect",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Murdock"
+      ],
+      "definition_short": "系列位置效應中末尾項目回憶較佳，反映短期記憶的暫存。",
+      "keywords": [
+        "短期記憶",
+        "末尾",
+        "延宕測驗消失"
+      ],
+      "related": [
+        "serial_position_effect",
+        "primacy_effect",
+        "short_term_memory"
+      ],
+      "confusable_with": [
+        "primacy_effect"
+      ],
+      "examples": [
+        "延宕測驗使新近效應消失，支持雙儲存模型"
+      ],
+      "common_mistakes": [
+        "新近效應在延宕測驗中消失，首因效應仍保留"
+      ],
+      "exam_appearances": [
+        "FJU_108_01"
+      ]
+    },
+    {
+      "id": "primacy_effect",
+      "term_zh": "首因效應",
+      "term_en": "Primacy Effect",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [],
+      "definition_short": "系列位置效應中開頭項目回憶較佳，反映複誦進入長期記憶。",
+      "keywords": [
+        "長期記憶",
+        "複誦",
+        "開頭"
+      ],
+      "related": [
+        "serial_position_effect",
+        "recency_effect",
+        "long_term_memory"
+      ],
+      "confusable_with": [
+        "recency_effect"
+      ],
+      "examples": [
+        "增加複誦間隔可放大首因效應"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "anterograde_amnesia",
+      "term_zh": "順向失憶症",
+      "term_en": "Anterograde Amnesia",
+      "category": "memory",
+      "school": "biological",
+      "scholars": [
+        "Scoville",
+        "Milner"
+      ],
+      "definition_short": "腦傷後無法形成新的外顯記憶；舊記憶大致保留。",
+      "keywords": [
+        "海馬迴",
+        "新記憶",
+        "H.M.",
+        "外顯記憶"
+      ],
+      "related": [
+        "retrograde_amnesia",
+        "hippocampus",
+        "explicit_memory"
+      ],
+      "confusable_with": [
+        "retrograde_amnesia"
+      ],
+      "examples": [
+        "H.M. 切除雙側海馬迴後出現順向失憶"
+      ],
+      "common_mistakes": [
+        "順向（向前）= 形成不了新記憶；逆向 = 失去舊記憶"
+      ],
+      "exam_appearances": [
+        "FJU_108_02"
+      ]
+    },
+    {
+      "id": "retrograde_amnesia",
+      "term_zh": "逆向失憶症",
+      "term_en": "Retrograde Amnesia",
+      "category": "memory",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "腦傷或創傷事件前的記憶喪失；後來形成新記憶能力可能保留。",
+      "keywords": [
+        "舊記憶",
+        "車禍",
+        "創傷"
+      ],
+      "related": [
+        "anterograde_amnesia",
+        "consolidation"
+      ],
+      "confusable_with": [
+        "anterograde_amnesia"
+      ],
+      "examples": [
+        "車禍患者忘記事故前數小時的記憶"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "antagonist",
+      "term_zh": "拮抗劑",
+      "term_en": "Antagonist",
+      "category": "neuroscience",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "與神經傳導物競爭結合受體，但阻斷或減弱神經反應的物質。",
+      "keywords": [
+        "阻斷",
+        "受體競爭",
+        "藥理"
+      ],
+      "related": [
+        "agonist",
+        "neurotransmitter"
+      ],
+      "confusable_with": [
+        "agonist"
+      ],
+      "examples": [
+        "抗精神病藥物為多巴胺 D2 拮抗劑"
+      ],
+      "common_mistakes": [
+        "拮抗（阻斷）vs 促進（模擬），常被搞反"
+      ],
+      "exam_appearances": [
+        "FJU_108_03"
+      ]
+    },
+    {
+      "id": "agonist",
+      "term_zh": "促進劑",
+      "term_en": "Agonist",
+      "category": "neuroscience",
+      "school": "biological",
+      "scholars": [],
+      "definition_short": "與神經傳導物結合相同受體並引發類似神經反應的物質。",
+      "keywords": [
+        "模擬",
+        "受體結合",
+        "藥理"
+      ],
+      "related": [
+        "antagonist",
+        "neurotransmitter"
+      ],
+      "confusable_with": [
+        "antagonist"
+      ],
+      "examples": [
+        "嗎啡為腦內啡受體促進劑"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "absolute_threshold",
+      "term_zh": "絕對閾值",
+      "term_en": "Absolute Threshold",
+      "category": "perception",
+      "school": "cognitive",
+      "scholars": [
+        "Fechner"
+      ],
+      "definition_short": "刺激能被偵測到所需的最小強度（50% 試驗中能偵測到的強度）。",
+      "keywords": [
+        "心理物理學",
+        "50%",
+        "感覺",
+        "Fechner"
+      ],
+      "related": [
+        "difference_threshold",
+        "psychophysics"
+      ],
+      "confusable_with": [
+        "difference_threshold"
+      ],
+      "examples": [
+        "視覺絕對閾值約為晴朗夜晚 48 公里外的燭光"
+      ],
+      "common_mistakes": [
+        "絕對閾值（有沒有）≠ 差異閾值（不一樣）"
+      ],
+      "exam_appearances": [
+        "FJU_108_04"
+      ]
+    },
+    {
+      "id": "difference_threshold",
+      "term_zh": "差異閾值",
+      "term_en": "Difference Threshold (JND)",
+      "category": "perception",
+      "school": "cognitive",
+      "scholars": [
+        "Weber",
+        "Fechner"
+      ],
+      "definition_short": "可察覺的最小刺激差異（Just Noticeable Difference）。",
+      "keywords": [
+        "JND",
+        "韋伯定律",
+        "Weber's Law"
+      ],
+      "related": [
+        "absolute_threshold",
+        "weber_law",
+        "psychophysics"
+      ],
+      "confusable_with": [
+        "absolute_threshold"
+      ],
+      "examples": [
+        "手中物體加重多少才感覺得出差別"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "classical_conditioning",
+      "term_zh": "古典制約",
+      "term_en": "Classical Conditioning",
+      "category": "learning",
+      "school": "behaviorism",
+      "scholars": [
+        "Pavlov"
+      ],
+      "definition_short": "Pavlov 提出，中性刺激與非制約刺激配對後，獲得引發類似反應的能力。",
+      "keywords": [
+        "Pavlov",
+        "UCS",
+        "CS",
+        "聯結"
+      ],
+      "related": [
+        "unconditioned_stimulus",
+        "operant_conditioning",
+        "second_order_conditioning"
+      ],
+      "confusable_with": [
+        "operant_conditioning"
+      ],
+      "examples": [
+        "Pavlov 狗流口水實驗；Watson 小艾伯特實驗"
+      ],
+      "common_mistakes": [
+        "古典制約（被動聯結）vs 操作制約（行為後果）"
+      ],
+      "exam_appearances": []
+    },
+    {
+      "id": "unconditioned_stimulus",
+      "term_zh": "非制約刺激",
+      "term_en": "Unconditioned Stimulus (UCS/US)",
+      "category": "learning",
+      "school": "behaviorism",
+      "scholars": [
+        "Pavlov"
+      ],
+      "definition_short": "古典制約中無需學習就能自動引發反應的刺激。",
+      "keywords": [
+        "Pavlov",
+        "天生",
+        "自動引發"
+      ],
+      "related": [
+        "classical_conditioning",
+        "conditioned_stimulus"
+      ],
+      "confusable_with": [
+        "conditioned_stimulus"
+      ],
+      "examples": [
+        "Pavlov 實驗中的食物（UCS）→ 流口水（UCR）"
+      ],
+      "common_mistakes": [
+        "UCS = 天生引發，CS = 學會引發"
+      ],
+      "exam_appearances": [
+        "FJU_108_05"
+      ]
+    },
+    {
+      "id": "display_rules",
+      "term_zh": "情緒表現規則",
+      "term_en": "Display Rules",
+      "category": "emotion",
+      "school": "cognitive",
+      "scholars": [
+        "Ekman",
+        "Friesen"
+      ],
+      "definition_short": "Ekman & Friesen 提出，特定文化中情緒表達場合與方式的社會規範。",
+      "keywords": [
+        "Ekman",
+        "文化",
+        "壓抑",
+        "跨文化"
+      ],
+      "related": [
+        "basic_emotions",
+        "cross_cultural_psychology"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "日本人在權威者前壓抑負面情緒；獨處時跨文化反應相似"
+      ],
+      "common_mistakes": [
+        "基本情緒跨文化普遍，是「表達」受文化規範"
+      ],
+      "exam_appearances": [
+        "FJU_108_06"
+      ]
+    },
+    {
+      "id": "heritability",
+      "term_zh": "遺傳率",
+      "term_en": "Heritability",
+      "category": "behavioral_genetics",
+      "school": "biological",
+      "scholars": [
+        "Plomin"
+      ],
+      "definition_short": "群體中特質變異可歸因於基因差異的比例（0-1）。",
+      "keywords": [
+        "群體",
+        "變異",
+        "基因",
+        "雙生子研究"
+      ],
+      "related": [
+        "twin_studies",
+        "nature_nurture"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "智力遺傳率約 0.5-0.8；身高約 0.8"
+      ],
+      "common_mistakes": [
+        "遺傳率 0.7 ≠ 個體 70% 來自遺傳；是群體變異的解釋比例，且隨環境變化"
+      ],
+      "exam_appearances": [
+        "FJU_108_07"
+      ]
+    },
+    {
+      "id": "bystander_effect",
+      "term_zh": "旁觀者效應",
+      "term_en": "Bystander Effect",
+      "category": "social",
+      "school": "social_cognitive",
+      "scholars": [
+        "Latané",
+        "Darley"
+      ],
+      "definition_short": "Latané & Darley 提出，目擊者越多時個人介入幫助的可能性越低。",
+      "keywords": [
+        "責任分散",
+        "多元無知",
+        "Kitty Genovese",
+        "助人"
+      ],
+      "related": [
+        "diffusion_of_responsibility",
+        "pluralistic_ignorance",
+        "prosocial_behavior"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "1964 Kitty Genovese 案啟發此研究"
+      ],
+      "common_mistakes": [
+        "Genovese 案 38 名目擊者細節後被質疑誇大，但研究啟發地位仍受肯定"
+      ],
+      "exam_appearances": [
+        "FJU_108_08"
+      ]
+    },
+    {
+      "id": "diffusion_of_responsibility",
+      "term_zh": "責任分散",
+      "term_en": "Diffusion of Responsibility",
+      "category": "social",
+      "school": "social_cognitive",
+      "scholars": [
+        "Latané",
+        "Darley"
+      ],
+      "definition_short": "他人在場時個人責任感稀釋的心理機制，是旁觀者效應的核心。",
+      "keywords": [
+        "旁觀者",
+        "責任",
+        "分散"
+      ],
+      "related": [
+        "bystander_effect",
+        "pluralistic_ignorance"
+      ],
+      "confusable_with": [
+        "pluralistic_ignorance"
+      ],
+      "examples": [],
+      "common_mistakes": [
+        "責任分散（責任感稀釋）≠ 多元無知（誤判情境不緊急）"
+      ],
+      "exam_appearances": [
+        "FJU_108_08"
+      ]
+    },
+    {
+      "id": "agoraphobia",
+      "term_zh": "懼曠症",
+      "term_en": "Agoraphobia",
+      "category": "clinical",
+      "school": "clinical",
+      "scholars": [],
+      "definition_short": "DSM-5 焦慮症，對難以逃離或無法獲援情境的強烈恐懼與迴避。",
+      "keywords": [
+        "焦慮症",
+        "公共場所",
+        "迴避",
+        "恐慌"
+      ],
+      "related": [
+        "panic_disorder",
+        "anxiety_disorder"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "擁擠空間、公共交通、開放空間恐懼；嚴重者足不出戶"
+      ],
+      "common_mistakes": [
+        "懼曠症≠單純怕廣場；重點在「難以逃離」情境"
+      ],
+      "exam_appearances": [
+        "FJU_108_09"
+      ]
+    },
+    {
+      "id": "assimilation",
+      "term_zh": "同化",
+      "term_en": "Assimilation",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展論：將新訊息納入既有基模，不修改基模。",
+      "keywords": [
+        "Piaget",
+        "基模",
+        "納入"
+      ],
+      "related": [
+        "accommodation",
+        "equilibration",
+        "schema",
+        "piaget_cognitive_development"
+      ],
+      "confusable_with": [
+        "accommodation"
+      ],
+      "examples": [
+        "小孩第一次看到貓時稱為狗"
+      ],
+      "common_mistakes": [
+        "同（沿用）vs 調（修改），常被搞反"
+      ],
+      "exam_appearances": [
+        "FJU_108_10"
+      ]
+    },
+    {
+      "id": "accommodation",
+      "term_zh": "調適",
+      "term_en": "Accommodation",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 認知發展論：修改既有基模以容納新訊息。",
+      "keywords": [
+        "Piaget",
+        "基模修改"
+      ],
+      "related": [
+        "assimilation",
+        "equilibration",
+        "schema",
+        "piaget_cognitive_development"
+      ],
+      "confusable_with": [
+        "assimilation"
+      ],
+      "examples": [
+        "小孩學會貓不是狗，建立新基模"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    },
+    {
+      "id": "rationalization",
+      "term_zh": "合理化",
+      "term_en": "Rationalization",
+      "category": "personality",
+      "school": "psychodynamic",
+      "scholars": [
+        "Freud"
+      ],
+      "definition_short": "Freud 防衛機轉之一，為不能接受的行為編造合理解釋以降低焦慮。",
+      "keywords": [
+        "酸葡萄",
+        "甜檸檬",
+        "潛意識",
+        "自尊"
+      ],
+      "related": [
+        "defense_mechanism",
+        "freud_personality"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "酸葡萄心理（吃不到的葡萄是酸的）；甜檸檬心理"
+      ],
+      "common_mistakes": [
+        "合理化是潛意識的，與有意識找藉口不同"
+      ],
+      "exam_appearances": [
+        "FJU_108_11"
+      ]
+    },
+    {
+      "id": "stereotype_threat",
+      "term_zh": "刻板印象威脅",
+      "term_en": "Stereotype Threat",
+      "category": "social",
+      "school": "social_cognitive",
+      "scholars": [
+        "Steele",
+        "Aronson"
+      ],
+      "definition_short": "Steele & Aronson 提出，擔心印證所屬群體的負面刻板印象，使表現下降。",
+      "keywords": [
+        "Steele",
+        "Aronson",
+        "焦慮",
+        "認知負荷"
+      ],
+      "related": [
+        "stereotype",
+        "social_identity"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "黑人 GRE 實驗；女性數學表現；年長者記憶測驗"
+      ],
+      "common_mistakes": [
+        "重點在「擔心印證」造成的表現影響，而非刻板印象本身"
+      ],
+      "exam_appearances": [
+        "FJU_108_12"
+      ]
+    },
+    {
+      "id": "self_fulfilling_prophecy",
+      "term_zh": "自證預言",
+      "term_en": "Self-Fulfilling Prophecy",
+      "category": "social",
+      "school": "social_cognitive",
+      "scholars": [
+        "Merton",
+        "Rosenthal",
+        "Jacobson"
+      ],
+      "definition_short": "Merton 提出，對情境的預期改變行為，使預期成真。",
+      "keywords": [
+        "預期",
+        "比馬龍",
+        "Pygmalion",
+        "教師期待"
+      ],
+      "related": [
+        "pygmalion_effect",
+        "expectancy_effects"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Rosenthal & Jacobson 比馬龍效應；銀行擠兌"
+      ],
+      "common_mistakes": [
+        "重點在「預期 → 行為改變 → 對方反應 → 成真」的中介機制"
+      ],
+      "exam_appearances": [
+        "FJU_108_16"
+      ]
+    },
+    {
+      "id": "attachment_theory",
+      "term_zh": "依附理論",
+      "term_en": "Attachment Theory",
+      "category": "developmental",
+      "school": "developmental",
+      "scholars": [
+        "Bowlby",
+        "Ainsworth"
+      ],
+      "definition_short": "Bowlby 提出，嬰兒與主要照顧者形成情感連結，影響後續人際關係。",
+      "keywords": [
+        "Bowlby",
+        "Ainsworth",
+        "陌生情境",
+        "內在運作模式"
+      ],
+      "related": [
+        "strange_situation",
+        "attachment_types"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Harlow 恆河猴實驗；Ainsworth 陌生情境"
+      ],
+      "common_mistakes": [
+        "依附≠單純的需求滿足；強調情感連結與安全堡壘功能"
+      ],
+      "exam_appearances": [
+        "FJU_108_15"
+      ]
+    },
+    {
+      "id": "strange_situation",
+      "term_zh": "陌生情境",
+      "term_en": "Strange Situation",
+      "category": "developmental",
+      "school": "developmental",
+      "scholars": [
+        "Ainsworth"
+      ],
+      "definition_short": "Ainsworth 設計的標準化實驗程序，觀察 12-18 月幼兒依附類型。",
+      "keywords": [
+        "Ainsworth",
+        "依附類型",
+        "母嬰分離"
+      ],
+      "related": [
+        "attachment_theory",
+        "attachment_types"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "八段落程序：母離開、陌生人進入、母回來等"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": [
+        "FJU_108_15"
+      ]
+    },
+    {
+      "id": "attachment_types",
+      "term_zh": "依附類型",
+      "term_en": "Attachment Types",
+      "category": "developmental",
+      "school": "developmental",
+      "scholars": [
+        "Ainsworth",
+        "Main",
+        "Solomon"
+      ],
+      "definition_short": "Ainsworth 三型（安全/焦慮矛盾/逃避）+ Main & Solomon 加的混亂型。",
+      "keywords": [
+        "安全",
+        "焦慮矛盾",
+        "逃避",
+        "混亂"
+      ],
+      "related": [
+        "attachment_theory",
+        "strange_situation"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "安全型約 65%、逃避型約 20%、焦慮矛盾型約 10-15%"
+      ],
+      "common_mistakes": [
+        "原始三型，混亂型是 Main & Solomon (1990) 加的"
+      ],
+      "exam_appearances": [
+        "FJU_108_15"
+      ]
+    },
+    {
+      "id": "inattentional_blindness",
+      "term_zh": "不注意盲",
+      "term_en": "Inattentional Blindness",
+      "category": "perception",
+      "school": "cognitive",
+      "scholars": [
+        "Simons",
+        "Chabris"
+      ],
+      "definition_short": "未專注於某物時，即使該物明顯出現在視野中也看不見的現象。",
+      "keywords": [
+        "大猩猩實驗",
+        "選擇性注意",
+        "看不見"
+      ],
+      "related": [
+        "change_blindness",
+        "selective_attention"
+      ],
+      "confusable_with": [
+        "change_blindness"
+      ],
+      "examples": [
+        "Simons & Chabris (1999) 看不見大猩猩實驗"
+      ],
+      "common_mistakes": [
+        "不注意盲（沒看見）vs 變化盲（沒察覺變化）"
+      ],
+      "exam_appearances": [
+        "FJU_108_14"
+      ]
+    },
+    {
+      "id": "false_memory",
+      "term_zh": "錯誤記憶",
+      "term_en": "False Memory",
+      "category": "memory",
+      "school": "cognitive",
+      "scholars": [
+        "Loftus"
+      ],
+      "definition_short": "Loftus 等人研究顯示記憶易受誤導訊息影響而扭曲或植入。",
+      "keywords": [
+        "Loftus",
+        "誤導訊息效應",
+        "目擊證人",
+        "DRM"
+      ],
+      "related": [
+        "misinformation_effect",
+        "eyewitness_testimony"
+      ],
+      "confusable_with": [],
+      "examples": [
+        "Loftus 撞車錄影帶實驗（contacted vs smashed）；DRM 範式"
+      ],
+      "common_mistakes": [
+        "錯誤記憶不是「忘記」而是「記得錯的」"
+      ],
+      "exam_appearances": [
+        "FJU_108_13",
+        "FJU_108_14"
+      ]
+    },
+    {
+      "id": "assimilation_piaget",
+      "term_zh": "同化",
+      "term_en": "Assimilation",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 概念，將新經驗納入既有基模加以理解的歷程。",
+      "keywords": [
+        "基模",
+        "適應",
+        "平衡"
+      ],
+      "related": [
+        "accommodation_piaget",
+        "schema_piaget",
+        "piaget_cognitive_development"
+      ],
+      "confusable_with": [
+        "accommodation_piaget"
+      ],
+      "examples": [
+        "兒童看到貓但稱之為狗（用『狗基模』理解）"
+      ],
+      "common_mistakes": [
+        "同化≠模仿；它是訊息處理層次的概念"
+      ],
+      "exam_appearances": [
+        "FJU_108_10"
+      ]
+    },
+    {
+      "id": "accommodation_piaget",
+      "term_zh": "調適",
+      "term_en": "Accommodation",
+      "category": "developmental",
+      "school": "cognitive_developmental",
+      "scholars": [
+        "Piaget"
+      ],
+      "definition_short": "Piaget 概念，當既有基模無法納入新經驗時，修改基模或建立新基模的歷程。",
+      "keywords": [
+        "基模",
+        "適應",
+        "平衡"
+      ],
+      "related": [
+        "assimilation_piaget",
+        "schema_piaget"
+      ],
+      "confusable_with": [
+        "assimilation_piaget"
+      ],
+      "examples": [
+        "兒童區分出『貓基模』與『狗基模』"
+      ],
+      "common_mistakes": [],
+      "exam_appearances": []
+    }
+  ]
+}

@@ -1,0 +1,1966 @@
+{
+  "meta": {
+    "source": "NTU",
+    "year": 109,
+    "year_ad": 2020,
+    "exam_name": "臺灣大學109學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 50,
+    "scoring": "選擇題 50 題（單選）",
+    "generated_by": "user_provided_answers",
+    "needs_proofreading": true,
+    "notes": "使用者已提供答案、解析與章節分類。"
+  },
+  "questions": [
+    {
+      "id": "NTU_109_01",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 1,
+        "title": "第1章 緒論"
+      },
+      "question": "Which of the following subfields of psychology is INCORRECTLY matched with its description?",
+      "options": [
+        "Experimental: sensing, perceiving, learning, thinking",
+        "Clinical: diagnosis and treatment of psychological disorders",
+        "Cognitive: how people grow and change from conception through death",
+        "Behavioral neuroscience: nervous system and behavior"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Cognitive psychology研究的是感知、記憶、思考、語言，\n❌ 而「人如何從受孕到死亡發展」是發展心理學（developmental psychology）的範疇。",
+      "concepts": [
+        "心理學次領域（subfields of psychology）"
+      ],
+      "scholars": [],
+      "school_of_thought": "general",
+      "key_concepts": "心理學次領域（subfields of psychology）",
+      "ai_hint": "Cognitive psychology研究的是感知、記憶、思考、語言，\n❌ 而「人如何從受孕到死亡發展」是發展心理學（developmental psychology）的範疇。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第1章 緒論"
+    },
+    {
+      "id": "NTU_109_02",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 2,
+        "title": "第2章 心理學方法"
+      },
+      "question": "A double-blind procedure is administered to overcome _____.",
+      "options": [
+        "memory bias",
+        "experimenter expectations",
+        "reporting bias",
+        "participant expectations"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "雙盲程序（double-blind procedure）是為了同時排除：\n✅ 研究人員的期望（experimenter expectations）\n✅ 參與者的期望（participant expectations）所以最完整的答案應包含這兩個。",
+      "concepts": [
+        "實驗控制設計：雙盲（double-blind procedure ）"
+      ],
+      "scholars": [],
+      "school_of_thought": "research_methods",
+      "key_concepts": "實驗控制設計：雙盲（double-blind procedure ）",
+      "ai_hint": "雙盲程序（double-blind procedure）是為了同時排除：\n✅ 研究人員的期望（experimenter expectations）\n✅ 參與者的期望（participant expectations）所以最完整的答案應包含這兩個。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NTU_109_03",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 3,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "The part of the autonomic division of the nervous system that calms the body is the _____ division.",
+      "options": [
+        "somatic",
+        "sympathetic",
+        "parasympathetic",
+        "apathetic"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "副交感神經系統 (parasympathetic division) 負責在壓力後讓身體恢復平靜（“rest and digest”）。",
+      "concepts": [
+        "自律神經系統：副交感系統（autonomic nervous system, ANS）"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "自律神經系統：副交感系統（autonomic nervous system, ANS）",
+      "ai_hint": "副交感神經系統 (parasympathetic division) 負責在壓力後讓身體恢復平靜（“rest and digest”）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_109_04",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 4,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "As an action potential occurs, the neuron's electrical charge:",
+      "options": [
+        "changes from negative to neutral",
+        "changes from positive to neutral",
+        "changes from positive to negative",
+        "changes from negative to positive"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "在動作電位（action potential）期間：\n✅ 神經元膜電位從負電位去極化到正電位。",
+      "concepts": [
+        "神經衝動傳導，動作電位（action potential） 的電位變化歷程"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "神經衝動傳導，動作電位（action potential） 的電位變化歷程",
+      "ai_hint": "在動作電位（action potential）期間：\n✅ 神經元膜電位從負電位去極化到正電位。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_109_05",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 5,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Taxis look tiny from the 90th floor. This illustrates the _____ cue of _____.",
+      "options": [
+        "monocular; relative size",
+        "binocular; relative size",
+        "monocular; texture gradient",
+        "binocular; texture gradient"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "看到高樓上看計程車變小，是在利用：\n✅ 單眼線索（monocular cue）\n✅ 相對大小（relative size）",
+      "concepts": [
+        "深度知覺線索（depth cues）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "深度知覺線索（depth cues）",
+      "ai_hint": "看到高樓上看計程車變小，是在利用：\n✅ 單眼線索（monocular cue）\n✅ 相對大小（relative size）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_109_06",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 6,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Which of the following sequences correctly arranges structures from the largest and most inclusive to the\nsmallest and most specific?",
+      "options": [
+        "Inner ear → otoliths → semicircular canal",
+        "Inner ear → semicircular canals → otoliths",
+        "Otoliths → semicircular canals → inner ear",
+        "Otoliths → inner ear → semicircular canals"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "從大到小的結構順序：\n1️⃣ Inner ear（最大）\n2️⃣ Semicircular canals（在內耳內，負責平衡）\n3️⃣ Otoliths（位於半規管和耳石器裡的微小結構，偵測直線加速度）",
+      "concepts": [
+        "前庭系統（vestibular system）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "前庭系統（vestibular system）",
+      "ai_hint": "從大到小的結構順序：\n1️⃣ Inner ear（最大）\n2️⃣ Semicircular canals（在內耳內，負責平衡）\n3️⃣ Otoliths（位於半規管和耳石器裡的微小結構，偵測直線加速度）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_109_07",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 7,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Which of the following Gestalt laws is correctly defined?",
+      "options": [
+        "Closure-stimuli are perceived in the most basic manner possible",
+        "Simplicity-stimuli resembling one another tend to be grouped together",
+        "Similarity - the tendency to fill in small gaps in objects",
+        "Proximity-stimuli closer to one another tend to be grouped together"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "❌ Closure：是指傾向於填補缺口，看成完整形狀（不是最基本方式）\n❌ Simplicity (Prägnanz)：傾向於以最簡單的方式看待（不是相似性）\n❌ Similarity：相似的刺激會被歸在一起（不是填補空隙）\n✅ Proximity：靠得近的刺激會被視為一組（這定義正確）",
+      "concepts": [
+        "格式塔原則（Gestalt laws）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "格式塔原則（Gestalt laws）",
+      "ai_hint": "❌ Closure：是指傾向於填補缺口，看成完整形狀（不是最基本方式）\n❌ Simplicity (Prägnanz)：傾向於以最簡單的方式看待（不是相似性）\n❌ Similarity：相似的刺激會被歸在一起（不是填補空隙）\n✅ Proximity：靠得近的刺激會被視為一組（這定義正確）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_109_08",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 8,
+        "title": "第5章 注意與意識"
+      },
+      "question": "In general terms, how do brain waves change as a sleeper progresses from stage 1 sleep to stage 4 sleep?",
+      "options": [
+        "Their amplitude decreases",
+        "Their frequency increases",
+        "The brain waves become slower",
+        "The brain waves become faster"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "當你從第1期睡眠進入第4期（深度慢波睡眠）：\n✅ 腦波頻率變慢（進入delta波）\n✅ 振幅增加（amplitude increases）",
+      "concepts": [
+        "睡眠中的腦波變化（brain waves）"
+      ],
+      "scholars": [],
+      "school_of_thought": "consciousness",
+      "key_concepts": "睡眠中的腦波變化（brain waves）",
+      "ai_hint": "當你從第1期睡眠進入第4期（深度慢波睡眠）：\n✅ 腦波頻率變慢（進入delta波）\n✅ 振幅增加（amplitude increases）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第5章 注意與意識"
+    },
+    {
+      "id": "NTU_109_09",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 9,
+        "title": "第5章 注意與意識"
+      },
+      "question": "Which sleep disturbance is correctly matched with its description?",
+      "options": [
+        "Sleep apnea-difficulty breathing during sleep",
+        "Night terrors-sudden sleep during waking consciousness",
+        "Insomnia- temporary paralysis of the body before or after sleep",
+        "Narcolepsy-sudden awakenings accompanied by extreme fear, panic, and strong physiological arousal"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ A. Sleep apnea — difficulty breathing during sleep\n ✔️ 完全正確\n❌ B. Night terrors — sudden sleep during waking consciousness\n 錯誤，這描述是猝睡症 (Narcolepsy)\n❌ C. Insomnia — temporary paralysis of the body before or after sleep\n 錯誤，這是睡眠癱瘓 (Sleep paralysis)\n❌ D. Narcolepsy — sudden awakenings\n 錯誤，Narcolepsy是白天突然進入睡眠",
+      "concepts": [
+        "常見睡眠障礙（sleep disorders）"
+      ],
+      "scholars": [],
+      "school_of_thought": "consciousness",
+      "key_concepts": "常見睡眠障礙（sleep disorders）",
+      "ai_hint": "✅ A. Sleep apnea — difficulty breathing during sleep\n ✔️ 完全正確\n❌ B. Night terrors — sudden sleep during waking consciousness\n 錯誤，這描述是猝睡症 (Narcolepsy)\n❌ C. Insomnia — temporary paralysis of the body before or after sleep\n 錯誤，這是睡眠癱瘓 (Sleep paralysis)\n❌ D. Narcolepsy — sudden awakenings\n 錯誤，Narcolepsy是白天突然進入睡眠",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第5章 注意與意識"
+    },
+    {
+      "id": "NTU_109_10",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 10,
+        "title": "第5章 ：注意與意識"
+      },
+      "question": "Which drug mentioned below is correctly matched with its class?",
+      "options": [
+        "Cocaine - depressant",
+        "Caffeine - stimulant",
+        "Marijuana - depressant",
+        "Heroin - hallucinogen"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "A. Cocaine – depressant\n ❌ 錯誤。Cocaine（古柯鹼）是stimulant（興奮劑）\nB. Caffeine – stimulant\n ✅ 正確。咖啡因是興奮劑\nC. Marijuana – depressant\n ❌ 錯誤。Marijuana（大麻）主要分類為hallucinogen（迷幻劑），同時有輕微抑制與興奮作用，但不歸類為純粹depressant\nD. Heroin – hallucinogen\n ❌ 錯誤。Heroin（海洛因）是narcotic / opioid（鴉片類止痛劑）",
+      "concepts": [
+        "不同藥物類別（drug classes）與其心理與生理作用"
+      ],
+      "scholars": [],
+      "school_of_thought": "consciousness",
+      "key_concepts": "不同藥物類別（drug classes）與其心理與生理作用",
+      "ai_hint": "A. Cocaine – depressant\n ❌ 錯誤。Cocaine（古柯鹼）是stimulant（興奮劑）\nB. Caffeine – stimulant\n ✅ 正確。咖啡因是興奮劑\nC. Marijuana – depressant\n ❌ 錯誤。Marijuana（大麻）主要分類為hallucinogen（迷幻劑），同時有輕微抑制與興奮作用，但不歸類為純粹depressant\nD. Heroin – hallucinogen\n ❌ 錯誤。Heroin（海洛因）是narcotic / opioid（鴉片類止痛劑）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第5章 注意與意識"
+    },
+    {
+      "id": "NTU_109_11",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 11,
+        "title": "第8章 ：語言與心智表徵"
+      },
+      "question": "You have a kind of picture in your head of your hometown, a mental representation of its layout and the location of key landmarks, like rivers, buildings, freeways, and parks. This representation is called a(n):",
+      "options": [
+        "internal navigator",
+        "mental GPS",
+        "cognitive map",
+        "perceptual blueprint"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "一個 cognitive map（認知地圖） 是指你對一個空間環境（如你的家鄉）在心裡形成的心理表徵，可以幫助你記住地標、路線和相對位置。這是心理學與認知科學中描述「空間記憶與心理地圖」的專有名詞。",
+      "concepts": [
+        "認知地圖（Cognitive Map）空間記憶（spatial memory）與心理表徵（mental representation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "認知地圖（Cognitive Map）空間記憶（spatial memory）與心理表徵（mental representation）",
+      "ai_hint": "一個 cognitive map（認知地圖） 是指你對一個空間環境（如你的家鄉）在心裡形成的心理表徵，可以幫助你記住地標、路線和相對位置。這是心理學與認知科學中描述「空間記憶與心理地圖」的專有名詞。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_109_12",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 12,
+        "title": "第6章 學習"
+      },
+      "question": "Which of the following does NOT accurately reflect a distinction between classical and operant conditioning?",
+      "options": [
+        "Classical conditioning entails forming an association between stimuli; operant conditioning involves forming an association between a behavior and its consequences",
+        "Classical conditioning applies to voluntary behavior, while operant conditioning applies to involuntary behavior",
+        "In the case of classical conditioning, before conditioning, an unconditioned stimulus leads to an unconditioned response; in operant conditioning reinforcement leads to an increase in behavior",
+        "In the case of classical conditioning, after conditioning, a conditioned stimulus leads to a conditioned response; in operant conditioning punishment leads to a decrease in behavior"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "這句話錯誤地反過來了兩種制約：\n古典制約 (Classical conditioning)：影響不自主的（involuntary）反應，如流口水、心跳、驚嚇等（Pavlov 的狗看到鈴聲就流口水）。\n操作制約 (Operant conditioning)：影響自主的（voluntary）行為，如按槓桿、完成作業、按鈴換食物（Skinner box 中老鼠按鍵獲得食物）。\n\n其他選項正確描述了區別：\n ✅ (A) 古典制約是刺激和刺激的聯結，操作制約是行為和結果的聯結\n ✅ (C) 古典制約有無條件刺激 -> 無條件反應，操作制約強化會增加行為\n ✅ (D) 古典制約有條件刺激 -> 條件反應，操作制約懲罰會減少行為",
+      "concepts": [
+        "古典制約理論（Classical Conditioning）vs 操作制約理論（Operant Conditioning）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約理論（Classical Conditioning）vs 操作制約理論（Operant Conditioning）",
+      "ai_hint": "這句話錯誤地反過來了兩種制約：\n古典制約 (Classical conditioning)：影響不自主的（involuntary）反應，如流口水、心跳、驚嚇等（Pavlov 的狗看到鈴聲就流口水）。\n操作制約 (Operant conditioning)：影響自主的（voluntary）行為，如按槓桿、完成作業、按鈴換食物（Skinner box 中老鼠按鍵獲得食物）。\n\n其他選項正確描述了區別：\n ✅ (A) 古典制約是刺激和刺激的聯結，操作制約是行為和結果的聯結\n ✅ (C) 古典制約有無條件刺激 -> 無條件反應，操作制約強化會增加行為\n ✅ (D) 古典制約有條件刺激 -> 條件反應，操作制約懲罰會減少行為",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_109_13",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 13,
+        "title": "第6章 學習"
+      },
+      "question": "Which of the following scenarios exemplify negative punishment?",
+      "options": [
+        "Carly yells at her husband when he comes home drunk",
+        "Jim makes his middle-schoolers run extra laps when they are unruly in gym class",
+        "Joanie takes several ibuprofen tablets when she has a headache",
+        "Astrid tells her daughter she is grounded for misbehaving and cannot meet her friends for a week"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "負懲罰 (Negative Punishment)\n = 移除一個愉快的刺激來減少行為發生。\n(A) Carly yell → 給予不愉快刺激（正懲罰）\n(B) Jim加跑圈 → 給予不愉快刺激（正懲罰）\n(C) Joanie吃止痛藥 → 移除不愉快刺激（負增強，不是懲罰）\n✅ (D) Astrid把見朋友這個愉快的刺激移除，目的是減少不當行為，這就是負懲罰。",
+      "concepts": [
+        "操作制約理論（Operant Conditioning"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "操作制約理論（Operant Conditioning",
+      "ai_hint": "負懲罰 (Negative Punishment)\n = 移除一個愉快的刺激來減少行為發生。\n(A) Carly yell → 給予不愉快刺激（正懲罰）\n(B) Jim加跑圈 → 給予不愉快刺激（正懲罰）\n(C) Joanie吃止痛藥 → 移除不愉快刺激（負增強，不是懲罰）\n✅ (D) Astrid把見朋友這個愉快的刺激移除，目的是減少不當行為，這就是負懲罰。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_109_14",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 14,
+        "title": "第6章 學習"
+      },
+      "question": "Rosa becomes anxious when she enters the examination room at the clinic before a blood test. She also squirms when she views injections on television. This illustrates:",
+      "options": [
+        "stimulus generalization",
+        "spontaneous recovery",
+        "stimulus discrimination. is mustialse",
+        "observational learning"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "刺激泛化 (stimulus generalization) 指一種情況：\n 一個反應不只出現在原本的條件刺激，還出現在和它相似的刺激。\n🔹 Rosa 的例子：\n她對診所的檢查室感到焦慮（原本的條件刺激）。\n她看見電視上打針也會感到不舒服（類似刺激 → 泛化）。\n所以這正是刺激泛化的典型案例。",
+      "concepts": [
+        "古典制約理論（Classical Conditioning）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約理論（Classical Conditioning）",
+      "ai_hint": "刺激泛化 (stimulus generalization) 指一種情況：\n 一個反應不只出現在原本的條件刺激，還出現在和它相似的刺激。\n🔹 Rosa 的例子：\n她對診所的檢查室感到焦慮（原本的條件刺激）。\n她看見電視上打針也會感到不舒服（類似刺激 → 泛化）。\n所以這正是刺激泛化的典型案例。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_109_15",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 15,
+        "title": "第7章 記憶"
+      },
+      "question": "Grouping pieces of information together to expand the effective capacity of short-term memory is termed＿＿＿＿",
+      "options": [
+        "clumping",
+        "consolidating",
+        "chunking",
+        "compacting"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Chunking（組塊）就是把分散的資訊「組成有意義的單位（chunks）」來增加短期記憶容量。",
+      "concepts": [
+        "短期記憶（STM）與工作記憶（WM）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "短期記憶（STM）與工作記憶（WM）",
+      "ai_hint": "Chunking（組塊）就是把分散的資訊「組成有意義的單位（chunks）」來增加短期記憶容量。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_109_16",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 16,
+        "title": "第7章 記憶"
+      },
+      "question": "The primacy effect refers to the fact that:",
+      "options": [
+        "the most important items in a list are remembered better than the less important items",
+        "items presented early in a list are remembered better than items in the middle of the list",
+        "items presented late in a list are remembered better than items presented earlier",
+        "items in a list which have the greatest emotional impact are those with the greatest likelihood of recall"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Primacy Effect（初始效應）：\n ➡️ 最早呈現的項目因為有更多機會被複誦與編碼進長期記憶，因此被記得較好。\n\nRecency Effect（新近效應）：\n ➡️ 最後呈現的項目仍在短期記憶中，也容易被回憶。",
+      "concepts": [
+        "序列位置效應（serial position effect）當中的primacy effect（初始效應）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "序列位置效應（serial position effect）當中的primacy effect（初始效應）",
+      "ai_hint": "Primacy Effect（初始效應）：\n ➡️ 最早呈現的項目因為有更多機會被複誦與編碼進長期記憶，因此被記得較好。\n\nRecency Effect（新近效應）：\n ➡️ 最後呈現的項目仍在短期記憶中，也容易被回憶。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_109_17",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 17,
+        "title": "第7章 記憶"
+      },
+      "question": "Why is it so difficult to retrieve information from long-term memory?",
+      "options": [
+        "The capacity of long-term memory is limited",
+        "The duration of long-term memories is limited",
+        "There is so much information being stored in long-term memory",
+        "The material that makes its way to long-term memory is temporary"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "長期記憶（long-term memory）的主要特性：\n・容量幾乎無限。\n・持續時間非常長（有些記憶可保存一生）。\n・檢索困難的原因通常不是因為容量或持續時間的限制，而是因為儲存了太多資訊，要找到正確的線索來提取特定記憶變得困難。",
+      "concepts": [
+        "記憶的結構性特徵 Structural properties of memory（Architecture of memory systems）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "記憶的結構性特徵 Structural properties of memory（Architecture of memory systems）",
+      "ai_hint": "長期記憶（long-term memory）的主要特性：\n・容量幾乎無限。\n・持續時間非常長（有些記憶可保存一生）。\n・檢索困難的原因通常不是因為容量或持續時間的限制，而是因為儲存了太多資訊，要找到正確的線索來提取特定記憶變得困難。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_109_18",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 18,
+        "title": "第7章 記憶"
+      },
+      "question": "Which of the following statements best describes the forgetting function that Ebbinghaus discovered?",
+      "options": [
+        "Nothing is ever really forgotten",
+        "Material is forgotten at a relatively slow rate at first, then the rate of forgetting speeds up",
+        "Material is forgotten at a relatively constant rate once it has been learned",
+        "Material is forgotten relatively rapidly at first, and then the rate of forgetting slows down"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Ebbinghaus 遺忘曲線（Ebbinghaus forgetting curve）顯示：\n・剛學完的東西最先忘掉最多（遺忘很快）。\n・之後遺忘的速度會逐漸減緩（剩下的記憶保持比較穩定）。",
+      "concepts": [
+        "艾賓浩斯遺忘曲線 （Ebbinghaus Forgetting Curve）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "艾賓浩斯遺忘曲線 （Ebbinghaus Forgetting Curve）",
+      "ai_hint": "Ebbinghaus 遺忘曲線（Ebbinghaus forgetting curve）顯示：\n・剛學完的東西最先忘掉最多（遺忘很快）。\n・之後遺忘的速度會逐漸減緩（剩下的記憶保持比較穩定）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_109_19",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 19,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "____ is the process by which information is used to draw conclusions and make decisions.",
+      "options": [
+        "Reasoning",
+        "Predicting",
+        "Conceptualizing",
+        "Negotiating"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Reasoning（推理）指的是：\n利用資訊去推導結論並做決策的認知過程。Predicting = 預測\nConceptualizing = 概念化\nNegotiating = 協商",
+      "concepts": [
+        "心智操作（mental processes）"
+      ],
+      "scholars": [],
+      "school_of_thought": "thinking",
+      "key_concepts": "心智操作（mental processes）",
+      "ai_hint": "Reasoning（推理）指的是：\n利用資訊去推導結論並做決策的認知過程。Predicting = 預測\nConceptualizing = 概念化\nNegotiating = 協商",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NTU_109_20",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 20,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "\"You always clam up when I ask you what's wrong,\" Iris tells her boyfriend. Iris is probably making this frequency judgment because she can remember a few times that her boyfriend would not tell her what was bothering him. Iris is using the ___ heuristic.",
+      "options": [
+        "representativeness",
+        "availability",
+        "frequency",
+        "functional"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "這題關鍵在於：\n「因為她可以記起幾次男朋友不願意說的例子。」\nAvailability heuristic（可得性捷思）是：根據你頭腦中最容易被想起的例子，來判斷某件事的頻率或可能性。\n她覺得男友「總是」這樣，其實是因為這些例子很容易被她回想起來，而非真的經常發生。",
+      "concepts": [
+        "啟發式與偏誤（heuristics and biases）"
+      ],
+      "scholars": [],
+      "school_of_thought": "thinking",
+      "key_concepts": "啟發式與偏誤（heuristics and biases）",
+      "ai_hint": "這題關鍵在於：\n「因為她可以記起幾次男朋友不願意說的例子。」\nAvailability heuristic（可得性捷思）是：根據你頭腦中最容易被想起的例子，來判斷某件事的頻率或可能性。\n她覺得男友「總是」這樣，其實是因為這些例子很容易被她回想起來，而非真的經常發生。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NTU_109_21",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 21,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "Alyssa uses a shoe as a hammer and a butter knife as a screwdriver while making several minor household repairs. Which of the following statements best characterizes Alyssa's problem solving?",
+      "options": [
+        "She is constrained by a powerful mental set",
+        "She has been released from functional fixedness",
+        "She is taking advantage of the representative heuristic",
+        "She is forming subgoals"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Functional fixedness（功能固著）是指：\n傾向只把物品看作「慣用功能」，而無法靈活運用它解決其他問題。\n(A) mental set：指用同一種熟悉的方法去解決新問題。這裡她是在創新。\n(C) representative heuristic：是指用典型例子來判斷事物，不是指重新賦予物品新用途。",
+      "concepts": [
+        "功能固著（functional fixedness）"
+      ],
+      "scholars": [],
+      "school_of_thought": "thinking",
+      "key_concepts": "功能固著（functional fixedness）",
+      "ai_hint": "Functional fixedness（功能固著）是指：\n傾向只把物品看作「慣用功能」，而無法靈活運用它解決其他問題。\n(A) mental set：指用同一種熟悉的方法去解決新問題。這裡她是在創新。\n(C) representative heuristic：是指用典型例子來判斷事物，不是指重新賦予物品新用途。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NTU_109_22",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 22,
+        "title": "第10章 智力"
+      },
+      "question": "Kyana is an excellent salesperson because she can always find a way of connecting with a potential client.\nBased on this information, in which kind of intelligence would Gardner expect Kyana to be high?",
+      "options": [
+        "Analytic",
+        "Bodily kinesthetic",
+        "Interpersonal",
+        "Spatial"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "擅長理解和與他人互動，這種能力屬於 人際智能 (interpersonal intelligence)，是霍華德·加德納（Howard Gardner）多元智能理論 (Multiple Intelligences Theory) 中的重要一種。",
+      "concepts": [
+        "多元智能理論 （Multiple Intelligences）"
+      ],
+      "scholars": [],
+      "school_of_thought": "intelligence",
+      "key_concepts": "多元智能理論 （Multiple Intelligences）",
+      "ai_hint": "擅長理解和與他人互動，這種能力屬於 人際智能 (interpersonal intelligence)，是霍華德·加德納（Howard Gardner）多元智能理論 (Multiple Intelligences Theory) 中的重要一種。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NTU_109_23",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 23,
+        "title": "第10章 智力"
+      },
+      "question": "Imagine that 6-year-olds can complete a particular block design puzzle in five minutes. It takes Bailey almost eight minutes to complete the same task. In Binet's terms, Bailey's ＿＿＿ age is ＿＿＿ than six.",
+      "options": [
+        "chronological; higher",
+        "chronological; lower",
+        "mental; higher",
+        "mental; lower"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "心理年齡 (mental age) 是指一個人完成測驗的表現相當於哪個年齡兒童的平均水平。\n如果6歲的兒童平均5分鐘完成，而Bailey花了近8分鐘（比平均慢），這表示她的表現低於6歲水平。\n因此，她的心理年齡（mental age）小於她的實際年齡（6歲）。",
+      "concepts": [
+        "Binet 的心理年齡（Mental Age）"
+      ],
+      "scholars": [],
+      "school_of_thought": "intelligence",
+      "key_concepts": "Binet 的心理年齡（Mental Age）",
+      "ai_hint": "心理年齡 (mental age) 是指一個人完成測驗的表現相當於哪個年齡兒童的平均水平。\n如果6歲的兒童平均5分鐘完成，而Bailey花了近8分鐘（比平均慢），這表示她的表現低於6歲水平。\n因此，她的心理年齡（mental age）小於她的實際年齡（6歲）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NTU_109_24",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 24,
+        "title": "第2章 心理學方法"
+      },
+      "question": "All of the following are types of validity EXCEPT for _______",
+      "options": [
+        "content",
+        "criterion",
+        "construct",
+        "split-half"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "心理測驗的效度（validity）種類：\n✅ Content validity（內容效度）：測驗涵蓋了要測量的內容範圍嗎？\n ✅ Criterion validity（效標效度）：測驗和某個外部標準的關聯性。\n ✅ Construct validity（建構效度）：測驗是否真正測量了理論構念。\n ❌ Split-half：這是信度（reliability）的評估方式（把測驗分成兩半比較一致性），不是效度",
+      "concepts": [
+        "心理衡鑑（assessment tool quality）"
+      ],
+      "scholars": [],
+      "school_of_thought": "research_methods",
+      "key_concepts": "心理衡鑑（assessment tool quality）",
+      "ai_hint": "心理測驗的效度（validity）種類：\n✅ Content validity（內容效度）：測驗涵蓋了要測量的內容範圍嗎？\n ✅ Criterion validity（效標效度）：測驗和某個外部標準的關聯性。\n ✅ Construct validity（建構效度）：測驗是否真正測量了理論構念。\n ❌ Split-half：這是信度（reliability）的評估方式（把測驗分成兩半比較一致性），不是效度",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NTU_109_25",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 25,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "According to the facial-feedback hypothesis, _____",
+      "options": [
+        "facial expressions can actually determine our emotional experience",
+        "our emotions activate specific facial-affect patterns",
+        "we pay close attention to others' facial expressions",
+        "facial expressions are strongly influenced by our immediate environment and our larger cultures"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "臉部表情不只是反映情緒，它還會影響甚至決定你的情緒經驗。\n比如：你強迫自己微笑，會讓你真的感覺比較快樂。",
+      "concepts": [
+        "臉部回饋假說（facial feedback hypothesis）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "臉部回饋假說（facial feedback hypothesis）",
+      "ai_hint": "臉部表情不只是反映情緒，它還會影響甚至決定你的情緒經驗。\n比如：你強迫自己微笑，會讓你真的感覺比較快樂。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_109_26",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 26,
+        "title": "第16章"
+      },
+      "question": "＿＿＿＿  is a disorder in which a person binges on large quantities of food, followed by efforts to purge the food through vomiting or other means.",
+      "options": [
+        "Anorexia nervosa",
+        "Bulimia",
+        "Compulsive eating",
+        "Binge-eating disorder"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 暴食 (binge) → 大量進食\n✅ 清除 (purge) → 嘔吐或使用瀉藥\n這是暴食症（Bulimia Nervosa）的典型特徵。",
+      "concepts": [
+        "進食障礙（Eating Disorders）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "進食障礙（Eating Disorders）",
+      "ai_hint": "✅ 暴食 (binge) → 大量進食\n✅ 清除 (purge) → 嘔吐或使用瀉藥\n這是暴食症（Bulimia Nervosa）的典型特徵。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_27",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 27,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "According to Maslow, our highest-level need is the need for:",
+      "options": [
+        "self-esteem",
+        "self-efficacy",
+        "self-love",
+        "self-actualization"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Maslow 的需求層次理論 (Hierarchy of Needs)：金字塔最頂端是：\n ✅ 自我實現（self-actualization）：\n 實現個人潛能，成為最好的自己。",
+      "concepts": [
+        "需求層次理論（Hierarchy of Needs）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "需求層次理論（Hierarchy of Needs）",
+      "ai_hint": "Maslow 的需求層次理論 (Hierarchy of Needs)：金字塔最頂端是：\n ✅ 自我實現（self-actualization）：\n 實現個人潛能，成為最好的自己。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_109_28",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 28,
+        "title": "第14章 發展心理學"
+      },
+      "question": "Which of the following is a disadvantage associated with longitudinal research?",
+      "options": [
+        "It cannot deal with the problem of a cohort group",
+        "It cannot assess change in behavior over time",
+        "It is time consuming",
+        "It cannot trace the behavior of more than two participants at a time"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "縱向研究 (longitudinal research) 中：\n研究者要長期追蹤同一群體，觀察行為變化。這種方法的主要缺點是：\n ✅ 非常耗時 (time consuming)\n 也可能有受試者流失，但這題的選項裡最直接的缺點就是耗時。",
+      "concepts": [
+        "研究方法\n longitudinal（縱貫研究） vs cross-sectional （橫斷研究）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "研究方法\n longitudinal（縱貫研究） vs cross-sectional （橫斷研究）",
+      "ai_hint": "縱向研究 (longitudinal research) 中：\n研究者要長期追蹤同一群體，觀察行為變化。這種方法的主要缺點是：\n ✅ 非常耗時 (time consuming)\n 也可能有受試者流失，但這題的選項裡最直接的缺點就是耗時。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_109_29",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 29,
+        "title": "第14章 發展心理學"
+      },
+      "question": "According to Mary Ainsworth, when a child with avoidant attachment style is exposed to the strange situation experiment, he/she will:",
+      "options": [
+        "show no concern when the mother leaves the room",
+        "continue to show signs of distress when the mother returns after a brief absence",
+        "exhibit inconsistent and contradictory behavior toward the mother when she returns",
+        "refuse to play and explore new settings when the mother is not present"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Mary Ainsworth 的陌生情境實驗 (Strange Situation Experiment)：\n✅ 迴避型依附（avoidant attachment）的特徵：\n・對母親離開幾乎沒反應\n・母親回來時也不特別關心或接近",
+      "concepts": [
+        "依附理論 Attachment Theory、Mary Ainsworth、Strange Situation 實驗"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "依附理論 Attachment Theory、Mary Ainsworth、Strange Situation 實驗",
+      "ai_hint": "Mary Ainsworth 的陌生情境實驗 (Strange Situation Experiment)：\n✅ 迴避型依附（avoidant attachment）的特徵：\n・對母親離開幾乎沒反應\n・母親回來時也不特別關心或接近",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_109_30",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 30,
+        "title": "第14章 發展心理學"
+      },
+      "question": "According to Erikson, the third stage of a child's psychosocial development is the ____  stage.",
+      "options": [
+        "intimacy-versus-isolation",
+        "id-versus-ego",
+        "trust-versus-mistrust",
+        "initiative-versus-guilt"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "根據 Erikson 的心理社會發展理論：\n第三階段是：\n ✅ 主動感對罪惡感（initiative vs. guilt）\n 年齡大約是3–6歲，孩子開始主動計畫、探索、嘗試做事情。",
+      "concepts": [
+        "Erikson 心理社會發展理論（Psychosocial Development Theory）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "Erikson 心理社會發展理論（Psychosocial Development Theory）",
+      "ai_hint": "根據 Erikson 的心理社會發展理論：\n第三階段是：\n ✅ 主動感對罪惡感（initiative vs. guilt）\n 年齡大約是3–6歲，孩子開始主動計畫、探索、嘗試做事情。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_109_31",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 31,
+        "title": "第14章 發展心理學"
+      },
+      "question": "A child demonstrates that she understands the idea of object permanence and egocentrism but fails to understand the concept of conservation. In the context of the Piagetian stages, she is most likely in the ____ stage.",
+      "options": [
+        "preoperational",
+        "concrete operational",
+        "sensorimotor",
+        "formal operational"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 物體恆存 (object permanence)：\n → 在感覺運動期（sensorimotor）後期就會出現。✅ 自我中心 (egocentrism)：\n → 前運思期（preoperational）的典型特徵。\n✅ 守恆概念 (conservation)：\n → 要到具體運思期（concrete operational）才具備。\n題目說：已經有物體恆存（超過感覺運動期）、有自我中心、但還不懂守恆\n👉 前運思期 (preoperational stage)",
+      "concepts": [
+        "Piaget 認知發展理論（Piaget's Theory of Cognitive Development－Assimilation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "Piaget 認知發展理論（Piaget's Theory of Cognitive Development－Assimilation）",
+      "ai_hint": "✅ 物體恆存 (object permanence)：\n → 在感覺運動期（sensorimotor）後期就會出現。✅ 自我中心 (egocentrism)：\n → 前運思期（preoperational）的典型特徵。\n✅ 守恆概念 (conservation)：\n → 要到具體運思期（concrete operational）才具備。\n題目說：已經有物體恆存（超過感覺運動期）、有自我中心、但還不懂守恆\n👉 前運思期 (preoperational stage)",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_109_32",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 32,
+        "title": "第12章 性格"
+      },
+      "question": "Which of the following is NOT one of Hans Eysenck's major personality dimensions?",
+      "options": [
+        "Extraversion",
+        "Agreeableness",
+        "Neuroticism",
+        "Psychoticism"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Hans Eysenck 的三大人格維度是：\n✅ Extraversion（外向性）\n✅ Neuroticism（神經質）\n✅ Psychoticism（精神質）\n❌Agreeableness（宜人性）\n👉 是五大人格模型（Big Five）的維度",
+      "concepts": [
+        "Hans Eysenck（艾森克）三大人格維度（Eysenck's PEN Model）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "Hans Eysenck（艾森克）三大人格維度（Eysenck's PEN Model）",
+      "ai_hint": "Hans Eysenck 的三大人格維度是：\n✅ Extraversion（外向性）\n✅ Neuroticism（神經質）\n✅ Psychoticism（精神質）\n❌Agreeableness（宜人性）\n👉 是五大人格模型（Big Five）的維度",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_109_33",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 33,
+        "title": "第12章 性格"
+      },
+      "question": "In Freud's theory of psychosexual development, mature adult sexuality develops during the:",
+      "options": [
+        "latency period",
+        "phallic stage",
+        "oral stage",
+        "genital stage"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "弗洛伊德 (Freud) 的心理性發展理論中：\n成熟的成人性行為是生殖期（genital stage）的核心特徵，這是青春期到成年後的階段。",
+      "concepts": [
+        "Freud 的心理性發展理論（Psychosexual Development）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "Freud 的心理性發展理論（Psychosexual Development）",
+      "ai_hint": "弗洛伊德 (Freud) 的心理性發展理論中：\n成熟的成人性行為是生殖期（genital stage）的核心特徵，這是青春期到成年後的階段。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_109_34",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 34,
+        "title": "第12章 性格"
+      },
+      "question": "According to Carl Rogers, people experience anxiety when:",
+      "options": [
+        "they feel inferior in the face of a challenging task",
+        "they cannot satisfy their basic needs",
+        "they become conscious of unacceptable sexual urges",
+        "their self-concept is at odds with their experience"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Carl Rogers的人本主義理論：\n✅ 當自我概念 (self-concept) 和實際經驗 (experience) 不一致（不協調、衝突）時，人就會產生焦慮。",
+      "concepts": [
+        "Carl Rogers 現象學派（Humanistic / Phenomenological Theory 不一致性焦慮（incongruence-induced anxiety）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "Carl Rogers 現象學派（Humanistic / Phenomenological Theory 不一致性焦慮（incongruence-induced anxiety）",
+      "ai_hint": "Carl Rogers的人本主義理論：\n✅ 當自我概念 (self-concept) 和實際經驗 (experience) 不一致（不協調、衝突）時，人就會產生焦慮。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_109_35",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 35,
+        "title": "第12章 性格"
+      },
+      "question": "Which defense mechanism is correctly matched with a definition?",
+      "options": [
+        "Displacement-an unwanted feeling is redirected from a threatening individual to a less threatening one",
+        "Reaction formation-unacceptable impulses are channeled into socially acceptable activities",
+        "Sublimation— unacceptable impulses are attributed to another person",
+        "Projection— unacceptable impulses are expressed as their opposites"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ (A) Displacement\n 定義： 把情緒從威脅性的對象轉移到比較安全的對象\n❌ (B) Reaction formation\n 定義：把不可接受的衝動表現為相反的行為（不是「轉化為社會接受的活動」，那是昇華）\n❌ (C) Sublimation\n 定義：把不可接受的衝動轉化為社會接受的行為（例如有攻擊傾向的人去打拳擊）\n（題中說「歸因於他人」，這是投射）\n❌ (D) Projection\n 定義：把自己不可接受的衝動歸因於別人（不是「表現為相反」）",
+      "concepts": [
+        "心理動力論（Psychodynamic Perspective）Freud & Anna Freud 的防衛機制（Defense Mechanisms）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "心理動力論（Psychodynamic Perspective）Freud & Anna Freud 的防衛機制（Defense Mechanisms）",
+      "ai_hint": "✅ (A) Displacement\n 定義： 把情緒從威脅性的對象轉移到比較安全的對象\n❌ (B) Reaction formation\n 定義：把不可接受的衝動表現為相反的行為（不是「轉化為社會接受的活動」，那是昇華）\n❌ (C) Sublimation\n 定義：把不可接受的衝動轉化為社會接受的行為（例如有攻擊傾向的人去打拳擊）\n（題中說「歸因於他人」，這是投射）\n❌ (D) Projection\n 定義：把自己不可接受的衝動歸因於別人（不是「表現為相反」）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_109_36",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 36,
+        "title": "第15章 壓力、適應與健康"
+      },
+      "question": "During the ＿＿＿ biological level.\nstage of the general adaptation syndrome, the body is actively fighting the stressor on a biological level.",
+      "options": [
+        "exhaustion",
+        "resistance",
+        "alarm",
+        "mobilization"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "賽利 (Hans Selye) 的一般適應症候群 (General Adaptation Syndrome, GAS) 中：\n三個階段：\nAlarm：警覺階段\n✅ Resistance：抵抗階段（身體在生理層面積極對抗壓力源）\nExhaustion：耗竭階段",
+      "concepts": [
+        "Hans Selye 的「一般適應症候群」（General Adaptation Syndrome, GAS）三階段理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "stress_health",
+      "key_concepts": "Hans Selye 的「一般適應症候群」（General Adaptation Syndrome, GAS）三階段理論",
+      "ai_hint": "賽利 (Hans Selye) 的一般適應症候群 (General Adaptation Syndrome, GAS) 中：\n三個階段：\nAlarm：警覺階段\n✅ Resistance：抵抗階段（身體在生理層面積極對抗壓力源）\nExhaustion：耗竭階段",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第15章 壓力、適應與健康"
+    },
+    {
+      "id": "NTU_109_37",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 37,
+        "title": "第15章 壓力、適應與健康"
+      },
+      "question": "Which of the following statements is TRUE about emotion-focused coping?",
+      "options": [
+        "Taking time-out from stress by creating positive events is a type of emotion-focused coping",
+        "Emotion-focused coping may be more effective than problem-focused coping when the situation is unchangeable",
+        "Emotion-focused coping attempts to modify the source of stress",
+        "In emotion-focused coping, a person may use wishful thinking to reduce stress or use more direct escape routes"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 情緒導向因應 (emotion-focused coping)\n→ 主要目的是調整自己對壓力的情緒反應，而不是改變壓力來源。\n✅ (A) Taking time-out from stress by creating positive events is a type of emotion-focused coping.\n ✔️ 正確。轉移注意、創造愉快經驗屬於情緒導向因應。\n✅ (B) Emotion-focused coping may be more effective than problem-focused coping when the situation is unchangeable.\n ✔️ 也正確。當壓力源無法改變（如疾病、失去親人），情緒導向策略比問題導向更有效。\n❌ (C) Emotion-focused coping attempts to modify the source of stress.\n 錯誤。這是問題導向因應。\n✅ (D) In emotion-focused coping, a person may use wishful thinking to reduce stress or use more direct escape routes.\n ✔️ 也正確。幻想逃避、迴避行為都是情緒導向因應的一種。",
+      "concepts": [
+        "emotion-focused coping（情緒導向因應） vs problem-focused coping（問題導向因應）"
+      ],
+      "scholars": [],
+      "school_of_thought": "stress_health",
+      "key_concepts": "emotion-focused coping（情緒導向因應） vs problem-focused coping（問題導向因應）",
+      "ai_hint": "✅ 情緒導向因應 (emotion-focused coping)\n→ 主要目的是調整自己對壓力的情緒反應，而不是改變壓力來源。\n✅ (A) Taking time-out from stress by creating positive events is a type of emotion-focused coping.\n ✔️ 正確。轉移注意、創造愉快經驗屬於情緒導向因應。\n✅ (B) Emotion-focused coping may be more effective than problem-focused coping when the situation is unchangeable.\n ✔️ 也正確。當壓力源無法改變（如疾病、失去親人），情緒導向策略比問題導向更有效。\n❌ (C) Emotion-focused coping attempts to modify the source of stress.\n 錯誤。這是問題導向因應。\n✅ (D) In emotion-focused coping, a person may use wishful thinking to reduce stress or use more direct escape routes.\n ✔️ 也正確。幻想逃避、迴避行為都是情緒導向因應的一種。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第15章 壓力、適應與健康"
+    },
+    {
+      "id": "NTU_109_38",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 38,
+        "title": "第15章 壓力、適應與健康"
+      },
+      "question": "Kim is aggressive, competitive, and ambitious. Lonnie is relaxed, cooperative, and patient. Morrie is anxious, tense, and pessimistic. Which individual is correctly paired with the behavior pattern he or she reflects?",
+      "options": [
+        "Lonnie-Type B",
+        "Morrie-Type A",
+        "Kim-Type C",
+        "None of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ Type A 行為模式：好勝 （competitive）\n、有野心 （ambitious）、攻擊性強（aggressive）\n✅ Type B 行為模式：放鬆 （relaxed）、合作 （cooperative）、有耐心 （patient）\n✅ Type C 行為模式（比較少用於這種測驗）：抑制情感、過度順從、容易感到無助或無望（有時和癌症研究相關）",
+      "concepts": [
+        "Type A / B / C personality types × 心臟病風險 × 壓力反應"
+      ],
+      "scholars": [],
+      "school_of_thought": "stress_health",
+      "key_concepts": "Type A / B / C personality types × 心臟病風險 × 壓力反應",
+      "ai_hint": "✅ Type A 行為模式：好勝 （competitive）\n、有野心 （ambitious）、攻擊性強（aggressive）\n✅ Type B 行為模式：放鬆 （relaxed）、合作 （cooperative）、有耐心 （patient）\n✅ Type C 行為模式（比較少用於這種測驗）：抑制情感、過度順從、容易感到無助或無望（有時和癌症研究相關）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第15章 壓力、適應與健康"
+    },
+    {
+      "id": "NTU_109_39",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 39,
+        "title": "第15章 壓力、適應與健康"
+      },
+      "question": "The greatest strength of the behavioral perspective on psychological disorders is its:",
+      "options": [
+        "explicit recognition of the biological underpinnings of behavior",
+        "emphasis on the client's rich inner life",
+        "focus on childhood conflicts that affect adult behavior",
+        "emphasis on observable behavior"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "行為取向 (behavioral perspective) 的核心特色：\n✅ 強調可觀察的行為，認為行為是學習的結果（制約、增強）。\n❌(A) 生物基礎 → 生物學取向\n❌(B) 內在經驗 → 人本/精神分析\n❌(C) 童年衝突 → 精神分析\n✅ (D) 可觀察行為 → 行為取向最核心的優勢",
+      "concepts": [
+        "行為取向 (behavioral perspective)"
+      ],
+      "scholars": [],
+      "school_of_thought": "stress_health",
+      "key_concepts": "行為取向 (behavioral perspective)",
+      "ai_hint": "行為取向 (behavioral perspective) 的核心特色：\n✅ 強調可觀察的行為，認為行為是學習的結果（制約、增強）。\n❌(A) 生物基礎 → 生物學取向\n❌(B) 內在經驗 → 人本/精神分析\n❌(C) 童年衝突 → 精神分析\n✅ (D) 可觀察行為 → 行為取向最核心的優勢",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第15章 壓力、適應與健康"
+    },
+    {
+      "id": "NTU_109_40",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 40,
+        "title": "第16章 心智異常：心理衡鑑、病理與治療"
+      },
+      "question": "Sam washes his hands very frequently. In spite of this, he feels that his hands are not clean and that he might acquire a viral disease due to poor hygiene. Given this information, we can conclude that Sam has:",
+      "options": [
+        "cyclothymic disorder",
+        "schizophrenia",
+        "bipolar disorder",
+        "obsessive-compulsive disorder"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Sam反覆洗手，仍感覺不乾淨，擔心感染疾病，這是：\n✅ 強迫症（OCD）的典型表現：強迫思考 (obsessions）/強迫行為 (compulsions):\n❌(A) cyclothymic disorder → 輕度情緒週期波動\n❌(B) schizophrenia → 妄想、幻覺\n❌(C) bipolar disorder → 情緒高漲與低落交替",
+      "concepts": [
+        "焦慮相關障礙（OCD & 相關症）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "焦慮相關障礙（OCD & 相關症）",
+      "ai_hint": "Sam反覆洗手，仍感覺不乾淨，擔心感染疾病，這是：\n✅ 強迫症（OCD）的典型表現：強迫思考 (obsessions）/強迫行為 (compulsions):\n❌(A) cyclothymic disorder → 輕度情緒週期波動\n❌(B) schizophrenia → 妄想、幻覺\n❌(C) bipolar disorder → 情緒高漲與低落交替",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_41",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 41,
+        "title": "第16章 心智異常：心理衡鑑、病理與治療"
+      },
+      "question": "How does dissociative amnesia differ from simple amnesia?",
+      "options": [
+        "Simple amnesia occurs due to stress, whereas dissociative amnesia does not",
+        "Simple amnesia involves an actual loss of memory, whereas dissociative amnesia does not",
+        "Dissociative amnesia involves an actual loss of memory, whereas simple amnesia does not",
+        "Dissociative amnesia typically results from a physiological cause, whereas simple amnesia does not"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ Simple amnesia（單純性失憶）：\n 通常由生理性原因引起（例如：頭部受傷、中風），導致真實的記憶損失。\n✅ Dissociative amnesia（分離性失憶）：\n・通常由心理壓力或創傷引起\n・病人無法回憶個人資訊（例如重要事件或身份），但沒有生理性損傷",
+      "concepts": [
+        "Simple amnesia（單純性失憶）vs. Dissociative amnesia（分離性失憶）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "Simple amnesia（單純性失憶）vs. Dissociative amnesia（分離性失憶）",
+      "ai_hint": "✅ Simple amnesia（單純性失憶）：\n 通常由生理性原因引起（例如：頭部受傷、中風），導致真實的記憶損失。\n✅ Dissociative amnesia（分離性失憶）：\n・通常由心理壓力或創傷引起\n・病人無法回憶個人資訊（例如重要事件或身份），但沒有生理性損傷",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_42",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 42,
+        "title": "第16章 心智異常：心理衡鑑、病理與治療 / 第3章 行為的生物基礎"
+      },
+      "question": "Which of the following neurotransmitters plays a major role in depression?",
+      "options": [
+        "Endorphins",
+        "Acetylcholine",
+        "Serotonin",
+        "Dopamine"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "憂鬱症（depression）的神經生物學中：\n血清素 (Serotonin) 被認為是最重要的神經傳導物質之一，和情緒調節密切相關。\n\n(A) Endorphins → 與疼痛緩解與快感有關\n(B) Acetylcholine → 與學習記憶有關\n(D) Dopamine → 與快感和精神分裂症較有關",
+      "concepts": [
+        "情緒障礙（尤其是憂鬱症）與神經傳導物質"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "情緒障礙（尤其是憂鬱症）與神經傳導物質",
+      "ai_hint": "憂鬱症（depression）的神經生物學中：\n血清素 (Serotonin) 被認為是最重要的神經傳導物質之一，和情緒調節密切相關。\n\n(A) Endorphins → 與疼痛緩解與快感有關\n(B) Acetylcholine → 與學習記憶有關\n(D) Dopamine → 與快感和精神分裂症較有關",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_43",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 43,
+        "title": "第16章 心智異常：心理衡鑑、病理與治療"
+      },
+      "question": "Electroconvulsive therapy (ECT) was used to treat severe ___",
+      "options": [
+        "Depression",
+        "Anxiety",
+        "Antisocial personality disorder",
+        "Schizophrenia"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "電痙攣療法（ECT）主要用於治療：\n重度憂鬱症（severe depression） 特別是：\n・對藥物無反應的個案\n・有自殺風險的個案",
+      "concepts": [
+        "電痙攣療法（Electroconvulsive Therapy, ECT）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "電痙攣療法（Electroconvulsive Therapy, ECT）",
+      "ai_hint": "電痙攣療法（ECT）主要用於治療：\n重度憂鬱症（severe depression） 特別是：\n・對藥物無反應的個案\n・有自殺風險的個案",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_44",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 44,
+        "title": "第16章 心智異常：心理衡鑑、病理與治療"
+      },
+      "question": "Therapy in which the goal is to reach one's potential for self-actualization is known as",
+      "options": [
+        "self-help",
+        "person-centered",
+        "interpersonal",
+        "group therapy"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "達到自我實現 (self-actualization）是Carl Rogers 的核心概念：\n ➡️ 人本取向 (humanistic) 的「當事人中心治療（person-centered therapy）",
+      "concepts": [
+        "人本主義治療 person-centered therapy（Rogers）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "人本主義治療 person-centered therapy（Rogers）",
+      "ai_hint": "達到自我實現 (self-actualization）是Carl Rogers 的核心概念：\n ➡️ 人本取向 (humanistic) 的「當事人中心治療（person-centered therapy）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_109_45",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 45,
+        "title": "第13章 社會心理學"
+      },
+      "question": "On which of the following behaviors is social facilitation most likely to be observed?",
+      "options": [
+        "solving a difficult puzzle",
+        "solving a long multiplication problem",
+        "tying shoe laces",
+        "reading an article in a foreign language"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "社會助長 (social facilitation) 指：當有人在場觀察時，對簡單或熟練行為表現更好；對複雜或不熟練行為表現反而更差。\n❌ (A) solving a difficult puzzle → 複雜\n❌ (B) solving a long multiplication problem → 較困難\n✅ (C) tying shoe laces → 簡單熟練行為\n❌ (D) reading an article in a foreign language → 複雜",
+      "concepts": [
+        "社會助長（social facilitation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "社會助長（social facilitation）",
+      "ai_hint": "社會助長 (social facilitation) 指：當有人在場觀察時，對簡單或熟練行為表現更好；對複雜或不熟練行為表現反而更差。\n❌ (A) solving a difficult puzzle → 複雜\n❌ (B) solving a long multiplication problem → 較困難\n✅ (C) tying shoe laces → 簡單熟練行為\n❌ (D) reading an article in a foreign language → 複雜",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_109_46",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 46,
+        "title": "第13章 社會心理學"
+      },
+      "question": "A bystander is most likely to respond to a possible emergency when he or she is",
+      "options": [
+        "in the presence of other people who are clearly not responding",
+        "the only bystander present",
+        "unsure whether other bystanders have responded",
+        "a member of a large crowd"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "這題考的是旁觀者效應 (bystander effect)：\n・當有更多人同時在場時，每個人都更可能假設別人會介入（責任分散），導致行動的機率降低。\n・相反，如果只有一個人，責任就無法分散，他會感到自己必須負責，因此最可能採取行動。",
+      "concepts": [
+        "Bystander Effect（旁觀者效應）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "Bystander Effect（旁觀者效應）",
+      "ai_hint": "這題考的是旁觀者效應 (bystander effect)：\n・當有更多人同時在場時，每個人都更可能假設別人會介入（責任分散），導致行動的機率降低。\n・相反，如果只有一個人，責任就無法分散，他會感到自己必須負責，因此最可能採取行動。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_109_47",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 47,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Which of the following is not a factor that contributes to the high obedience rates in Milgram's shock studies?",
+      "options": [
+        "social norms concerning implicit contracts to complete a task",
+        "surveillance by the experimenter",
+        "the presence of other subjects",
+        "ideological justification for following orders"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Milgram的電擊實驗的高服從率有幾個經典原因：(A) 社會規範：實驗開始後，參與者感覺有義務完成任務。\n(B) 實驗者監督：權威人物的在場監督強化了服從。\n(C) 當沒有其他參與者反對時，服從更高（同儕的行為會影響決定）。\n(D) 則不正確：Milgram 的研究並沒有特別強調「意識形態的正當性」（例如政治或宗教信念）來合理化電擊。研究主要依靠情境壓力、權威影響和責任分散，而非意識形態。",
+      "concepts": [
+        "ilgram 順從實驗（Obedience Study）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "ilgram 順從實驗（Obedience Study）",
+      "ai_hint": "Milgram的電擊實驗的高服從率有幾個經典原因：(A) 社會規範：實驗開始後，參與者感覺有義務完成任務。\n(B) 實驗者監督：權威人物的在場監督強化了服從。\n(C) 當沒有其他參與者反對時，服從更高（同儕的行為會影響決定）。\n(D) 則不正確：Milgram 的研究並沒有特別強調「意識形態的正當性」（例如政治或宗教信念）來合理化電擊。研究主要依靠情境壓力、權威影響和責任分散，而非意識形態。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_109_48",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 48,
+        "title": "第13章 社會心理學 / 第8章 語言與心智表徵"
+      },
+      "question": "Research suggests that subjects who were exposed to words such as \"old,\" \"gray,\" and \"retired\" walked more slowly upon leaving the experiment. This is an example of stereotype",
+      "options": [
+        "priming",
+        "selectivity",
+        "primitives",
+        "observance"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "當人們接觸到與「老年人」相關的詞（如 old, gray, retired）後，他們無意識地行為變得更慢。\n這是「啟動效應（priming）」的典型例子：Priming = 先前的刺激無意識地影響後續行為或知覺。",
+      "concepts": [
+        "啟動效應（Priming）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "啟動效應（Priming）",
+      "ai_hint": "當人們接觸到與「老年人」相關的詞（如 old, gray, retired）後，他們無意識地行為變得更慢。\n這是「啟動效應（priming）」的典型例子：Priming = 先前的刺激無意識地影響後續行為或知覺。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_109_49",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 49,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Everyone in your Psychology 101 course performed very poorly on a recent exam. If your instructor makes the fundamental attribution error she would infer that the students performed poorly because",
+      "options": [
+        "too many midterm exams were being given in other classes that week",
+        "the students were not very bright and were also unwilling to study",
+        "the test had too many picky items",
+        "the students were not given enough time to finish the test"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "基本歸因錯誤 (FAE) 指的是：\n 👉 高估內在特質對行為的影響，低估外在情境。\n也就是：當人們表現不佳時，觀察者傾向於認為「他們是懶惰、笨、不努力」，而忽略「考試太難、時間不夠、壓力太大」等情境因素。\n\n❌(A) 太多考試（情境因素）\n✅(B) 學生不聰明又不想學（內在特質歸因）\n❌(C) 考題刁鑽（情境因素）\n❌(D) 沒時間作答（情境因素）",
+      "concepts": [
+        "歸因理論（Attribution Theory） × 基本歸因謬誤（FAE）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "歸因理論（Attribution Theory） × 基本歸因謬誤（FAE）",
+      "ai_hint": "基本歸因錯誤 (FAE) 指的是：\n 👉 高估內在特質對行為的影響，低估外在情境。\n也就是：當人們表現不佳時，觀察者傾向於認為「他們是懶惰、笨、不努力」，而忽略「考試太難、時間不夠、壓力太大」等情境因素。\n\n❌(A) 太多考試（情境因素）\n✅(B) 學生不聰明又不想學（內在特質歸因）\n❌(C) 考題刁鑽（情境因素）\n❌(D) 沒時間作答（情境因素）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_109_50",
+      "source": "NTU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 50,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In the triangular theory of love, romantic love is",
+      "options": [
+        "high on intimacy, passion, and commitment",
+        "high on passion but low on intimacy and commitment",
+        "high on passion and commitment but low on intimacy",
+        "high on passion and intimacy but low on commitment"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "（Sternberg 的三角理論）認為愛由三個元素組成：\n・親密感 (Intimacy) – 情感上的接近、聯繫與關\n・激情 (Passion) – 吸引與性慾望\n・承諾 (Commitment) – 維持關係的意願\nRomantic love（浪漫愛） 特徵：\n ✅ 高親密感\n ✅ 高激情\n ❌ 低承諾\n也就是：彼此深刻連結並有強烈吸引，但未必打算長期承諾。",
+      "concepts": [
+        "Sternberg 的愛情三角理論（Triangular Theory of Love）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "Sternberg 的愛情三角理論（Triangular Theory of Love）",
+      "ai_hint": "（Sternberg 的三角理論）認為愛由三個元素組成：\n・親密感 (Intimacy) – 情感上的接近、聯繫與關\n・激情 (Passion) – 吸引與性慾望\n・承諾 (Commitment) – 維持關係的意願\nRomantic love（浪漫愛） 特徵：\n ✅ 高親密感\n ✅ 高激情\n ❌ 低承諾\n也就是：彼此深刻連結並有強烈吸引，但未必打算長期承諾。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    }
+  ]
+}

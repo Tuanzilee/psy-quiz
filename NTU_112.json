@@ -1,0 +1,997 @@
+{
+  "meta": {
+    "source": "NTU",
+    "year": 112,
+    "year_ad": 2023,
+    "exam_name": "臺灣大學112學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 25,
+    "scoring": "選擇題 25 題（單選）",
+    "generated_by": "user_provided_answers",
+    "needs_proofreading": true,
+    "notes": "使用者已提供答案、解析與章節分類。"
+  },
+  "questions": [
+    {
+      "id": "NTU_112_01",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 1,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "Extensive exercise will cause a person to build larger muscles because exercise triggers biochemical changes in the body that activate certain genes involved in producing the necessary muscles proteins. In generalizing from the example just given, what should NOT be the \"take home\" message.",
+      "options": [
+        "Genes not only influence the body but use of the body can influence the genes",
+        "It makes no sense to talk about \"purely\" genetic effects",
+        "The often-mentioned \"nature/nurture\" distinction is appropriate in separating genetic from environmental effects",
+        "None of the above"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "基因是樂譜，環境是演奏者；別再問誰在主導，因為交響樂需要兩者合作！",
+      "concepts": [
+        "基因、環境與行為（Genes, Environment, and Behavior）"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "基因、環境與行為（Genes, Environment, and Behavior）",
+      "ai_hint": "基因是樂譜，環境是演奏者；別再問誰在主導，因為交響樂需要兩者合作！",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_112_02",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 2,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Regarding the phenomenon of adaptation in the sensory system, which statement is not true?\nAdaptation -",
+      "options": [
+        "Consists of a dampening down of responding to stimuli that persist a while beyond their initial appearance",
+        "Inhibits a novel stimuli from standing out for inspection among already existing stimuli",
+        "Enhances change in a stimulus as a feature having priority for attention",
+        "Has survival value in quickly helping to identify among stimuli as to which is friend and which is foe"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "感覺適應是神經系統的「靜音濾波器」，讓你自動忽略背景，把焦點留給變化。",
+      "concepts": [
+        "感覺系統中的適應現象（sensory adaptation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "感覺系統中的適應現象（sensory adaptation）",
+      "ai_hint": "感覺適應是神經系統的「靜音濾波器」，讓你自動忽略背景，把焦點留給變化。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_112_03",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 3,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "One aspect of sensory coding, the psychological intensity with which a stimulus is experienced,\ninvolves",
+      "options": [
+        "Past experiences",
+        "Neuron firing rate",
+        "Number of neurons triggered",
+        "b and c"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "越強的刺激，不只打得更快，還會叫更多人一起打！——這就是神經如何表現感覺強度。",
+      "concepts": [
+        "將外在刺激轉換為心理經驗的強度（psychological intensity）的感覺編碼（sensory coding）與強度表徵（intensity representation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "將外在刺激轉換為心理經驗的強度（psychological intensity）的感覺編碼（sensory coding）與強度表徵（intensity representation）",
+      "ai_hint": "越強的刺激，不只打得更快，還會叫更多人一起打！——這就是神經如何表現感覺強度。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_112_04",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 4,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Which statement relates to the Gestalt point of view when it comes to object perception?",
+      "options": [
+        "Perception of the relations among parts of the object",
+        "Perception of the elementary features of the object",
+        "Perception of the other's geons",
+        "Flow of information as an object is transformed with successive process steps"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "格式塔心理學說：你看見的不是零件拼圖，而是一整張圖畫！\n整體大於部分之和（The whole is more than the sum of its parts）",
+      "concepts": [
+        "格式塔心理學（Gestalt Psychology）在物體知覺上的觀點"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "格式塔心理學（Gestalt Psychology）在物體知覺上的觀點",
+      "ai_hint": "格式塔心理學說：你看見的不是零件拼圖，而是一整張圖畫！\n整體大於部分之和（The whole is more than the sum of its parts）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_112_05",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 5,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "The way we interpret an object depends on（同台大111.5）",
+      "options": [
+        "What features are present to be potentially identified",
+        "Which of these features and the selection and arrangement choices to which they guide us actually trigger identifications",
+        "Both bottom-up (fine-grained) and top-down (large-scale) analyses of these identifications",
+        "a, b, and c"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "我們不是看到「事實」，我們看到的是「資料＋預期」混合後的大腦詮釋！",
+      "concepts": [
+        "訊息處理歷程（information processing mechanisms）知覺的雙向處理模型：Bottom-up & Top-down processing"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "訊息處理歷程（information processing mechanisms）知覺的雙向處理模型：Bottom-up & Top-down processing",
+      "ai_hint": "我們不是看到「事實」，我們看到的是「資料＋預期」混合後的大腦詮釋！",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_112_06",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 6,
+        "title": "第6章 學習"
+      },
+      "question": "Why does habituation have an adaptive function? （同台大111.8）",
+      "options": [
+        "It greatly intensifies the effects of sensitization",
+        "It allows organisms to ignore familiar but harmless stimuli otherwise difficult not to react to",
+        "It paves the way for associative conditioning",
+        "It keeps neurons active when they might otherwise regenerate"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "某個警報每天都在響（像是鄰居家的狗叫），一開始你會很在意，但久了你就無視它——這就是習慣化（Habituation）。反過來，如果是地震警報，就算只響兩次，你也會越來越在意——這是敏感化（Sensitization）。",
+      "concepts": [
+        "「習慣化（habituation）」的功能與生物演化的適應性意義（adaptive function）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "「習慣化（habituation）」的功能與生物演化的適應性意義（adaptive function）",
+      "ai_hint": "某個警報每天都在響（像是鄰居家的狗叫），一開始你會很在意，但久了你就無視它——這就是習慣化（Habituation）。反過來，如果是地震警報，就算只響兩次，你也會越來越在意——這是敏感化（Sensitization）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_112_07",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 7,
+        "title": "第6章 學習"
+      },
+      "question": "The faster rate of reconditioning after extinction confirms which of the following facts?",
+      "options": [
+        "You can teach an old dog new tricks",
+        "We learn better when under pressure",
+        "Extinction does not erase original learning",
+        "The effects of initial learning always outstrip subsequent learning"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "腳踏車技術沒消失，只是被封存了。再學很快，因為記憶還在。",
+      "concepts": [
+        "滅除後的快速再學習（Savings and Reconditioning）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "滅除後的快速再學習（Savings and Reconditioning）",
+      "ai_hint": "腳踏車技術沒消失，只是被封存了。再學很快，因為記憶還在。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_112_08",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 8,
+        "title": "第6章 學習"
+      },
+      "question": "Classical conditioning differs from operant conditioning in that",
+      "options": [
+        "Classical conditioning occurs very rapidly, whereas operant conditioning always occurs gradually, in trial-and-error fashion",
+        "In operant conditioning, the response is voluntary, whereas in classical conditioning, the response is elicited by the US",
+        "Associations are formed only in classical conditioning, not in operant conditioning",
+        "Responses are never involved in classical conditioning as they are in operant conditioning"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "古典制約像是你聽到鈴聲就肚子餓，是被動觸發；\n操作制約像是你按電梯按鈕讓電梯來，是主動行為後獲得結果。",
+      "concepts": [
+        "古典與操作制約差異"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典與操作制約差異",
+      "ai_hint": "古典制約像是你聽到鈴聲就肚子餓，是被動觸發；\n操作制約像是你按電梯按鈕讓電梯來，是主動行為後獲得結果。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_112_09",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 9,
+        "title": "第6章 學習"
+      },
+      "question": "In classical conditioning what is basically learned is while in operant conditioning what is basically learned is",
+      "options": [
+        "What stimuli predict what other stimuli / what responses to what stimuli lead to desired goals",
+        "To ignore familiar stimuli that have proven harmless / to suppress behavior to stimuli that have proven harmful",
+        "The contiguity between stimuli / the contingency between stimuli",
+        "nore of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "古典制約像是「天氣預報」：\n看到烏雲就知道要下雨。你無法改變烏雲，但你可以預測。\n操作制約像是「自助販賣機」：\n你知道投幣（行為）會導致出飲料（結果），你能決定是否執行這個行為。",
+      "concepts": [
+        "古典制約（Classical Conditioning） 與 操作制約（Operant Conditioning） 的學習本質"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約（Classical Conditioning） 與 操作制約（Operant Conditioning） 的學習本質",
+      "ai_hint": "古典制約像是「天氣預報」：\n看到烏雲就知道要下雨。你無法改變烏雲，但你可以預測。\n操作制約像是「自助販賣機」：\n你知道投幣（行為）會導致出飲料（結果），你能決定是否執行這個行為。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_112_10",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 10,
+        "title": "第7章 記憶"
+      },
+      "question": "For us to remember something, we must first engage in the process of（同台大 111.14）",
+      "options": [
+        "Storage",
+        "Rehearsal",
+        "Acquisition",
+        "Recall"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "把記憶比喻成拍照的過程：\nAcquisition 是按下快門（看見並轉換成可記憶格式）\nStorage 是把照片存在相機記憶卡\nRetrieval 是你打開相簿重新看到這張照片",
+      "concepts": [
+        "記憶的三階段模型（Acquisition → Storage → Retrieval）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "記憶的三階段模型（Acquisition → Storage → Retrieval）",
+      "ai_hint": "把記憶比喻成拍照的過程：\nAcquisition 是按下快門（看見並轉換成可記憶格式）\nStorage 是把照片存在相機記憶卡\nRetrieval 是你打開相簿重新看到這張照片",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_112_11",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 11,
+        "title": "第7章 記憶"
+      },
+      "question": "According to the stage theory（同台大111.16）",
+      "options": [
+        "Items enter memory in pieces rather than as whole",
+        "Items must pass through working memory to get into long-term memory",
+        "All items that get into working memory are eventually transferred to long-term memory",
+        "Both b and c"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "感官記憶：像是你眼睛和耳朵剛看到的「視覺快閃」與「聲音回音」。\n工作記憶：像是一個小漏斗，如果你不馬上倒進瓶子，它就會溢出。\n長期記憶：像是大型水庫，要你好好輸送才會存下來。",
+      "concepts": [
+        "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）",
+      "ai_hint": "感官記憶：像是你眼睛和耳朵剛看到的「視覺快閃」與「聲音回音」。\n工作記憶：像是一個小漏斗，如果你不馬上倒進瓶子，它就會溢出。\n長期記憶：像是大型水庫，要你好好輸送才會存下來。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_112_12",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 12,
+        "title": "第7章 記憶"
+      },
+      "question": "1（同台大111.17）",
+      "options": [
+        "Transforms all information intro memory traces",
+        "Transfers items in short-term memory to long-term memory",
+        "Removes fragile and transient memory traces from those that are more robust",
+        "Transforms memories from fragile and transient status to more permanent and robust state"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "剛形成的記憶（尤其是 episodic 記憶）最初儲存在海馬迴，狀態非常不穩定（labile），經過睡眠、重複想起、時間等因素，這些記憶會被「重寫」進大腦皮質，成為穩定而不易被干擾的長期記憶",
+      "concepts": [
+        "記憶鞏固（memory consolidation）與長期記憶形成"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "記憶鞏固（memory consolidation）與長期記憶形成",
+      "ai_hint": "剛形成的記憶（尤其是 episodic 記憶）最初儲存在海馬迴，狀態非常不穩定（labile），經過睡眠、重複想起、時間等因素，這些記憶會被「重寫」進大腦皮質，成為穩定而不易被干擾的長期記憶",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_112_13",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 13,
+        "title": "第8章 語言與心智表徵"
+      },
+      "question": "Which of the following statement explains the Interactionist view on language acquisition in humans?（基本上同台大 111.19）",
+      "options": [
+        "Children have to be able to interact with children of the same age from young to be able to. acquire language",
+        "Children's biologically programmed ability to speak must be complimented with extensive experience with language",
+        "Children's biologically programmed ability to speak must be complimented with their ability to gesture",
+        "Children must interact with more knowledgeable others and to engage in a variety of social interactions",
+        "None of the above"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "語言不是靠天生會說，而是靠一起說著說著就會了。——這就是 Tomasello 的互動論。",
+      "concepts": [
+        "語言習得理論中的互動論觀點（Interactionist view of language acquisition）"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "語言習得理論中的互動論觀點（Interactionist view of language acquisition）",
+      "ai_hint": "語言不是靠天生會說，而是靠一起說著說著就會了。——這就是 Tomasello 的互動論。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_112_14",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 14,
+        "title": "第8章 語言與心智表徵"
+      },
+      "question": "In the case of maltreated children like Genie, the general finding is that children who have never been spoken to from birth up till puberty can never reach the language proficiency typical for their age. As such, the Critical Period Hypothesis states that（同台大 111.20）",
+      "options": [
+        "Our biologically programmed ability to speak must be complimented with interactive language experience in early childhood",
+        "Our biologically programmed ability to speak must be complimented with interactive language experience in the first year of life",
+        "Our biologically programmed ability to speak must be activated with hearing speech in early childhood",
+        "Our biologically programmed ability lasts for only a few years from birth before it disappears"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "語言能力就像鋼琴天賦——你可能天生有音樂感，但如果你在 12 歲前從未摸過鋼琴，之後就算開始學，也很難達到音樂家的流暢程度。",
+      "concepts": [
+        "關鍵期假說（Critical Period Hypothesis, CPH） Genie 這種剝奪性個案（extreme deprivation cases）"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "關鍵期假說（Critical Period Hypothesis, CPH） Genie 這種剝奪性個案（extreme deprivation cases）",
+      "ai_hint": "語言能力就像鋼琴天賦——你可能天生有音樂感，但如果你在 12 歲前從未摸過鋼琴，之後就算開始學，也很難達到音樂家的流暢程度。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_112_15",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 15,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "Maslow’s hierarchy of needs, from lowest to highest?",
+      "options": [
+        "Physiological – Safety – Esteem – Societal",
+        "Safety – Physio – Social – Esteem",
+        "Esteem – Physio – Safety – Self-Actualization",
+        "Physio – Safety – Esteem – Self-Actualization",
+        "Non All of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Maslow 的金字塔不是四層，是五層；愛與歸屬感絕對不能漏。你不能一口氣跳到頂樓（自我實現），除非你先把地基（吃飽、睡好、安全）打穩，再搭上友情與尊重的電梯。",
+      "concepts": [
+        "Maslow 的需求層次理論（Maslow's Hierarchy of Needs）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "Maslow 的需求層次理論（Maslow's Hierarchy of Needs）",
+      "ai_hint": "Maslow 的金字塔不是四層，是五層；愛與歸屬感絕對不能漏。你不能一口氣跳到頂樓（自我實現），除非你先把地基（吃飽、睡好、安全）打穩，再搭上友情與尊重的電梯。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_112_16",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 16,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "Emotion regulation refers to the ability to control, diminish, or change one's own feelings. It can mean influencing",
+      "options": [
+        "How we experience or express our emotions",
+        "When we have certain emotions",
+        "Which emotions we have",
+        "a and b",
+        "All of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "情緒就像是一鍋水快要滾了，你可以在火還沒點時關瓦斯（避免情緒），你也可以把鍋子蓋打開讓蒸氣散掉（轉化體驗），或換個鍋子煮別的東西（改變情緒）。情緒調節不是只是「忍住」，而是從情緒會不會來、什麼時候來，到它來了你要怎麼處理，全包了！",
+      "concepts": [
+        "James Gross 情緒調節（Emotion Regulation） 理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "James Gross 情緒調節（Emotion Regulation） 理論",
+      "ai_hint": "情緒就像是一鍋水快要滾了，你可以在火還沒點時關瓦斯（避免情緒），你也可以把鍋子蓋打開讓蒸氣散掉（轉化體驗），或換個鍋子煮別的東西（改變情緒）。情緒調節不是只是「忍住」，而是從情緒會不會來、什麼時候來，到它來了你要怎麼處理，全包了！",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_112_17",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 17,
+        "title": "第12章 性格"
+      },
+      "question": "Trait labels like 'extravert' help us predict...",
+      "options": [
+        "How a person tends to act all the time",
+        "How a person tends to act in most places",
+        "How a person tends to act later in life",
+        "How a person tends to act in certain sorts of situations"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "特質就像是一台「設定偏好」的導航系統，但實際開去哪裡，還要看「當時的路況」——也就是情境。\n人格特質不能告訴你一個人「永遠怎麼樣」，但能幫你預測「某種情境下」他很可能怎麼樣。",
+      "concepts": [
+        "特質理論（Trait Theory）」的核心觀點，人格特質是否能精確預測行為？預測的是「所有時候」，還是「某些情境」？"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "特質理論（Trait Theory）」的核心觀點，人格特質是否能精確預測行為？預測的是「所有時候」，還是「某些情境」？",
+      "ai_hint": "特質就像是一台「設定偏好」的導航系統，但實際開去哪裡，還要看「當時的路況」——也就是情境。\n人格特質不能告訴你一個人「永遠怎麼樣」，但能幫你預測「某種情境下」他很可能怎麼樣。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_112_18",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 18,
+        "title": "第13章 社會心理學"
+      },
+      "question": "The Fundamental Attribution error refers to the（同台大111.25）",
+      "options": [
+        "Tendency to attribute behaviors to dispositional qualities while underrating the role of the situation",
+        "Tendency to attribute behaviors to the situational qualities while underrating the role of person disposition",
+        "Tendency to underrate both dispositional and situational factors in making attributions about behavior",
+        "Tendency to attribute behaviors to the culture while underrating the role of the person and community"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "看到別人跌倒，你會說「他走路笨」而不是「那地板太滑」。但自己跌倒時，你就會說「地太滑啦」而不是「我走路差」。FAE 是指：你看到別人的錯，怪個性；但看到自己的錯，就怪環境。",
+      "concepts": [
+        "基本歸因錯誤（Fundamental Attribution Error）＝高估個性，低估情境"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "基本歸因錯誤（Fundamental Attribution Error）＝高估個性，低估情境",
+      "ai_hint": "看到別人跌倒，你會說「他走路笨」而不是「那地板太滑」。但自己跌倒時，你就會說「地太滑啦」而不是「我走路差」。FAE 是指：你看到別人的錯，怪個性；但看到自己的錯，就怪環境。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_112_19",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 19,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Deindividuation occurs when an individual loses awareness of himself as a separate individual. This phenomena is more likely to occur when there is（同台大 111.29）",
+      "options": [
+        "A suppression of arousal and anonymity",
+        "A substance-induced state of arousal and anonymity",
+        "A high level of arousal and anonymity",
+        "None of the above"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "想像你在萬人演唱會現場，大家在尖叫、跳動、互不相識。你跳上椅子大叫，平常你不會這樣，但在那瞬間你不再「是你」——你是「群體裡的一份子」。\n去個體化= 高喚起 + 匿名 → 失去自我意識，行為變得「不像自己」。",
+      "concepts": [
+        "去個體化（Deindividuation）與群體行為中的心理機制"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "去個體化（Deindividuation）與群體行為中的心理機制",
+      "ai_hint": "想像你在萬人演唱會現場，大家在尖叫、跳動、互不相識。你跳上椅子大叫，平常你不會這樣，但在那瞬間你不再「是你」——你是「群體裡的一份子」。\n去個體化= 高喚起 + 匿名 → 失去自我意識，行為變得「不像自己」。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_112_20",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 20,
+        "title": "第15章 壓力、適應與健康"
+      },
+      "question": "We may adopt a variety of strategies for managing our emotions. Problem-centered coping focuses on doing something about the situation, whereas emotion-centered coping focuses on",
+      "options": [
+        "Controlling the negative emotion or distress when little can be done about the outcome",
+        "Controlling the type of emotion that is felt",
+        "Controlling the situation to deal with the distress",
+        "None of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "壓力像暴風雨：\n• 你能改變路線 換航道（問題導向）\n• 你無法改變天氣 撐傘、找避風港（情緒導向）\n解不了問題，就處理情緒；這就是情緒導向因應的精髓。",
+      "concepts": [
+        "情緒導向因應（Emotion-Focused Coping）"
+      ],
+      "scholars": [],
+      "school_of_thought": "stress_health",
+      "key_concepts": "情緒導向因應（Emotion-Focused Coping）",
+      "ai_hint": "壓力像暴風雨：\n• 你能改變路線 換航道（問題導向）\n• 你無法改變天氣 撐傘、找避風港（情緒導向）\n解不了問題，就處理情緒；這就是情緒導向因應的精髓。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第15章 壓力、適應與健康"
+    },
+    {
+      "id": "NTU_112_21",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 21,
+        "title": "第14章 發展心理學"
+      },
+      "question": "The goodness-of-fit model was proposed by Thomas and Chess (1986). It posits that favourable outcomes can be achieved when...",
+      "options": [
+        "Child-rearing environments recognize each child's temperament while encouraging more adaptive functioning",
+        "At least one of the caregivers\" personality traits match the child's temperament",
+        "The child-rearing environment and family members of a difficult' child accommodate his or her needs",
+        "Both parents' temperaments and caregiving styles are not in stark contrast to the child's temperament"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "氣質本身不是問題，許多成功的親子關係其實來自於父母與孩子的差異，但父母願意調整教養風格。\n容易型（easy）\n難養型（difficult）\n慢熟型（slow-to-warm-up）",
+      "concepts": [
+        "Thomas & Chess（1986）提出的 The goodness-of-fit model （氣質與環境適配模型）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "Thomas & Chess（1986）提出的 The goodness-of-fit model （氣質與環境適配模型）",
+      "ai_hint": "氣質本身不是問題，許多成功的親子關係其實來自於父母與孩子的差異，但父母願意調整教養風格。\n容易型（easy）\n難養型（difficult）\n慢熟型（slow-to-warm-up）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_112_22",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 22,
+        "title": "第14章 發展心理學"
+      },
+      "question": "How does self-awareness contribute to early emotional and social development?",
+      "options": [
+        "Infants start to behave intentionally and learn that their goals may conflict with the goals of others",
+        "Infants start to realize that their own feelings and thoughts are more important than those of another person",
+        "Infants low in self-awareness are less likely to be egoistic when they are older and therefore make friends more easily",
+        "Infants are more likely to express their emotions and thoughts to others"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒約18-24個月大左右，可用「鏡中測試（mirror test）」第一次發現「鏡子裡的是我」。從那刻起，他開始知道「我可以控制我自己」，也開始知道「別人不是我」，而這就是社交的第一步。",
+      "concepts": [
+        "嬰幼兒自我覺察（self-awareness）如何影響他們的情緒發展與社會行為"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "嬰幼兒自我覺察（self-awareness）如何影響他們的情緒發展與社會行為",
+      "ai_hint": "嬰兒約18-24個月大左右，可用「鏡中測試（mirror test）」第一次發現「鏡子裡的是我」。從那刻起，他開始知道「我可以控制我自己」，也開始知道「別人不是我」，而這就是社交的第一步。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_112_23",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 23,
+        "title": "第14章 發展心理學"
+      },
+      "question": "What are the crucial 'ingredients' of attachment security?\n（覺得這題出得很好！）",
+      "options": [
+        "Early availability of a consistent caregiver",
+        "Sensitive caregiving but not overstimulating care",
+        "Goodness of fit",
+        "Parents' internal working models",
+        "A, B, and C",
+        "All of the above"
+      ],
+      "answer": "F",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "安全依附 = 穩定的照顧 （Bowlby）× 敏感的回應（Ainsworth） × 適合的氣質教養調整（Thomas & Chess） × 健康的內在圖式（Bowlby）",
+      "concepts": [
+        "依附理論（Attachment Theory）嬰兒依附安全感的建構條件（Crucial Ingredients of Attachment Security）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "依附理論（Attachment Theory）嬰兒依附安全感的建構條件（Crucial Ingredients of Attachment Security）",
+      "ai_hint": "安全依附 = 穩定的照顧 （Bowlby）× 敏感的回應（Ainsworth） × 適合的氣質教養調整（Thomas & Chess） × 健康的內在圖式（Bowlby）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_112_24",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 24,
+        "title": "第16章 心智異常"
+      },
+      "question": "Diathesis-stress model: Who is at high risk for disorder?",
+      "options": [
+        "Gene variant + low stress",
+        "Gene + high stress",
+        "No gene + high stress",
+        "None"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "一個人是否發展出心理疾病，取決於兩個因素的交互作用：\n Diathesis（素質）：潛在的易感性，如基因、神經系統特徵、早期創傷經驗\nStress（壓力）：生活中實際發生的壓力事件，如失業、失戀、親人死亡等\n一當素質高＋壓力高時，最可能觸發疾病",
+      "concepts": [
+        "Diathesis-Stress Model（素質-壓力模型）"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "Diathesis-Stress Model（素質-壓力模型）",
+      "ai_hint": "一個人是否發展出心理疾病，取決於兩個因素的交互作用：\n Diathesis（素質）：潛在的易感性，如基因、神經系統特徵、早期創傷經驗\nStress（壓力）：生活中實際發生的壓力事件，如失業、失戀、親人死亡等\n一當素質高＋壓力高時，最可能觸發疾病",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_112_25",
+      "source": "NTU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 25,
+        "title": "第16章 心智異常"
+      },
+      "question": "Cognitive-Behavioral Therapy has the following characteristics except",
+      "options": [
+        "Highly structured sessions",
+        "Patient has to do homework such as practicing new skills or new ways or thinking",
+        "Concerns with identifying and solving problems the patient wishes to address",
+        "Group therapy",
+        "None of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "CBT 是「結構化、目標導向、任務式」的心理健身房：你來練習新想法與行為，帶著功課回家反覆練，讓改變發生在生活裡。",
+      "concepts": [
+        "認知行為治療（Cognitive-Behavioral Therapy, CBT） 的核心特徵辨識"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "認知行為治療（Cognitive-Behavioral Therapy, CBT） 的核心特徵辨識",
+      "ai_hint": "CBT 是「結構化、目標導向、任務式」的心理健身房：你來練習新想法與行為，帶著功課回家反覆練，讓改變發生在生活裡。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    }
+  ]
+}

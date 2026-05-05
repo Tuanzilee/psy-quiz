@@ -1,0 +1,1516 @@
+{
+  "meta": {
+    "source": "NTU",
+    "year": 111,
+    "year_ad": 2022,
+    "exam_name": "臺灣大學111學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 38,
+    "scoring": "選擇題 38 題（單選）",
+    "generated_by": "user_provided_answers",
+    "needs_proofreading": true,
+    "notes": "使用者已提供答案、解析與章節分類。"
+  },
+  "questions": [
+    {
+      "id": "NTU_111_01",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 1,
+        "title": "第3章 行為的生物基礎 / 第2章 心理學方法"
+      },
+      "question": "Disease or unfortunate injuries can manipulate people’s brains in ways that would be unethical for experimental manipulations to do. But neuropsychological studies of these brains are not unethical and, as combined with current advances in neuroimagery, have the following advantage(s) over other techniques for gaining knowledge about the human brain. They",
+      "options": [
+        "Are replicable",
+        "Allow for more detailed analysis of symptoms and for the coordination of these with how much tissue damage is present and where",
+        "Can vary the activity of the brain",
+        "Can experimentally control precisely the area of the brain that is damaged,"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "神經心理學研究 (neuropsychological studies)：\n・這些研究利用自然發生的損傷或疾病，而不是實驗故意製造。\n・結合神經影像技術，可以把行為症狀與受損區域做對應。\n\n❌(A) 可重複性 → 損傷是自然發生，無法完全「複製」\n✅ (B) 可以詳細分析症狀，並將其與受損範圍和位置對應 → 正確\n❌(C) 改變大腦活動 → 這是TMS或電刺激的功能，不是損傷研究\n❌(D) 精確控制損傷位置 → 無法控制，因為損傷不是人為製造",
+      "concepts": [
+        "神經心理學（Neuropsychology） 與腦部影像技術的應用"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "神經心理學（Neuropsychology） 與腦部影像技術的應用",
+      "ai_hint": "神經心理學研究 (neuropsychological studies)：\n・這些研究利用自然發生的損傷或疾病，而不是實驗故意製造。\n・結合神經影像技術，可以把行為症狀與受損區域做對應。\n\n❌(A) 可重複性 → 損傷是自然發生，無法完全「複製」\n✅ (B) 可以詳細分析症狀，並將其與受損範圍和位置對應 → 正確\n❌(C) 改變大腦活動 → 這是TMS或電刺激的功能，不是損傷研究\n❌(D) 精確控制損傷位置 → 無法控制，因為損傷不是人為製造",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_111_02",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 2,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "In which of the following tasks would you expect superior performance from the left hemisphere of a typical person?",
+      "options": [
+        "Matching paint colors",
+        "Recognizing faces",
+        "Remembering the words of a poem",
+        "Drawing the floor plan of a familiar house",
+        "All of the above"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "❌(A) Matching paint colors → 視空間（右半球）\n❌(B) Recognizing faces → 臉孔（右半球）\n✅ (C) Remembering the words of a poem → 語言記憶（左半球）\n❌(D) Drawing floor plan → 視空間（右半球）",
+      "concepts": [
+        "大腦左半球 (left hemisphere)、右半球 (right hemisphere)功能"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "大腦左半球 (left hemisphere)、右半球 (right hemisphere)功能",
+      "ai_hint": "❌(A) Matching paint colors → 視空間（右半球）\n❌(B) Recognizing faces → 臉孔（右半球）\n✅ (C) Remembering the words of a poem → 語言記憶（左半球）\n❌(D) Drawing floor plan → 視空間（右半球）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_111_03",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 3,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "If, under certain circumstances, a participant’s hit rate went up in saying “yes” when he detected a signal while his false alarm rate stayed the same, we could conclude that his",
+      "options": [
+        "Response criterion",
+        "Signal threshold",
+        "Sensitivity",
+        "Decision level",
+        "None of the above"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "如果：\n• Hit rate 上升（更常正確地偵測到訊號）\n• False alarm rate 不變（並沒有更多誤判）那表示：他真正提升了分辨訊號與雜訊的能力，也就是：\nSensitivity（感受性/敏感性）提高了。",
+      "concepts": [
+        "訊號偵測理論（Signal Detection Theory）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "訊號偵測理論（Signal Detection Theory）",
+      "ai_hint": "如果：\n• Hit rate 上升（更常正確地偵測到訊號）\n• False alarm rate 不變（並沒有更多誤判）那表示：他真正提升了分辨訊號與雜訊的能力，也就是：\nSensitivity（感受性/敏感性）提高了。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_111_04",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 4,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "One aspect of sensory coding, the psychological intensity with which a stimulus is experienced, involves",
+      "options": [
+        "The total number of neurons that are firing",
+        "The rate of neurotransmitter reuptake",
+        "The type of neurotransmitter released",
+        "The rate of action potentials fired",
+        "The direction of the action potential"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "心理強度指：\n 👉 刺激看起來或感覺起來更強烈。\n有兩種關鍵機制：\n ✅ 更多神經元同時活化（population coding）\n ✅ 神經元的放電速率更高（frequency coding）\n所以：\n ✅(A) 總活化神經元數 ✔️ 這會影響強度\n ✅(D) 動作電位發放速率 ✔️ 這同樣決定強度",
+      "concepts": [
+        "感覺編碼（sensory coding）中關於心理強度（psychological intensity）的神經生理機制"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "感覺編碼（sensory coding）中關於心理強度（psychological intensity）的神經生理機制",
+      "ai_hint": "心理強度指：\n 👉 刺激看起來或感覺起來更強烈。\n有兩種關鍵機制：\n ✅ 更多神經元同時活化（population coding）\n ✅ 神經元的放電速率更高（frequency coding）\n所以：\n ✅(A) 總活化神經元數 ✔️ 這會影響強度\n ✅(D) 動作電位發放速率 ✔️ 這同樣決定強度",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_111_05",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 5,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "According to the Gestalt point of view, the perception of an object depends on the",
+      "options": [
+        "Perception of the relations among parts of the object",
+        "Perception of the elementary features of the object",
+        "Perception of the other's geons",
+        "Flow of information as an object is transformed with successive process steps"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "核心觀點：整體大於部分的總和\n我們知覺物體時，依賴部分之間的關係與組織，而不是只是感知單獨的元素。",
+      "concepts": [
+        "格式塔心理學\n（Gestalt psychology）"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "格式塔心理學\n（Gestalt psychology）",
+      "ai_hint": "核心觀點：整體大於部分的總和\n我們知覺物體時，依賴部分之間的關係與組織，而不是只是感知單獨的元素。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_111_06",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 6,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "The way we interpret an object depends on ____",
+      "options": [
+        "What features are present to be potentially identified",
+        "Which of these features and the selection and arrangement choices to which they guide us actually trigger identifications",
+        "Both bottom-up (fine-grained) and top-down (large-scale) analyses of these identifications",
+        "a, b, and c"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "知覺解釋的多層次理論：\n我們如何解讀一個物體，會同時依賴：\n✅(a) 物體本身有什麼特徵（底層輸入）\n✅(b) 這些特徵的組合和選擇如何觸發辨認（模式匹配）\n✅(c) 自下而上分析與自上而下分析的結合（整合兩種處理）",
+      "concepts": [
+        "知覺解釋的多層次理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "知覺解釋的多層次理論",
+      "ai_hint": "知覺解釋的多層次理論：\n我們如何解讀一個物體，會同時依賴：\n✅(a) 物體本身有什麼特徵（底層輸入）\n✅(b) 這些特徵的組合和選擇如何觸發辨認（模式匹配）\n✅(c) 自下而上分析與自上而下分析的結合（整合兩種處理）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NTU_111_07",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 7,
+        "title": "第8章 語言與心智表徵"
+      },
+      "question": "It appears that there is a ＿＿＿＿ relationship between the time to scan a mental image from one point to another and the time to scan between the same points on the actual picture of which the image is an analog.",
+      "options": [
+        "Symbolic",
+        "Representational",
+        "Haphazard",
+        "Proportional",
+        "None of the above"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "研究發現：\n心像掃描的時間和實際圖片上距離成比例。\n換句話說：\n・距離越長 → 掃描時間越長\n・兩者有線性比例關係",
+      "concepts": [
+        "心理旋轉與心理掃描研究（Kosslyn 的心像實驗）"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "心理旋轉與心理掃描研究（Kosslyn 的心像實驗）",
+      "ai_hint": "研究發現：\n心像掃描的時間和實際圖片上距離成比例。\n換句話說：\n・距離越長 → 掃描時間越長\n・兩者有線性比例關係",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_111_08",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 8,
+        "title": "第6章 學習"
+      },
+      "question": "What is the adaptive significance of habituation?",
+      "options": [
+        "It greatly intensifies the effects of sensitization",
+        "It allows organisms to ignore familiar but harmless stimuli otherwise difficult not to react to",
+        "It paves the way for associative conditioning",
+        "It keeps neurons active when they might otherwise regenerate"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 習慣化 (habituation)\n = 對重複出現、無害的刺激反應逐漸減弱。演化功能：\n ➡️ 幫助生物忽略熟悉但無害的刺激，以便專注在更重要的新事件上。\n❌(A) 增強敏感化 → 不是習慣化的功能\n✅ (B) 忽略熟悉但無害的刺激 → 正確\n❌(C) 為聯結制約鋪路 → 不是主要功能\n❌(D) 維持神經元活性 → 不是習慣化的作用",
+      "concepts": [
+        "Habituation（習慣化）的功能與演化意義"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "Habituation（習慣化）的功能與演化意義",
+      "ai_hint": "✅ 習慣化 (habituation)\n = 對重複出現、無害的刺激反應逐漸減弱。演化功能：\n ➡️ 幫助生物忽略熟悉但無害的刺激，以便專注在更重要的新事件上。\n❌(A) 增強敏感化 → 不是習慣化的功能\n✅ (B) 忽略熟悉但無害的刺激 → 正確\n❌(C) 為聯結制約鋪路 → 不是主要功能\n❌(D) 維持神經元活性 → 不是習慣化的作用",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_09",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 9,
+        "title": "第6章 學習"
+      },
+      "question": "In a classical conditioning experiment in which a tone is paired with meat in the mouth, a dog comes to salivate to the sound of the tone. The tone is called the",
+      "options": [
+        "Conditioned stimulus",
+        "Unconditioned stimulus",
+        "Unconditioned response",
+        "Stimulus generalization",
+        "Reinforcer"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "古典制約 (classical conditioning) 經典範例：\n・肉（放在嘴裡）= 無條件刺激（unconditioned stimulus, UCS）\n・唾液分泌對肉的反應 = 無條件反應（unconditioned response, UCR）\n・聲音（先中性，經配對後引發唾液）= 條件刺激（conditioned stimulus, CS）\n・對聲音分泌唾液 = 條件反應（conditioned response, CR）",
+      "concepts": [
+        "古典制約（classical conditioning）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約（classical conditioning）",
+      "ai_hint": "古典制約 (classical conditioning) 經典範例：\n・肉（放在嘴裡）= 無條件刺激（unconditioned stimulus, UCS）\n・唾液分泌對肉的反應 = 無條件反應（unconditioned response, UCR）\n・聲音（先中性，經配對後引發唾液）= 條件刺激（conditioned stimulus, CS）\n・對聲音分泌唾液 = 條件反應（conditioned response, CR）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_10",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 10,
+        "title": "第6章 學習"
+      },
+      "question": "The faster rate of reconditioning after extinction confirms which of the following facts ?",
+      "options": [
+        "You can teach an old dog new tricks",
+        "We learn better when under pressure",
+        "Extinction does not erase original learning",
+        "The effects of initial learning always outstrip subsequent leaming"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "再制約 (reconditioning)：\n經歷滅除後，再次配對CS和US，學習會恢復得更快。\n這證明：\n👉 滅除並沒有抹去原本的學習記憶，只是暫時抑制了它。",
+      "concepts": [
+        "滅除（extinction） 與 再制約（reconditioning）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "滅除（extinction） 與 再制約（reconditioning）",
+      "ai_hint": "再制約 (reconditioning)：\n經歷滅除後，再次配對CS和US，學習會恢復得更快。\n這證明：\n👉 滅除並沒有抹去原本的學習記憶，只是暫時抑制了它。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_11",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 11,
+        "title": "第6章 學習"
+      },
+      "question": "According to the law of effect, responses followed by reward",
+      "options": [
+        "Decrease in frequency",
+        "Are not always reinforced",
+        "Become trials or errors",
+        "Are strengthened",
+        "all of the above"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "效果律（Law of Effect）由 Edward Thorndike 提出，核心觀點：\n✅ 行為如果伴隨令人滿意的結果（獎勵），該行為以後會更常出現，也就是被強化。\n\n❌ a. 減少頻率\n❌ b. 有時不被強化\n❌ c. 成為試誤（試誤是學習過程，不是結果）\n✅ d. 被強化 ✔️",
+      "concepts": [
+        "操作制約（Operant Conditioning）Thorndike 的效果律（Law of Effect）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "操作制約（Operant Conditioning）Thorndike 的效果律（Law of Effect）",
+      "ai_hint": "效果律（Law of Effect）由 Edward Thorndike 提出，核心觀點：\n✅ 行為如果伴隨令人滿意的結果（獎勵），該行為以後會更常出現，也就是被強化。\n\n❌ a. 減少頻率\n❌ b. 有時不被強化\n❌ c. 成為試誤（試誤是學習過程，不是結果）\n✅ d. 被強化 ✔️",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_12",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 12,
+        "title": "第6章 學習"
+      },
+      "question": "Operant conditioning differs from classical conditioning in that",
+      "options": [
+        "In operant conditioning, the response is voluntary, whereas in classical conditioning, the response is elicited by the US",
+        "Associations are formed only in classical conditioning, not in operant conditioning",
+        "Responses are never involved in classical conditioning as they are in operant conditioning",
+        "Operant conditioning always occurs gradually, in trial-and-error fashion, whereas classical conditioning",
+        "Occurs very rapidly"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "操作制約：\n• 自發性反應（自願行為）\n• 行為由後果來強化或削弱\n古典制約：\n• 反射性反應（不自主）\n• 行為是由無條件刺激（US）觸發\n\n✅ (a) 操作制約是自願反應，古典制約是由US引發反射性反應。→ 正確\n❌(b) 誤導，兩者都建立聯結\n❌(c) 錯，古典制約也有反應（唾液分泌等）\n❌(d) 不正確，古典制約也可能逐漸建立，操作制約不一定是慢慢 trial-and-error\n❌(e) 錯，兩者學習速率都可以快或慢",
+      "concepts": [
+        "古典制約（classical conditioning）」和「操作制約（operant conditioning）差異"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約（classical conditioning）」和「操作制約（operant conditioning）差異",
+      "ai_hint": "操作制約：\n• 自發性反應（自願行為）\n• 行為由後果來強化或削弱\n古典制約：\n• 反射性反應（不自主）\n• 行為是由無條件刺激（US）觸發\n\n✅ (a) 操作制約是自願反應，古典制約是由US引發反射性反應。→ 正確\n❌(b) 誤導，兩者都建立聯結\n❌(c) 錯，古典制約也有反應（唾液分泌等）\n❌(d) 不正確，古典制約也可能逐漸建立，操作制約不一定是慢慢 trial-and-error\n❌(e) 錯，兩者學習速率都可以快或慢",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_13",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 13,
+        "title": "第6章 學習"
+      },
+      "question": "In classical conditioning what is basically leamed is ＿＿＿ , while in operant conditioning what is basically learned is＿＿＿",
+      "options": [
+        "What stimuli predict what other stimuli / what responses to what stimuli lead to desired goals",
+        "To ignore familiar stimuli that have proven harmless / to suppress behavior to stimuli that have proven harmful",
+        "The contiguity between stimuli / the contingency between stimuli",
+        "none of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 古典制約（classical conditioning）：\n 學到的是：\n 👉 什麼刺激預告另一個刺激（例如鈴聲預告食物）。\n✅ 操作制約（operant conditioning）：\n 學到的是：\n 👉 對什麼刺激做什麼反應能帶來想要的結果（例如按槓桿可以得到食物）。",
+      "concepts": [
+        "古典制約學預測（prediction）操作制約學控制（control）"
+      ],
+      "scholars": [],
+      "school_of_thought": "learning",
+      "key_concepts": "古典制約學預測（prediction）操作制約學控制（control）",
+      "ai_hint": "✅ 古典制約（classical conditioning）：\n 學到的是：\n 👉 什麼刺激預告另一個刺激（例如鈴聲預告食物）。\n✅ 操作制約（operant conditioning）：\n 學到的是：\n 👉 對什麼刺激做什麼反應能帶來想要的結果（例如按槓桿可以得到食物）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_111_14",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 14,
+        "title": "第7章 記憶"
+      },
+      "question": "For us to remember something, we must first engage in the process of",
+      "options": [
+        "Storage",
+        "Rehearsal",
+        "Acquisition",
+        "Recall"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "記憶的三個主要階段：\n1️⃣ 編碼 (Acquisition / Encoding) → 先把訊息獲取進記憶系統\n2️⃣ 儲存 (Storage)\n3️⃣ 提取 (Recall / Retrieval)\n\n要記住任何事情，第一步就是先取得/編碼它。",
+      "concepts": [
+        "記憶的三個歷程（Acquisition → Storage → Retrieval）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "記憶的三個歷程（Acquisition → Storage → Retrieval）",
+      "ai_hint": "記憶的三個主要階段：\n1️⃣ 編碼 (Acquisition / Encoding) → 先把訊息獲取進記憶系統\n2️⃣ 儲存 (Storage)\n3️⃣ 提取 (Recall / Retrieval)\n\n要記住任何事情，第一步就是先取得/編碼它。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_111_16",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 16,
+        "title": "第7章 記憶"
+      },
+      "question": "According to the stage theory",
+      "options": [
+        "Items enter memory in pieces rather than as whole",
+        "Items must pass through working memory to get into long-term memory",
+        "All items that get into working memory are eventually transferred to long-term memory",
+        "Both b and c"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Atkinson-Shiffrin 模型主張：\n ✅ 資訊先進入感覺（官）記憶\n ✅ 再進入短期記憶（working memory）\n ✅ 再由短期記憶進入長期記憶",
+      "concepts": [
+        "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）",
+      "ai_hint": "Atkinson-Shiffrin 模型主張：\n ✅ 資訊先進入感覺（官）記憶\n ✅ 再進入短期記憶（working memory）\n ✅ 再由短期記憶進入長期記憶",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_111_17",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 17,
+        "title": "第7章 記憶"
+      },
+      "question": "Memory consolidation refers to the biological process that takes place for a period of time after an event is experienced. This process ____",
+      "options": [
+        "Transforms all information intro  memory traces",
+        "Transfers items in short-term memory to long-term memory",
+        "Removes fragile and transient memory traces from those that are more robust",
+        "Transforms memories from fragile and transient status to more permanent and robust state"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "記憶鞏固 (memory consolidation)：\n✅ 核心概念：\n 記憶剛形成時很脆弱，需要時間進行生物過程（如突觸改變、基因表達），把暫時的記憶變成持久的記憶。\n\n❌(a) 將所有資訊轉為痕跡 → 太廣泛，不正確\n❌(b) 將短期記憶直接轉為長期 → 不完整，因為鞏固也涉及質的改變，不只是「轉移」\n❌(c) 移除脆弱記憶 → 錯誤，重點是強化，不是移除\n✅ (d) 把脆弱、短暫的記憶轉變為更穩定的長期記憶 → 完全正確",
+      "concepts": [
+        "記憶鞏固（memory consolidation） 的生物學本質與功能性意義"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "記憶鞏固（memory consolidation） 的生物學本質與功能性意義",
+      "ai_hint": "記憶鞏固 (memory consolidation)：\n✅ 核心概念：\n 記憶剛形成時很脆弱，需要時間進行生物過程（如突觸改變、基因表達），把暫時的記憶變成持久的記憶。\n\n❌(a) 將所有資訊轉為痕跡 → 太廣泛，不正確\n❌(b) 將短期記憶直接轉為長期 → 不完整，因為鞏固也涉及質的改變，不只是「轉移」\n❌(c) 移除脆弱記憶 → 錯誤，重點是強化，不是移除\n✅ (d) 把脆弱、短暫的記憶轉變為更穩定的長期記憶 → 完全正確",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_111_18",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 18,
+        "title": "第7章 記憶"
+      },
+      "question": "When Ebbinghaus tested himself on memory for nonsense syllables, he found that",
+      "options": [
+        "Forgetting was fastest immediately after learning",
+        "His episodic memory and generic memory were equivalent",
+        "His implicit memory was better than his explicit memory",
+        "None of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Ebbinghaus 的遺忘曲線研究：\n✅ 他發現：\n 遺忘最快發生在剛學完之後，然後速率逐漸變慢。",
+      "concepts": [
+        "Hermann Ebbinghaus 遺忘曲線（Forgetting Curve）"
+      ],
+      "scholars": [],
+      "school_of_thought": "memory",
+      "key_concepts": "Hermann Ebbinghaus 遺忘曲線（Forgetting Curve）",
+      "ai_hint": "Ebbinghaus 的遺忘曲線研究：\n✅ 他發現：\n 遺忘最快發生在剛學完之後，然後速率逐漸變慢。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_111_19",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 19,
+        "title": "第8章 語言與心智表徵"
+      },
+      "question": "Tomasello supports the Interactionist view on language acquisition in humans. What does this view propose?",
+      "options": [
+        "Children have to be able to interact with children of the same age from young to be able to acquire language",
+        "Children's biologically programmed ability to speak must be complemented with extensive experience with language",
+        "Children's biologically programmed ability to speak must be complimented with their ability to gesture",
+        "Children must interact with more knowledgeable others and to engage in a variety of social interactions",
+        "None of the above"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 互動論 (Interactionist view) 強調：\n・語言能力部分是生物天賦（biologically programmed）\n・同時也需要大量的社會經驗和語言互動來啟動和豐富這種能力\n\n換句話說：\n✅ 生物本能 + 與他人的語言經驗 → 語言發展\n\n(d) Vygotsky 式強調「與更有知識者互動」→ 這是社會文化論，和 Tomasello 的重點不完全一樣",
+      "concepts": [
+        "Tomasello  語言習得的互動論觀點 (Interactionist view)互動論"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "Tomasello  語言習得的互動論觀點 (Interactionist view)互動論",
+      "ai_hint": "✅ 互動論 (Interactionist view) 強調：\n・語言能力部分是生物天賦（biologically programmed）\n・同時也需要大量的社會經驗和語言互動來啟動和豐富這種能力\n\n換句話說：\n✅ 生物本能 + 與他人的語言經驗 → 語言發展\n\n(d) Vygotsky 式強調「與更有知識者互動」→ 這是社會文化論，和 Tomasello 的重點不完全一樣",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_111_20",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 20,
+        "title": "第8章 語言與心智表徵"
+      },
+      "question": "In the case of maltreated children like Genie, the general finding is that children who have never been spoken to from birth up till puberty can never reach the language proficiency typical for their age. As such, the Critical Period Hypothesis states that",
+      "options": [
+        "Our biologically programmed ability to speak must be complemented with interactive language experience in early childhood",
+        "Our biologically programmed ability to speak must be complemented with interactive language experience in the first year of life",
+        "Our biologically programmed ability to speak must be activated with hearing speech in early childhood",
+        "Our biologically programmed ability lasts for only a few years from birth before it disappears"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "語言的關鍵期假說 (Critical Period Hypothesis)：\n✅ 核心觀點：語言習得需要在童年早期（特別是在青春期前）接觸語言，否則很難完全掌握。\nGenie的案例支持：\n・生理上具備語言能力\n・但若缺乏早期互動性語言經驗，就無法達到年齡應有的語言水平",
+      "concepts": [
+        "Lenneberg（1967）語言的關鍵期假說 Critical Period Hypothesis（CPH）"
+      ],
+      "scholars": [],
+      "school_of_thought": "language",
+      "key_concepts": "Lenneberg（1967）語言的關鍵期假說 Critical Period Hypothesis（CPH）",
+      "ai_hint": "語言的關鍵期假說 (Critical Period Hypothesis)：\n✅ 核心觀點：語言習得需要在童年早期（特別是在青春期前）接觸語言，否則很難完全掌握。\nGenie的案例支持：\n・生理上具備語言能力\n・但若缺乏早期互動性語言經驗，就無法達到年齡應有的語言水平",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "NTU_111_21",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 21,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "In explaining why our behaviors are motivated, the urge to reduce a drive has been described through the Drive-Behaviors- Equilibrium process. These components are defined as ____",
+      "options": [
+        "State of high arousal - Behavior that serves to reduce the drive - Drive reduction is achieved",
+        "State of internal bodily tension - Behavior that serves to reduce the drive - Drive reduction is achieved",
+        "State of internal bodily tension - Behavior that serves to reduce the drive - Internal bodily tension is partially transformed external bodily tension",
+        "partially transformed external bodily tension",
+        "None of the above"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "動機驅力理論 (Drive Reduction Theory)：三個核心部分：\n ✅ 內在身體緊張狀態 (internal bodily tension)（如飢餓、口渴）\n → 驅動行為去降低這種緊張\n → 驅力減弱，恢復平衡（equilibrium）",
+      "concepts": [
+        "Clark Hull（赫爾）驅力理論 (Drive Reduction Theory)\n動機－行為－平衡模型（Drive–Behavior–Equilibrium Process）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "Clark Hull（赫爾）驅力理論 (Drive Reduction Theory)\n動機－行為－平衡模型（Drive–Behavior–Equilibrium Process）",
+      "ai_hint": "動機驅力理論 (Drive Reduction Theory)：三個核心部分：\n ✅ 內在身體緊張狀態 (internal bodily tension)（如飢餓、口渴）\n → 驅動行為去降低這種緊張\n → 驅力減弱，恢復平衡（equilibrium）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原 Word 漏列 d 選項，已補上：partially transformed external bodily tension",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_111_22",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 22,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "Maslow proposes that people will strive for higher order needs only when the lower ones are fulfilled. The hierarchy of needs is as follows, from lowest to highest:",
+      "options": [
+        "Physiological - Safety - Esteem - Societal",
+        "Safety - Physiological - Social - Esteem",
+        "Esteem - Physiological - Safety - Self-Actualization",
+        "Physiological - Safety - Esteem - Self-Actualization",
+        "None of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "從最低到最高依序是：\n1️⃣ 生理需求 (Physiological)\n2️⃣ 安全需求 (Safety)\n3️⃣ 歸屬與愛 (Social / Belongingness)\n4️⃣ 尊重 (Esteem)\n5️⃣ 自我實現 (Self-Actualization)\n✅ 唯一符合的是(e)，因為所有列出的順序都不正確",
+      "concepts": [
+        "Maslow’s 需求層次理論（Hierarchy of Needs, 1943）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "Maslow’s 需求層次理論（Hierarchy of Needs, 1943）",
+      "ai_hint": "從最低到最高依序是：\n1️⃣ 生理需求 (Physiological)\n2️⃣ 安全需求 (Safety)\n3️⃣ 歸屬與愛 (Social / Belongingness)\n4️⃣ 尊重 (Esteem)\n5️⃣ 自我實現 (Self-Actualization)\n✅ 唯一符合的是(e)，因為所有列出的順序都不正確",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_111_23",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 23,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "Infants begin to smile to a wide range of external solicitors including social stimuli and increasingly, they smile more at:",
+      "options": [
+        "Other babies",
+        "Their own image on the mirror",
+        "Familiar faces, especially caregivers",
+        "Female faces"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒微笑發展：\n✅ 在最初幾週，嬰兒會對內在狀態（生理舒適）或隨機刺激微笑。\n✅ 到2～3個月大，嬰兒的微笑越來越多出現在社會互動中，特別是對熟悉的照顧者最有反應。",
+      "concepts": [
+        "社會性微笑（social smile）"
+      ],
+      "scholars": [],
+      "school_of_thought": "motivation_emotion",
+      "key_concepts": "社會性微笑（social smile）",
+      "ai_hint": "嬰兒微笑發展：\n✅ 在最初幾週，嬰兒會對內在狀態（生理舒適）或隨機刺激微笑。\n✅ 到2～3個月大，嬰兒的微笑越來越多出現在社會互動中，特別是對熟悉的照顧者最有反應。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_111_25",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 25,
+        "title": "第13章 社會心理學"
+      },
+      "question": "A Causal Attribution is...",
+      "options": [
+        "A step of associating two phenomena, one behavioral one situational",
+        "A step of producing an outcome for a cause",
+        "A step of inferring or concluding what the cause of an observation was",
+        "A step of inferring what an observation based on a known cause"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Causal Attribution（因果歸因）是：\n✅ 當你觀察到一個行為或事件時，推斷它的原因是什麼。\n❌(a) 只是把兩個現象聯結起來 → 不夠精確❌(b) 從因產生結果 → 不是歸因，是因果過程\n✅ (c) 根據觀察，推斷原因 → 完全正確\n❌(d) 根據已知原因推斷觀察 → 方向顛倒",
+      "concepts": [
+        "歸因理論（Attribution Theory）中的因果歸因（Causal Attribution）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "歸因理論（Attribution Theory）中的因果歸因（Causal Attribution）",
+      "ai_hint": "Causal Attribution（因果歸因）是：\n✅ 當你觀察到一個行為或事件時，推斷它的原因是什麼。\n❌(a) 只是把兩個現象聯結起來 → 不夠精確❌(b) 從因產生結果 → 不是歸因，是因果過程\n✅ (c) 根據觀察，推斷原因 → 完全正確\n❌(d) 根據已知原因推斷觀察 → 方向顛倒",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_26",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 26,
+        "title": "第13章 社會心理學"
+      },
+      "question": "The Fundamental Attribution error refers to the",
+      "options": [
+        "Tendency to attribute behaviors to dispositional qualities while underrating the role of the situation",
+        "Tendency to attribute behaviors to the situational qualities while underrating the role of person disposition",
+        "Tendency to underrate both dispositional and situational factors in making attributions about behavior",
+        "Tendency to attribute behaviors to the culture while underrating the role of the person and community"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Fundamental Attribution Error（基本歸因謬誤）指：\n👉 當我們解釋他人行為時，傾向過度歸因於他們的性格特質（內在因素），而低估情境的影響。\n✅ (a) 把行為歸因於性格（內在），低估情境 → 完全正確\n❌(b) 剛好相反 → 錯\n❌(c) 低估兩者 → 錯\n❌(d) 歸因於文化 → 不正確",
+      "concepts": [
+        "基本歸因謬誤（Fundamental Attribution Error）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "基本歸因謬誤（Fundamental Attribution Error）",
+      "ai_hint": "Fundamental Attribution Error（基本歸因謬誤）指：\n👉 當我們解釋他人行為時，傾向過度歸因於他們的性格特質（內在因素），而低估情境的影響。\n✅ (a) 把行為歸因於性格（內在），低估情境 → 完全正確\n❌(b) 剛好相反 → 錯\n❌(c) 低估兩者 → 錯\n❌(d) 歸因於文化 → 不正確",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_27",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 27,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In one of the earliest studies on conformity, Sherif (1937) used an autokinetic effect (a seemingly moving spot of light) to demonstrate conformity. He found that",
+      "options": [
+        "When participants viewed a light alone, their responses varied; when they viewed the light with others, their responses usually conformed to the most recent participant",
+        "When participants viewed a light alone, their responses varied; when they viewed the light with others, their responses usually conformed to the norm that developed in their particular group",
+        "When participants viewed a light alone, their responses varied; when they viewed the light with others, their esponses usually conformed to whoever who seemed more knowledgeable",
+        "None of the above"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Sherif (1937) 的自動運動效應 (autokinetic effect) 實驗：\n✅ 一個靜止的光點在黑暗中看起來會動，實際上沒在動。\n✅ 參與者單獨時，估計距離差異很大（沒標準）。\n✅ 小組討論後，慢慢形成一致的「群體標準」，之後個體的回答會趨於這個群體規範。",
+      "concepts": [
+        "社會影響\n從眾行為（Conformity）Sherif 的自動運動實驗（Autokinetic Effect）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "社會影響\n從眾行為（Conformity）Sherif 的自動運動實驗（Autokinetic Effect）",
+      "ai_hint": "Sherif (1937) 的自動運動效應 (autokinetic effect) 實驗：\n✅ 一個靜止的光點在黑暗中看起來會動，實際上沒在動。\n✅ 參與者單獨時，估計距離差異很大（沒標準）。\n✅ 小組討論後，慢慢形成一致的「群體標準」，之後個體的回答會趨於這個群體規範。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_28",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 28,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Which of the following is/are true about obedience to authority?",
+      "options": [
+        "Authoritarian personalities are more likely to be highly obedient",
+        "A highly obedient person is submissive to persons above but harsh to those below",
+        "A diffusion of responsibility and dehumanization of the victim contributes to obedience",
+        "a and b",
+        "All of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "服從權威的心理因素：\n✅ (a) 權威主義人格 (authoritarian personality)\n → 更容易高度服從權威\n✅ (b) 服從型人格對上服從、對下嚴苛\n✅ (c) 責任分散和去人性化（例如米爾格倫實驗）都會提高服從傾向",
+      "concepts": [
+        "社會心理學中「服從」（obedience）研究"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "社會心理學中「服從」（obedience）研究",
+      "ai_hint": "服從權威的心理因素：\n✅ (a) 權威主義人格 (authoritarian personality)\n → 更容易高度服從權威\n✅ (b) 服從型人格對上服從、對下嚴苛\n✅ (c) 責任分散和去人性化（例如米爾格倫實驗）都會提高服從傾向",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_29",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 29,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Deindividuation occurs when an individual loses awareness of himself as a separate individual. This phenomena is more likely to occur when there is",
+      "options": [
+        "A suppression of arousal and anonymity",
+        "A high level of arousal and anonymity",
+        "A substance-induced state of arousal and anonymity",
+        "None of the above"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "去個體化 (deindividuation)：\n這種現象常在：高度喚起 (high arousal)、匿名性 (anonymity) 的條件下發生。\n例如： ➡️ 群眾、面具、黑暗環境",
+      "concepts": [
+        "社會心理學去個體化（Deindividuation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "社會心理學去個體化（Deindividuation）",
+      "ai_hint": "去個體化 (deindividuation)：\n這種現象常在：高度喚起 (high arousal)、匿名性 (anonymity) 的條件下發生。\n例如： ➡️ 群眾、面具、黑暗環境",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_30",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 30,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In certain situations, there is a tendency for group decisions to be more extreme that the decisions that would have been made by any of the group members working on their own. This is called  a, Group extremism",
+      "options": [
+        "Group extremism",
+        "Group desensitization",
+        "Group politicization",
+        "Group polarization",
+        "None of the above"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "當一群人討論時，他們的決策會比個別成員更極端，這叫做：\n👉 團體極化 (group polarization)",
+      "concepts": [
+        "社會心理學群體極化（Group Polarization）團體決策偏差"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "社會心理學群體極化（Group Polarization）團體決策偏差",
+      "ai_hint": "當一群人討論時，他們的決策會比個別成員更極端，這叫做：\n👉 團體極化 (group polarization)",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_31",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 31,
+        "title": "第13章 社會心理學"
+      },
+      "question": "What is risky shift?",
+      "options": [
+        "Patten in which a group appears to be more willing to take chances, or more willing to take an extreme stance, than the individual group members would have been on their own",
+        "Pattem in which a group risks losing the ability to make a decision even though they were close to making a decision",
+        "Pattern in which a group appears to be less willing to take chances than the individual group members would have been on their own",
+        "None of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "✅ 這是團體決策的一種現象：\n當人們在小組裡討論時，會比單獨決策時傾向採取更大風險。（即小組決策往往更冒險）\n✅ Risky Shift 是 Group Polarization 的一種形式，特指討論後團體決策變得更冒險。",
+      "concepts": [
+        "Stoner（1961）觀察到群體決策當中的風險轉移（ Risky Shift），後來被視為群體極化（Group Polarization） 的特例"
+      ],
+      "scholars": [],
+      "school_of_thought": "social",
+      "key_concepts": "Stoner（1961）觀察到群體決策當中的風險轉移（ Risky Shift），後來被視為群體極化（Group Polarization） 的特例",
+      "ai_hint": "✅ 這是團體決策的一種現象：\n當人們在小組裡討論時，會比單獨決策時傾向採取更大風險。（即小組決策往往更冒險）\n✅ Risky Shift 是 Group Polarization 的一種形式，特指討論後團體決策變得更冒險。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_111_32",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 32,
+        "title": "第14章 發展心理學"
+      },
+      "question": "In the first two years of life, what are the key motor skills that infants develop?",
+      "options": [
+        "Stretching out their fingers and toes",
+        "Moving their heads and showing signs of nodding",
+        "Bending all their limbs",
+        "Reaching and grasping something",
+        "None of the above"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒前兩年發展的關鍵動作技能 (motor skills)：\n在生命最初兩年，最重要的進步包括：\n・伸手去拿東西 (reaching)\n・抓握物體 (grasping)\n・這是精細動作技能的核心基礎，也是認知與探索世界的重要方式",
+      "concepts": [
+        "嬰幼兒精細動作發展里程碑（motor development milestones）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "嬰幼兒精細動作發展里程碑（motor development milestones）",
+      "ai_hint": "嬰兒前兩年發展的關鍵動作技能 (motor skills)：\n在生命最初兩年，最重要的進步包括：\n・伸手去拿東西 (reaching)\n・抓握物體 (grasping)\n・這是精細動作技能的核心基礎，也是認知與探索世界的重要方式",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_33",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 33,
+        "title": "第14章 發展心理學"
+      },
+      "question": "The following is/are true about babies’ hearing:",
+      "options": [
+        "Very young infants already show a preference for human voice over other sounds",
+        "Babies prefer high pitch than low pitch sounds and voices",
+        "Babies show a preference for melodious than non-melodious sounds",
+        "a and b",
+        "All of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒的聽覺偏好：\n ✅ (a) 新生兒偏好人聲（特別是母親的聲音）\n ✅ (b) 嬰兒偏好較高音調的聲音（媽媽語調通常偏高）\n ✅ (c) 嬰兒確實傾向偏好旋律性、歌唱性的聲音（例如搖籃曲比雜音有吸引力）",
+      "concepts": [
+        "嬰兒聽覺感知能力（auditory perception）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "嬰兒聽覺感知能力（auditory perception）",
+      "ai_hint": "嬰兒的聽覺偏好：\n ✅ (a) 新生兒偏好人聲（特別是母親的聲音）\n ✅ (b) 嬰兒偏好較高音調的聲音（媽媽語調通常偏高）\n ✅ (c) 嬰兒確實傾向偏好旋律性、歌唱性的聲音（例如搖籃曲比雜音有吸引力）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_34",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 34,
+        "title": "第14章 發展心理學"
+      },
+      "question": "Which of the following is true about visual acuity in babies?",
+      "options": [
+        "Newborns can see objects up to a meter away, but no more",
+        "Newborns cannot see an object well unless it is held close to the face",
+        "By the end of the first year of life, babies have vision as half as good as adults'",
+        "Color vision is automatically available at birth"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒視覺清晰度 (visual acuity)：\n❌  (a) 新生兒能看見一公尺遠的物體，但看不更遠？太具體且不正確，新生兒可以看到更遠，但清晰度很低\n✅ (b) 新生兒如果物體不靠近（約20-30公分內），就看不清楚\n ❌ (c) 滿一歲時視力約成人一半？ 不正確，大約在6-12個月已接近成人水準\n ❌ (d) 色彩視覺在出生時就完全發展？不正確，色彩視覺在幾個月內逐步成熟",
+      "concepts": [
+        "視覺清晰度（visual acuity）與感官發展（sensory development）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "視覺清晰度（visual acuity）與感官發展（sensory development）",
+      "ai_hint": "嬰兒視覺清晰度 (visual acuity)：\n❌  (a) 新生兒能看見一公尺遠的物體，但看不更遠？太具體且不正確，新生兒可以看到更遠，但清晰度很低\n✅ (b) 新生兒如果物體不靠近（約20-30公分內），就看不清楚\n ❌ (c) 滿一歲時視力約成人一半？ 不正確，大約在6-12個月已接近成人水準\n ❌ (d) 色彩視覺在出生時就完全發展？不正確，色彩視覺在幾個月內逐步成熟",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_35",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 35,
+        "title": "第14章 發展心理學"
+      },
+      "question": "What do we know about babies’ visual perception?",
+      "options": [
+        "They prefer face-like images and attractive faces",
+        "They prefer round-shaped patterns thän other patterns",
+        "They prefer face-like images but only if such images have accompanying sounds",
+        "None of the above"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "嬰兒視覺偏好\n✅ 實驗發現：\n・新生兒偏好類似臉孔的圖案（兩個上方斑點+一個下方斑點）\n・他們也偏好對稱和被成人評為吸引人的臉\n・這種偏好在沒有聲音的情況下也會出現",
+      "concepts": [
+        "Fantz（1961）嬰兒的視覺知覺（visual perception）發展：人臉偏好（face preference）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "Fantz（1961）嬰兒的視覺知覺（visual perception）發展：人臉偏好（face preference）",
+      "ai_hint": "嬰兒視覺偏好\n✅ 實驗發現：\n・新生兒偏好類似臉孔的圖案（兩個上方斑點+一個下方斑點）\n・他們也偏好對稱和被成人評為吸引人的臉\n・這種偏好在沒有聲音的情況下也會出現",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_36",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 36,
+        "title": "第14章 發展心理學"
+      },
+      "question": "Depth perception in babies has been tested using the Visual Cliff experiment which tells us that:",
+      "options": [
+        "Babies between 6 and 14 months of age would not cross the fake cliff even with encouragement",
+        "Babies between 6 and 14 months of age would cross the fake cliff with their mothers' encouragement",
+        "Babies between 6 and 14 months of age would cross the fake cliff, but very slowly",
+        "Babies between 6 and 14 months of age would cross the fake cliff, but without ever looking down"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "視覺懸崖實驗（Visual Cliff Experiment）：✅ 結果顯示：\n・6-14個月大的嬰兒已經具備深度知覺\n・即使媽媽在對面鼓勵，大多數嬰兒不會爬過假懸崖\n・他們通常會停在玻璃邊緣，顯示出猶豫或恐懼",
+      "concepts": [
+        "視覺懸崖實驗（Visual Cliff Experiment）研究 嬰兒是否具有深度知覺（depth perception）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "視覺懸崖實驗（Visual Cliff Experiment）研究 嬰兒是否具有深度知覺（depth perception）",
+      "ai_hint": "視覺懸崖實驗（Visual Cliff Experiment）：✅ 結果顯示：\n・6-14個月大的嬰兒已經具備深度知覺\n・即使媽媽在對面鼓勵，大多數嬰兒不會爬過假懸崖\n・他們通常會停在玻璃邊緣，顯示出猶豫或恐懼",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_37",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 37,
+        "title": "第14章 發展心理學"
+      },
+      "question": "According to Piaget’s theory of cognitive development, children in the pre-operational stage have a problem of centration, as demonstrated using a conservation task. That is, children focus their attention on only one dimension or characteristic of an object or situation. The following are examples except",
+      "options": [
+        "Children might judge a container as having more liquid because it's a taller container than the other, even though both containers have the same amount",
+        "Children might judge a row of counters as having more because it has been spaced apart more than the other row (the counters being close together), even though both rows have the same number of counters",
+        "Children might judge a container as having more liquid because its a wider container than the other, even though both containers have the same amount",
+        "Children might judge a row of counters has having more because the counters are bigger than the other w, even though both rows have the same number of counters. e, a and b",
+        "a and b",
+        "c and d"
+      ],
+      "answer": "F",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "皮亞傑「集中化 (centration)」的概念：\n\n✅ 集中化：\n幼兒在前運思期（2–7歲）只關注物體的一個面向，忽略其他相關特徵，因此守恆任務 (conservation tasks) 失敗。\n集中化是注意力只看一個面向，守恆是理解雖然外觀改變，但量仍不變的概念，結果，是孩子在前運思期無法理解量不變性，所以集中化導致守恆失敗。",
+      "concepts": [
+        "Piaget 認知發展理論（Piaget's Theory of Cognitive Development－Assimilation）集中化（centration）與守恆概念（conservation）"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "Piaget 認知發展理論（Piaget's Theory of Cognitive Development－Assimilation）集中化（centration）與守恆概念（conservation）",
+      "ai_hint": "皮亞傑「集中化 (centration)」的概念：\n\n✅ 集中化：\n幼兒在前運思期（2–7歲）只關注物體的一個面向，忽略其他相關特徵，因此守恆任務 (conservation tasks) 失敗。\n集中化是注意力只看一個面向，守恆是理解雖然外觀改變，但量仍不變的概念，結果，是孩子在前運思期無法理解量不變性，所以集中化導致守恆失敗。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原 Word 漏列 e 選項，已補上：a and b",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_38",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 38,
+        "title": "第14章 發展心理學"
+      },
+      "question": "Caregiver-child attachment is the strong emotional bond that forms in the second half of the Ist year between infants and their primary caregiver. The following behaviors that are visible signs of attachment except",
+      "options": [
+        "Active efforts to make contact",
+        "Warm greetings",
+        "Audible verbalizations",
+        "Proximity in unfamiliar situations"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "依附行為 (attachment behaviors) 在嬰兒與主要照顧者之間的表現：\n・接近與保持接觸 (proximity seeking)\n・主動嘗試接觸 (active efforts to make contact)\n・在陌生情境中尋求安全 (proximity in unfamiliar situations)\n・當見到照顧者時表現愉快 (warm greetings)",
+      "concepts": [
+        "嬰兒依附行為（attachment behaviors） 的具體表現"
+      ],
+      "scholars": [],
+      "school_of_thought": "developmental",
+      "key_concepts": "嬰兒依附行為（attachment behaviors） 的具體表現",
+      "ai_hint": "依附行為 (attachment behaviors) 在嬰兒與主要照顧者之間的表現：\n・接近與保持接觸 (proximity seeking)\n・主動嘗試接觸 (active efforts to make contact)\n・在陌生情境中尋求安全 (proximity in unfamiliar situations)\n・當見到照顧者時表現愉快 (warm greetings)",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_111_39",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 39,
+        "title": "第12章 性格"
+      },
+      "question": "What is the problem with using self-report measures to assess personality? Such measures require:",
+      "options": [
+        "Honesty",
+        "Intelligence",
+        "Self-esteem",
+        "Self-knowledge",
+        "a and d",
+        "All of the above"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "自我報告量表（self-report measures）測量人格的侷限性，要能準確回答，受試者必須：\n・誠實 (honesty)：不扭曲或撒謊\n・自我了解 (self-knowledge)：能夠客觀認識自己的行為和傾向",
+      "concepts": [
+        "自我陳述量表（self-report measures）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "自我陳述量表（self-report measures）",
+      "ai_hint": "自我報告量表（self-report measures）測量人格的侷限性，要能準確回答，受試者必須：\n・誠實 (honesty)：不扭曲或撒謊\n・自我了解 (self-knowledge)：能夠客觀認識自己的行為和傾向",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_111_40",
+      "source": "NTU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 40,
+        "title": "第12章 性格"
+      },
+      "question": "Mischel (1968) proposed the Personality Paradox to explain that people behave much less consistently than their personality traits would predict. Evidence for this comes from:",
+      "options": [
+        "Low correlations between measures of traits taken at different times at the same place",
+        "Low correlations between measures of traits taken in different situations",
+        "Low correlations between measures of traits taken in different countries",
+        "None of the above"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Walter Mischel 的「人格悖論 (personality paradox)」 核心觀點：\n雖然我們覺得人有「穩定的人格特質」，但實際上人們在不同情境中行為表現的相關性很低，遠低於我們以為的穩定性。",
+      "concepts": [
+        "Walter Mischel（1968）提出的「人格悖論（Personality Paradox）"
+      ],
+      "scholars": [],
+      "school_of_thought": "personality",
+      "key_concepts": "Walter Mischel（1968）提出的「人格悖論（Personality Paradox）",
+      "ai_hint": "Walter Mischel 的「人格悖論 (personality paradox)」 核心觀點：\n雖然我們覺得人有「穩定的人格特質」，但實際上人們在不同情境中行為表現的相關性很低，遠低於我們以為的穩定性。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    }
+  ]
+}

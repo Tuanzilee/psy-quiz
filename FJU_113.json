@@ -1,0 +1,739 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 113,
+    "year_ad": 2024,
+    "exam_name": "輔仁大學113學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 15,
+    "scoring": "名詞解釋 30% (每題5分共6題) + 配合題 20% (每題5分共4題) + 問答題 50% (每題10分共5題)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "notes": "Part 2 配合題的選項 C『工作制約』疑為『操作制約』之 OCR 錯誤（與其他選項並列為學派/概念，且 Skinner 是操作制約創始人）。已在配合題答案中註記。"
+  },
+  "questions": [
+    {
+      "id": "FJU_113_01",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Terminal buttons",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "終端紐扣（軸突終端 / 突觸前末梢）。神經元軸突末端的膨大結構，內含突觸小泡（synaptic vesicles），小泡儲存神經傳導物。當神經衝動（動作電位）抵達終端紐扣，觸發鈣離子內流，使突觸小泡與細胞膜融合，將神經傳導物釋放到突觸間隙（synaptic cleft），與下一個神經元的樹突上的受體結合，完成神經訊息的化學傳遞。終端紐扣是電訊號轉化為化學訊號的關鍵位置。",
+      "keywords_required": [
+        "軸突",
+        "突觸小泡",
+        "神經傳導物",
+        "突觸間隙"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "終端紐扣",
+        "軸突",
+        "突觸小泡",
+        "神經傳導物",
+        "突觸傳遞"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "軸突末端結構，儲存與釋放神經傳導物",
+      "ai_hint": "答題結構：定義（位置） → 內含（突觸小泡） → 功能（釋放神經傳導物） → 在突觸傳遞中的角色（電→化學）。",
+      "common_mistakes": "勿與『樹突』『軸突丘』混淆。終端紐扣專指軸突末端的膨大結構。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_113_02",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Plasticity",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "可塑性（神經可塑性，neuroplasticity）。指大腦神經系統根據經驗、學習、損傷等因素，改變其結構與功能的能力。可塑性貫穿一生，但發展早期最強。主要形式：（一）突觸可塑性（synaptic plasticity）：突觸強度的改變，包括長期增益（LTP）與長期抑制（LTD），是記憶與學習的細胞基礎；（二）結構可塑性：神經連結（樹突分支、新突觸）增減；（三）功能重組：腦傷後其他腦區接管受損區的功能。經典證據：倫敦計程車司機海馬迴後部較大（Maguire 研究）；中風病人經復健可恢復部分功能；盲人的視覺皮質可被觸覺/聽覺『侵占』。可塑性是神經科學近代最重要的概念之一，挑戰了『成人大腦不變』的舊觀。",
+      "keywords_required": [
+        "神經",
+        "經驗",
+        "改變",
+        "LTP",
+        "學習"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "神經可塑性",
+        "突觸可塑性",
+        "LTP",
+        "結構可塑性",
+        "腦傷恢復"
+      ],
+      "scholars": [
+        "Maguire",
+        "Hebb"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "大腦根據經驗改變結構/功能的能力",
+      "ai_hint": "答題結構：定義 → 三種形式（突觸/結構/功能重組） → LTP 為記憶基礎 → 經典證據（倫敦計程車司機、盲人皮質重組）。",
+      "common_mistakes": "勿認為可塑性僅限發展期；成人大腦仍持續可塑性，只是程度較弱。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_113_03",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Theory of mind",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "心智理論（ToM）。指個體理解他人擁有與自己不同的信念、慾望、意圖、知識的能力，是社會認知的核心。Premack & Woodruff（1978）以黑猩猩研究提出此概念。經典測驗為『錯誤信念作業』（false belief task），如 Sally-Anne 任務：Sally 把球放盒子離開後，Anne 把球移到籃子；問兒童『Sally 回來會去哪找球』。一般兒童約 4 歲能正確回答（盒子，因 Sally 不知道球被移），3 歲以下多答籃子（混淆自己知道與他人知道）。心智理論發展與前額葉、顳頂交界處（TPJ）相關。自閉症光譜患者常在心智理論作業上表現困難，是其社交困難的可能機制（Baron-Cohen『心盲』理論）。",
+      "keywords_required": [
+        "他人",
+        "信念",
+        "錯誤信念",
+        "Sally-Anne",
+        "自閉症"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "心智理論",
+        "錯誤信念作業",
+        "Sally-Anne任務",
+        "自閉症",
+        "社會認知"
+      ],
+      "scholars": [
+        "Premack",
+        "Woodruff",
+        "Wimmer",
+        "Perner",
+        "Baron-Cohen"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "理解他人有與自己不同的心智狀態",
+      "ai_hint": "答題結構：定義 → Premack & Woodruff 提出 → Sally-Anne 任務（4歲為界） → 神經基礎（TPJ） → 自閉症應用。",
+      "common_mistakes": "心智理論≠同理心。心智理論是『認知性』理解他人想法；同理心包含情感共鳴。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "FJU_113_04",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Overregularization",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "過度規則化（過度概化）。語言發展中兒童學會規則後，將規則錯誤地應用到不規則例外的現象。例如英文中過去式規則為加 -ed，兒童學會後會說 *goed（應為 went）、*foots（應為 feet）。中文中也有類似現象，如『買了又買了』。重要的是這是『發展性錯誤』而非退步——兒童在更早階段可能正確說 went，學會規則後反而錯誤，再經歷更精細的學習後才再度正確（U 形發展曲線）。此現象支持兒童語言學習是『規則歸納』而非『純模仿』，是 Chomsky 普遍語法（universal grammar）與 Pinker 規則習得理論的重要證據。",
+      "keywords_required": [
+        "規則",
+        "不規則",
+        "兒童",
+        "U形",
+        "Chomsky"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "過度規則化",
+        "語言發展",
+        "規則歸納",
+        "Chomsky",
+        "U形發展"
+      ],
+      "scholars": [
+        "Chomsky",
+        "Pinker",
+        "Marcus"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "兒童學會規則後過度套用到例外，是發展中正常現象",
+      "ai_hint": "答題結構：定義 → 例子（goed, foots） → U 形發展現象 → 支持規則歸納而非單純模仿（Chomsky）。",
+      "common_mistakes": "勿視為『學習退步』；這是『規則內化』的正常階段。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "FJU_113_05",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Hindsight bias",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "後見之明偏誤（事後諸葛偏誤）。Fischhoff（1975）提出，指事件結果揭曉後，人們傾向高估自己『早已預見』此結果的能力（『我就知道會這樣』），但事實上事前的判斷並無那麼準確。三個層次：（一）記憶扭曲：忘記事前真實預測，重塑為與結果一致；（二）必然性：認為結果『理所當然』；（三）可預測性：認為自己當時能預見。例子：股票暴跌後說『早就看出泡沫』；運動比賽後說『一定是這隊贏』。心理機制涉及『錨定效應』（以結果為錨重新評估）與『認知連貫性需求』（讓自己的世界觀內外一致）。實務影響：法律判決中後見偏誤可能不公（如『被告應該預見』判斷）、醫療事故事後檢討。",
+      "keywords_required": [
+        "事前",
+        "事後",
+        "預測",
+        "Fischhoff",
+        "高估"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "後見之明偏誤",
+        "Fischhoff研究",
+        "認知偏誤",
+        "錨定效應"
+      ],
+      "scholars": [
+        "Fischhoff"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "結果揭曉後高估事前預測能力的偏誤",
+      "ai_hint": "答題結構：定義 → Fischhoff 提出 → 三個層次（記憶/必然/可預測） → 例子 → 機制與實務影響。",
+      "common_mistakes": "勿與『確認偏誤』混淆。後見之明是『事後重塑』；確認偏誤是『選擇性接收符合既有信念的資訊』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "FJU_113_06",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Mental set",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "心向（思考定勢）。指過去成功經驗形成的固定解題策略，使個體在新情境中傾向使用該策略，即使有更佳方法也不易發現。Luchins（1942）的水罐問題（water jar problem）為經典實驗：受試者學會用 B-A-2C 公式解一系列問題後，遇到可用更簡單方法的題目時仍套用複雜公式（學會了複雜方法的人，反而比沒學過的人更難看出簡單解）。心向是『功能僵化』（functional fixedness）的一種表現，後者指對物體用途的固定看法（如把錘子只想成敲釘工具）。Duncker 蠟燭問題顯示功能僵化阻礙創意。心向解釋了專家可能在『非典型問題』反而表現不如新手的現象。",
+      "keywords_required": [
+        "過去經驗",
+        "策略",
+        "Luchins",
+        "水罐",
+        "僵化"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "心向",
+        "思考定勢",
+        "功能僵化",
+        "問題解決",
+        "Luchins水罐問題"
+      ],
+      "scholars": [
+        "Luchins",
+        "Duncker"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "過去成功策略形成的思考慣性，阻礙新解法",
+      "ai_hint": "答題結構：定義 → Luchins 水罐實驗 → 與功能僵化的關係（Duncker 蠟燭） → 對問題解決的影響。",
+      "common_mistakes": "心向不全是壞事——對熟悉問題提供效率；只在『新型態問題』時造成阻礙。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "FJU_113_07",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "配合題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "配合題（學者與研究主題配對）"
+      },
+      "question": "B. F. Skinner",
+      "options": [
+        "工作記憶",
+        "裂腦研究",
+        "操作制約（原試題寫『工作制約』，疑為 OCR 錯誤）",
+        "感官記憶",
+        "古典制約",
+        "錯誤記憶"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原試題選項 C 為『工作制約』，研判為『操作制約』之 OCR 錯誤——Skinner 是操作制約創始人，且『工作制約』非標準心理學術語。",
+      "reference_answer": "操作制約。Skinner 是操作制約（operant conditioning）的代表人物，發展 Skinner box、增強排程理論，承續 Thorndike 效果律。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "操作制約",
+        "Skinner學習論"
+      ],
+      "scholars": [
+        "Skinner"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "Skinner = 操作制約創始人",
+      "ai_hint": "Skinner 與 Pavlov 是學習論兩大支柱：Pavlov 古典制約、Skinner 操作制約。",
+      "common_mistakes": "Skinner 不是古典制約（那是 Pavlov）；不是工作記憶（那是 Baddeley）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_113_08",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "配合題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "配合題（學者與研究主題配對）"
+      },
+      "question": "Ivan Pavlov",
+      "options": [
+        "工作記憶",
+        "裂腦研究",
+        "操作制約（原試題寫『工作制約』，疑為 OCR 錯誤）",
+        "感官記憶",
+        "古典制約",
+        "錯誤記憶"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "古典制約。Pavlov 是古典制約（classical conditioning）創始人，以狗的唾液實驗奠定行為學派基礎，1904 年諾貝爾生理醫學獎。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "古典制約",
+        "Pavlov"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "Pavlov = 古典制約",
+      "ai_hint": "Pavlov 狗 + 食物 + 鈴聲，是普心最經典實驗。",
+      "common_mistakes": "Pavlov 不是操作制約（那是 Skinner）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_113_09",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "配合題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "配合題（學者與研究主題配對）"
+      },
+      "question": "Elizabeth Loftus",
+      "options": [
+        "工作記憶",
+        "裂腦研究",
+        "操作制約（原試題寫『工作制約』，疑為 OCR 錯誤）",
+        "感官記憶",
+        "古典制約",
+        "錯誤記憶"
+      ],
+      "answer": "F",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯誤記憶（不實記憶）。Loftus 經典研究：誤導性提問（『撞碎』vs『撞到』）影響目擊者回憶；商場走失實驗證明可植入虛假童年記憶。對司法目擊證詞可信度有重大影響。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "不實記憶",
+        "Loftus研究",
+        "目擊者證詞"
+      ],
+      "scholars": [
+        "Loftus"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "Loftus = 錯誤記憶/不實記憶研究",
+      "ai_hint": "Loftus 是法庭心理學重要證人；普心常考她的研究。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_113_10",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "配合題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "配合題（學者與研究主題配對）"
+      },
+      "question": "George Sperling",
+      "options": [
+        "工作記憶",
+        "裂腦研究",
+        "操作制約（原試題寫『工作制約』，疑為 OCR 錯誤）",
+        "感官記憶",
+        "古典制約",
+        "錯誤記憶"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "感官記憶。Sperling（1960）以『部分報告法』（partial report procedure）證明視覺感官記憶（iconic memory）的存在：閃示 3×4 字母矩陣 50 ms 後，用聲音線索指示要報告哪一行，受試者幾乎能完全報告，但若延遲 1 秒則無法。證明感官記憶容量大但持續時間極短（< 1 秒）。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "感官記憶",
+        "視覺感官記憶",
+        "部分報告法",
+        "Sperling研究"
+      ],
+      "scholars": [
+        "Sperling"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "Sperling = 感官記憶（部分報告法）",
+      "ai_hint": "Sperling 部分報告法是感官記憶研究的經典里程碑。",
+      "common_mistakes": "感官記憶≠短期記憶。感官記憶持續 < 1 秒，短期記憶 15-30 秒。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_113_11",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "請說明腦機介面是怎麼運作的，並且舉一個例子來做說明。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "腦機介面（Brain-Computer Interface, BCI）：直接讀取大腦神經訊號，將其轉譯為控制外部設備（電腦、義肢、輪椅）指令的系統。\n\n運作原理（四個步驟）：\n（一）訊號擷取：透過電極（侵入式：植入大腦皮質的微電極陣列；非侵入式：頭皮上的 EEG 電極）讀取神經元活動。\n（二）訊號處理：濾波、放大、降噪，提取有意義的神經特徵（如特定頻率波形、特定區域活化模式）。\n（三）解碼／模式辨識：用機器學習演算法（SVM、深度學習）將神經訊號模式對應到特定意圖（如『想像移動右手』對應特定 motor cortex 模式）。\n（四）輸出控制：將解碼結果轉為設備指令，控制外部裝置；同時透過視覺/觸覺回饋讓使用者調整。\n\n神經科學基礎：運動皮質（M1）的『運動意圖』神經編碼是 BCI 的主要基礎；不需真的動，光是『想像動作』就能引發類似的神經活動。\n\n例子：\n（一）BrainGate 系統：在四肢癱瘓患者的運動皮質植入電極，使其『用想的』控制電腦游標、機械手臂喝咖啡。\n（二）Neuralink（Musk 公司，2024 年）：首位人類受試者使用大腦植入裝置控制電腦、玩遊戲。\n（三）Utah Array 用於協助 ALS 病人溝通：解碼語言皮質訊號合成語音。\n（四）非侵入式：腦波控制輪椅、無人機、義手。\n\n應用領域：癱瘓患者復原、義肢、神經疾病治療（深部腦刺激 DBS 治療巴金森氏症）。",
+      "keywords_required": [
+        "神經訊號",
+        "電極",
+        "解碼",
+        "運動皮質"
+      ],
+      "essay_outline": [
+        "定義：BCI 直接讀取神經訊號控制外部設備",
+        "運作四步驟：擷取 → 處理 → 解碼 → 輸出",
+        "神經基礎：運動皮質的運動意圖編碼",
+        "例子：BrainGate 癱瘓患者控制機械手臂",
+        "可選例子：Neuralink、ALS 溝通協助",
+        "應用領域與展望"
+      ],
+      "concepts": [
+        "腦機介面",
+        "BCI",
+        "運動皮質",
+        "神經編碼",
+        "神經可塑性"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "四步驟運作 + 至少一個具體例子",
+      "ai_hint": "10 分：原理 5-6 分 + 例子 4-5 分。例子越具體（病人、設備名）越加分。",
+      "common_mistakes": "勿只描述例子而沒解釋原理；要連結到神經訊號如何被讀取與解碼。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_113_12",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "請舉兩個例子說明服飾店會透過那些技巧來混淆我們的感官運作，進而促進消費。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "可從多個感官運作層面分析（任選兩個深入即可）：\n\n（一）視覺：燈光與鏡子\n服飾店常用偏黃溫暖燈光，使皮膚顯得紅潤健康（顏色恆常性遭操弄），衣服顏色看起來更討喜。試衣間常設『修身鏡』（略傾斜或微凸），使人視覺上看起來更瘦更高，提升購買意願。這操弄了視覺『大小恆常性』與身體意象的知覺。\n\n（二）嗅覺：香氛行銷\n知名品牌（如 Abercrombie & Fitch）店內噴灑特定香水，建立品牌-嗅覺聯結（古典制約），讓消費者產生情緒愉悅與品牌記憶。嗅覺與情緒、記憶的杏仁核-海馬迴系統直接相連，繞過理性決策。\n\n（三）聽覺：背景音樂\n音樂節奏快慢影響消費者瀏覽速度（慢音樂使停留時間更長）；音樂風格也透過情緒制約塑造品牌調性。研究顯示古典音樂使消費者購買更高價商品（暗示『高品質』基模）。\n\n（四）觸覺：材質擺放\n讓消費者觸摸衣服啟動『所有權效應』（endowment effect）——觸摸後對物品估值上升。柔軟舒適的材質激發正向觸覺反應。\n\n（五）綜合：定錨效應與對比\n旁邊放一件貴的（錨點）使主推商品看起來便宜；折扣價旁邊標原價，操弄價值知覺。\n\n這些技巧運用感官-情緒-記憶的腦部連結，繞過消費者的理性評估系統。",
+      "keywords_required": [
+        "燈光",
+        "鏡子",
+        "嗅覺",
+        "古典制約"
+      ],
+      "essay_outline": [
+        "選擇 2 個感官管道深入（建議：視覺燈光 + 嗅覺/聽覺擇一）",
+        "例一：視覺（燈光暖色、修身鏡、顏色恆常性操弄）",
+        "例二：嗅覺/聽覺（古典制約、情緒記憶連結）",
+        "可加：觸覺（所有權效應）、定錨效應",
+        "結論：感官-情緒-記憶連結繞過理性評估"
+      ],
+      "concepts": [
+        "感覺",
+        "知覺",
+        "知覺恆常性",
+        "古典制約",
+        "所有權效應",
+        "定錨效應"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "至少 2 個感官管道 + 援引心理學理論（古典制約／恆常性／知覺啟發式）",
+      "ai_hint": "10 分：兩個例子各 5 分（每個都要說明操弄機制 + 心理學理論）。具體店名加分（如 A&F）。",
+      "common_mistakes": "勿只描述現象不解釋機制；每個例子要連到感官/知覺理論。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_113_13",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "日前花東大地震，有位學生當時正在複習微積分。他之後只要讀微積分，就會想到地震的情景。請說明這背後有甚麼心理學的機制在運作，以及可以用甚麼方式來協助他不要讀微積分就聯想到地震的發生。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "心理機制（多重）：\n\n（一）古典制約：微積分（中性刺激）與地震（強烈情緒事件 UCS）在時間上配對，使微積分成為 CS，引發『恐懼/焦慮』CR。地震帶來的恐懼透過杏仁核快速形成情緒記憶（LeDoux 恐懼學習路徑）。\n\n（二）情境依賴記憶／編碼特定性原則（Tulving）：學習時的情境（讀微積分）與記憶（地震）綁在一起，相似情境再現時自動觸發回憶。\n\n（三）情緒記憶增強：杏仁核活化使該事件被高度鞏固，海馬迴對時空細節記憶更強烈。\n\n（四）創傷後壓力反應：若達臨床閾值可能演變為 PTSD（侵入性記憶、迴避、過度警覺）。\n\n協助方式：\n\n（一）系統減敏法（systematic desensitization, Wolpe）：建立焦慮階層，從低強度（看微積分書封面）逐步暴露到高強度（解微積分題），每階段配合放鬆訓練（如腹式呼吸），逐步消弱『微積分→恐懼』連結。\n\n（二）暴露治療（exposure therapy）：在安全環境中重複接觸微積分，讓恐懼反應自然消弱（extinction）。Foa 延長暴露治療對 PTSD 有效。\n\n（三）認知行為治療（CBT）：辨識自動化負向認知（『讀書時會地震』），用理性思考替代（『地震與微積分無因果』）。\n\n（四）EMDR（眼動減敏與再處理）：透過眼動與創傷敘事處理情緒記憶，對 PTSD 有實證效果。\n\n（五）改變學習情境：暫時換不同地點/時間讀微積分，建立新的情境記憶，沖淡舊連結。\n\n（六）藥物輔助：嚴重時 SSRI、Beta-blocker（普萘洛爾）可抑制再固化過程降低情緒強度。\n\n（七）社會支持：分享經歷、團體治療降低孤立感。\n\n建議綜合介入：以暴露治療為主軸，配合認知重建與情境調整。",
+      "keywords_required": [
+        "古典制約",
+        "杏仁核",
+        "系統減敏",
+        "暴露",
+        "消弱"
+      ],
+      "essay_outline": [
+        "機制一：古典制約（微積分=CS，地震=UCS）",
+        "機制二：情境依賴記憶（Tulving 編碼特定性）",
+        "機制三：杏仁核情緒記憶增強",
+        "可選機制四：創傷反應 / PTSD",
+        "協助一：系統減敏法（Wolpe）",
+        "協助二：暴露治療（消弱）",
+        "協助三：CBT 認知重建",
+        "可加：EMDR、情境調整、藥物"
+      ],
+      "concepts": [
+        "古典制約",
+        "情境依賴記憶",
+        "杏仁核",
+        "系統減敏法",
+        "暴露治療",
+        "消弱"
+      ],
+      "scholars": [
+        "LeDoux",
+        "Tulving",
+        "Wolpe",
+        "Foa"
+      ],
+      "school_of_thought": "cognitive_behavioral",
+      "key_concepts": "古典制約解釋 + 系統減敏/暴露治療為核心介入",
+      "ai_hint": "10 分：機制 5 分（至少 2 個機制）+ 介入 5 分（至少 2 個方法）。古典制約與系統減敏是必引；連結杏仁核加分。",
+      "common_mistakes": "勿只說『他可能有 PTSD』；要先解釋連結是怎麼形成的。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_113_14",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "為什麼有些政治人物要說謊，混淆是非。請從記憶運作的觀點，來做說明。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "從記憶運作觀點分析政治人物說謊的『有效性』機制：\n\n（一）虛假事實效應（illusory truth effect, Hasher 等人）：訊息只要重複出現，閱聽人就會覺得它『可信』，無論真假。政治人物重複錯誤訊息使民眾印象深刻，產生熟悉感被誤認為真實。\n\n（二）記憶重構性（Bartlett, Loftus）：記憶非錄影帶式精確重播，每次提取都會被重新建構。政治人物提供新『敘事』時，閱聽人的舊記憶可能被新訊息整合甚至取代。\n\n（三）誤導性訊息效應（misinformation effect, Loftus & Palmer）：事件後接收的錯誤訊息會混入原始記憶，使人記得從未發生的細節。政治宣傳善用此效應植入有利敘事。\n\n（四）來源遺忘（source amnesia）：記得『某事是真的』但忘記訊息來源（八卦？新聞？臉書？）。閱聽人對訊息可信度的批判性下降。\n\n（五）睡眠者效應（sleeper effect, Hovland）：可信度低的訊息（如政治宣傳）短期被打折扣，但長期下來訊息與來源分離，影響反而上升。\n\n（六）情緒記憶優勢：情緒激發（憤怒、恐懼）的訊息透過杏仁核增強鞏固，比中性訊息更易記住。煽動性謊言比理性論述更難被遺忘。\n\n（七）反芻偏誤（backfire effect 早期研究存疑，但仍有部分支持）：直接糾正反而強化錯誤信念，因為強調了錯誤訊息本身。\n\n（八）資訊環境：演算法推送加重同溫層；人們只接觸支持既有信念的訊息（確認偏誤），錯誤訊息在群體中反覆強化。\n\n結論：政治人物說謊的『有效性』建立在多重記憶機制上——重複、情緒、敘事置換、來源混淆。對抗方法包括媒體素養教育、第一手資料查證、延緩判斷。",
+      "keywords_required": [
+        "虛假事實效應",
+        "重構",
+        "Loftus",
+        "來源遺忘",
+        "情緒記憶"
+      ],
+      "essay_outline": [
+        "機制一：虛假事實效應（重複 → 可信）",
+        "機制二：記憶重構性（Bartlett, Loftus）",
+        "機制三：誤導性訊息效應",
+        "機制四：來源遺忘",
+        "機制五：情緒記憶優勢（杏仁核）",
+        "可選：睡眠者效應、確認偏誤",
+        "結論：多重記憶機制使謊言『有效』"
+      ],
+      "concepts": [
+        "虛假事實效應",
+        "不實記憶",
+        "記憶重構",
+        "誤導效應",
+        "來源遺忘",
+        "情緒記憶"
+      ],
+      "scholars": [
+        "Hasher",
+        "Bartlett",
+        "Loftus",
+        "Hovland"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "至少 3 個記憶機制解釋為何謊言能生效",
+      "ai_hint": "10 分：3 個機制各 3 分 + 整合結論 1 分。Loftus 不實記憶與虛假事實效應是必引。",
+      "common_mistakes": "勿純粹批評政治；題目要求『記憶運作觀點』，必須圍繞記憶機制論述。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_113_15",
+      "source": "FJU",
+      "year": 113,
+      "year_ad": 2024,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "你覺得我們目前訓練人工智慧的方式，和人類嬰兒在學習知識，有哪些相同、相異之處。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "相同之處：\n\n（一）統計學習：嬰兒（如 Saffran 1996 研究）與當代 AI（特別是大型語言模型）皆透過接觸大量資料，學習其中的統計規律（出現頻率、共現機率）。嬰兒從語音流中提取詞彙邊界、AI 從語料中學習語言模式。\n\n（二）由錯誤修正學習：嬰兒透過嘗試錯誤學會語言規則（如過度規則化）；AI 透過反向傳播調整權重。皆涉及『誤差驅動』學習。\n\n（三）模式辨識：嬰兒辨認母親臉、AI 辨認影像，皆是高維資料中找出規律。\n\n（四）聯結性學習：神經網路啟發自神經元突觸連結；學習皆涉及『連結強度』調整（類似 Hebb's rule：fire together, wire together）。\n\n相異之處：\n\n（一）資料量與效率：當代 AI 需數十億 token 訓練；嬰兒只需有限互動就能學會語言（『刺激貧乏』論證，Chomsky）。嬰兒『樣本效率』遠高於 AI。\n\n（二）具身認知（embodied cognition）：嬰兒在物理身體中學習，透過感官-動作循環理解世界（Piaget 感覺運動期）；當前 AI 多半沒有身體，缺乏具身經驗。\n\n（三）社會學習：嬰兒透過共享注意力（joint attention）、模仿、社會回饋學習（Tomasello 共享意向性）。AI 缺乏真正的社會理解。\n\n（四）內建偏置（innate biases）：嬰兒帶有演化賦予的學習偏置（如對人臉的偏好、語言關鍵期）；AI 的『先天』來自架構與初始權重設計。\n\n（五）跨領域遷移：嬰兒能將少量經驗推廣到新情境（few-shot learning）；AI 在分布外情境常表現失敗。\n\n（六）動機與意向性：嬰兒有好奇、慾望驅動學習；AI 由目標函數驅動，無內在動機。\n\n（七）發展階段性：嬰兒認知發展呈質性階段（Piaget）；AI 學習是漸進連續的。\n\n（八）意識問題：嬰兒有主觀經驗（推測）；AI 是否有意識仍是哲學爭議。\n\n結論：表面機制（統計學習）相似但深層架構（具身、社會、發展）差異很大。AI 研究啟發認知科學，反之認知科學亦提示 AI 改進方向。",
+      "keywords_required": [
+        "統計學習",
+        "Chomsky",
+        "具身認知",
+        "共享注意力",
+        "誤差"
+      ],
+      "essay_outline": [
+        "相同：統計學習（Saffran）",
+        "相同：誤差驅動學習",
+        "相同：模式辨識與聯結",
+        "相異：資料效率（Chomsky 刺激貧乏）",
+        "相異：具身認知（Piaget 感覺運動）",
+        "相異：社會學習（Tomasello）",
+        "相異：內建偏置與跨領域遷移",
+        "結論：表面相似深層不同"
+      ],
+      "concepts": [
+        "統計學習",
+        "Saffran研究",
+        "Chomsky語言習得",
+        "具身認知",
+        "共享注意力",
+        "Piaget認知發展論",
+        "Hebb學習律"
+      ],
+      "scholars": [
+        "Saffran",
+        "Chomsky",
+        "Piaget",
+        "Tomasello",
+        "Hebb"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "至少 2 個相同 + 2 個相異 + 援引發展心理學/語言習得研究",
+      "ai_hint": "10 分：相同點 4 分 + 相異點 6 分（題目側重相異）。Chomsky 刺激貧乏與 Piaget 具身認知是常見高分理論。",
+      "common_mistakes": "勿純粹技術層面（『AI 用 GPU，嬰兒用大腦』）；要從認知/發展機制比較。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第8章 語言與心智表徵"
+    }
+  ]
+}

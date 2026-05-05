@@ -1,0 +1,1306 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 107,
+    "year_ad": 2018,
+    "exam_name": "輔仁大學107學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 29,
+    "scoring": "配合題 75% (每題3分共25題) + 名詞解釋 25% (每題5分共5題)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "id_format": "FJU_107_NN (全卷流水號)"
+  },
+  "questions": [
+    {
+      "id": "FJU_107_01",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "語言理解、聽覺主要皮質",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原試題選項 3 與 10 皆為視丘，疑為印刷重複；下視丘未被使用。",
+      "reference_answer": "顳葉。Wernicke 區（語言理解）位於左側顳葉後上方；初級聽覺皮質（A1）位於顳上回的 Heschl gyrus。",
+      "essay_outline": null,
+      "concepts": [
+        "大腦皮質分區",
+        "顳葉",
+        "Wernicke區",
+        "聽覺皮質"
+      ],
+      "scholars": [
+        "Wernicke"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "顳葉是處理聽覺與語言理解的主要皮質區",
+      "ai_hint": "考點：左顳葉 = Wernicke + 聽覺皮質。Broca（語言產生）在額葉，要分清。",
+      "common_mistakes": "易與額葉的 Broca 區混淆。Broca 負責語言產生，Wernicke 負責語言理解。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_02",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "運動皮質區域",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "額葉。初級運動皮質（M1）位於額葉後緣中央前回（precentral gyrus）。",
+      "essay_outline": null,
+      "concepts": [
+        "大腦皮質分區",
+        "額葉",
+        "運動皮質"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "初級運動皮質位於額葉中央前回",
+      "ai_hint": "中央溝以前是運動（額葉），中央溝以後是體感覺（頂葉）。",
+      "common_mistakes": "易與頂葉的體感覺皮質（中央後回）混淆。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_03",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "執行功能、規劃、監控能力",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "額葉。前額葉皮質（PFC）負責執行功能、計畫、決策、工作記憶與行為監控。",
+      "essay_outline": null,
+      "concepts": [
+        "額葉",
+        "前額葉皮質",
+        "執行功能"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "前額葉皮質是執行功能的核心區",
+      "ai_hint": "Phineas Gage 案例：前額葉受損 → 人格與決策能力改變。",
+      "common_mistakes": "執行功能是廣義概念，包含計畫、抑制、彈性、工作記憶。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_04",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "體感覺運作有關",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "G",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "頂葉。初級體感覺皮質（S1）位於頂葉中央後回，處理觸覺、痛覺、溫覺、本體感覺。",
+      "essay_outline": null,
+      "concepts": [
+        "頂葉",
+        "體感覺皮質"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "體感覺皮質位於頂葉中央後回",
+      "ai_hint": "Penfield 體感覺小人圖（homunculus）的位置在頂葉。",
+      "common_mistakes": "勿與額葉運動皮質混淆——兩者隔著中央溝相鄰。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_05",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "與情緒運作有關的皮質下區域",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "I",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "杏仁核。位於顳葉內側，是邊緣系統的核心結構，主導恐懼、情緒記憶與威脅偵測。",
+      "essay_outline": null,
+      "concepts": [
+        "杏仁核",
+        "邊緣系統",
+        "情緒"
+      ],
+      "scholars": [
+        "LeDoux"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "杏仁核是情緒（特別是恐懼）的核心皮質下結構",
+      "ai_hint": "題目強調「皮質下」是關鍵：排除額葉等皮質區。LeDoux 的恐懼制約研究最經典。",
+      "common_mistakes": "情緒不只杏仁核，但題目限定皮質下，杏仁核最符合。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_06",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "巴金森氏症或舞蹈症病人常見的異常腦區",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "基底核。巴金森氏症為黑質多巴胺神經元退化（影響基底核迴路）；亨丁頓舞蹈症為紋狀體萎縮，皆為基底核相關運動障礙。",
+      "essay_outline": null,
+      "concepts": [
+        "基底核",
+        "巴金森氏症",
+        "亨丁頓舞蹈症",
+        "多巴胺"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "基底核負責動作的啟動、抑制與精細調節",
+      "ai_hint": "巴金森 = 多巴胺不足 → 動作減少；舞蹈症 = 動作抑制失敗 → 不自主動作。兩者都是基底核相關。",
+      "common_mistakes": "勿與小腦混淆——小腦負責動作協調、平衡，基底核負責啟動與抑制。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_07",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "與記憶處理、固化有關",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "F",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "海馬回。負責將短期記憶固化（consolidation）為長期記憶；H.M. 病例切除雙側海馬迴後無法形成新的外顯記憶。",
+      "essay_outline": null,
+      "concepts": [
+        "海馬回",
+        "記憶固化",
+        "外顯記憶",
+        "H.M.病例"
+      ],
+      "scholars": [
+        "Scoville",
+        "Milner"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "海馬回是外顯記憶固化的關鍵腦區",
+      "ai_hint": "經典案例 H.M.：切除海馬迴後出現順行性失憶，但程序記憶保留。",
+      "common_mistakes": "海馬回負責記憶「形成」與「固化」，但長期記憶儲存於皮質。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_08",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "視覺處理",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "枕葉。初級視覺皮質（V1）位於枕葉，負責視覺訊息的初步處理。",
+      "essay_outline": null,
+      "concepts": [
+        "枕葉",
+        "視覺皮質",
+        "V1"
+      ],
+      "scholars": [
+        "Hubel",
+        "Wiesel"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "視覺處理的核心區域是枕葉",
+      "ai_hint": "Hubel 與 Wiesel 對 V1 細胞的研究獲諾貝爾獎。",
+      "common_mistakes": "視覺有腹側流（What，到顳葉）與背側流（Where，到頂葉），但「視覺處理」起點仍在枕葉。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_09",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "easy",
+      "question": "多種感覺訊息彙整的皮質下區域",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "選項 C 與 J 皆為視丘；任一皆可。",
+      "reference_answer": "視丘。除嗅覺外的所有感覺訊息進入大腦皮質前的中繼站，故稱為「感覺接力站」。",
+      "essay_outline": null,
+      "concepts": [
+        "視丘",
+        "感覺中繼",
+        "皮質下結構"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "視丘是感覺訊息送往皮質前的中繼站（嗅覺除外）",
+      "ai_hint": "口訣：視丘 = 感覺中繼，下視丘 = 內分泌、情緒、動機。兩者常被搞混。",
+      "common_mistakes": "視丘≠下視丘。下視丘控制體溫、飢渴、生殖、自律神經，與感覺彙整無關。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_10",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 1,
+        "title": "腦區域與功能配合"
+      },
+      "difficulty": "medium",
+      "question": "與注意力有關，損傷時會有忽略症",
+      "options": [
+        "額葉（frontal lobe）",
+        "基底核（basal ganglia）",
+        "視丘（thalamus）",
+        "枕葉（occipital lobe）",
+        "顳葉（temporal lobe）",
+        "海馬回（hippocampus）",
+        "頂葉（parietal lobe）",
+        "下視丘（hypothalamus）",
+        "杏仁核（amygdala）",
+        "視丘（thalamus）"
+      ],
+      "answer": "G",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "頂葉。半側忽略症（hemispatial neglect）多由右側頂葉（特別是下頂葉）損傷造成，病人忽略左側空間。",
+      "essay_outline": null,
+      "concepts": [
+        "頂葉",
+        "半側忽略症",
+        "注意力",
+        "空間認知"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "右頂葉損傷 → 左側半側忽略症",
+      "ai_hint": "經典症狀：吃飯只吃右半盤、畫鐘只畫右半邊。多為右頂葉損傷。",
+      "common_mistakes": "忽略症≠視覺缺損。病人視野是完整的，是注意力無法分配到該側。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_107_11",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "Piaget 認知發展階段配合"
+      },
+      "difficulty": "medium",
+      "question": "能夠知道偶數、奇數是什麼，也可以做數學運算，但不了解「一偶數加上一奇數會得到奇數」此概念",
+      "options": [
+        "形式運思期（formal operations period）",
+        "感覺運動期（sensory motor period）",
+        "前運思期（preoperational period）",
+        "具體運思期（concrete operations period）"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "具體運思期（7-11 歲）。可以進行邏輯運算與守恆，但僅限具體事物；無法處理「奇偶相加結果」這類抽象規則或假設性命題（這需要形式運思期）。",
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "具體運思期",
+        "形式運思期"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "具體運思期能做運算但只限具體事物；抽象規則屬於形式運思期",
+      "ai_hint": "關鍵字：能算（具體運思）但不懂規則（缺乏形式運思的抽象推理）。",
+      "common_mistakes": "易誤選形式運思期。注意題目強調「不了解規則」，意指尚未具備抽象思考。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_107_12",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "Piaget 認知發展階段配合"
+      },
+      "difficulty": "easy",
+      "question": "發展物體永久性概念",
+      "options": [
+        "形式運思期（formal operations period）",
+        "感覺運動期（sensory motor period）",
+        "前運思期（preoperational period）",
+        "具體運思期（concrete operations period）"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "感覺運動期（0-2 歲）。約 8-12 個月發展出物體恆存性（object permanence），知道物體即使看不到仍存在。",
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "感覺運動期",
+        "物體恆存性"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "物體恆存性是感覺運動期的關鍵成就",
+      "ai_hint": "口訣：感運期 → 物體恆存；前運期 → 自我中心；具運期 → 守恆；形運期 → 抽象。",
+      "common_mistakes": "「物體恆存」≠「守恆概念」。前者是嬰兒期，後者是兒童期。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_107_13",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "Piaget 認知發展階段配合"
+      },
+      "difficulty": "easy",
+      "question": "自我中心為特徵",
+      "options": [
+        "形式運思期（formal operations period）",
+        "感覺運動期（sensory motor period）",
+        "前運思期（preoperational period）",
+        "具體運思期（concrete operations period）"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "前運思期（2-7 歲）。自我中心（egocentrism）：無法區分自己與他人觀點，經典實驗為「三山實驗」。",
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "前運思期",
+        "自我中心",
+        "三山實驗"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "前運思期以自我中心思考為特徵",
+      "ai_hint": "前運思期關鍵特徵：自我中心、泛靈論、未守恆、單向思考、集中化。",
+      "common_mistakes": "Piaget 的自我中心≠日常用語的「自私」，是認知能力上的限制。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_107_14",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "Piaget 認知發展階段配合"
+      },
+      "difficulty": "easy",
+      "question": "可以有假設的以及真實的思考",
+      "options": [
+        "形式運思期（formal operations period）",
+        "感覺運動期（sensory motor period）",
+        "前運思期（preoperational period）",
+        "具體運思期（concrete operations period）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "形式運思期（11 歲以上）。能進行假設演繹推理（hypothetico-deductive reasoning），處理抽象概念與假設性命題。",
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "形式運思期",
+        "假設演繹推理"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "形式運思期能進行抽象推理與假設性思考",
+      "ai_hint": "形式運思期的核心：抽象、假設、命題、系統化問題解決。",
+      "common_mistakes": "並非所有成人都達形式運思期；研究指出此階段普及率不如 Piaget 預期。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_107_15",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 2,
+        "title": "Piaget 認知發展階段配合"
+      },
+      "difficulty": "easy",
+      "question": "發展數量守恆概念",
+      "options": [
+        "形式運思期（formal operations period）",
+        "感覺運動期（sensory motor period）",
+        "前運思期（preoperational period）",
+        "具體運思期（concrete operations period）"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "具體運思期（7-11 歲）。發展守恆概念（conservation），理解數量、體積、質量不因外觀改變而變化。",
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "具體運思期",
+        "守恆概念"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "守恆概念是具體運思期的關鍵成就",
+      "ai_hint": "守恆順序：數量(6-7) → 質量(7-8) → 重量(9-10) → 體積(11-12)。",
+      "common_mistakes": "守恆是具體運思期；前運思期兒童會被外觀誤導（如杯子高瘦看起來水多）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_107_16",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 3,
+        "title": "情緒理論配合"
+      },
+      "difficulty": "medium",
+      "question": "可以用來解釋興奮轉移（excitation transfer）的現象",
+      "options": [
+        "軀體標記假說 (Somatic Marker Hypothesis, SMH)",
+        "認知激發理論 (cognitive arousal theory) (Schachter)",
+        "James-Lange 理論",
+        "Cannon-Bard（肯能）理論"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "興奮轉移為 Zillmann 提出，但理論基礎是 Schachter 兩因論——殘存生理激發被錯誤歸因到新情境的情緒。輔仁可能標準答案是 B（認知激發理論），請以教科書為準。",
+      "reference_answer": "認知激發理論（Schachter-Singer 兩因論）。興奮轉移（Zillmann, 1971）指運動後殘存的生理激發被錯誤歸因到後續情緒事件，使該情緒被放大；此現象建立在「生理激發 + 認知標籤 = 情緒」的兩因論基礎上。",
+      "essay_outline": null,
+      "concepts": [
+        "情緒理論",
+        "認知激發理論",
+        "兩因論",
+        "興奮轉移",
+        "錯誤歸因"
+      ],
+      "scholars": [
+        "Schachter",
+        "Singer",
+        "Zillmann"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "興奮轉移現象建立在 Schachter 兩因論之上",
+      "ai_hint": "經典實驗：Dutton & Aron (1974) 吊橋實驗——心跳被誤歸因為對異性的吸引。",
+      "common_mistakes": "易誤選 James-Lange——但 J-L 認為情緒由特定生理反應決定，無法解釋同一激發產生不同情緒。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_107_17",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 3,
+        "title": "情緒理論配合"
+      },
+      "difficulty": "easy",
+      "question": "情緒是來自我們對體內生理反應（例如心跳）的知覺",
+      "options": [
+        "軀體標記假說 (Somatic Marker Hypothesis, SMH)",
+        "認知激發理論 (cognitive arousal theory) (Schachter)",
+        "James-Lange 理論",
+        "Cannon-Bard（肯能）理論"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "James-Lange 理論。主張「我們因為哭所以悲傷、因為發抖所以害怕」——情緒是對自身生理反應（心跳、肌肉、內臟變化）的知覺結果。",
+      "essay_outline": null,
+      "concepts": [
+        "情緒理論",
+        "James-Lange理論",
+        "周邊論"
+      ],
+      "scholars": [
+        "James",
+        "Lange"
+      ],
+      "school_of_thought": "behavioral_physiological",
+      "key_concepts": "James-Lange：先有生理反應，才有情緒知覺",
+      "ai_hint": "口訣：J-L 是「身體先動，心才跟著動」。順序：刺激 → 生理反應 → 情緒知覺。",
+      "common_mistakes": "J-L 理論被 Cannon 反駁：不同情緒生理反應差異不大、生理反應太慢。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_107_18",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 3,
+        "title": "情緒理論配合"
+      },
+      "difficulty": "easy",
+      "question": "受試者的情緒取決於他自己對於生理反應的認知解釋",
+      "options": [
+        "軀體標記假說 (Somatic Marker Hypothesis, SMH)",
+        "認知激發理論 (cognitive arousal theory) (Schachter)",
+        "James-Lange 理論",
+        "Cannon-Bard（肯能）理論"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "認知激發理論（Schachter-Singer 兩因論）。情緒 = 生理激發 + 認知標籤。經典實驗：注射腎上腺素後，依環境線索產生不同情緒（憤怒或愉快）。",
+      "essay_outline": null,
+      "concepts": [
+        "情緒理論",
+        "認知激發理論",
+        "兩因論",
+        "腎上腺素實驗"
+      ],
+      "scholars": [
+        "Schachter",
+        "Singer"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "情緒 = 生理激發 + 對情境的認知解釋",
+      "ai_hint": "Schachter & Singer (1962) 腎上腺素實驗是兩因論的關鍵證據。",
+      "common_mistakes": "兩因論強調「認知解釋」是情緒分化的關鍵，而非生理本身。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_107_19",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 3,
+        "title": "情緒理論配合"
+      },
+      "difficulty": "medium",
+      "question": "強調我們的決策行為是會受到情緒影響",
+      "options": [
+        "軀體標記假說 (Somatic Marker Hypothesis, SMH)",
+        "認知激發理論 (cognitive arousal theory) (Schachter)",
+        "James-Lange 理論",
+        "Cannon-Bard（肯能）理論"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "軀體標記假說（Damasio, 1994）。過去經驗形成的身體訊號（軀體標記）會在決策時自動產生情緒反應，引導我們快速做出選擇；前額葉腹內側受損者決策困難，即為證據。",
+      "essay_outline": null,
+      "concepts": [
+        "情緒理論",
+        "軀體標記假說",
+        "前額葉腹內側",
+        "決策"
+      ],
+      "scholars": [
+        "Damasio"
+      ],
+      "school_of_thought": "biological_cognitive",
+      "key_concepts": "情緒透過身體訊號影響決策——理性需要情緒",
+      "ai_hint": "Iowa Gambling Task 是檢驗 SMH 的經典作業；vmPFC 損傷者決策表現顯著變差。",
+      "common_mistakes": "Damasio 反對「情緒干擾理性」的傳統觀點，主張情緒是理性決策的必要組成。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_107_20",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 3,
+        "title": "情緒理論配合"
+      },
+      "difficulty": "medium",
+      "question": "刺激會引發生理反應與情緒反應，但生理與情緒兩者之間是相互獨立",
+      "options": [
+        "軀體標記假說 (Somatic Marker Hypothesis, SMH)",
+        "認知激發理論 (cognitive arousal theory) (Schachter)",
+        "James-Lange 理論",
+        "Cannon-Bard（肯能）理論"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "Cannon-Bard 理論。主張刺激同時引發生理反應與情緒體驗，兩者由視丘並行傳達至大腦皮質與身體，互不依賴。",
+      "essay_outline": null,
+      "concepts": [
+        "情緒理論",
+        "Cannon-Bard理論",
+        "中樞論",
+        "視丘"
+      ],
+      "scholars": [
+        "Cannon",
+        "Bard"
+      ],
+      "school_of_thought": "physiological",
+      "key_concepts": "Cannon-Bard：生理反應與情緒同時並行、互不依賴",
+      "ai_hint": "口訣：J-L 是「先後說」、C-B 是「同時說」、Schachter 是「認知說」。",
+      "common_mistakes": "C-B 理論強調「同時」與「獨立」，與 J-L 的「先後」相對。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_107_21",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "記憶理論配合"
+      },
+      "difficulty": "easy",
+      "question": "有關人、事、時、地、物",
+      "options": [
+        "內隱記憶（implicit memory）",
+        "工作記憶（working memory）",
+        "語意記憶（semantic memory）",
+        "短期記憶（short-term memory）",
+        "情境記憶（episodic memory）"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "情境記憶（episodic memory）。個人特定時空脈絡下的經驗，如「上週生日吃了什麼蛋糕」。屬外顯記憶。",
+      "essay_outline": null,
+      "concepts": [
+        "長期記憶",
+        "情境記憶",
+        "外顯記憶",
+        "Tulving記憶分類"
+      ],
+      "scholars": [
+        "Tulving"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "情境記憶 = 個人經歷，含時空脈絡",
+      "ai_hint": "Tulving 區分情境記憶（自傳式）與語意記憶（一般知識）。",
+      "common_mistakes": "情境記憶≠短期記憶。情境記憶可保留多年。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_107_22",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "記憶理論配合"
+      },
+      "difficulty": "easy",
+      "question": "對於世界的知識",
+      "options": [
+        "內隱記憶（implicit memory）",
+        "工作記憶（working memory）",
+        "語意記憶（semantic memory）",
+        "短期記憶（short-term memory）",
+        "情境記憶（episodic memory）"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "語意記憶（semantic memory）。對世界的事實、概念與一般知識，如「台灣首都是台北」。屬外顯記憶。",
+      "essay_outline": null,
+      "concepts": [
+        "長期記憶",
+        "語意記憶",
+        "外顯記憶",
+        "Tulving記憶分類"
+      ],
+      "scholars": [
+        "Tulving"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "語意記憶 = 一般性知識，去脈絡化",
+      "ai_hint": "語意記憶通常較情境記憶不易遺忘——失憶症患者可能保有事實知識但忘記個人經歷。",
+      "common_mistakes": "語意記憶與情境記憶都屬外顯，差別在「知識 vs 經歷」。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_107_23",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "記憶理論配合"
+      },
+      "difficulty": "easy",
+      "question": "不容易用言語陳述的記憶內容",
+      "options": [
+        "內隱記憶（implicit memory）",
+        "工作記憶（working memory）",
+        "語意記憶（semantic memory）",
+        "短期記憶（short-term memory）",
+        "情境記憶（episodic memory）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "內隱記憶（implicit memory）。無意識、不需言語表達的記憶，如騎腳踏車、打字等程序記憶。",
+      "essay_outline": null,
+      "concepts": [
+        "長期記憶",
+        "內隱記憶",
+        "程序記憶",
+        "外顯/內隱二分"
+      ],
+      "scholars": [
+        "Squire",
+        "Tulving"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "內隱記憶 = 無意識、難以言語化",
+      "ai_hint": "內隱記憶包含程序記憶、促發效應（priming）、古典制約。",
+      "common_mistakes": "內隱≠不重要。失憶症患者外顯記憶受損但內隱保留——H.M. 仍能學會新動作技能。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_107_24",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "配合題",
+      "language": "zh",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "記憶理論配合"
+      },
+      "difficulty": "medium",
+      "question": "強調主動運作與組織的記憶被動地維持訊息",
+      "options": [
+        "內隱記憶（implicit memory）",
+        "工作記憶（working memory）",
+        "語意記憶（semantic memory）",
+        "短期記憶（short-term memory）",
+        "情境記憶（episodic memory）"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原題斷句不易讀，理解為「強調主動運作與組織的記憶（B），相對於被動地維持訊息（即傳統短期記憶 D）」。",
+      "reference_answer": "工作記憶（working memory）。Baddeley & Hitch (1974) 提出，相對於 Atkinson-Shiffrin 模型中的短期記憶（被動儲存），工作記憶強調主動處理與組織訊息，含中央執行、語音迴路、視空間模板、情節緩衝區。",
+      "essay_outline": null,
+      "concepts": [
+        "短期記憶",
+        "工作記憶",
+        "Baddeley模型",
+        "中央執行"
+      ],
+      "scholars": [
+        "Baddeley",
+        "Hitch"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "工作記憶強調「處理」，短期記憶強調「儲存」",
+      "ai_hint": "Baddeley 工作記憶四成分：中央執行、語音迴路、視空間模板、情節緩衝區（後加）。",
+      "common_mistakes": "工作記憶≠短期記憶。短期記憶是被動儲存，工作記憶是主動運作。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_107_25",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "名詞解釋",
+      "language": "zh",
+      "section": {
+        "type": "名詞解釋",
+        "number": 5,
+        "title": "解釋名詞"
+      },
+      "difficulty": "medium",
+      "question": "防衛機轉（defense mechanism）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "由 Freud 提出，後由其女 Anna Freud 系統化。指自我（ego）為了化解本我與超我衝突所引發的焦慮，所採用的潛意識心理策略。常見類型包含：壓抑（repression）、否認（denial）、投射（projection）、合理化（rationalization）、反向作用（reaction formation）、退化（regression）、昇華（sublimation）等。多數為潛意識運作，過度使用可能導致心理病態，但昇華等較成熟的機制具有適應功能。",
+      "keywords_required": [
+        "Freud",
+        "焦慮",
+        "潛意識",
+        "自我",
+        "本我",
+        "超我"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "精神分析",
+        "防衛機轉",
+        "Freud人格理論",
+        "本我自我超我"
+      ],
+      "scholars": [
+        "Freud",
+        "Anna Freud"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "自我為降低焦慮所採用的潛意識策略",
+      "ai_hint": "答題結構：定義 → 提出者 → 功能（化解三我衝突） → 至少三個例子（壓抑、投射、昇華） → 適應 vs 不適應之分。",
+      "common_mistakes": "防衛機轉是潛意識的，不是有意識的應對策略；勿與「因應策略 (coping strategy)」混為一談。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_107_26",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "名詞解釋",
+      "language": "zh",
+      "section": {
+        "type": "名詞解釋",
+        "number": 5,
+        "title": "解釋名詞"
+      },
+      "difficulty": "medium",
+      "question": "知覺恆常性（perceptual constancy）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "指儘管刺激物在視網膜上的投影因距離、角度、光線改變，知覺系統仍將物體知覺為穩定不變的特性。主要類型包括：大小恆常性（物體遠近不同但知覺大小不變）、形狀恆常性（觀看角度改變但知覺形狀不變）、明度恆常性（照明改變但知覺亮度不變）、顏色恆常性（光源改變但知覺顏色不變）。是知覺的重要特性，使我們能在動態環境中維持穩定的世界知覺。",
+      "keywords_required": [
+        "大小",
+        "形狀",
+        "明度",
+        "顏色",
+        "視網膜投影",
+        "穩定"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "知覺",
+        "知覺恆常性",
+        "大小恆常性",
+        "形狀恆常性",
+        "明度恆常性",
+        "顏色恆常性"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "刺激改變但知覺穩定的特性",
+      "ai_hint": "答題結構：定義（投影改變但知覺不變） → 四類型（大小、形狀、明度、顏色） → 各舉一例。",
+      "common_mistakes": "知覺恆常性≠錯覺。錯覺是知覺與物理刺激不一致；恆常性是維持物體真實特性的知覺。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_107_27",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "名詞解釋",
+      "language": "zh",
+      "section": {
+        "type": "名詞解釋",
+        "number": 5,
+        "title": "解釋名詞"
+      },
+      "difficulty": "medium",
+      "question": "認知失調理論（dissonance theory）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "由 Festinger（1957）提出。當個體同時持有兩個或多個彼此矛盾的認知（包含態度、信念、行為），會產生不舒服的失調狀態，並引發降低失調的動機。降低失調的方式包括：改變態度、改變行為、增加新認知合理化、減低衝突認知的重要性。經典實驗為 Festinger & Carlsmith (1959) 的 1 美元 vs 20 美元枯燥實驗：拿少報酬者反而態度改變較多，因為缺乏外在理由，只能改變內在態度以降低失調。",
+      "keywords_required": [
+        "Festinger",
+        "矛盾",
+        "認知",
+        "態度",
+        "降低失調"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "社會心理學",
+        "認知失調",
+        "態度改變",
+        "Festinger理論"
+      ],
+      "scholars": [
+        "Festinger",
+        "Carlsmith"
+      ],
+      "school_of_thought": "social_cognitive",
+      "key_concepts": "認知矛盾引發不舒服感，驅動態度或行為改變",
+      "ai_hint": "答題結構：定義 → 提出者與年代 → 不舒服感引發降低動機 → 至少兩種降低方式 → 1美元實驗為例。",
+      "common_mistakes": "易與「認知偏誤」混淆。認知失調是動機歷程，認知偏誤是訊息處理的系統性偏差。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_107_28",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "名詞解釋",
+      "language": "zh",
+      "section": {
+        "type": "名詞解釋",
+        "number": 5,
+        "title": "解釋名詞"
+      },
+      "difficulty": "medium",
+      "question": "習得無助感（learned helplessness）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "由 Seligman 與 Maier（1967）以狗為對象的實驗中提出。當個體反覆面對不可控制的負向事件後，會學到「無論如何努力都無法改變結果」的認知，即使後來情境變得可控，仍放棄嘗試。後 Abramson 等人（1978）擴充為「習得無助感的歸因理論」：將失敗作內在、穩定、整體歸因者較易出現無助感，並成為憂鬱症認知模型的基礎。",
+      "keywords_required": [
+        "Seligman",
+        "不可控制",
+        "放棄",
+        "歸因",
+        "憂鬱"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "習得無助感",
+        "Seligman理論",
+        "歸因理論",
+        "憂鬱症認知模型"
+      ],
+      "scholars": [
+        "Seligman",
+        "Maier",
+        "Abramson"
+      ],
+      "school_of_thought": "cognitive_behavioral",
+      "key_concepts": "重複的不可控失敗導致放棄嘗試與認知扭曲",
+      "ai_hint": "答題結構：定義 → Seligman 狗實驗 → 三要素（不可控、消極預期、放棄） → 與憂鬱症的關聯（歸因理論延伸）。",
+      "common_mistakes": "習得無助≠單純的悲觀。Seligman 後期提出「習得樂觀」作為對應介入。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_107_29",
+      "source": "FJU",
+      "year": 107,
+      "year_ad": 2018,
+      "type": "名詞解釋",
+      "language": "zh",
+      "section": {
+        "type": "名詞解釋",
+        "number": 5,
+        "title": "解釋名詞"
+      },
+      "difficulty": "medium",
+      "question": "流體智慧（fluid intelligence）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "由 Cattell（1963）提出，後與 Horn 發展為 Cattell-Horn 理論（後與 Carroll 整合為 CHC 理論）。流體智慧指處理新穎問題、進行抽象推理與發現規則的能力，較不受文化與經驗影響，主要依賴生理與神經機制。流體智慧在青年期達高峰，後隨年齡逐漸下降。相對的概念為晶體智慧（crystallized intelligence），指透過學習與經驗累積的知識，較不受老化影響，甚至持續增進。",
+      "keywords_required": [
+        "Cattell",
+        "新穎",
+        "抽象推理",
+        "晶體智慧",
+        "老化"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "智力理論",
+        "流體智慧",
+        "晶體智慧",
+        "Cattell-Horn理論"
+      ],
+      "scholars": [
+        "Cattell",
+        "Horn",
+        "Carroll"
+      ],
+      "school_of_thought": "psychometric",
+      "key_concepts": "流體智慧：處理新問題的能力，受年齡影響大",
+      "ai_hint": "答題結構：定義 → 提出者（Cattell-Horn） → 特性（新穎、抽象、生理基礎） → 與晶體智慧對比 → 老化趨勢。",
+      "common_mistakes": "流體智慧≠智商高低。它是智力的一個面向，與晶體智慧相對。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第10章 智力"
+    }
+  ]
+}

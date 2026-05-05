@@ -1,0 +1,773 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 108,
+    "year_ad": 2019,
+    "exam_name": "輔仁大學108學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 16,
+    "scoring": "名詞解釋 60% (每題5分共12題) + 問答題 40% (每題10分共4題)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "notes": "本卷大量使用英文題目；學生作答以中文為主，故 keywords_required 以中文關鍵字為主、人名保留英文。第7題原 PDF OCR 為『1017% (heritability)』，研判為『遺傳率 (heritability)』掃描錯誤，已修正。"
+  },
+  "questions": [
+    {
+      "id": "FJU_108_01",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Recency effect",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "近因效應。指自由回憶實驗中，序列最後幾個項目被回憶得較好的現象，反映短期記憶／工作記憶的作用。與初始效應（primacy effect，前幾個項目回憶較好，反映長期記憶編碼）共同構成序列位置效應（serial position effect）。後續加入分心作業（如倒數）會選擇性消除近因效應而不影響初始效應，是支持多重記憶系統的重要證據。",
+      "keywords_required": [
+        "序列",
+        "最後",
+        "短期記憶",
+        "初始效應",
+        "序列位置效應"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "記憶",
+        "近因效應",
+        "初始效應",
+        "序列位置效應",
+        "短期記憶",
+        "長期記憶"
+      ],
+      "scholars": [
+        "Murdock",
+        "Glanzer",
+        "Cunitz"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "近因效應 = 短期記憶；初始效應 = 長期記憶編碼",
+      "ai_hint": "答題結構：定義 → 序列位置曲線 → 與初始效應對比 → 分心作業實驗 → 對多重記憶系統的支持。",
+      "common_mistakes": "勿與『近時偏誤(recency bias)』社會判斷概念混淆；輔仁脈絡下指記憶研究現象。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_108_02",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Anterograde amnesia",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "順向失憶症。腦部受損（特別是海馬迴與內側顳葉）後，無法形成新的外顯（陳述性）記憶，但受損前的舊記憶大致保存。經典案例為 H.M.（Henry Molaison），切除雙側海馬迴後出現嚴重順向失憶，但程序記憶與動作學習仍可正常進行，是支持外顯／內隱記憶分離與海馬迴記憶固化角色的關鍵證據。對應概念為逆向失憶症（retrograde amnesia），指對受損前事件的失憶。",
+      "keywords_required": [
+        "海馬迴",
+        "新記憶",
+        "外顯記憶",
+        "H.M.",
+        "逆向失憶"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "順向失憶症",
+        "逆向失憶症",
+        "海馬回",
+        "H.M.病例",
+        "外顯記憶",
+        "內隱記憶"
+      ],
+      "scholars": [
+        "Scoville",
+        "Milner"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "順向失憶 = 無法形成新記憶；舊記憶與內隱記憶通常保留",
+      "ai_hint": "答題結構：定義 → 受損腦區（海馬迴／MTL） → H.M. 案例 → 內隱保留的證據 → 與逆向失憶對比。",
+      "common_mistakes": "易與逆向失憶混淆；前者影響受損後的新記憶，後者影響受損前的舊記憶。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_108_03",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Antagonist",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "拮抗劑。指能阻斷或抑制神經傳導物作用的物質，可透過佔據受體（receptor）使原本的傳導物無法結合，或抑制其釋放、加速回收與分解，最終降低突觸後神經元的反應。例如：抗精神病藥物多為多巴胺拮抗劑，可緩解思覺失調症的正性症狀；箭毒（curare）為乙醯膽鹼拮抗劑。對應概念為促進劑（agonist），會增強傳導物的作用。",
+      "keywords_required": [
+        "神經傳導物",
+        "受體",
+        "阻斷",
+        "促進劑",
+        "agonist"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "拮抗劑",
+        "促進劑",
+        "神經傳導物",
+        "受體",
+        "突觸傳遞"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "拮抗劑阻斷神經傳導物作用；促進劑增強",
+      "ai_hint": "答題結構：定義 → 機制（佔受體 / 抑釋放 / 加速回收） → 例子（抗精神病藥、箭毒） → 與 agonist 對比。",
+      "common_mistakes": "拮抗劑不等於『抑制神經元』——它阻斷的是特定傳導物作用，效果視該傳導物而定。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_108_04",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Absolute threshold",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "絕對閾。指在控制條件下，個體能夠偵測到刺激存在的最小刺激強度。實務操作上定義為 50% 試驗中能正確偵測的強度（因感官敏感度有變動，並非全有全無）。為心理物理學基本概念，由 Fechner 系統化。對應概念為差異閾（difference threshold / JND），指能察覺兩刺激不同的最小差異量；Weber 定律進一步指出 JND 與基準刺激強度成固定比例。",
+      "keywords_required": [
+        "最小",
+        "刺激",
+        "50%",
+        "心理物理學",
+        "差異閾"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "絕對閾",
+        "差異閾",
+        "心理物理學",
+        "Weber定律",
+        "Fechner"
+      ],
+      "scholars": [
+        "Fechner",
+        "Weber"
+      ],
+      "school_of_thought": "psychophysics",
+      "key_concepts": "絕對閾 = 50% 偵測率的最小刺激強度",
+      "ai_hint": "答題結構：定義 → 50% 操作型定義 → 心理物理學脈絡 → 與差異閾(JND)對比 → Weber 定律。",
+      "common_mistakes": "絕對閾並非『絕對固定』，會因疲勞、注意力、期望而變動，故用 50% 偵測率定義。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_108_05",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Unconditioned stimulus",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "非制約刺激（UCS）。古典制約中能自然引發非制約反應（UCR）的刺激，無需學習。經典例子為 Pavlov 狗實驗：食物（UCS）自然引發唾液分泌（UCR）；經反覆與鈴聲（中性刺激）配對後，鈴聲成為制約刺激（CS），單獨能引發制約反應（CR，即唾液分泌）。古典制約的關鍵在 UCS 與 CS 的時間性配對（contiguity）與預測性（contingency）。",
+      "keywords_required": [
+        "古典制約",
+        "Pavlov",
+        "非制約反應",
+        "UCR",
+        "制約刺激"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "古典制約",
+        "非制約刺激",
+        "非制約反應",
+        "制約刺激",
+        "制約反應",
+        "Pavlov"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "UCS 自然引發 UCR，無需學習",
+      "ai_hint": "答題結構：定義 → 古典制約四元素（UCS/UCR/CS/CR） → Pavlov 例子 → 配對與預測。",
+      "common_mistakes": "UCS 容易與 CS 混淆；UCS 是天生反應的刺激，CS 是經學習才有反應的刺激。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_108_06",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "Display rules",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "情緒表現規則。Ekman 提出，指各文化對於情緒外在表達的社會規範，規定在何種情境下可以、應該或不該表達何種情緒，以及表達的強度。雖然基本情緒（如喜怒哀懼驚惡）的面部表情具跨文化普遍性，但表現規則導致實際表達在不同文化中差異甚大。經典證據：Ekman & Friesen 的跨文化研究顯示，日本受試者獨自觀看噁心影片時表情與美國受試者類似，但有他人在場時則明顯壓抑表情，反映文化對情緒表達的調節。",
+      "keywords_required": [
+        "Ekman",
+        "文化",
+        "情緒表達",
+        "社會規範",
+        "面部表情"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "情緒表達",
+        "表現規則",
+        "基本情緒",
+        "跨文化研究",
+        "Ekman情緒理論"
+      ],
+      "scholars": [
+        "Ekman",
+        "Friesen"
+      ],
+      "school_of_thought": "cross_cultural",
+      "key_concepts": "文化規範對情緒表達的調節",
+      "ai_hint": "答題結構：定義 → Ekman 提出 → 與基本情緒普遍性的關係 → 日/美跨文化研究 → 對情緒表達差異的解釋。",
+      "common_mistakes": "勿混淆『表現規則』與『情緒體驗本身』——前者影響表達，不必然影響內在感受。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "FJU_108_07",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "遺傳率（heritability）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原 PDF OCR 顯示『1017% (heritability)』，研判為掃描錯誤；題意明確為遺傳率。",
+      "reference_answer": "遺傳率（heritability，h²）。行為遺傳學概念，指特定族群中某特質的個體變異有多少比例可歸因於基因差異，數值介於 0 到 1（或 0% 到 100%）。常用雙生子研究（同卵 vs 異卵雙生子相關）或收養研究估計。重要警示：（一）遺傳率是族群層次概念，不能說某個體有多少比例由基因決定；（二）遺傳率高不代表環境介入無效（如身高遺傳率高，但營養介入仍可顯著影響）；（三）遺傳率隨族群與環境變動，非該特質的固有屬性。",
+      "keywords_required": [
+        "族群",
+        "變異",
+        "基因",
+        "雙生子",
+        "環境"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "遺傳率",
+        "行為遺傳學",
+        "雙生子研究",
+        "收養研究"
+      ],
+      "scholars": [],
+      "school_of_thought": "behavioral_genetics",
+      "key_concepts": "遺傳率是族群變異的歸因比例，非個體屬性",
+      "ai_hint": "答題結構：定義 → 0-1 區間 → 估計方法（雙生子／收養） → 三大警示（族群層次、不否定環境介入、隨情境變動）。",
+      "common_mistakes": "最常見錯誤：把『智力遺傳率 0.5』理解成『某人智力一半由基因決定』，這是錯的——應理解為族群中智力差異有 50% 可歸因於基因差異。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_108_08",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "旁觀者效應（bystander effect）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "旁觀者效應。Latané 與 Darley 於 1968 年提出，指緊急情境中在場旁觀者越多，個體提供協助的可能性越低、反應時間越長的現象。研究動機源自 Kitty Genovese 命案。主要心理機制包含：（一）責任分散（diffusion of responsibility）：旁觀者多時責任被稀釋；（二）多元無知（pluralistic ignorance）：以他人鎮定推論情境不緊急；（三）評價憂慮（evaluation apprehension）：擔心介入後被他人負面評價。Latané 提出助人決策五步驟模型解釋此現象。",
+      "keywords_required": [
+        "Latané",
+        "Darley",
+        "責任分散",
+        "多元無知",
+        "助人"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "旁觀者效應",
+        "責任分散",
+        "多元無知",
+        "助人行為",
+        "Kitty_Genovese"
+      ],
+      "scholars": [
+        "Latané",
+        "Darley"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "旁觀者越多，個別助人機率越低",
+      "ai_hint": "答題結構：定義 → 提出者與案例（Genovese） → 三大機制（責任分散/多元無知/評價憂慮） → 五步驟模型。",
+      "common_mistakes": "旁觀者效應是『機率』降低，不是『一定不會』有人助人；現代研究亦指出在某些情境（如群體有共同認同）效應減弱。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_108_09",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "懼曠症（agoraphobia）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "懼曠症。DSM-5 焦慮疾患之一，指對特定情境產生強烈恐懼或焦慮，因擔心一旦出現恐慌或失能症狀，逃離困難或得不到協助。常見害怕情境包含：搭乘大眾運輸、處於開放空間（停車場、橋）、處於封閉空間（電影院、商店）、排隊或處於人群中、獨自離家。患者常採取逃避或需要陪伴的方式應對，嚴重者甚至無法離開家門。常與恐慌症共病，但 DSM-5 中已被列為獨立診斷。治療以認知行為治療（特別是暴露治療）與藥物治療為主。",
+      "keywords_required": [
+        "焦慮",
+        "恐懼",
+        "逃避",
+        "恐慌",
+        "DSM"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "懼曠症",
+        "焦慮疾患",
+        "恐慌症",
+        "DSM-5",
+        "暴露治療"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "對逃離困難情境的強烈恐懼，常致逃避行為",
+      "ai_hint": "答題結構：定義 → DSM 焦慮疾患 → 害怕情境列舉 → 與恐慌症的關係 → 治療（CBT/暴露/藥物）。",
+      "common_mistakes": "中文常被翻譯為『廣場恐懼症』，但 DSM-5 定義廣於『廣場』，包含多種情境；中文教科書多用『懼曠症』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_108_10",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "皮亞傑的同化（assimilation）概念",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "同化（assimilation）。Piaget 認知發展理論的核心概念，指個體將新經驗納入既有基模（schema）中加以理解的歷程。例如：兒童已有『狗』的基模，看到貓時用既有基模稱之為狗。當新經驗無法被既有基模納入時，需透過調適（accommodation）修改既有基模或建立新基模（如區分出『貓』的基模）。同化與調適共同構成適應（adaptation）歷程，個體在兩者間求取平衡（equilibration），是認知發展的驅動力。",
+      "keywords_required": [
+        "Piaget",
+        "基模",
+        "新經驗",
+        "調適",
+        "平衡"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "Piaget認知發展論",
+        "同化",
+        "調適",
+        "基模",
+        "平衡"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "同化 = 新經驗納入既有基模；與調適共同推動發展",
+      "ai_hint": "答題結構：定義 → 基模概念 → 同化的例子 → 與調適對比 → 平衡作為發展動力。",
+      "common_mistakes": "同化≠單純『模仿』；它是訊息處理層次的概念，描述如何用既有結構理解新訊息。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_108_11",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "合理化（rationalization）防衛機轉",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "合理化（rationalization）。Freud 提出的防衛機轉之一，指個體面對挫折或不被接受的行為時，為降低焦慮，潛意識地以看似合理但非真實的理由為自己辯護。經典例子：（一）酸葡萄心理：得不到的東西貶低其價值（『反正那葡萄是酸的』）；（二）甜檸檬心理：將既有的東西過度美化（『我手上的雖然不甜但很有營養』）。合理化發生在潛意識層次，與有意識的說謊或藉口不同；過度使用會妨礙個體面對真實問題。",
+      "keywords_required": [
+        "Freud",
+        "防衛機轉",
+        "潛意識",
+        "辯護",
+        "酸葡萄"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "合理化",
+        "防衛機轉",
+        "Freud人格理論",
+        "酸葡萄心理"
+      ],
+      "scholars": [
+        "Freud"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "潛意識用合理但非真實的理由為自己辯護",
+      "ai_hint": "答題結構：定義 → 防衛機轉框架 → 酸葡萄／甜檸檬例子 → 強調潛意識層次。",
+      "common_mistakes": "合理化是潛意識的，與有意識的『找藉口』不同——但實務上邊界模糊。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_108_12",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞解釋"
+      },
+      "question": "刻板印象威脅（stereotype threat）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "刻板印象威脅。Steele 與 Aronson 於 1995 年提出，指當個體所屬群體被認為在某領域表現較差時，其在該領域的測驗表現會因擔心『驗證該負面刻板印象』而下降。經典實驗：對黑人大學生進行語文測驗，告知是『智力測驗』時表現顯著低於白人（活化種族刻板印象）；告知是『一般作業』時兩組表現無差。後續研究擴及性別（女性數學）、社經（低社經學生）等多種情境。機制涉及焦慮、認知資源被佔用、工作記憶下降等。",
+      "keywords_required": [
+        "Steele",
+        "Aronson",
+        "群體",
+        "焦慮",
+        "表現下降"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "刻板印象威脅",
+        "刻板印象",
+        "Steele研究"
+      ],
+      "scholars": [
+        "Steele",
+        "Aronson"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "意識到負面刻板印象 → 焦慮 → 表現下降",
+      "ai_hint": "答題結構：定義 → Steele & Aronson 1995 經典實驗 → 機制（焦慮/工作記憶） → 跨情境擴展（性別/社經）。",
+      "common_mistakes": "刻板印象威脅描述的是『情境效應』，不是個體穩定特質；移除威脅情境後表現可恢復。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_108_13",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請分享一個記憶心理學的研究，以及這個研究對於我們了解人類記憶有甚麼貢獻。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "開放式問答，可選研究眾多。以下為三個高分模板，擇一深入發揮即可。",
+      "reference_answer": "可從以下研究擇一深入：（一）Ebbinghaus 遺忘曲線（1885）：以無意義音節自我實驗，發現遺忘呈先快後慢的對數曲線，奠定實驗記憶研究方法論，啟發後續分散練習效果研究。（二）H.M. 病例（Scoville & Milner, 1957）：雙側海馬迴切除導致順向失憶但程序記憶保留，證實外顯／內隱記憶的分離與海馬迴在記憶固化的關鍵角色，改寫記憶神經機制理論。（三）Loftus 不實記憶研究：誤導性問題能在事後植入虛假記憶（『撞碎玻璃』vs『撞到』影響後續對玻璃碎片的回憶），證實記憶具重構性，動搖目擊證詞可信度，影響司法實務。",
+      "keywords_required": [
+        "研究者",
+        "方法",
+        "結果",
+        "貢獻"
+      ],
+      "essay_outline": [
+        "選定一個研究（建議：H.M. / Loftus 不實記憶 / Ebbinghaus 遺忘曲線 三選一）",
+        "說明研究方法（受試者、操弄、測量）",
+        "說明關鍵發現",
+        "貢獻：對哪個記憶理論／實務應用有突破性影響"
+      ],
+      "concepts": [
+        "記憶研究方法",
+        "H.M.病例",
+        "不實記憶",
+        "遺忘曲線",
+        "Ebbinghaus",
+        "Loftus"
+      ],
+      "scholars": [
+        "Ebbinghaus",
+        "Scoville",
+        "Milner",
+        "Loftus"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "選一個記憶研究，講清楚『方法 → 結果 → 對理論／實務的貢獻』",
+      "ai_hint": "10 分題建議：方法 3 分 + 結果 3 分 + 貢獻 4 分。貢獻段是高分關鍵——避免只描述結果。",
+      "common_mistakes": "最常見錯誤：只講『發現了 X』而沒說『所以呢』。要回到題目要求的『貢獻』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_108_14",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請用兩個證據說明「眼見為憑」是錯誤的。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "知覺並非被動反映外在世界，而是主動建構歷程，至少有以下證據：（一）視覺錯覺：Müller-Lyer 錯覺中等長線段因箭頭方向被知覺為長度不同；Ponzo 錯覺利用深度線索使等長物體看起來不等長。錯覺反映知覺系統使用啟發式（如大小恆常性），這些啟發式在 2D 圖形上會誤導我們。（二）不注意盲（inattentional blindness）：Simons & Chabris『隱形大猩猩』實驗中，當受試者專注於計算傳球次數時，約一半受試者完全沒看到走過畫面的大猩猩，顯示注意力是知覺的必要條件，未被注意的訊息即使在視野內也不會進入意識。（三）變化盲（change blindness）：場景中明顯變化（如人物替換）只要伴隨遮蔽（如閃光、剪接）就常被忽視。（四）目擊證人不實記憶（Loftus）：誤導性提問可改變對事件的知覺與回憶。",
+      "keywords_required": [
+        "錯覺",
+        "不注意盲",
+        "建構",
+        "Loftus"
+      ],
+      "essay_outline": [
+        "破題：知覺是主動建構而非被動反映",
+        "證據一：視覺錯覺（Müller-Lyer / Ponzo / 月亮錯覺擇一）說明知覺系統的啟發式可能出錯",
+        "證據二：不注意盲／變化盲／不實記憶 三選一",
+        "結論：知覺受注意力、預期、脈絡影響，故『眼見』不必為憑"
+      ],
+      "concepts": [
+        "知覺建構",
+        "視覺錯覺",
+        "不注意盲",
+        "變化盲",
+        "不實記憶"
+      ],
+      "scholars": [
+        "Simons",
+        "Chabris",
+        "Loftus"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "知覺是主動建構，受注意、預期、脈絡影響",
+      "ai_hint": "10 分題：兩個證據各 4 分 + 整合論述 2 分。建議一個來自知覺（錯覺/不注意盲），一個來自記憶（Loftus），跨領域顯示廣度。",
+      "common_mistakes": "勿只描述現象不解釋原理；每個證據都要說明『這如何證明眼見不為憑』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_108_15",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請說明 Mary Ainsworth 以陌生情境研究依附關係所得到的結果，並請說明針對此一類型依附關係研究之結果，學者們提出了哪些解釋。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "Ainsworth 陌生情境法（Strange Situation Procedure, SSP）：以 12-18 個月幼兒為對象，安排八個包含母親離開、陌生人介入、母親返回的情境，依幼兒對分離焦慮與重逢反應的表現分為三型（後 Main 加入第四型）：（一）安全依附（secure, B 型，約 60-70%）：母親在時自由探索，分離時焦慮，重逢時主動尋求安撫並可被安撫。（二）焦慮-抗拒型（anxious-resistant, C 型，約 10-15%）：難以離開母親探索，分離時極度焦慮，重逢時又黏又抗拒（接觸後又推開）。（三）逃避型（anxious-avoidant, A 型，約 15-20%）：分離時焦慮少，重逢時主動逃避母親。（四）混亂型（disorganized, D 型，Main & Solomon, 1986 加入）：行為矛盾混亂，常見於虐待或創傷家庭。學者解釋包含：Bowlby 的依附理論（演化適應）、Ainsworth 的母親敏感度假說（敏感回應 → 安全依附）、Kagan 的氣質假說（部分差異源於兒童先天氣質）、跨文化批評（如日本嬰兒少有逃避型，反映文化育兒實踐差異）。",
+      "keywords_required": [
+        "Ainsworth",
+        "陌生情境",
+        "安全依附",
+        "逃避",
+        "抗拒",
+        "Bowlby"
+      ],
+      "essay_outline": [
+        "Ainsworth 陌生情境法簡述（程序、年齡）",
+        "三/四型依附類型與行為特徵",
+        "Bowlby 依附理論作為理論基礎",
+        "母親敏感度假說（Ainsworth）",
+        "氣質假說 / 跨文化批評",
+        "結論"
+      ],
+      "concepts": [
+        "依附理論",
+        "陌生情境法",
+        "安全依附",
+        "逃避型依附",
+        "抗拒型依附",
+        "混亂型依附",
+        "Bowlby依附理論"
+      ],
+      "scholars": [
+        "Ainsworth",
+        "Bowlby",
+        "Main",
+        "Solomon",
+        "Kagan"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "三/四型依附 + 多種解釋（敏感度、氣質、文化）",
+      "ai_hint": "10 分題建議：結果 5 分（三/四型）+ 解釋 5 分（至少兩種）。混亂型一定要提到。",
+      "common_mistakes": "常見錯誤：把依附類型講成『好/壞』；應強調這些是適應策略，且後續研究指出文化差異。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_108_16",
+      "source": "FJU",
+      "year": 108,
+      "year_ad": 2019,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請以一例說明何謂自證預言（self-fulfilling prophecy）。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原 PDF 為『請以一實說明』，研判為『請以一例說明』之 OCR 錯誤。",
+      "reference_answer": "自證預言（self-fulfilling prophecy）由社會學家 Merton（1948）提出：對情境的錯誤定義會引發新行為，而這些行為又使原本錯誤的定義成真。心理學經典研究為 Rosenthal & Jacobson（1968）的『畢馬龍效應』（Pygmalion in the Classroom）：研究者隨機告訴小學老師某些學生『智力潛能即將大幅成長』（實則隨機選出），一年後這些學生 IQ 增幅顯著高於對照組。機制：教師對『有潛能』學生抱持較高期待 → 給予更多注意、更挑戰性的作業、更多正向回饋 → 學生實際表現提升 → 印證教師原本的『預言』。其他例子：銀行擠兌（謠傳銀行倒閉 → 民眾搶提款 → 銀行真的倒閉）、求職者預期被拒於是表現緊張 → 真的被拒。",
+      "keywords_required": [
+        "Merton",
+        "預期",
+        "行為",
+        "成真",
+        "Rosenthal"
+      ],
+      "essay_outline": [
+        "定義（Merton 提出）",
+        "心理機制：預期 → 行為改變 → 結果驗證預期",
+        "經典例子：Rosenthal & Jacobson 畢馬龍效應",
+        "其他例子（銀行擠兌、刻板印象等）"
+      ],
+      "concepts": [
+        "自證預言",
+        "畢馬龍效應",
+        "Rosenthal研究",
+        "期望效應"
+      ],
+      "scholars": [
+        "Merton",
+        "Rosenthal",
+        "Jacobson"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "預期透過行為循環自我實現",
+      "ai_hint": "10 分題建議：定義 2 分 + 機制 3 分 + 例子 5 分。Rosenthal 研究是最經典必提。",
+      "common_mistakes": "勿混淆自證預言與『安慰劑效應』；前者透過行為循環，後者透過心理生理直接影響。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    }
+  ]
+}

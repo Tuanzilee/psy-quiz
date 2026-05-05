@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 109,
+    "year_ad": 2020,
+    "exam_name": "輔仁大學109學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 9,
+    "scoring": "名詞定義與解釋 80% (每題10分共8題) + 問答題 20% (1題20分)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true
+  },
+  "questions": [
+    {
+      "id": "FJU_109_01",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Split-brain patient",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "裂腦病人。指接受胼胝體切除術（callosotomy）以治療嚴重癲癇的病人，手術切斷連接左右大腦半球的胼胝體後，兩半球無法直接交換訊息。Sperry 與 Gazzaniga 對其進行的研究獲 1981 年諾貝爾獎，揭示左右半球的功能側化：左半球主管語言、邏輯、序列分析；右半球主管空間、面孔辨識、整體知覺。經典實驗：物品閃示於左視野（送至右半球）時，病人能用左手指認但無法用語言說出名稱（語言在左半球），證明半球功能分離。對神經心理學與意識研究有深遠影響。",
+      "keywords_required": [
+        "胼胝體",
+        "Sperry",
+        "癲癇",
+        "側化",
+        "左半球"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "裂腦研究",
+        "胼胝體",
+        "大腦側化",
+        "Sperry研究"
+      ],
+      "scholars": [
+        "Sperry",
+        "Gazzaniga"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "胼胝體切斷後，左右半球功能側化的證據",
+      "ai_hint": "答題結構：定義（手術緣由） → Sperry & Gazzaniga 研究 → 半球功能側化（左語言/右空間） → 經典實驗（左視野不能命名） → 對意識研究貢獻。",
+      "common_mistakes": "勿把『裂腦』理解成『精神分裂症（schizophrenia）』，兩者完全無關；schizophrenia 中譯已改為『思覺失調症』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_109_02",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Operant conditioning",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "操作制約。Skinner 系統發展，承續 Thorndike 效果律（law of effect）。指個體的行為依其後果（增強或懲罰）而改變未來出現頻率的學習歷程。四種後果關係：（一）正增強（給予愉快刺激增加行為）；（二）負增強（移除厭惡刺激增加行為）；（三）正懲罰（給予厭惡刺激減少行為）；（四）負懲罰（移除愉快刺激減少行為）。Skinner 設計 Skinner box 系統研究，並提出增強排程（reinforcement schedule）：固定/變動 × 比率/時距，其中變動比率（如吃角子老虎）抵抗消弱最強。與古典制約對比：古典是『刺激-刺激』學習被動反應；操作是『行為-後果』學習主動行為。",
+      "keywords_required": [
+        "Skinner",
+        "後果",
+        "增強",
+        "懲罰",
+        "古典制約"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "操作制約",
+        "Skinner學習論",
+        "增強",
+        "懲罰",
+        "增強排程",
+        "效果律"
+      ],
+      "scholars": [
+        "Skinner",
+        "Thorndike"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "行為依後果改變頻率；4 種後果 × 4 種排程",
+      "ai_hint": "答題結構：定義 → Skinner 與效果律淵源 → 4 種後果（2×2 矩陣） → 增強排程（最少提變動比率） → 與古典制約對比。",
+      "common_mistakes": "正/負不是『好/壞』而是『給予/移除』；負增強≠懲罰（負增強仍是增加行為）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_109_03",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Perceptual constancy",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_107_T2 同題；答案結構保持一致。",
+      "reference_answer": "知覺恆常性。儘管刺激物在視網膜上的投影因距離、角度、光線改變，知覺系統仍將物體知覺為穩定不變的特性。主要類型包括：大小恆常性（物體遠近不同但知覺大小不變）、形狀恆常性（觀看角度改變但知覺形狀不變）、明度恆常性（照明改變但知覺亮度不變）、顏色恆常性（光源改變但知覺顏色不變）。是知覺重要特性，使我們能在動態環境中維持穩定的世界知覺。對應現象為知覺錯覺（illusion）：物理刺激與知覺不一致。",
+      "keywords_required": [
+        "大小",
+        "形狀",
+        "明度",
+        "顏色",
+        "視網膜投影",
+        "穩定"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "知覺",
+        "知覺恆常性",
+        "大小恆常性",
+        "形狀恆常性",
+        "明度恆常性",
+        "顏色恆常性"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "刺激改變但知覺穩定的特性",
+      "ai_hint": "答題結構：定義 → 四類型（大小、形狀、明度、顏色） → 各舉一例。與錯覺對比加分。",
+      "common_mistakes": "知覺恆常性≠錯覺；前者維持真實知覺，後者是知覺與物理刺激不一致。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_109_04",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Fluid intelligence",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_107_T5 同題；答案結構保持一致。",
+      "reference_answer": "流體智慧。Cattell（1963）提出，後與 Horn 發展為 Cattell-Horn 理論，後與 Carroll 整合為 CHC 理論。指處理新穎問題、進行抽象推理與發現規則的能力，較不受文化與經驗影響，主要依賴生理與神經機制。流體智慧在青年期達高峰，後隨年齡逐漸下降。對應的概念為晶體智慧（crystallized intelligence），指透過學習與經驗累積的知識，較不受老化影響，甚至持續增進。常用測量：Raven 漸進式矩陣（測流體）；詞彙測驗（測晶體）。",
+      "keywords_required": [
+        "Cattell",
+        "新穎",
+        "抽象推理",
+        "晶體智慧",
+        "老化"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "智力理論",
+        "流體智慧",
+        "晶體智慧",
+        "Cattell-Horn理論"
+      ],
+      "scholars": [
+        "Cattell",
+        "Horn",
+        "Carroll"
+      ],
+      "school_of_thought": "psychometric",
+      "key_concepts": "流體智慧：處理新問題的能力，受年齡影響大",
+      "ai_hint": "答題結構：定義 → 提出者（Cattell-Horn） → 特性（新穎、抽象、生理基礎） → 與晶體智慧對比 → 老化趨勢與測量工具。",
+      "common_mistakes": "流體智慧≠智商高低；它是智力的一個面向，與晶體智慧相對。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "FJU_109_05",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Defense mechanism",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_107_T1 同題；答案結構保持一致。",
+      "reference_answer": "防衛機轉。由 Freud 提出，後由其女 Anna Freud 系統化。指自我（ego）為了化解本我（id）與超我（superego）衝突所引發的焦慮，所採用的潛意識心理策略。常見類型包含：壓抑（repression）、否認（denial）、投射（projection）、合理化（rationalization）、反向作用（reaction formation）、退化（regression）、昇華（sublimation）等。多數為潛意識運作；過度使用可能導致心理病態，但昇華等較成熟的機制具適應功能。Vaillant 進一步將防衛機轉分為成熟（昇華、利他）與不成熟（投射、退化）等層級。",
+      "keywords_required": [
+        "Freud",
+        "焦慮",
+        "潛意識",
+        "自我",
+        "本我",
+        "超我"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "精神分析",
+        "防衛機轉",
+        "Freud人格理論",
+        "本我自我超我"
+      ],
+      "scholars": [
+        "Freud",
+        "Anna Freud",
+        "Vaillant"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "自我為降低焦慮所採用的潛意識策略",
+      "ai_hint": "答題結構：定義 → Freud / Anna Freud → 功能（化解三我衝突） → 至少三個例子（壓抑、投射、昇華） → 適應 vs 不適應之分。",
+      "common_mistakes": "防衛機轉是潛意識的，不同於有意識的因應策略（coping strategy）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_109_06",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Attachment theory",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "依附理論。由 Bowlby（1969）提出，認為嬰兒與主要照顧者形成的情感連結具有演化適應功能（保護幼兒免於危險），並透過『內在運作模式』（internal working model）影響個體終身的人際與情感關係。核心概念包含：（一）依附行為系統（哭、找尋、緊隨）以維持親密；（二）安全堡壘（secure base）作為探索的依託；（三）分離焦慮為依附形成的指標。Ainsworth（1978）以陌生情境法操作化，分出安全、焦慮-抗拒、逃避型；Main & Solomon（1986）後加入混亂型。動物研究基礎：Harlow 恆河猴實驗證明『接觸安慰』比『食物』更為依附關鍵。",
+      "keywords_required": [
+        "Bowlby",
+        "Ainsworth",
+        "陌生情境",
+        "安全依附",
+        "演化"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "依附理論",
+        "Bowlby依附理論",
+        "陌生情境法",
+        "Ainsworth研究",
+        "Harlow實驗",
+        "內在運作模式"
+      ],
+      "scholars": [
+        "Bowlby",
+        "Ainsworth",
+        "Harlow",
+        "Main",
+        "Solomon"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "嬰兒-照顧者情感連結具演化功能，影響終身關係",
+      "ai_hint": "答題結構：定義 → Bowlby 演化觀點 → 內在運作模式 → Ainsworth 三/四型 → Harlow 實驗 → 對成人關係的延伸（成人依附）。",
+      "common_mistakes": "依附≠單純的『情感』；它是有特定行為系統與發展機制的理論。依附類型也非『好/壞』，而是適應策略。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_109_07",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Ingroup/outgroup bias",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "內團體/外團體偏誤。指個體傾向對自己所屬群體（內團體）給予較正面的評價、信任、合作，而對外團體則保持距離、不信任、甚至敵意。Tajfel 的最少團體典範（minimal group paradigm）顯示，即使是隨意分組（如抽籤分『紅組/藍組』），人們仍會偏袒同組成員，顯示此偏誤的根本性。理論基礎為社會認同理論（Tajfel & Turner, 1979）：個體將自我認同延伸至所屬群體，提升自尊；外團體相對被刻板化、同質化（外團體同質性效應）。實務影響包含種族偏見、職場小圈圈、國族主義等。",
+      "keywords_required": [
+        "Tajfel",
+        "最少團體",
+        "社會認同",
+        "偏袒",
+        "外團體"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "內團體外團體偏誤",
+        "社會認同理論",
+        "最少團體典範",
+        "Tajfel研究"
+      ],
+      "scholars": [
+        "Tajfel",
+        "Turner"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "對所屬群體偏袒、對外團體疏離的偏誤",
+      "ai_hint": "答題結構：定義 → Tajfel 最少團體典範 → 社會認同理論機制 → 外團體同質性效應 → 實務應用（偏見、衝突）。",
+      "common_mistakes": "並非只在『真實有衝突』的群體間出現；最少團體典範證明即使隨意分組仍有偏誤，反映此偏誤的自動性。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_109_08",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "名詞定義與解釋"
+      },
+      "question": "Self-fulfilling prophecy",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_16 同題；答案結構保持一致。",
+      "reference_answer": "自證預言。由社會學家 Merton（1948）提出：對情境的錯誤定義會引發新行為，而這些行為又使原本錯誤的定義成真。心理學經典研究為 Rosenthal & Jacobson（1968）的『畢馬龍效應』（Pygmalion in the Classroom）：研究者隨機告訴小學老師某些學生『智力潛能即將大幅成長』（實則隨機選出），一年後這些學生 IQ 增幅顯著高於對照組。機制：教師對『有潛能』學生抱持較高期待 → 給予更多注意、更挑戰性的作業、更多正向回饋 → 學生實際表現提升 → 印證教師原本的『預言』。其他例子：銀行擠兌、求職者預期被拒於是緊張表現差。",
+      "keywords_required": [
+        "Merton",
+        "預期",
+        "行為",
+        "成真",
+        "Rosenthal"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "自證預言",
+        "畢馬龍效應",
+        "Rosenthal研究",
+        "期望效應"
+      ],
+      "scholars": [
+        "Merton",
+        "Rosenthal",
+        "Jacobson"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "預期透過行為循環自我實現",
+      "ai_hint": "答題結構：定義（Merton 提出） → 機制 → 經典例子（Rosenthal 畢馬龍） → 其他例子。",
+      "common_mistakes": "勿混淆自證預言與安慰劑效應；前者透過行為循環，後者透過心理生理直接影響。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_109_09",
+      "source": "FJU",
+      "year": 109,
+      "year_ad": 2020,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請說明心理學中，對於記憶有哪些分類，以及這些記憶類別的特性。（20分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "記憶分類有多種維度，可從以下層次說明：\n\n（一）依時間長短：Atkinson-Shiffrin 多重記憶模型分為①感官記憶（< 1 秒，視覺記憶 250 ms、聽覺記憶約 4 秒，由 Sperling 部分報告法證實）；②短期記憶／工作記憶（容量 7±2，持續 15-30 秒，Baddeley 工作記憶模型含中央執行、語音迴路、視空間模板、情節緩衝區）；③長期記憶（容量幾近無限，可保存終生）。\n\n（二）依意識可及程度（長期記憶分支）：①外顯記憶（陳述性，可用言語表達）→ 又分情境記憶（個人經驗，含時空脈絡，如『上週生日』）與語意記憶（事實知識，如『台灣首都台北』）（Tulving 區分）；②內隱記憶（非陳述性，難以言語）→ 包含程序記憶（騎腳踏車）、促發效應、古典制約。失憶症患者（如 H.M.）外顯受損但內隱保留，是兩者分離的證據。\n\n（三）依時間方向：前瞻記憶（記得未來要做的事，如記得吃藥）與回溯記憶（記得過去發生的事）。\n\n（四）依編碼性質：聲音、視覺、語意編碼等。\n\n關鍵神經基礎：海馬迴與外顯記憶固化有關（H.M. 案例）；杏仁核與情緒記憶有關；小腦與基底核參與程序記憶。",
+      "keywords_required": [
+        "感官記憶",
+        "短期記憶",
+        "長期記憶",
+        "外顯",
+        "內隱",
+        "情境",
+        "語意",
+        "程序"
+      ],
+      "essay_outline": [
+        "破題：記憶有多種分類維度",
+        "依時間長短：感官 → 短期/工作 → 長期（Atkinson-Shiffrin 模型）",
+        "依意識可及（長期記憶分支）：外顯 vs 內隱（Tulving 區分）",
+        "外顯記憶細分：情境記憶 vs 語意記憶",
+        "內隱記憶：程序記憶、促發、古典制約",
+        "依時間方向：前瞻 vs 回溯記憶",
+        "神經基礎：海馬迴（外顯）、杏仁核（情緒）、小腦/基底核（程序）",
+        "證據：H.M. 案例顯示外顯與內隱分離"
+      ],
+      "concepts": [
+        "記憶分類",
+        "感官記憶",
+        "短期記憶",
+        "長期記憶",
+        "工作記憶",
+        "情境記憶",
+        "語意記憶",
+        "外顯記憶",
+        "內隱記憶",
+        "Atkinson_Shiffrin模型",
+        "Baddeley模型"
+      ],
+      "scholars": [
+        "Atkinson",
+        "Shiffrin",
+        "Baddeley",
+        "Tulving",
+        "Sperling",
+        "Squire"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "至少三個分類維度（時間、意識、方向），每維度說明其下類別與特性",
+      "ai_hint": "20 分大題，建議結構：時間維度 8 分 + 意識維度 8 分 + 神經基礎/其他 4 分。一定要提 H.M. 證據與 Tulving 區分。",
+      "common_mistakes": "勿只列分類不講特性；每類記憶要說明容量、持續時間或代表現象。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    }
+  ]
+}

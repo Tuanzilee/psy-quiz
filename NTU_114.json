@@ -1,0 +1,1187 @@
+{
+  "meta": {
+    "school": "NTU",
+    "year": 114,
+    "year_ad": 2025,
+    "count": 30,
+    "note": "NTU 114 (含 10 是非題 + 20 選擇題)。是非題答案欄原試卷留白，由 AI 推導，標 medium 信心度待勘誤。"
+  },
+  "questions": [
+    {
+      "id": "NTU_114_01",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "第16章 心智異常"
+      },
+      "question": "小蔥在家中時常幻想有人在監聽或監視他，因此在家時都會將門窗緊閉、窗簾拉上。後來小蔥被醫師診斷患有思覺失調症，醫生告訴他思覺失調症又名為精神分裂症，而小蔥的症狀屬於負性症狀，相較於正性症狀更不易治療。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "監視/被害妄想屬於正性症狀（多出來的異常經驗），不是負性症狀。「思覺失調症又名精神分裂症」這部分是對的（前者為新譯名），但題目把妄想症狀歸為負性症狀，且宣稱「相較於正性症狀更不易治療」——這個敘述部分錯誤，整題判 X。",
+      "concepts": [
+        "思覺失調症",
+        "正性症狀",
+        "負性症狀"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "思覺失調症",
+      "ai_hint": "監視/被害妄想屬於正性症狀（多出來的異常經驗），不是負性症狀。「思覺失調症又名精神分裂症」這部分是對的（前者為新譯名），但題目把妄想症狀歸為負性症狀，且宣稱「相較於正性症狀更不易治療」——這個敘述部分錯誤，整題判 X。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_114_02",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 2,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "實驗者向一群男性受試者呈現課體照片，同時以聽覺方式呈現心眺的聲音，有些聲音顯示心跳較快，有些較慢，但其實皆非其本人的心跳，結果凡是和快速心跳一起呈現的照片被判斷較具吸引力。此可做為夏辛二氏情緒理論（Schachter-Singer emotion theory）之證據。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "此情境為錯誤歸因生理激發（misattribution of arousal）：快速心跳被誤解為「對照片中對象的吸引」，因而判斷較有吸引力。Dutton & Aron (1974) 吊橋實驗即此典型，正符合 Schachter-Singer 兩因論「生理激發 + 認知標籤 = 情緒」。",
+      "concepts": [
+        "Schachter-Singer兩因論",
+        "錯誤歸因",
+        "情緒理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Schachter-Singer兩因論",
+      "ai_hint": "此情境為錯誤歸因生理激發（misattribution of arousal）：快速心跳被誤解為「對照片中對象的吸引」，因而判斷較有吸引力。Dutton & Aron (1974) 吊橋實驗即此典型，正符合 Schachter-Singer",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_114_03",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 3,
+        "title": "第14章 發展心理學"
+      },
+      "question": "小安剛讀幼稚園的時候很難交到朋友，因為同學問他要不要一起玩的時候，他總是感到害怕不安然後一個人躲到教室角落一個人玩。比起其他幼稚園同學，小安的氣質很有可能是卡根所指的「非抑制型氣質。」",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "Kagan 將兒童氣質分為抑制型（inhibited）與非抑制型（uninhibited）。面對陌生情境感到害怕、退縮、躲避是「抑制型氣質」的典型表現。題目稱小安為「非抑制型」，與行為描述相反。",
+      "concepts": [
+        "Kagan氣質研究",
+        "抑制型氣質",
+        "非抑制型氣質"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Kagan氣質研究",
+      "ai_hint": "Kagan 將兒童氣質分為抑制型（inhibited）與非抑制型（uninhibited）。面對陌生情境感到害怕、退縮、躲避是「抑制型氣質」的典型表現。題目稱小安為「非抑制型」，與行為描述相反。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NTU_114_04",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 4,
+        "title": "第10章 智力"
+      },
+      "question": "目前主流的智商計算方式為：智商=（心智年齡 /實足年齡）乘上100。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "比率智商（IQ = MA/CA × 100）由 Stern 提出，僅適用於兒童期。當代主流為「離差智商」（deviation IQ），以同年齡群體標準分數計算，可比較不同年齡層。Wechsler 系列測驗已採用離差智商超過半世紀。",
+      "concepts": [
+        "智商",
+        "比率智商",
+        "離差智商",
+        "Stern"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "智商",
+      "ai_hint": "比率智商（IQ = MA/CA × 100）由 Stern 提出，僅適用於兒童期。當代主流為「離差智商」（deviation IQ），以同年齡群體標準分數計算，可比較不同年齡層。Wechsler 系列測驗已採用離差智商超過半世紀。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NTU_114_05",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 5,
+        "title": "第7章 記憶"
+      },
+      "question": "小明考前都沒讀書，直到考試前一天才開始臨時抱佛腳，很幸運的是他隔天考試時都記得昨天抱佛腳時讀的內容。他依靠的是短期記憶（short-temm\nmemory) •",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "短期記憶持續時間僅約 15-30 秒，無複誦會迅速衰退。能跨夜回憶必然已透過編碼進入長期記憶（LTM）。臨時抱佛腳能否記住的關鍵在於有沒有有效編碼進 LTM，而非短期記憶。",
+      "concepts": [
+        "短期記憶",
+        "長期記憶",
+        "記憶編碼"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "短期記憶",
+      "ai_hint": "短期記憶持續時間僅約 15-30 秒，無複誦會迅速衰退。能跨夜回憶必然已透過編碼進入長期記憶（LTM）。臨時抱佛腳能否記住的關鍵在於有沒有有效編碼進 LTM，而非短期記憶。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_114_06",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 6,
+        "title": "第12章 性格"
+      },
+      "question": "若魚和幾個熱心的朋友組成校園調查團，負責協尋遺失在校園中的學生證，並將其發布於 NTU 交流版上，提供失主尋找並領回。今天，若魚和其成員在博雅的販賣機旁找到教務長遺失的識別證，然而，若魚在獲得教務長稱讚時卻說是因團隊合作，展現出不居功的節操。若魚以上此一行為是符合「相依我」的性格特質。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "相依我（interdependent self）由 Markus & Kitayama 提出，為東亞集體主義文化常見的自我構念，特徵包含強調與他人連結、不過度突顯個人成就、把功勞歸於團體。「不居功、稱讚歸於團隊」正是相依我的典型表現。",
+      "concepts": [
+        "相依我",
+        "獨立我",
+        "文化心理學",
+        "Markus_Kitayama"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "相依我",
+      "ai_hint": "相依我（interdependent self）由 Markus & Kitayama 提出，為東亞集體主義文化常見的自我構念，特徵包含強調與他人連結、不過度突顯個人成就、把功勞歸於團體。「不居功、稱讚歸於團隊」正是相依我的典型表現。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_114_07",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 7,
+        "title": "第12章 性格"
+      },
+      "question": "兒童若在成長過程中受到父母提供的 conditions of worth，會更了解什麼條件和經驗是能幫助發展自我天性的，因此較容易追求自我實現。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "Rogers 提出「條件性的價值（conditions of worth）」是指父母只在孩子滿足某些條件時才給予關愛。這會使個體扭曲真實自我以迎合條件，反而阻礙自我實現。相對概念是「無條件積極關懷」（unconditional positive regard），才是促進自我實現的關鍵。題目敘述顛倒。",
+      "concepts": [
+        "Rogers個人中心治療",
+        "條件性價值",
+        "無條件積極關懷",
+        "自我實現"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Rogers個人中心治療",
+      "ai_hint": "Rogers 提出「條件性的價值（conditions of worth）」是指父母只在孩子滿足某些條件時才給予關愛。這會使個體扭曲真實自我以迎合條件，反而阻礙自我實現。相對概念是「無條件積極關懷」（unconditional positi",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_114_08",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 8,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "人們為了賺錢會努力工作，但剛出生的嬰兒對金錢卻無特別的偏好反應，由此可見誘因說並不成立。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "誘因說（incentive theory）並未主張誘因是天生固有的。次級誘因（如金錢）本就是經由與初級增強物（食物、安全）配對而習得的習得性增強物。嬰兒對金錢無反應，恰好支持「誘因可被學習」的觀點，反而印證誘因說。",
+      "concepts": [
+        "誘因論",
+        "初級增強物",
+        "次級增強物",
+        "動機理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "誘因論",
+      "ai_hint": "誘因說（incentive theory）並未主張誘因是天生固有的。次級誘因（如金錢）本就是經由與初級增強物（食物、安全）配對而習得的習得性增強物。嬰兒對金錢無反應，恰好支持「誘因可被學習」的觀點，反而印證誘因說。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_114_09",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 9,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "開宏睡覺夢到被前女友追殺，但他本人並不會因此驚醒而開始拔腿狂奔，是因為他後腦的網狀系統能發揮功用，阻斷訊息從大腦皮質到下肢傳遞的關係。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "REM 睡眠期間出現肌肉張力消失（REM atonia），由腦幹（特別是橋腦）抑制脊髓運動神經元而成，這才是夢境中身體不會真正動作的機制。網狀系統（reticular formation）主要與覺醒、注意調節有關，並非夢境動作抑制的關鍵結構。題目歸因錯誤。",
+      "concepts": [
+        "REM睡眠",
+        "REM肌肉麻痺",
+        "網狀系統",
+        "腦幹"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "REM睡眠",
+      "ai_hint": "REM 睡眠期間出現肌肉張力消失（REM atonia），由腦幹（特別是橋腦）抑制脊髓運動神經元而成，這才是夢境中身體不會真正動作的機制。網狀系統（reticular formation）主要與覺醒、注意調節有關，並非夢境動作抑制的關鍵結構",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_114_10",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 10,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "現實生活中多數的動機並非基於需要，而是企求達到更好；且通常內在動機會比外在動機持久而且具影響力。",
+      "options": [
+        "O 是",
+        "X 否"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "Deci & Ryan 自我決定理論（Self-Determination Theory）區分內在動機（出於興趣、樂趣本身）與外在動機（為獎賞、處罰）。研究指出內在動機通常較持久且影響力更大；過度的外在獎賞反而會削弱內在動機（過度合理化效應）。",
+      "concepts": [
+        "內在動機",
+        "外在動機",
+        "自我決定理論",
+        "Deci_Ryan"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "內在動機",
+      "ai_hint": "Deci & Ryan 自我決定理論（Self-Determination Theory）區分內在動機（出於興趣、樂趣本身）與外在動機（為獎賞、處罰）。研究指出內在動機通常較持久且影響力更大；過度的外在獎賞反而會削弱內在動機（過度合理化效應",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷答案欄與章節欄均為空白/錯誤，本題答案與章節由 AI 依題意推導，請對照標準答案勘誤。",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NTU_114_11",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 11,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "關於LeDoux 提出情緒神經訊號的雙路徑理論，下列敘述何者正確？",
+      "options": [
+        "低徑是由視丘傳到大腦皮質進行細緻的視覺分析，並產生意識經驗後 再傳到杏仁核，產生較晚的情緒反應",
+        "高徑是從視丘快速且初步地處理後，即直接連結到杏仁核，並引發相 關的生理反應的通道",
+        "要形成一個完整的情緒經驗，低徑比高徑重要",
+        "低徑較符合詹郎二氏情緒理論（James-Lange theory of emotion）；高徑較符合夏辛二氏情緒理論（Schachter-Singer emotion theory）"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "LeDoux  情緒神經訊號的雙路徑理論",
+      "concepts": [
+        "LeDoux  情緒神經訊號的雙路徑理論"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "LeDoux  情緒神經訊號的雙路徑理論",
+      "ai_hint": "LeDoux  情緒神經訊號的雙路徑理論",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_114_12",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 12,
+        "title": "第13章 社會心理學"
+      },
+      "question": "小花在上週和朋友一起出門喝酒，並在喝酒的過程中，覺得某位在酒吧遇到的男生很帥。身為小花的朋友，我們如何以 Kelley 的共變模型，推論這個男生真的很帥，而不是小美喝醉了犯花癡？",
+      "options": [
+        "一致性高、共通性高、特異性高",
+        "一致性高、共通性高、特異性低",
+        "一致性低、共通性高、特異性低",
+        "一致性低、共通性低、特異性高"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Kelley 共變模型 一致性（consistency） 共通性（consensus） 特異性（distinctiveness）",
+      "concepts": [
+        "Kelley 共變模型 一致性（consistency） 共通性（consensus） 特異性（distinctiveness）"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Kelley 共變模型 一致性（consistency） 共通性（consensus） 特異性（distinctiveness）",
+      "ai_hint": "Kelley 共變模型 一致性（consistency） 共通性（consensus） 特異性（distinctiveness）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_114_13",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 13,
+        "title": "第13章 社會心理學"
+      },
+      "question": "美國歌手 Taylor Swift 才華出眾，曲風橫跨鄉村、流行、獨立民謠等，其歌詞擅長捕捉戀愛中的雀躍、脆弱、與哀傷。下列她所寫的情歌歌詞和初步吸引四變項的配對，何者最正確？（冒號前為歌名，引號內為歌詞，歌名與歌詞以原文表示，四變項則為中文。）",
+      "options": [
+        "Paper Ring: \"Darling, you're the one I want, and/ I hate accidents except when we went from friends to this” 交互性",
+        "Fifteen: \"Cause when you're fifteen and somebody tells you they love you/ You're gonna believe them” — 體貌魅力",
+        "Begin Again: \"You said you never met one girl who/ Had as many James Taylor records as you, but I do” -相似度",
+        "Gorgeous: \"You're so gorgeous/ I can't say anything to your face/'Cause look at your face （Gorgeous）” — 靠近度"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "看到「一樣、共同、都喜歡」  → 相似度 看到「好看、帥、美」  → 體貌魅力 看到「常見面、同班、鄰居」  → 靠近度 看到「他也喜歡我」  → 交互性",
+      "concepts": [
+        "看到「一樣、共同、都喜歡」  → 相似度 看到「好看、帥、美」  → 體貌魅力 看到「常見面、同班、鄰居」  → 靠近度 看到「他也喜歡我」  → 交互性"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "看到「一樣、共同、都喜歡」  → 相似度 看到「好看、帥、美」  → 體貌魅力 看到「常見面、同班、鄰居」  → 靠近度 看到「他也喜歡我」  → 交互性",
+      "ai_hint": "看到「一樣、共同、都喜歡」  → 相似度 看到「好看、帥、美」  → 體貌魅力 看到「常見面、同班、鄰居」  → 靠近度 看到「他也喜歡我」  → 交互性",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_114_14",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 14,
+        "title": "第16章 心智異常"
+      },
+      "question": "小翰近期一直無法克制自己的情感，常因未知的恐懼情緒失控，於是他求助於心理醫師老王。老王請小翰談論自己的困擾、抒發鬱悶，小翰於是開始說起之前被女友甩、又發現女友劈腿等慘痛經驗。藉重新經歷過去的悲痛經驗，小翰原本歇斯底里的症狀終得趨緩。請問上述情境不可與下列何者敘述呼應？",
+      "options": [
+        "“上述治療法為佛洛伊德與布萊爾發展的「情感宣洩」治療法",
+        "此種治療法讓讓佛洛伊德再度確認心智是一種能量系統，它們和被遺忘的回憶有關，經由釋放這些能量可以使情況好轉",
+        "在病患情感宣洩之前，他們並未察覺出現在身上的症狀和心智內容有關",
+        "人可以透過宣洩情緒超越潛意識對我們的控制——人具有自我成長的潛能"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "精神分析（Freud）核心概念 潛意識  → 症狀來源 壓抑（repression）  → 痛苦經驗被壓下去 情感宣洩（catharsis）  → 把壓抑情緒釋放出來   症狀改善的機制：  「把壓抑的東西帶到意識層」",
+      "concepts": [
+        "精神分析（Freud）核心概念 潛意識  → 症狀來源 壓抑（repression）  → 痛苦經驗被壓下去 情感宣洩（catharsis）  → 把壓抑情緒釋"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "精神分析（Freud）核心概念 潛意識  → 症狀來源 壓抑（repression）  → 痛苦經驗被壓下去 情感宣洩（catharsis）  → 把壓抑情緒釋放出來   症狀改善的機制：  「把壓抑的東西帶到意識層」",
+      "ai_hint": "精神分析（Freud）核心概念 潛意識  → 症狀來源 壓抑（repression）  → 痛苦經驗被壓下去 情感宣洩（catharsis）  → 把壓抑情緒釋放出來   症狀改善的機制：  「把壓抑的東西帶到意識層」",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_114_15",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 15,
+        "title": "第13章 社會心理學"
+      },
+      "question": "桌上有半杯水，悲觀的人會說「只剩半杯」，樂親的人說「還有半杯」。\n請問以上描述不同的原因最可能是因為以下哪個理論？",
+      "options": [
+        "基本歸因謬誤",
+        "自我應驗預言",
+        "單純暴露效果",
+        "自保偏誤"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "解釋風格（explanatory style）樂觀者  → 強調正向面（還有） 悲觀者  → 強調損失（只剩）",
+      "concepts": [
+        "解釋風格（explanatory style）樂觀者  → 強調正向面（還有） 悲觀者  → 強調損失（只剩）"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "解釋風格（explanatory style）樂觀者  → 強調正向面（還有） 悲觀者  → 強調損失（只剩）",
+      "ai_hint": "解釋風格（explanatory style）樂觀者  → 強調正向面（還有） 悲觀者  → 強調損失（只剩）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_114_16",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 16,
+        "title": "第13章 社會心理學"
+      },
+      "question": "關於刻板印象威脅效果，以下的敘述何者錯誤？",
+      "options": [
+        "花木蘭去參加數學競試前，先告知他女生數學比較爛，他會因此考得 比較差",
+        "即便告訴花木蘭，女生數學比較爛的刻板印象 可能會影響他的數學表現，花木蘭一定仍會受到刻板印象影響，而有著較差的數學表現",
+        "但如果告知花木蘭，他身為亞洲人數學一定會很強，他反而會因此考 比較好",
+        "不告訴黑人公主蒂安娜（公主奥青蛙中的公主）他正在參加智力測驗的 話，他的表現應該會跟其他迪士尼公主不分軒輊"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "刻板印象威脅三要素 有負面刻板印象 個體知道這個刻板印象 情境被「啟動」（例如考試）\n\n刻板印象只有被提醒時才會影響，而且不一定發生",
+      "concepts": [
+        "刻板印象威脅三要素 有負面刻板印象 個體知道這個刻板印象 情境被「啟動」（例如考試）"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "刻板印象威脅三要素 有負面刻板印象 個體知道這個刻板印象 情境被「啟動」（例如考試）",
+      "ai_hint": "刻板印象只有被提醒時才會影響，而且不一定發生",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NTU_114_17",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 17,
+        "title": "第10章 智力"
+      },
+      "question": "小明與小美是兄妹，在上小學前，他們的爸媽想要了解自己小孩的智力，因此帶小明與小美去做智力測驗，而禁不起好奇心的驅使，爸媽也跟著做了測驗，有關測驗的結果何者錯誤？",
+      "options": [
+        "爸媽發現他們的智力測驗分數都比自己的小孩低，推測可能原因是因為小孩們每餐營養都很均衡，不像他們小時候吃飽就好，且小孩玩的遊戲常會用到科學推理。以上推測應用到了弗林效應",
+        "若本次智力測驗是採用「瑞文氏矩陣推理測驗」，則爸媽推測，可以用測驗結果來比較小明與小美的流體智力",
+        "測驗結束後，爸媽對測驗結果感到懷疑，於是又隔一段時間去測類似的題目，並請不同評分者進行評分。爸媽針對的是測驗的效度",
+        "小美在測驗前聽到爸媽聊天，他們說女生通常數學都比較不好，於是小美在測驗數學智能部份時，感到特別的壓力而表現比小明差。以上敘述可以刻板印象威脅效果解釋"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "信度 vs 效度（超高頻考點） 信度（reliability）  → 測量是否穩定一致\n\n信度 = 穩不穩 效度 = 準不準",
+      "concepts": [
+        "信度 vs 效度（超高頻考點） 信度（reliability）  → 測量是否穩定一致"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "信度 vs 效度（超高頻考點） 信度（reliability）  → 測量是否穩定一致",
+      "ai_hint": "信度 = 穩不穩 效度 = 準不準",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NTU_114_18",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 18,
+        "title": "第12章 性格"
+      },
+      "question": "以下對五大性格的描述，何者正確？",
+      "options": [
+        "許多心理病態形式可被視為正常性格特質的誇張或極端型態，且與正常性格間沒有清楚的分界",
+        "外向社會性、神經情緒性，與嚴謹負責性等均具文化普同性",
+        "翻譯不夠精確是導致測驗不能適切運用於不同國家的唯一原因",
+        "國家之間可能有性格的文化差異，但國家之內則沒有差異"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "五大人格（Big Five）核心 外向性（Extraversion） 神經質（Neuroticism） 開放性（Openness） 親和性（Agreeableness） 盡責性（Conscientiousness）",
+      "concepts": [
+        "五大人格（Big Five）核心 外向性（Extraversion） 神經質（Neuroticism） 開放性（Openness） 親和性（Agreeablen"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "五大人格（Big Five）核心 外向性（Extraversion） 神經質（Neuroticism） 開放性（Openness） 親和性（Agreeableness） 盡責性（Conscientiousness）",
+      "ai_hint": "五大人格（Big Five）核心 外向性（Extraversion） 神經質（Neuroticism） 開放性（Openness） 親和性（Agreeableness） 盡責性（Conscientiousness）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_114_19",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 19,
+        "title": "第16章 心智異常"
+      },
+      "question": "如果坐在隔壁的同學非常奇怪，不論是思想和行為都讓人無法理解，但他可以去打工、養活自己，且在上課的時候不會影響他人，這樣的他並不算是心理異常，是因為沒有符合哪一個法則？",
+      "options": [
+        "社會常模法則",
+        "生存福祉法則",
+        "可理解性法則",
+        "他其實有符合每一個法則"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "心理異常常用判準（4D） 偏離（Deviance）  → 是否違反社會常模 困擾（Distress）  → 是否痛苦 失能（Dysfunction）  → 是否影響生活功能 危險（Danger）  → 是否危害自己或他人\n\n影響工作、人際 → 高機率異常",
+      "concepts": [
+        "心理異常常用判準（4D） 偏離（Deviance）  → 是否違反社會常模 困擾（Distress）  → 是否痛苦 失能（Dysfunction）  → 是否"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "心理異常常用判準（4D） 偏離（Deviance）  → 是否違反社會常模 困擾（Distress）  → 是否痛苦 失能（Dysfunction）  → 是否影響生活功能 危險（Danger）  → 是否危害自己或他人",
+      "ai_hint": "影響工作、人際 → 高機率異常",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_114_20",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 20,
+        "title": "第12章 性格"
+      },
+      "question": "特質理論中，Hans J. Eysenck 提出特質有層級式的區別，透過因素分析提出三大人格型態，其標定之三大高級因素，與五大特質向度（The Big Five Theory），有何異同？請選出錯誤的選項。",
+      "options": [
+        "艾杉克的三大人格型態中所提出的「心理病態性」是五大論中沒有的",
+        "艾杉克提出的「神經質」因素，在五大論中有相對應之特質",
+        "五大論中的「嚴謹負責性」有相對應的艾杉克三大人格特質",
+        "五大論的特質與艾杉克提出的特質皆是雙極向度"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Eysenck 三大特質（PEN 模型）  P：Psychoticism（心理病態性）  E：Extraversion（外向性）  N：Neuroticism（神經質） Big Five 五大人格  外向性、神經質、開放性、親和性、盡責性\n\n兩模型只重疊外向與神經質，盡責性在 Eysenck 裡不存在",
+      "concepts": [
+        "Eysenck 三大特質（PEN 模型）  P：Psychoticism（心理病態性）  E：Extraversion（外向性）  N：Neuroticism（"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Eysenck 三大特質（PEN 模型）  P：Psychoticism（心理病態性）  E：Extraversion（外向性）  N：Neuroticism（神經質） Big Five 五大人格  外向性、神經質、開放性、親和性、盡責性",
+      "ai_hint": "兩模型只重疊外向與神經質，盡責性在 Eysenck 裡不存在",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NTU_114_21",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 21,
+        "title": "第6章 學習"
+      },
+      "question": "不同制度的強化會塑造不同的反應模式，下列舉例何者最不合理？",
+      "options": [
+        "變時制強化：本學期普心只有一次期末考，直到考試前，學生才臨時抱佛腳，開始觀看整個學期的上課影片",
+        "變比制強化：小明每週都買一次樂透，雖然從去年開始就沒中過獎，但他仍然抱著期待持續購買",
+        "定時制強化：直到選舉前，里長才開始整頓社區環境，積極爭取連任",
+        "定比制強化：就讀幼稚園的童童每蒐集到十張好寶寶貼紙，就能向老師兌換一個小獎品，因此童童每換一次獎品後便又努力蒐集更多貼紙"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "操作制約四大強化時制 定時制 FI  → 固定時間  → 行為：最後一刻才爆發 變時制 VI  → 不固定時間  → 行為：穩定但普通 定比制 FR  → 固定次數  → 行為：拼命做＋短暫休息 變比制 VR  → 不固定次數  → 行為：最持久（賭博）\n\n考前爆讀是定時制不是變時制，關鍵看時間有沒有固定",
+      "concepts": [
+        "操作制約四大強化時制 定時制 FI  → 固定時間  → 行為：最後一刻才爆發 變時制 VI  → 不固定時間  → 行為：穩定但普通 定比制 FR  → 固定"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "操作制約四大強化時制 定時制 FI  → 固定時間  → 行為：最後一刻才爆發 變時制 VI  → 不固定時間  → 行為：穩定但普通 定比制 FR  → 固定次數  → 行為：拼命做＋短暫休息 變比制 VR  → 不固定次數  → 行為：",
+      "ai_hint": "考前爆讀是定時制不是變時制，關鍵看時間有沒有固定",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NTU_114_22",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 22,
+        "title": "第10章 智力"
+      },
+      "question": "智力測驗經常採取因素分析的方式找尋智力的潛在結構，問以下理論何者並非經過因素分析後的結果所建構出來？",
+      "options": [
+        "g factor",
+        "智力三元論",
+        "多元智力理論",
+        "以上皆是"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "問誰是因素分析  → Spearman 問誰不是  → Sternberg、Gardner 問誰最偏教育／文化  → Gardner\n\n只有 g factor 來自因素分析，其他都是理論建構",
+      "concepts": [
+        "問誰是因素分析  → Spearman 問誰不是  → Sternberg、Gardner 問誰最偏教育／文化  → Gardner"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "問誰是因素分析  → Spearman 問誰不是  → Sternberg、Gardner 問誰最偏教育／文化  → Gardner",
+      "ai_hint": "只有 g factor 來自因素分析，其他都是理論建構",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NTU_114_23",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 23,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "中情局有一天抓到了一個犯罪組織的重要幹部小林，並提出希望他能轉為污點證人，但他始終不信任政府的說法，認為政府只是說說的。為了盡快破案，中情局長找上了既為談判專家也是心理學家的洛伊德，希望他能提出方法讓小林信任政府，請問下列何者最可能是洛伊德提出的建議？",
+      "options": [
+        "在談判時前先注射催產激素到小林體內",
+        "在談判時前先注射血清素到小林體內",
+        "在談判時前先注射多巴胺到小林體內",
+        "在談判時前先注射腦內啡到小林體內"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "四大常考神經傳導物質 催產素（oxytocin）  → 信任、依附、親密關係 血清素（serotonin）  → 情緒穩定 多巴胺（dopamine）  → 獎賞、動機 腦內啡（endorphins）  → 止痛、愉悅\n\n看到 信任、依附、親密 → 催產素",
+      "concepts": [
+        "四大常考神經傳導物質 催產素（oxytocin）  → 信任、依附、親密關係 血清素（serotonin）  → 情緒穩定 多巴胺（dopamine）  → 獎"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "四大常考神經傳導物質 催產素（oxytocin）  → 信任、依附、親密關係 血清素（serotonin）  → 情緒穩定 多巴胺（dopamine）  → 獎賞、動機 腦內啡（endorphins）  → 止痛、愉悅",
+      "ai_hint": "看到 信任、依附、親密 → 催產素",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_114_24",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 24,
+        "title": "第2章 心理學方法"
+      },
+      "question": "以下是製作杯子蛋糕的食譜。請問有幾種單位是屬於比率量尺？\n步驟1 預熱烤箱至100度\n 步驟2 將20克植物油和40克牛奶微微加熱至50–60度之間後，加入50克麵粉和少許鹽拌勻，最後加入香草精拌勻後加入3顆蛋黃拌勻備用\n 步驟3 將蛋白加入砂糖打發至有微微彎勾\n 步驟4 加蛋白霜和蛋黃糊混合後入杯子蛋糕紙杯中敲出氣泡入烤箱烘焙15分鐘\n 步驟5 出爐後重敲放涼",
+      "options": [
+        "4種",
+        "3種",
+        "2種",
+        "1種"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "四種量尺 名目  👉 分類（性別、血型） 順序  👉 排序（名次） 等距  👉 間距相等但無絕對零點（溫度°C） 比率  👉 有絕對零點，可做倍數比較（重量、長度、時間）\n\n有絕對零點才能算比率量尺，重量數量時間都算但溫度不算",
+      "concepts": [
+        "四種量尺 名目  👉 分類（性別、血型） 順序  👉 排序（名次） 等距  👉 間距相等但無絕對零點（溫度°C） 比率  👉 有絕對零點，可做倍數比較（重量、長"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "四種量尺 名目  👉 分類（性別、血型） 順序  👉 排序（名次） 等距  👉 間距相等但無絕對零點（溫度°C） 比率  👉 有絕對零點，可做倍數比較（重量、長度、時間）",
+      "ai_hint": "有絕對零點才能算比率量尺，重量數量時間都算但溫度不算",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NTU_114_25",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 25,
+        "title": "第2章 心理學方法"
+      },
+      "question": "心理學的複製危機體現了科學的何種性質？",
+      "options": [
+        "規律性，凡事必有因果關係",
+        "從看似無關的現象中找到規律，建立理論",
+        "操弄「因」，觀察「果」是否改變",
+        "科學理論是可被修正或否定的"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "科學核心精神 可檢驗 可反駁（falsifiable） 可修正 👉 不是「永遠正確」\n\n複製危機證明科學不是絕對正確，而是可以被推翻與修正  來自 Karl Popper 👉 好理論 = 可以被證偽",
+      "concepts": [
+        "科學核心精神 可檢驗 可反駁（falsifiable） 可修正 👉 不是「永遠正確」"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "科學核心精神 可檢驗 可反駁（falsifiable） 可修正 👉 不是「永遠正確」",
+      "ai_hint": "複製危機證明科學不是絕對正確，而是可以被推翻與修正  來自 Karl Popper 👉 好理論 = 可以被證偽",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NTU_114_26",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 26,
+        "title": "第2章 心理學方法"
+      },
+      "question": "心理學實驗企圖了解心理相關因子（factor）間的因果關係，這些因子常以變項（variable）形式表達。變項意指可改變的項目，以下何者不是變項可以大概分為的類別？",
+      "options": [
+        "獨變項",
+        "依變項",
+        "因果變項",
+        "混淆變項"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "研究變項（IV／DV／混淆變項） 獨變項（Independent Variable, IV）  👉 研究者操弄的原因 依變項（Dependent Variable, DV）  👉 被測量的結果 混淆變項（Confounding Variable）  👉 可能干擾因果關係的外在因素\n\n三大變項角色 獨變項（IV）  👉 我操弄什麼 依變項（DV）  👉 我測量什麼 混淆變項  👉 有沒有其他東西在偷偷影響結果",
+      "concepts": [
+        "研究變項（IV／DV／混淆變項） 獨變項（Independent Variable, IV）  👉 研究者操弄的原因 依變項（Dependent Variabl"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "研究變項（IV／DV／混淆變項） 獨變項（Independent Variable, IV）  👉 研究者操弄的原因 依變項（Dependent Variable, DV）  👉 被測量的結果 混淆變項（Confounding Variab",
+      "ai_hint": "三大變項角色 獨變項（IV）  👉 我操弄什麼 依變項（DV）  👉 我測量什麼 混淆變項  👉 有沒有其他東西在偷偷影響結果",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NTU_114_27",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 27,
+        "title": "第16章 心智異常"
+      },
+      "question": "思覺失調症（Schizophrenia）是指精神狀態與現實脫離，有認知、情緒、意志與行為等方面之異常。Emil Kraepelin 首先注意此病症，稱之為 dementia praecox；Eugen Bleuler 正式使用 schizophrenia 一詞。\n請問，下列何者是思覺失調症的正性症狀？",
+      "options": [
+        "妄想",
+        "思考停頓",
+        "面無表情",
+        "語言缺乏內容"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "思覺失調症 （正性 vs 負性症狀） 看到幻覺、妄想、混亂  → 正性 看到沒情緒、不說話、沒動機  → 負性\n\n正性是多出來的異常（妄想幻覺），負性是功能變少（冷漠沉默）",
+      "concepts": [
+        "思覺失調症 （正性 vs 負性症狀） 看到幻覺、妄想、混亂  → 正性 看到沒情緒、不說話、沒動機  → 負性"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "思覺失調症 （正性 vs 負性症狀） 看到幻覺、妄想、混亂  → 正性 看到沒情緒、不說話、沒動機  → 負性",
+      "ai_hint": "正性是多出來的異常（妄想幻覺），負性是功能變少（冷漠沉默）",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NTU_114_28",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 28,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "請將以下腦區自前額葉往枕葉方向排序。\n\n甲：中央溝\n乙：初級體覺皮質\n丙：初級運動皮質\n丁：初級視覺皮質\n戊：後聯絡皮質區\n己：前聯絡皮質區",
+      "options": [
+        "丙甲乙己戊丁",
+        "己乙甲丙戊丁",
+        "己乙甲丙丁戊",
+        "己丙甲乙戊丁"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "大腦皮質區域定位 （前→後排列）  建立「前 → 後」的腦區邏輯 👉 前額葉 → 頂葉 → 枕葉 前聯絡皮質  👉 計畫、決策（最前） 初級運動皮質  👉 控制動作（中央溝前） 中央溝  👉 分界線 初級體覺皮質  👉 感覺（中央溝後） 後聯絡皮質  👉 感覺整合 初級視覺皮質  👉 視覺（最後，枕葉）\n\n從前到後就是想→動→感→整合→看",
+      "concepts": [
+        "大腦皮質區域定位 （前→後排列）  建立「前 → 後」的腦區邏輯 👉 前額葉 → 頂葉 → 枕葉 前聯絡皮質  👉 計畫、決策（最前） 初級運動皮質  👉 控制"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "大腦皮質區域定位 （前→後排列）  建立「前 → 後」的腦區邏輯 👉 前額葉 → 頂葉 → 枕葉 前聯絡皮質  👉 計畫、決策（最前） 初級運動皮質  👉 控制動作（中央溝前） 中央溝  👉 分界線 初級體覺皮質  👉 感覺（中央溝後） 後",
+      "ai_hint": "從前到後就是想→動→感→整合→看",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NTU_114_29",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 29,
+        "title": "第7章 記憶"
+      },
+      "question": "貝兒習慣在總圖唸書，因此當老師宣布普心期末考為線上考試時，她立刻決定自己也要去總圖進行考試。請問她的決定可能是依循下列何者？",
+      "options": [
+        "登錄特珠性效果（Encoding specificity effect）",
+        "適當轉移效果（Transfer appropriateness effect）",
+        "自傳記憶（Autobiographical memory）",
+        "接近效果（Propinquity effect）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Encoding Specificity （超常考） 👉 記憶依賴「情境線索」包含 地點、氣味、情緒 經典實驗 潛水員在水中學習  → 水中回憶最好 陸地學習  → 陸地回憶最好",
+      "concepts": [
+        "Encoding Specificity （超常考） 👉 記憶依賴「情境線索」包含 地點、氣味、情緒 經典實驗 潛水員在水中學習  → 水中回憶最好 陸地學習 "
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "Encoding Specificity （超常考） 👉 記憶依賴「情境線索」包含 地點、氣味、情緒 經典實驗 潛水員在水中學習  → 水中回憶最好 陸地學習  → 陸地回憶最好",
+      "ai_hint": "Encoding Specificity （超常考） 👉 記憶依賴「情境線索」包含 地點、氣味、情緒 經典實驗 潛水員在水中學習  → 水中回憶最好 陸地學習  → 陸地回憶最好",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NTU_114_30",
+      "source": "NTU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 30,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "一個人碰到熱水壺，卻停留了 2 秒才把手收回去。請問根據你在普心課學到的知識，你應該對他說什麼才會是最正確的？",
+      "options": [
+        "你神經大條有！",
+        "你沒有髓鞘啊！",
+        "你延腦有問題啊！",
+        "你的神經元很多嗎？"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "反射路徑 熱 → 感覺神經 → 脊髓 → 運動神經 → 收手  多發性硬化症（MS） 👉 髓鞘受損 → 動作變慢、控制差\n\n反應慢不是想太久，是神經傳導變慢而髓鞘出問題",
+      "concepts": [
+        "反射路徑 熱 → 感覺神經 → 脊髓 → 運動神經 → 收手  多發性硬化症（MS） 👉 髓鞘受損 → 動作變慢、控制差"
+      ],
+      "scholars": [],
+      "school_of_thought": "",
+      "key_concepts": "反射路徑 熱 → 感覺神經 → 脊髓 → 運動神經 → 收手  多發性硬化症（MS） 👉 髓鞘受損 → 動作變慢、控制差",
+      "ai_hint": "反應慢不是想太久，是神經傳導變慢而髓鞘出問題",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "",
+      "topic": "第3章 行為的生物基礎"
+    }
+  ]
+}

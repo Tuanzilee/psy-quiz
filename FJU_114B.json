@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 114,
+    "year_ad": 2025,
+    "exam_name": "輔仁大學114學年度轉學生招生考試（B 卷 / 名解+申論）",
+    "subject": "普通心理學",
+    "total_questions": 12,
+    "scoring": "解釋名詞 60% (每題6分共10題) + 問答題 40% (每題20分共2題)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "notes": "原 PDF 此 114 部分為解釋名詞 10 題 + 問答 2 題，與 114A 純申論題格式完全不同。猜測為不同系所/組別的試題。"
+  },
+  "questions": [
+    {
+      "id": "FJU_114B_01",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "無條件積極關懷（Unconditional Positive Regard）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "無條件積極關懷。Carl Rogers（1957）提出，是『個人中心治療』（person-centered therapy）的三大核心治療師條件之一（其他兩個為：真誠 congruence、同理心 empathy）。指治療師對個案表達完全接納與正向關懷，不因個案的言行、感受或選擇而評價、批判或撤回關心。重要的是『無條件』——不像日常人際關係常以『若你乖』『若你成功』為條件給予關愛。Rogers 認為許多心理困擾源於童年只有『有條件的關愛』（conditional positive regard），個體為獲得關愛而扭曲自我；治療中提供無條件積極關懷，能讓個案在安全氛圍中重新整合『真實自我』與『理想自我』，促進自我實現（self-actualization）。",
+      "keywords_required": [
+        "Rogers",
+        "個人中心",
+        "接納",
+        "評價",
+        "自我實現"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "無條件積極關懷",
+        "Rogers個人中心治療",
+        "人本主義",
+        "自我實現"
+      ],
+      "scholars": [
+        "Rogers"
+      ],
+      "school_of_thought": "humanistic",
+      "key_concepts": "Rogers 治療三條件之一：完全接納、不批判",
+      "ai_hint": "答題結構：定義 → Rogers 個人中心治療三條件 → 與『有條件關愛』對比 → 治療效果（促進自我實現）。",
+      "common_mistakes": "不等於『同意個案所有行為』；治療師可不認同行為，但持續接納個案這個人。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_114B_02",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "大五人格測驗（The Big Five）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "大五人格（Big Five / Five-Factor Model, FFM）。當代人格心理學主流模型，由 McCrae & Costa 系統化。透過詞彙假說（lexical hypothesis）與因素分析，從大量人格描述詞中萃取出五個主要向度（OCEAN）：\n\n（一）開放性（Openness to experience）：好奇、想像、藝術敏感度 vs 守舊、實際。\n（二）盡責性（Conscientiousness）：自律、有條理、勤奮 vs 散漫、衝動。\n（三）外向性（Extraversion）：好交際、活躍、樂觀 vs 內斂、安靜。\n（四）親和性（Agreeableness）：合作、信任、利他 vs 競爭、多疑。\n（五）神經質（Neuroticism）：情緒不穩、焦慮 vs 情緒穩定（也稱情緒穩定性 Emotional Stability，反向計分）。\n\n常用測量工具：NEO-PI-R（McCrae & Costa）、IPIP（公開版）。\n\n優勢：（一）跨文化穩定性高（多語言可複製五因素結構）；（二）可預測諸多生活結果（如盡責性預測學業/職場成功）；（三）有遺傳基礎（雙生子研究遺傳率約 40-50%）。\n\n限制：（一）描述性而非解釋性（說『此人外向』但不解釋為何外向）；（二）跨文化效度仍有爭議；（三）未必涵蓋所有人格特質（如誠實-謙遜，HEXACO 模型加入第六因素）。",
+      "keywords_required": [
+        "McCrae",
+        "Costa",
+        "OCEAN",
+        "外向",
+        "神經質",
+        "因素分析"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "大五人格",
+        "Big_Five",
+        "人格特質論",
+        "因素分析"
+      ],
+      "scholars": [
+        "McCrae",
+        "Costa",
+        "Goldberg"
+      ],
+      "school_of_thought": "trait",
+      "key_concepts": "OCEAN 五向度 + 詞彙假說因素分析",
+      "ai_hint": "答題結構：定義 → 五向度（OCEAN 列出並各簡述） → 起源（詞彙假說） → 優勢（跨文化、預測力）。",
+      "common_mistakes": "勿與 MBTI 混淆。MBTI 在學術心理學評價低；大五是主流。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_114B_03",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "思覺失調症（Schizophrenia）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "思覺失調症（原譯精神分裂症，2014 年台灣精神醫學會正式改譯）。DSM-5 列為『思覺失調類群及其他精神病性疾患』之一，主要特徵為現實感扭曲，盛行率約 1%。\n\n症狀分為三大類：\n（一）正性症狀（positive symptoms，多出現異常經驗）：幻覺（以聽幻覺最常見）、妄想（被害、關係、誇大）、思考混亂（言語雜亂）、明顯異常的動作行為。\n（二）負性症狀（negative symptoms，正常功能減損）：情感平淡、貧語、缺乏動機、社會退縮、快感缺失。\n（三）認知症狀：注意力、工作記憶、執行功能受損。\n\n診斷標準（DSM-5）：至少有 2 種以上症狀（其中至少 1 個為幻覺、妄想、思考混亂之一），持續至少 6 個月，造成功能顯著下降，且非物質或其他疾病引起。\n\n病因（多因素）：\n（一）基因：遺傳率約 80%，但無單一基因。\n（二）多巴胺假說：中腦邊緣系統多巴胺過度活化（解釋正性症狀）；中腦皮質系統不足（解釋負性症狀）。\n（三）腦部結構異常：腦室擴大、前額葉與顳葉皮質減少。\n（四）發展與壓力：神經發展假說（產前感染、缺氧）；壓力-易感性模型。\n\n治療：抗精神病藥（Dopamine 拮抗劑）+ 心理社會治療 + 家庭支持。",
+      "keywords_required": [
+        "正性症狀",
+        "負性症狀",
+        "幻覺",
+        "妄想",
+        "多巴胺",
+        "DSM"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "思覺失調症",
+        "正性症狀",
+        "負性症狀",
+        "多巴胺假說",
+        "DSM-5"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "正/負/認知三類症狀 + 多巴胺假說 + 6 個月診斷標準",
+      "ai_hint": "答題結構：中文譯名變更 → 三類症狀 → DSM 診斷要件（6個月） → 多巴胺假說 → 治療。",
+      "common_mistakes": "（一）不是『多重人格』；多重人格是解離性身分疾患（DID）。（二）譯名應用『思覺失調症』，避免『精神分裂症』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_114B_04",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "精神疾病診斷與統計手冊（DSM）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "精神疾病診斷與統計手冊（Diagnostic and Statistical Manual of Mental Disorders, DSM）。由美國精神醫學會（American Psychiatric Association, APA）出版，是當代精神疾病診斷的主要依據。\n\n發展沿革：\n- DSM-I（1952）→ II（1968）→ III（1980，重大改革，採症狀群基準診斷）→ III-R → IV（1994）→ IV-TR（2000）→ DSM-5（2013，現行版）→ DSM-5-TR（2022）。\n- DSM-5 的重大改變：取消 DSM-IV 的『多軸診斷』、加入『光譜』概念（如自閉症光譜）、整合疾病類別。\n\n地位：\n- 北美主流診斷系統；歐洲與全球公衛則並用 ICD（國際疾病分類，WHO 出版，現行 ICD-11）。\n- DSM 影響保險給付、研究判準、司法精神鑑定。\n\n優勢：\n- 提供共同診斷語言、提升診斷信度；\n- 結構化症狀群，有助臨床判斷與研究比較。\n\n爭議：\n- 醫療化（pathologization）：把正常變異列為診斷（如喪親後悲傷）；\n- 診斷信度高但效度爭議（症狀群劃分是否反映真實疾病類別？）；\n- 受藥廠影響的疑慮；\n- 文化敏感度不足。\n\n當代趨勢：RDoC（Research Domain Criteria, NIMH 提出）試圖以神經生物學為基礎重構分類，挑戰 DSM 純症狀群分類取向。",
+      "keywords_required": [
+        "美國精神醫學會",
+        "APA",
+        "DSM-5",
+        "症狀群",
+        "ICD"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "DSM",
+        "精神疾病診斷",
+        "ICD",
+        "RDoC"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "APA 出版 + 現行 DSM-5 + 與 ICD 並用 + 歷史與爭議",
+      "ai_hint": "答題結構：定義（出版單位） → 現行版本（DSM-5/5-TR） → 與 ICD 並用 → 優勢（共同語言）→ 爭議（醫療化、效度）。",
+      "common_mistakes": "勿說『DSM 是全球唯一系統』；歐洲多用 ICD。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_114B_05",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "創傷後壓力症候群（PTSD）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "創傷後壓力症候群（Post-Traumatic Stress Disorder, PTSD）。DSM-5 列為『創傷及壓力相關疾患』類別。發生於暴露於嚴重創傷事件（戰爭、性侵、災難、意外、目睹他人死亡或重傷）後。\n\n四大症狀群（DSM-5）：\n（一）侵入性症狀：反覆出現創傷記憶、惡夢、閃回（flashbacks）、對相似情境的強烈生理/心理反應。\n（二）持續迴避：迴避與創傷相關的記憶、感受、地點、活動、人物。\n（三）認知與情緒的負面改變：對自己或世界持負面信念、自責、持續負向情緒、興趣減少、疏離感。\n（四）警覺度與反應改變：易怒、過度警覺、難以集中、睡眠障礙、容易被驚嚇。\n\n診斷要件：症狀持續超過 1 個月，造成顯著功能損害。\n\n神經機制：杏仁核過度活化、前額葉抑制功能下降、海馬迴體積縮小（壓力下皮質醇毒性影響）。\n\n治療：認知行為治療（特別是延長暴露治療 PE，Foa）、EMDR、認知處理治療（CPT）、SSRI 抗鬱劑（FDA 核准 sertraline、paroxetine）。早期介入（如創傷事件後立即提供心理急救）有預防效果。\n\n相關概念：急性壓力疾患（< 1 個月）、複雜性 PTSD（C-PTSD，慢性創傷如童年虐待）。",
+      "keywords_required": [
+        "創傷",
+        "侵入性",
+        "迴避",
+        "杏仁核",
+        "暴露治療"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "PTSD",
+        "創傷後壓力症候群",
+        "杏仁核",
+        "暴露治療",
+        "EMDR"
+      ],
+      "scholars": [
+        "Foa"
+      ],
+      "school_of_thought": "clinical",
+      "key_concepts": "創傷暴露 + 四大症狀群 + 持續 1 個月以上",
+      "ai_hint": "答題結構：定義 → 四大症狀群（DSM-5）→ 1 個月診斷標準 → 神經機制 → 治療。",
+      "common_mistakes": "1 個月以下是『急性壓力疾患』，超過 1 個月才是 PTSD。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_114B_06",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "懼曠症（Agoraphobia）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_09、FJU_111_07 同題；答案結構保持一致。",
+      "reference_answer": "懼曠症。DSM-5 焦慮疾患之一，指對特定情境產生強烈恐懼或焦慮，因擔心一旦出現恐慌或失能症狀，逃離困難或得不到協助。常見害怕情境包含：搭乘大眾運輸、處於開放空間（停車場、橋）、處於封閉空間（電影院、商店）、排隊或處於人群中、獨自離家。患者常採取逃避或需要陪伴的方式應對，嚴重者甚至無法離開家門。常與恐慌症共病，但 DSM-5 中已被列為獨立診斷。治療以認知行為治療（特別是暴露治療）與藥物治療為主。",
+      "keywords_required": [
+        "焦慮",
+        "恐懼",
+        "逃避",
+        "恐慌",
+        "DSM"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "懼曠症",
+        "焦慮疾患",
+        "恐慌症",
+        "DSM-5",
+        "暴露治療"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "對逃離困難情境的強烈恐懼，常致逃避行為",
+      "ai_hint": "答題結構：定義 → DSM 焦慮疾患 → 害怕情境列舉 → 治療。",
+      "common_mistakes": "中文譯名以『懼曠症』為主，DSM-5 定義廣於『廣場』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_114B_07",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "遺傳率（Heritability Coefficient）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_07、FJU_111_08 同題；答案結構保持一致。",
+      "reference_answer": "遺傳率（heritability coefficient, h²）。行為遺傳學概念，指特定族群中某特質的個體變異有多少比例可歸因於基因差異，數值介於 0 到 1（或 0% 到 100%）。常用雙生子研究（同卵 vs 異卵雙生子相關）或收養研究估計。重要警示：（一）遺傳率是族群層次概念，不能說某個體有多少比例由基因決定；（二）遺傳率高不代表環境介入無效（如身高遺傳率高，但營養介入仍可顯著影響）；（三）遺傳率隨族群與環境變動，非該特質的固有屬性。",
+      "keywords_required": [
+        "族群",
+        "變異",
+        "基因",
+        "雙生子",
+        "環境"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "遺傳率",
+        "行為遺傳學",
+        "雙生子研究",
+        "收養研究"
+      ],
+      "scholars": [],
+      "school_of_thought": "behavioral_genetics",
+      "key_concepts": "遺傳率是族群變異的歸因比例，非個體屬性",
+      "ai_hint": "答題結構：定義 → 估計方法 → 三大警示。",
+      "common_mistakes": "最常見錯誤：把『智力遺傳率 0.5』理解成『某人智力一半由基因決定』，這是錯的。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_114B_08",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "自證預言（Self-fulfilling Prophecy）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_16、FJU_109_08 同題；答案結構保持一致。",
+      "reference_answer": "自證預言。社會學家 Merton（1948）提出：對情境的錯誤定義會引發新行為，而這些行為又使原本錯誤的定義成真。心理學經典研究為 Rosenthal & Jacobson（1968）的『畢馬龍效應』（Pygmalion in the Classroom）：研究者隨機告訴小學老師某些學生『智力潛能即將大幅成長』（實則隨機選出），一年後這些學生 IQ 增幅顯著高於對照組。機制：教師對『有潛能』學生抱持較高期待 → 給予更多注意、更挑戰性的作業、更多正向回饋 → 學生實際表現提升 → 印證教師原本的『預言』。其他例子：銀行擠兌、求職者預期被拒於是表現緊張 → 真的被拒。",
+      "keywords_required": [
+        "Merton",
+        "預期",
+        "行為",
+        "成真",
+        "Rosenthal"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "自證預言",
+        "畢馬龍效應",
+        "Rosenthal研究",
+        "期望效應"
+      ],
+      "scholars": [
+        "Merton",
+        "Rosenthal",
+        "Jacobson"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "預期透過行為循環自我實現",
+      "ai_hint": "答題結構：定義（Merton）→ 機制 → Rosenthal 畢馬龍 → 其他例子。",
+      "common_mistakes": "勿混淆自證預言與安慰劑效應。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_114B_09",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "自我設障（Self-handicapping）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "自我設障。Berglas & Jones（1978）提出，指個體在面對重要評估前，主動製造或誇大可能影響表現的障礙，以保護自尊的策略。\n\n機制：透過設障，若失敗可歸因於外在障礙（『不是我能力不足，是我準備時間太少』），保護自尊；若成功則更顯能力（『障礙下還能成功』）。屬於『自利偏誤』（self-serving bias）的事前版本。\n\n常見形式：\n（一）行為性設障：考前熬夜玩遊戲、比賽前不練習、報告前喝酒。\n（二）認知性設障：在事前公開聲明壓力大、身體不適、情緒低落，預設失敗藉口。\n\n動機：低自尊者、對自己能力不確定者較常使用；男性較女性常使用行為性設障。\n\n後果：短期保護自尊，但長期傷害實際表現，形成惡性循環；妨礙真實能力的發展與評估。\n\n對應的健康策略：成長心態（Dweck）、自我同情（self-compassion, Neff），鼓勵接納失敗作為學習機會。",
+      "keywords_required": [
+        "Berglas",
+        "Jones",
+        "障礙",
+        "歸因",
+        "自尊"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "自我設障",
+        "自利偏誤",
+        "歸因",
+        "自尊保護"
+      ],
+      "scholars": [
+        "Berglas",
+        "Jones"
+      ],
+      "school_of_thought": "social_cognitive",
+      "key_concepts": "事前製造障礙以保護自尊的策略",
+      "ai_hint": "答題結構：定義 → Berglas & Jones 提出 → 機制（歸因保護）→ 兩類形式 → 後果。",
+      "common_mistakes": "自我設障是『策略』非『失敗』；個體用以保護自尊。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_114B_10",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "史丹佛監獄實驗（Stanford Prison Experiment）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "史丹佛監獄實驗。Zimbardo 於 1971 年在史丹佛大學心理學系地下室進行的著名情境實驗。將 24 名心理健康大學生隨機分派為『獄卒』與『囚犯』，模擬監獄情境，原訂 14 天觀察情境角色對行為的影響。\n\n結果：實驗第二天即出現獄卒虐待囚犯（言語羞辱、體罰、剝奪基本需求）、囚犯精神崩潰；Zimbardo 自己也被情境吞沒，扮演『典獄長』失去研究者身份。實驗在第六天被緊急中止（其女友 Maslach 提出倫理質疑）。\n\n影響：\n（一）支持『情境決定論』：一般善良的人在特定情境下也會做出殘酷行為；情境（角色、權力結構、去個人化）的力量勝過個性。\n（二）解釋阿布格萊布監獄虐囚等真實事件。\n（三）為心理學研究倫理改革重要推手——當代研究倫理審查（IRB）部分源於此案教訓。\n\n當代批評（特別自 2018 年公開錄音與檔案後）：\n（一）方法論問題：獄卒被研究者明確指示『製造心理壓力』；非自然展現。\n（二）部分囚犯後來表示是『扮演』而非真實崩潰。\n（三）樣本偏誤、未盲化、無對照組。\n\n結論：作為心理學經典案例仍有教學價值，但其『情境吞沒個性』的結論需謹慎，當代學者建議結合 BBC 監獄研究（Reicher & Haslam, 2006）等更嚴謹研究綜合理解。",
+      "keywords_required": [
+        "Zimbardo",
+        "情境",
+        "角色",
+        "去個人化",
+        "倫理"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "史丹佛監獄實驗",
+        "Zimbardo研究",
+        "情境決定論",
+        "去個人化",
+        "研究倫理"
+      ],
+      "scholars": [
+        "Zimbardo"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "1971 Zimbardo + 情境角色力量 + 倫理問題",
+      "ai_hint": "答題結構：時間/地點/方法 → 戲劇性結果 → 影響（情境決定論）→ 當代批評（方法論與倫理）。當代版本的回答已不只『情境的力量』，要平衡兩面。",
+      "common_mistakes": "勿不批判地全盤接受『情境決定論』結論；近年研究指出此實驗有方法瑕疵。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_114B_11",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請說明佛洛伊德的精神分析理論要點。（20分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "Freud（1856-1939）創立精神分析（psychoanalysis），是現代心理治療與人格理論的奠基者。其理論可從幾個面向說明：\n\n【一、心靈結構：地形學模型 + 結構模型】\n\n地形學模型（早期）：意識（conscious，當下覺察）、前意識（preconscious，可被喚回的記憶）、潛意識（unconscious，被壓抑的衝動，最大也最重要）。冰山比喻：意識僅冰山一角。\n\n結構模型（後期）：\n- 本我（id）：與生俱來，遵循『快樂原則』，追求立即滿足，含性與攻擊本能（libido、Thanatos）。\n- 自我（ego）：遵循『現實原則』，調節本我衝動與現實限制。\n- 超我（superego）：道德與社會規範的內化，包含理想自我與良知。\n三者衝突若失衡引發焦慮，自我以防衛機轉因應。\n\n【二、性心理發展（psychosexual stages）】\n\n（一）口腔期（0-1 歲）：滿足於口腔活動。\n（二）肛門期（1-3 歲）：訓練排泄控制。\n（三）性器期（3-6 歲）：戀母/戀父情結（Oedipus/Electra）；認同同性父母解決衝突。\n（四）潛伏期（6-青春期）：性衝動暫時休眠。\n（五）兩性期（青春期後）：成熟性慾望。\n\n各階段未解決會在成人形成『固著』（fixation），影響人格。\n\n【三、防衛機轉】\n\n自我為化解三我衝突的潛意識策略，包含壓抑、否認、投射、合理化、反向作用、退化、昇華等。Anna Freud 進一步系統化。\n\n【四、治療方法】\n\n自由聯想（free association）、夢的解析（『夢是通往潛意識的康莊大道』）、移情分析（transference）、抗拒分析。目標：將潛意識帶入意識，使個體獲得洞察（insight）。\n\n【五、貢獻與限制】\n\n貢獻：\n- 開創心理治療先河；\n- 提出潛意識概念，影響文學、藝術、文化甚廣；\n- 強調童年經驗的重要性；\n- 啟發後續精神分析發展（Jung、Adler、客體關係、Erikson）。\n\n限制：\n- 概念難以實證檢驗；\n- 過度強調性慾；\n- 以神經症女性為樣本不具普遍性；\n- 缺乏實驗證據支持。\n\n當代立場：作為心理學史上重要里程碑，但作為當代科學心理學主流已被認知行為學派、神經科學取代。",
+      "keywords_required": [
+        "潛意識",
+        "本我",
+        "自我",
+        "超我",
+        "性心理發展",
+        "防衛機轉",
+        "戀母情結"
+      ],
+      "essay_outline": [
+        "破題：Freud 是精神分析創始人",
+        "心靈結構一：意識/前意識/潛意識（冰山）",
+        "心靈結構二：本我/自我/超我",
+        "性心理發展五階段（含戀母情結）",
+        "防衛機轉",
+        "治療方法（自由聯想、夢的解析、移情）",
+        "貢獻（潛意識、童年）與限制（實證、性慾過度）",
+        "當代評價"
+      ],
+      "concepts": [
+        "精神分析",
+        "Freud人格理論",
+        "本我自我超我",
+        "性心理發展",
+        "防衛機轉",
+        "潛意識",
+        "戀母情結"
+      ],
+      "scholars": [
+        "Freud",
+        "Anna Freud"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "三層結構（意識）+ 三我（本我/自我/超我）+ 性心理五階段 + 防衛機轉 + 治療法",
+      "ai_hint": "20 分大題：建議結構 → 心靈結構 5 分 + 性心理發展 5 分 + 防衛機轉 4 分 + 治療法 3 分 + 評價 3 分。涵蓋『五大要點』完整勝過深入單一要點。",
+      "common_mistakes": "勿只談『戀母情結』；Freud 理論博大，需系統性敘述。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_114B_12",
+      "source": "FJU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "許多學者觀察到這樣一個現象：社群媒體的使用，使得持不同信念/意見的人們益形分裂，幾乎難以彼此溝通。請用社會心理學的理論、概念來解釋此一現象。注意：這是一個複雜的現象，請使用多個社會心理學理論或概念來加以詮釋。（20分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "社群媒體加劇社會分裂涉及多重社會心理學機制，可從以下角度切入（建議選 4-5 個深入論述）：\n\n【一、同溫層與確認偏誤（confirmation bias）】\n\n演算法推送符合使用者既有信念的內容，形成『過濾泡泡』（filter bubble, Pariser）與『同溫層』（echo chamber）。使用者選擇性接觸與消化資訊，反覆確認既有信念，意見極化。\n\n【二、團體極化（group polarization, Moscovici, Stoner）】\n\n團體討論後，成員意見往極端方向移動。社群媒體讓相似觀點者大量集結互相強化，原本溫和意見變激進。機制：（一）社會比較（看到群內更激進者，自我調整）；（二）說服性論證（看到更多支持自己立場的論點）。\n\n【三、社會認同理論（Tajfel & Turner）】\n\n網路群體（如政黨支持者、特定立場社團）形成強烈內團體認同，將不同立場者視為外團體並貶抑。社群媒體加深『我們 vs 他們』的二元對立，引發內團體偏袒、外團體去人性化（dehumanization）。\n\n【四、刻板印象與外團體同質性】\n\n網路上他方多以最極端例子呈現，使人形成『他們都是 X 樣子』的刻板印象。外團體同質性效應使對外團體個體差異視而不見。\n\n【五、虛擬去個人化（online disinhibition effect, Suler）】\n\n匿名性、不可見性、缺乏即時回饋，導致網路言論比面對面更激烈、攻擊性更強，加深敵意。\n\n【六、認知失調（Festinger）與動機性推理（motivated reasoning）】\n\n當接觸到挑戰自身立場的證據，人們不易理性更新信念，反而透過合理化、否認、攻擊訊息來源等方式維持認知一致性。Backfire 效應（部分研究支持）：直接糾正反而強化錯誤信念。\n\n【七、情緒化內容的擴散優勢】\n\n研究（Vosoughi et al., 2018, Science）顯示假新聞在 Twitter 比真新聞傳播更快，主因是引發強烈情緒（憤怒、恐懼）的內容更易被轉發。情緒驅動的訊息透過杏仁核加深記憶，理性訊息常被忽略。\n\n【八、虛假事實效應（illusory truth effect）】\n\n訊息只要重複出現，閱聽人就會覺得它『可信』，無論真假。社群媒體的演算法重複放大特定訊息，形塑『集體真實』。\n\n【九、社會比較與相對剝奪（Festinger 社會比較理論）】\n\n社群媒體展示『最佳化版本的他人生活』，加劇對自身處境的不滿，形成怨懟情緒，易被政治動員。\n\n【十、改善方向（簡述）】\n\n媒體素養教育、跨群體接觸（Allport 接觸假說）、平台演算法透明化、慢思考訓練、個人主動跨同溫層瀏覽。\n\n結論：社群媒體分裂現象不是單一機制造成，而是技術設計（演算法）與多重認知偏誤、團體歷程交織的結果，需從個人、群體、平台、政策多層面共同回應。",
+      "keywords_required": [
+        "同溫層",
+        "團體極化",
+        "社會認同",
+        "Tajfel",
+        "確認偏誤"
+      ],
+      "essay_outline": [
+        "破題：複雜現象需多重理論",
+        "機制一：同溫層 + 確認偏誤",
+        "機制二：團體極化（Moscovici/Stoner）",
+        "機制三：社會認同理論（Tajfel/Turner）+ 去人性化",
+        "機制四：去個人化（網路抑制效應）",
+        "機制五：認知失調 + 動機性推理",
+        "機制六：情緒化內容傳播優勢（Vosoughi 研究）",
+        "機制七：虛假事實效應",
+        "可選機制八：相對剝奪（社會比較）",
+        "改善方向（接觸假說、媒體素養）",
+        "結論：多重機制需多層面回應"
+      ],
+      "concepts": [
+        "團體極化",
+        "同溫層",
+        "確認偏誤",
+        "社會認同理論",
+        "去人性化",
+        "去個人化",
+        "認知失調",
+        "虛假事實效應",
+        "接觸假說"
+      ],
+      "scholars": [
+        "Tajfel",
+        "Turner",
+        "Moscovici",
+        "Stoner",
+        "Festinger",
+        "Pariser",
+        "Suler",
+        "Vosoughi"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "至少 4 個社心理論或概念 + 連結社群媒體現象 + 改善方向",
+      "ai_hint": "20 分大題：題目明確要求『多個』理論。建議至少 4-5 個機制，每個 3-4 分。Tajfel 社會認同 + 團體極化 + 同溫層 + 認知失調是核心；可加情緒擴散與虛假事實顯示廣度。最後加上改善方向加分。",
+      "common_mistakes": "（一）只列 1-2 個理論不夠（題目明說『複雜』『多個』）；（二）勿純粹現象描述而沒援引理論；（三）勿忽略改善方向。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    }
+  ]
+}

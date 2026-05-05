@@ -1,0 +1,2037 @@
+{
+  "meta": {
+    "school": "NCKU",
+    "year": 114,
+    "year_ad": 2025,
+    "count": 48,
+    "note": "NCKU 114 — 40 選擇題 + 3 申論題 + 5 配合題小題（諾貝爾獎心理學家），共 48 entry。原試卷全英文，使用者提供雙語版（每段英文後附中文翻譯）。選擇題部分 question/options 用英文（依原卷），reference_answer/ai_hint 用中文。答案、章節、解析均由 AI 推導（除配合題使用者已提供答案），標 medium 信心度待勘誤。Part 2 申論題使用者已提供範本答案。本年度被使用者警告為『出題最詭異的一年』，請特別注意 Q15（眼藥水 tolerance/addiction）、Q16（男性思覺失調發病年齡 B vs C 邊界模糊）、Q25（基因 vs 環境的解讀）、Q29（炸彈威脅 B vs 沒解釋 D 的 affiliation）、Q38（Erikson 認同失敗的延伸後果）。"
+  },
+  "questions": [
+    {
+      "id": "NCKU_114_01",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 1,
+        "title": "第2章 心理學方法"
+      },
+      "question": "Most research on psychopathology is correlational because:",
+      "options": [
+        "It would be unethical to manipulate variables to induce psychological disorders",
+        "The population of potential research participants is too small for correlational studies",
+        "It is very difficult to develop operational definitions of psychological disorders",
+        "It would be difficult to randomly assign a group of people with a particular psychological disorder to different groups"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】大多數關於心理疾病（psychopathology）的研究為何是相關研究？\n\n【中譯選項】\nA. 操弄變項來誘發心理疾病在倫理上是不允許的\nB. 可研究的參與者數量對於相關研究來說太少\nC. 很難為心理疾病建立操作性定義\nD. 很難將已有心理疾病的人隨機分派到不同組別\n\n【解析】心理疾病的相關研究是必要的，因為操弄變項刻意誘發精神病在倫理上不被允許。實驗法不可行，所以只能用相關法。\n❌ B：實際上心理疾病樣本並不太少。\n❌ C：操作型定義雖難但不是主因。\n❌ D：題目要的是『為什麼用相關研究』而非『隨機分派的困難』；雖然 D 也有道理，但 A 是教科書直接答案。",
+      "concepts": [
+        "相關研究",
+        "研究倫理"
+      ],
+      "scholars": [],
+      "school_of_thought": "research_methods",
+      "key_concepts": "相關研究, 研究倫理",
+      "ai_hint": "心理疾病的相關研究是必要的，因為操弄變項刻意誘發精神病在倫理上不被允許。實驗法不可行，所以只能用相關法。\n❌ B：實際上心理疾病樣本並不太少。\n❌ C：操作型定義雖難但不是主因。\n❌ D：題目要的是『為什麼用相關研究』而非『隨機分派的困難』；雖然 D 也有道理，但 A 是教科書直接答案。",
+      "common_mistakes": "把『難以做實驗』與『無法操作型定義』混淆",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第2章 心理學方法"
+    },
+    {
+      "id": "NCKU_114_02",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 2,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "Which of the following best describes the function of the myelin sheath in the nervous system?",
+      "options": [
+        "It generates electrical impulses",
+        "It insulates axons and speeds up neural transmission",
+        "It releases neurotransmitters",
+        "It connects neurons to muscles"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】下列何者最能描述神經系統中髓鞘（myelin sheath）的功能？\n\n【中譯選項】\nA. 它負責產生電訊號（動作電位）\nB. 它包覆軸突並加快神經傳導速度\nC. 它負責釋放神經傳導物質\nD. 它將神經元與肌肉連接\n\n【解析】髓鞘（myelin sheath）由神經膠質細胞（少突膠質細胞、許旺細胞）形成，包覆軸突，提供電絕緣並透過跳躍式傳導加快動作電位。\n❌ A：產生電訊號是軸突／鈉鉀通道的事。\n❌ C：釋放神經傳導物質是突觸末梢。\n❌ D：連接神經元到肌肉是運動神經元，不是髓鞘的功能。",
+      "concepts": [
+        "髓鞘",
+        "跳躍式傳導",
+        "動作電位"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "髓鞘, 跳躍式傳導, 動作電位",
+      "ai_hint": "髓鞘（myelin sheath）由神經膠質細胞（少突膠質細胞、許旺細胞）形成，包覆軸突，提供電絕緣並透過跳躍式傳導加快動作電位。\n❌ A：產生電訊號是軸突／鈉鉀通道的事。\n❌ C：釋放神經傳導物質是突觸末梢。\n❌ D：連接神經元到肌肉是運動神經元，不是髓鞘的功能。",
+      "common_mistakes": "把『絕緣』和『產生訊號』混淆",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_03",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 3,
+        "title": "第14章 發展心理學"
+      },
+      "question": "According to Piaget, during which stage do children develop object permanence?",
+      "options": [
+        "Sensorimotor",
+        "Preoperational",
+        "Concrete operational",
+        "Formal operational"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據皮亞傑理論，兒童在哪一個發展階段會發展出「物體恆存」？\n\n【中譯選項】\nA. 感覺動作期\nB. 前運思期\nC. 具體運思期\nD. 形式運思期\n\n【解析】Piaget 認知發展四階段：感覺動作期（0-2 歲）→ 物體恆存；前運思期（2-7）→ 自我中心；具體運思期（7-11）→ 守恆；形式運思期（11+）→ 抽象推理。物體恆存是感覺動作期晚期（約 8-12 個月）的關鍵成就。",
+      "concepts": [
+        "物體恆存",
+        "Piaget認知發展論"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "物體恆存, Piaget認知發展論",
+      "ai_hint": "Piaget 認知發展四階段：感覺動作期（0-2 歲）→ 物體恆存；前運思期（2-7）→ 自我中心；具體運思期（7-11）→ 守恆；形式運思期（11+）→ 抽象推理。物體恆存是感覺動作期晚期（約 8-12 個月）的關鍵成就。",
+      "common_mistakes": "把物體恆存放錯階段（誤以為前運思期）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NCKU_114_04",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 4,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "Which part of the brain is primarily responsible for regulating basic drives such as hunger, thirst, and body temperature?",
+      "options": [
+        "Hippocampus",
+        "Hypothalamus",
+        "Amygdala",
+        "Cerebellum"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】大腦中哪一個部位主要負責調節基本生理驅力，例如飢餓、口渴與體溫？\n\n【中譯選項】\nA. 海馬迴\nB. 下視丘\nC. 杏仁核\nD. 小腦\n\n【解析】下視丘（hypothalamus）調控內分泌、自律神經，並監控飢餓、口渴、體溫、性慾等基本驅力。\n❌ A 海馬迴 → 記憶。\n❌ C 杏仁核 → 情緒（尤其恐懼）。\n❌ D 小腦 → 動作協調與運動學習。",
+      "concepts": [
+        "下視丘",
+        "驅力"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "下視丘, 驅力",
+      "ai_hint": "下視丘（hypothalamus）調控內分泌、自律神經，並監控飢餓、口渴、體溫、性慾等基本驅力。\n❌ A 海馬迴 → 記憶。\n❌ C 杏仁核 → 情緒（尤其恐懼）。\n❌ D 小腦 → 動作協調與運動學習。",
+      "common_mistakes": "把下視丘和海馬迴搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_05",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 5,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Your friend Cal explains to you that when he looks at the names of the days of the week on his calendar, each day looks as if it is written in a different color. For example, Cal always sees Monday as written in a light maroon color, while Tuesday is always in royal blue. Based on Cal's description, it is likely that he is a (n):",
+      "options": [
+        "integrative perceptionist",
+        "synesthete",
+        "holistic reader",
+        "selective reader"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】你的朋友 Cal 說，當他看到行事曆上的星期名稱時，每一天看起來都像用不同顏色寫的。例如星期一是淡酒紅色，星期二是寶藍色。根據這個描述，他很可能是什麼？\n\n【中譯選項】\nA. 整合知覺者\nB. 聯覺者\nC. 整體閱讀者\nD. 選擇性閱讀者\n\n【解析】聯覺（synesthesia）是一種感覺經驗自動引發另一種感覺的現象，例如『字素-顏色聯覺』看到字母／數字／星期會自動感覺顏色。Cal 是典型的『grapheme-color synesthete』。",
+      "concepts": [
+        "聯覺",
+        "字素-顏色聯覺"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "聯覺, 字素-顏色聯覺",
+      "ai_hint": "聯覺（synesthesia）是一種感覺經驗自動引發另一種感覺的現象，例如『字素-顏色聯覺』看到字母／數字／星期會自動感覺顏色。Cal 是典型的『grapheme-color synesthete』。",
+      "common_mistakes": "把聯覺誤認為『想像力豐富』",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NCKU_114_06",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 6,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "In studies of monozygotic twins separated at birth and adopted into different environments there are:",
+      "options": [
+        "no similarities",
+        "only physical similarities",
+        "only broad personality trait similarities",
+        "sometimes a surprising number of similarities with regard to idiosyncratic behaviors"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在研究「出生即分開、被不同家庭收養」的同卵雙胞胎時，發現：\n\n【中譯選項】\nA. 沒有任何相似之處\nB. 只有外表上的相似\nC. 只有大方向的人格特質相似\nD. 有時在一些非常個人化、特殊的行為上也出現令人驚訝的相似\n\n【解析】Bouchard 的明尼蘇達雙胞胎研究（Minnesota Twin Study）發現出生即分離的同卵雙胞胎不只在外表、智力、性格特質相似，連一些非常個人化、特殊的習慣（穿著、嗜好、姿勢、笑點）都驚人相似，支持遺傳對行為的強大影響。",
+      "concepts": [
+        "雙胞胎研究",
+        "遺傳行為"
+      ],
+      "scholars": [
+        "Bouchard"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "雙胞胎研究, 遺傳行為",
+      "ai_hint": "Bouchard 的明尼蘇達雙胞胎研究（Minnesota Twin Study）發現出生即分離的同卵雙胞胎不只在外表、智力、性格特質相似，連一些非常個人化、特殊的習慣（穿著、嗜好、姿勢、笑點）都驚人相似，支持遺傳對行為的強大影響。",
+      "common_mistakes": "選 C（『只有大方向』）— 實際上連特殊行為都相似才是這項研究最有名的發現",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_07",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 7,
+        "title": "第6章 學習"
+      },
+      "question": "Which of the following is an example of a fixed-ratio schedule of reinforcement?",
+      "options": [
+        "Getting paid every two weeks",
+        "Winning on a slot machine",
+        "Receiving a bonus for every 10th sale",
+        "Pop quizzes in class"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】下列何者是「固定比率增強時程（fixed-ratio schedule）」的例子？\n\n【中譯選項】\nA. 每兩週領一次薪水\nB. 玩吃角子老虎機中獎\nC. 每完成第10筆銷售就得到獎金\nD. 課堂中的突擊小考\n\n【解析】增強時程：\n• 固定比率（FR）：每 N 次反應給一次增強 → C『每 10 筆銷售給獎金』\n• 變動比率（VR）：吃角子老虎機 → B\n• 固定間距（FI）：每兩週發一次薪水 → A\n• 變動間距（VI）：突擊小考 → D",
+      "concepts": [
+        "增強時程",
+        "固定比率"
+      ],
+      "scholars": [
+        "Skinner"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "增強時程, 固定比率",
+      "ai_hint": "增強時程：\n• 固定比率（FR）：每 N 次反應給一次增強 → C『每 10 筆銷售給獎金』\n• 變動比率（VR）：吃角子老虎機 → B\n• 固定間距（FI）：每兩週發一次薪水 → A\n• 變動間距（VI）：突擊小考 → D",
+      "common_mistakes": "把『時間』和『次數』搞混（fixed-interval vs fixed-ratio）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NCKU_114_08",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 8,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "Imagine you are at the end part of the chain of activity on a production line. Your boss, who in his previous career was a neuroscientist, calls you an agonist. What would he be implying?",
+      "options": [
+        "that you completely halt production",
+        "that you interfere with production",
+        "that you take stuff out of the process that is defective",
+        "that you facilitate production"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】想像你在生產線的最後一個環節，你的老闆（以前是神經科學家）稱你為「agonist」，這代表什麼意思？\n\n【中譯選項】\nA. 你會完全停止生產\nB. 你會干擾生產\nC. 你會把有缺陷的產品從流程中移除\nD. 你會促進生產\n\n【解析】在神經科學中，agonist（致效劑）= 模擬／增強神經傳導物質作用的物質；antagonist（拮抗劑）= 阻斷／干擾。生產線比喻：agonist 促進生產，antagonist 阻擋生產。",
+      "concepts": [
+        "致效劑",
+        "拮抗劑",
+        "神經傳導物質"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "致效劑, 拮抗劑, 神經傳導物質",
+      "ai_hint": "在神經科學中，agonist（致效劑）= 模擬／增強神經傳導物質作用的物質；antagonist（拮抗劑）= 阻斷／干擾。生產線比喻：agonist 促進生產，antagonist 阻擋生產。",
+      "common_mistakes": "把 agonist 與 antagonist 搞反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_09",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 9,
+        "title": "第13章 社會心理學"
+      },
+      "question": "What does the term \"cognitive dissonance\" refer to?",
+      "options": [
+        "The tendency to conform to group norms",
+        "The discomfort felt when holding conflicting beliefs or behaviors",
+        "The process of learning through observation",
+        "The inability to recall past events"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】「認知失調（cognitive dissonance）」是指什麼？\n\n【中譯選項】\nA. 傾向遵從團體規範\nB. 當持有互相衝突的信念或行為時所產生的不適感\nC. 透過觀察他人進行學習的過程\nD. 無法回憶過去事件\n\n【解析】Festinger 的認知失調理論：當個體持有兩個互相衝突的認知（信念、態度、行為）時，會產生不適感，並驅使個體調整以減少失調。",
+      "concepts": [
+        "認知失調"
+      ],
+      "scholars": [
+        "Festinger"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "認知失調",
+      "ai_hint": "Festinger 的認知失調理論：當個體持有兩個互相衝突的認知（信念、態度、行為）時，會產生不適感，並驅使個體調整以減少失調。",
+      "common_mistakes": "把認知失調和認知偏誤混為一談",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_10",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 10,
+        "title": "第16章 心智異常"
+      },
+      "question": "Which disorder is characterized by alternating periods of depression and mania?",
+      "options": [
+        "Major depressive disorder",
+        "Generalized anxiety disorder",
+        "Bipolar disorder",
+        "Schizophrenia"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】哪一種心理疾病的特徵是憂鬱期與躁期交替出現？\n\n【中譯選項】\nA. 重度憂鬱症\nB. 廣泛性焦慮症\nC. 雙相情緒障礙（躁鬱症）\nD. 思覺失調症\n\n【解析】雙相情緒障礙（Bipolar disorder）特徵就是憂鬱期與躁期交替；過去稱躁鬱症。\n❌ A 重度憂鬱 → 只有憂鬱期沒有躁期。\n❌ B 廣泛性焦慮 → 持續焦慮，與躁鬱無關。\n❌ D 思覺失調 → 妄想／幻覺／思考解離為主。",
+      "concepts": [
+        "雙相情緒障礙",
+        "躁症",
+        "鬱症"
+      ],
+      "scholars": [],
+      "school_of_thought": "abnormal",
+      "key_concepts": "雙相情緒障礙, 躁症, 鬱症",
+      "ai_hint": "雙相情緒障礙（Bipolar disorder）特徵就是憂鬱期與躁期交替；過去稱躁鬱症。\n❌ A 重度憂鬱 → 只有憂鬱期沒有躁期。\n❌ B 廣泛性焦慮 → 持續焦慮，與躁鬱無關。\n❌ D 思覺失調 → 妄想／幻覺／思考解離為主。",
+      "common_mistakes": "把雙相和重度憂鬱搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NCKU_114_11",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 11,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In Milgram's obedience study, what was the main finding?",
+      "options": [
+        "People refuse to obey authority figures when asked to harm others",
+        "Most participants were willing to administer potentially lethal shocks when instructed by an authority figure",
+        "Obedience rates were higher among women than men",
+        "The presence of others decreased obedience"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在 Milgram 的服從實驗中，最主要的發現是什麼？\n\n【中譯選項】\nA. 當被要求傷害他人時，人們會拒絕服從權威\nB. 在權威指示下，大多數參與者願意施加可能致命的電擊\nC. 女性的服從率比男性高\nD. 他人的在場會降低服從\n\n【解析】Milgram（1963）服從實驗：在權威指示下，65% 的參與者願意施加可能致命（450V）的電擊。最關鍵的發現是『一般人在權威壓力下會順從到傷害他人的程度』。",
+      "concepts": [
+        "服從實驗"
+      ],
+      "scholars": [
+        "Milgram"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "服從實驗",
+      "ai_hint": "Milgram（1963）服從實驗：在權威指示下，65% 的參與者願意施加可能致命（450V）的電擊。最關鍵的發現是『一般人在權威壓力下會順從到傷害他人的程度』。",
+      "common_mistakes": "誤以為大多數人會拒絕（與實驗結果相反）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_12",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 12,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "If you close one eye, you will still be able to use ______ as a depth cue, but you will not be able to use ______ as a depth cue.",
+      "options": [
+        "linear perspective; occlusion",
+        "texture gradients; disparity",
+        "convergence; motion parallax",
+        "disparity; linear perspective"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】如果你閉上一隻眼睛，你仍然可以使用＿＿作為深度線索，但無法使用＿＿作為深度線索。\n\n【中譯選項】\nA. 線性透視；遮擋\nB. 紋理梯度；視差\nC. 會聚；運動視差\nD. 視差；線性透視\n\n【解析】深度線索分為單眼線索（一眼可用）和雙眼線索（需兩眼）。\n• 單眼線索：紋理梯度（texture gradient）、線性透視、遮擋、運動視差等。\n• 雙眼線索：視差（disparity，retinal disparity）、會聚（convergence）。\n閉一眼仍可用單眼線索，但失去雙眼線索。\nB 對：紋理梯度（單眼）保留，視差（雙眼）失去。",
+      "concepts": [
+        "深度知覺",
+        "雙眼線索",
+        "單眼線索"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "深度知覺, 雙眼線索, 單眼線索",
+      "ai_hint": "深度線索分為單眼線索（一眼可用）和雙眼線索（需兩眼）。\n• 單眼線索：紋理梯度（texture gradient）、線性透視、遮擋、運動視差等。\n• 雙眼線索：視差（disparity，retinal disparity）、會聚（convergence）。\n閉一眼仍可用單眼線索，但失去雙眼線索。\nB 對：紋理梯度（單眼）保留，視差（雙眼）失去。",
+      "common_mistakes": "把視差（disparity，雙眼）和線性透視（單眼）搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NCKU_114_13",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 13,
+        "title": "第4章 感覺與知覺"
+      },
+      "question": "Prolonged exposure to movement in one direction ______ the motion detectors sensitive to that direction. When the movement stops, the baseline firing rate of detectors for the opposite direction of motion will be ______ than the firing rate for the detectors that responded to the prolonged movement, leading to motion aftereffects.",
+      "options": [
+        "activates; higher",
+        "activates; lower",
+        "fatigues; higher",
+        "fatigues; lower"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】長時間暴露在同一方向的運動刺激下，會＿＿該方向的運動偵測器。當運動停止時，對相反方向敏感的偵測器的基準放電率會＿＿於原本那一方向的偵測器，進而產生運動後效。\n\n【中譯選項】\nA. 活化；較高\nB. 活化；較低\nC. 疲乏；較高\nD. 疲乏；較低\n\n【解析】運動後效（motion aftereffect，瀑布錯覺）：長時間注視一個方向的運動 → 該方向的運動偵測神經元疲乏 → 反方向偵測器的相對放電率變高 → 看靜止物體時錯覺往反方向移動。所以是『疲乏；較高』。",
+      "concepts": [
+        "運動後效",
+        "對抗歷程",
+        "感覺適應"
+      ],
+      "scholars": [],
+      "school_of_thought": "perception",
+      "key_concepts": "運動後效, 對抗歷程, 感覺適應",
+      "ai_hint": "運動後效（motion aftereffect，瀑布錯覺）：長時間注視一個方向的運動 → 該方向的運動偵測神經元疲乏 → 反方向偵測器的相對放電率變高 → 看靜止物體時錯覺往反方向移動。所以是『疲乏；較高』。",
+      "common_mistakes": "選『活化』（與機制相反）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "NCKU_114_14",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 14,
+        "title": "第6章 學習"
+      },
+      "question": "If you trained a rat to fear a flashing light by pairing it with a painful electric shock, what would be your conditioned stimulus?",
+      "options": [
+        "flashing light",
+        "electric shock",
+        "fear",
+        "extinction"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】如果你透過將「閃光」與「電擊」配對，訓練一隻老鼠對閃光產生恐懼，哪一個是條件刺激（conditioned stimulus）？\n\n【中譯選項】\nA. 閃光\nB. 電擊\nC. 恐懼\nD. 消弱（消退）\n\n【解析】古典制約：US（電擊）→ UR（恐懼）；CS（閃光）+ US 配對後 → CS 單獨引發 CR。\n所以閃光是 CS（條件刺激），電擊是 US（非制約刺激），恐懼是 UR/CR，消弱是另一個概念。",
+      "concepts": [
+        "古典制約",
+        "條件刺激"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "古典制約, 條件刺激",
+      "ai_hint": "古典制約：US（電擊）→ UR（恐懼）；CS（閃光）+ US 配對後 → CS 單獨引發 CR。\n所以閃光是 CS（條件刺激），電擊是 US（非制約刺激），恐懼是 UR/CR，消弱是另一個概念。",
+      "common_mistakes": "把 CS 和 US 搞反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NCKU_114_15",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 15,
+        "title": "第5章 注意與意識"
+      },
+      "question": "You use eye drops to keep your contacts moist. At first it was just once in the morning, but now it seems you are using eye drops every hour or your eyes just seem to dry out. This increased need for eye drops can be considered an example of ___ and may be due to a mild ___ to eye drops.",
+      "options": [
+        "tolerance; addiction",
+        "sensitization; habituation",
+        "withdrawal effects; addiction",
+        "counter conditioning; habituation"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】你使用眼藥水來保持隱形眼鏡濕潤。一開始只需要早上用一次，但現在似乎每小時都要使用，否則眼睛就會乾。這種對眼藥水需求增加的現象，可以被視為＿＿，並可能是對眼藥水產生輕微＿＿的結果。\n\n【中譯選項】\nA. 耐受性；成癮\nB. 敏化；習慣化\nC. 戒斷效應；成癮\nD. 反制約；習慣化\n\n【解析】對藥物產生『耐受性』（tolerance）= 需要越來越多劑量才能達到相同效果。長期反覆使用導致受體下調或代謝加速。tolerance 常與 addiction（成癮）並存。\n❌ B 敏化＋習慣化矛盾。❌ C 戒斷是停藥才會出現。❌ D 反制約是治療技術。",
+      "concepts": [
+        "藥物耐受性",
+        "成癮"
+      ],
+      "scholars": [],
+      "school_of_thought": "consciousness",
+      "key_concepts": "藥物耐受性, 成癮",
+      "ai_hint": "對藥物產生『耐受性』（tolerance）= 需要越來越多劑量才能達到相同效果。長期反覆使用導致受體下調或代謝加速。tolerance 常與 addiction（成癮）並存。\n❌ B 敏化＋習慣化矛盾。❌ C 戒斷是停藥才會出現。❌ D 反制約是治療技術。",
+      "common_mistakes": "把 tolerance（耐受）和 withdrawal（戒斷）搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。 本題 stem 提到對眼藥水『可能產生輕微 addiction』，這與『心理藥物上癮』不同；題目沿用課本的 tolerance/addiction 概念。",
+      "topic": "第5章 注意與意識"
+    },
+    {
+      "id": "NCKU_114_16",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 16,
+        "title": "第16章 心智異常"
+      },
+      "question": "In males, at what age does Schizophrenia most often result in hospitalization?",
+      "options": [
+        "Early childhood (0–10 yrs)",
+        "Adolescence (10–20 yrs)",
+        "Midlife (20–40 yrs)",
+        "Later life (40–60 yrs)"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在男性中，思覺失調症最常在什麼年齡階段導致住院？\n\n【中譯選項】\nA. 幼年期（0–10歲）\nB. 青春期（10–20歲）\nC. 成年早中期（20–40歲）\nD. 中晚年（40–60歲）\n\n【解析】思覺失調症典型發病：男性 18-25 歲、女性 25-35 歲，男性發病較早。題目選項：B（10-20 歲）涵蓋部分早期發病，C（20-40 歲）涵蓋發病高峰與最常住院的年齡。教科書通常標示成年早期（early adulthood）為男性最常住院年齡，對應 C。",
+      "concepts": [
+        "思覺失調症",
+        "發病年齡"
+      ],
+      "scholars": [],
+      "school_of_thought": "abnormal",
+      "key_concepts": "思覺失調症, 發病年齡",
+      "ai_hint": "思覺失調症典型發病：男性 18-25 歲、女性 25-35 歲，男性發病較早。題目選項：B（10-20 歲）涵蓋部分早期發病，C（20-40 歲）涵蓋發病高峰與最常住院的年齡。教科書通常標示成年早期（early adulthood）為男性最常住院年齡，對應 C。",
+      "common_mistakes": "選太早（B）— 雖然男性發病早，但最常住院年齡仍在 20s 中後段",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。 選項 B vs C 邊界模糊，依文獻不同可能解讀為 B；建議對照原題作答。",
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "NCKU_114_17",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 17,
+        "title": "第6章 學習"
+      },
+      "question": "Why is Skinner's dream of solving all social problems through operant conditioning impossible?",
+      "options": [
+        "Biology places constraints on our learning.",
+        "Operant conditioning isn't effective for learning.",
+        "Operant conditioning doesn't apply to social learning.",
+        "Operant conditioning doesn't take into account learning from classical conditioning."
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】為什麼 Skinner 想透過操作制約解決所有社會問題的理想是不可能的？\n\n【中譯選項】\nA. 生物因素會對學習產生限制\nB. 操作制約對學習沒有幫助\nC. 操作制約不適用於社會學習\nD. 操作制約沒有考慮到古典制約的影響\n\n【解析】Breland 夫婦的『有機體錯誤行為』（misbehavior of organisms）：浣熊、豬等動物無法被操作制約完全克服其本能行為。生物因素（本能、生理限制）對學習設下界限，這是 Skinner 全行為主義無法實現社會工程的根本理由。",
+      "concepts": [
+        "生物限制",
+        "本能漂移",
+        "Misbehavior"
+      ],
+      "scholars": [
+        "Breland"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "生物限制, 本能漂移, Misbehavior",
+      "ai_hint": "Breland 夫婦的『有機體錯誤行為』（misbehavior of organisms）：浣熊、豬等動物無法被操作制約完全克服其本能行為。生物因素（本能、生理限制）對學習設下界限，這是 Skinner 全行為主義無法實現社會工程的根本理由。",
+      "common_mistakes": "選『操作制約沒效』（誇張）— 實際上是『有限制』而非『無效』",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NCKU_114_18",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 18,
+        "title": "第7章 記憶"
+      },
+      "question": "Anterograde amnesia is most commonly associated with what part of the brain?",
+      "options": [
+        "Corpus Callosum",
+        "Hippocampus",
+        "Primary Visual Cortex",
+        "Somatosensory Cortex"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】順行性失憶（anterograde amnesia）最常與大腦的哪個部位有關？\n\n【中譯選項】\nA. 胼胝體\nB. 海馬迴\nC. 初級視覺皮質\nD. 體感覺皮質\n\n【解析】順行性失憶（anterograde amnesia）= 失去形成新長期記憶的能力。經典案例 H.M.（Henry Molaison）切除海馬迴後出現此症狀。海馬迴是新陳述性記憶（episodic + semantic）形成的關鍵區域。",
+      "concepts": [
+        "順行性失憶",
+        "海馬迴",
+        "H.M."
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "順行性失憶, 海馬迴, H.M.",
+      "ai_hint": "順行性失憶（anterograde amnesia）= 失去形成新長期記憶的能力。經典案例 H.M.（Henry Molaison）切除海馬迴後出現此症狀。海馬迴是新陳述性記憶（episodic + semantic）形成的關鍵區域。",
+      "common_mistakes": "把順行性（anterograde）和逆行性（retrograde）搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NCKU_114_19",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 19,
+        "title": "第7章 記憶"
+      },
+      "question": "According to the research conducted by Loftus, people will estimate speeds when they are asked how fast a car was going when it smashed into another car relative to when they are asked how fast a car was going when it collided with another car?",
+      "options": [
+        "slower",
+        "faster",
+        "similar",
+        "the same"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據 Loftus 的研究，當人們被問「車子是以多快的速度撞上（smashed）」另一台車，相較於被問「碰撞（collided）」時，他們會如何估計速度？\n\n【中譯選項】\nA. 較慢\nB. 較快\nC. 相似\nD. 相同\n\n【解析】Loftus & Palmer (1974) 經典實驗：受試看交通事故影片後被問速度。問句用 smashed 比 collided 估計的時速更快（41 vs 32 mph）。顯示語言提示會扭曲記憶（誤導訊息效應）。",
+      "concepts": [
+        "誤導訊息效應",
+        "記憶可塑性"
+      ],
+      "scholars": [
+        "Loftus"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "誤導訊息效應, 記憶可塑性",
+      "ai_hint": "Loftus & Palmer (1974) 經典實驗：受試看交通事故影片後被問速度。問句用 smashed 比 collided 估計的時速更快（41 vs 32 mph）。顯示語言提示會扭曲記憶（誤導訊息效應）。",
+      "common_mistakes": "誤以為動詞不影響記憶",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NCKU_114_20",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 20,
+        "title": "第14章 發展心理學"
+      },
+      "question": "Evolutionary psychologists are more likely to explain the male and female sexual roles of today as",
+      "options": [
+        "products of recent changes in the society.",
+        "behaviors that developed over extremely long periods of time.",
+        "identical to those roles as they existed during the Pleistocene era.",
+        "learned responses to environmental consequences in the individual male's and female's experience."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】演化心理學家較可能如何解釋現今男女的性別角色？\n\n【中譯選項】\nA. 近代社會變遷的產物\nB. 在極長時間的演化過程中發展出來的行為\nC. 與更新世（Pleistocene）時期完全相同的角色\nD. 個體在環境中學習出來的反應\n\n【解析】演化心理學主張現代男女性別角色源自更新世（Pleistocene）祖先環境中的適應性行為——延續了上萬年的天擇結果，而非近代社會建構或個人學習。",
+      "concepts": [
+        "演化心理學",
+        "性別角色"
+      ],
+      "scholars": [
+        "Buss"
+      ],
+      "school_of_thought": "evolutionary",
+      "key_concepts": "演化心理學, 性別角色",
+      "ai_hint": "演化心理學主張現代男女性別角色源自更新世（Pleistocene）祖先環境中的適應性行為——延續了上萬年的天擇結果，而非近代社會建構或個人學習。",
+      "common_mistakes": "選 A（社會建構）— 那是社會學派的觀點，不是演化心理學",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NCKU_114_21",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 21,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "A student is walking through an exhibit at the science museum entitled \"The Living Brain.\" The exhibit takes her from the outer layers of the brain to its deepest recesses. What is the route she will follow?",
+      "options": [
+        "cerebrum, limbic system, brain stem",
+        "brain stem, limbic system, cerebrum",
+        "limbic system, cerebrum, brain stem",
+        "cerebrum, brain stem, limbic system"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】一位學生參觀科學博物館「活的腦」展覽，展覽帶她從大腦最外層走到最深層。她會依序看到哪些結構？\n\n【中譯選項】\nA. 大腦皮質（大腦）、邊緣系統、腦幹\nB. 腦幹、邊緣系統、大腦\nC. 邊緣系統、大腦、腦幹\nD. 大腦、腦幹、邊緣系統\n\n【解析】大腦由表至深：大腦皮質（cerebrum，最外）→ 邊緣系統（limbic system，中層，含杏仁核、海馬迴、視丘等）→ 腦幹（brain stem，最深，連接脊髓）。",
+      "concepts": [
+        "大腦結構",
+        "邊緣系統",
+        "腦幹"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "大腦結構, 邊緣系統, 腦幹",
+      "ai_hint": "大腦由表至深：大腦皮質（cerebrum，最外）→ 邊緣系統（limbic system，中層，含杏仁核、海馬迴、視丘等）→ 腦幹（brain stem，最深，連接脊髓）。",
+      "common_mistakes": "把腦幹與大腦皮質的位置搞反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_22",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 22,
+        "title": "第10章 智力"
+      },
+      "question": "Back in 1920s, Psychologist Lewis Terman explored the popular myth that gifted children have problems with social and emotional adjustment. He found",
+      "options": [
+        "his sample to be better adjusted than their less gifted peers.",
+        "that gifted children had more problems with social adjustments as compared to their less gifted peers.",
+        "that gifted children did not participate in athletic activities as compared to their less gifted peers.",
+        "his sample was poorer on adjustment than their less gifted peers."
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在1920年代，心理學家 Lewis Terman 檢驗一個普遍迷思：天才兒童在社會與情緒適應上有問題。他的研究發現：\n\n【中譯選項】\nA. 他的樣本在適應上比一般兒童更好\nB. 天才兒童在社會適應上有更多問題\nC. 天才兒童較少參與運動活動\nD. 他的樣本在適應上比一般兒童更差\n\n【解析】Lewis Terman 從 1921 年起追蹤 1500 多名 IQ 140+ 兒童（Terman 的『天才』）。長達數十年的縱貫研究發現他們在心理健康、社會適應、職業成就、婚姻穩定上『普遍優於』一般兒童，推翻『天才必有怪癖／適應差』的迷思。",
+      "concepts": [
+        "Terman 縱貫研究",
+        "資優兒童"
+      ],
+      "scholars": [
+        "Terman"
+      ],
+      "school_of_thought": "intelligence",
+      "key_concepts": "Terman 縱貫研究, 資優兒童",
+      "ai_hint": "Lewis Terman 從 1921 年起追蹤 1500 多名 IQ 140+ 兒童（Terman 的『天才』）。長達數十年的縱貫研究發現他們在心理健康、社會適應、職業成就、婚姻穩定上『普遍優於』一般兒童，推翻『天才必有怪癖／適應差』的迷思。",
+      "common_mistakes": "選 B 或 D — 與 Terman 的實際發現相反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NCKU_114_23",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 23,
+        "title": "第10章 智力"
+      },
+      "question": "Charles Spearman's belief that there is a factor of general intelligence underlying all intelligent performance was based on his finding that",
+      "options": [
+        "the performance of individuals on a variety of intelligence tests was highly correlated.",
+        "each individual domain has associated with it specific skills.",
+        "a person's performance on tests depended both on general intelligence and domain-specific abilities.",
+        "fluid intelligence and crystallized intelligence were relatively independent."
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】Spearman 認為所有智能表現背後都有一個「一般智力因素（g）」的理由是，他發現：\n\n【中譯選項】\nA. 個體在各種不同智力測驗上的表現之間具有高度相關\nB. 每一個領域都有其特定技能\nC. 測驗表現同時依賴一般智力與特定能力\nD. 流體智力與晶體智力彼此相對獨立\n\n【解析】Spearman 觀察到不同智力測驗（語文、數學、空間等）成績『高度正相關』，由此推論背後存在共同的『一般智力因素 g』。這就是 Spearman 提出 g 的關鍵證據。",
+      "concepts": [
+        "g 因素",
+        "二因論"
+      ],
+      "scholars": [
+        "Spearman"
+      ],
+      "school_of_thought": "intelligence",
+      "key_concepts": "g 因素, 二因論",
+      "ai_hint": "Spearman 觀察到不同智力測驗（語文、數學、空間等）成績『高度正相關』，由此推論背後存在共同的『一般智力因素 g』。這就是 Spearman 提出 g 的關鍵證據。",
+      "common_mistakes": "選 C／D — 那是反對 g 的觀點（多元智能、流體晶體之分）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NCKU_114_24",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 24,
+        "title": "第7章 記憶"
+      },
+      "question": "One of the best ways to remember factual information is to relate it to something personal. In this way, you are taking advantage of your ______ memory to aid retrieval from your ______ memory.",
+      "options": [
+        "implicit; explicit",
+        "semantic; episodic",
+        "episodic; semantic",
+        "explicit; implicit"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】記住事實性資訊的一個好方法是把它和個人經驗連結。這樣做是利用你的＿＿記憶來幫助從＿＿記憶中提取資訊。\n\n【中譯選項】\nA. 內隱記憶；外顯記憶\nB. 語意記憶；情節記憶\nC. 情節記憶；語意記憶\nD. 外顯記憶；內隱記憶\n\n【解析】情節記憶（episodic）= 個人經驗、特定時空事件；語意記憶（semantic）= 一般事實、概念。把事實連結到個人經驗 = 用情節記憶『裝載』語意資訊，使提取更容易（精緻化複誦、自我參照效應）。",
+      "concepts": [
+        "情節記憶",
+        "語意記憶",
+        "自我參照效應"
+      ],
+      "scholars": [
+        "Tulving"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "情節記憶, 語意記憶, 自我參照效應",
+      "ai_hint": "情節記憶（episodic）= 個人經驗、特定時空事件；語意記憶（semantic）= 一般事實、概念。把事實連結到個人經驗 = 用情節記憶『裝載』語意資訊，使提取更容易（精緻化複誦、自我參照效應）。",
+      "common_mistakes": "把 episodic 和 semantic 搞反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NCKU_114_25",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 25,
+        "title": "第10章 智力"
+      },
+      "question": "One probable reason that children with more affluent parents tend to have higher IQs is that these children are more likely to:",
+      "options": [
+        "be genetically predisposed to be more intelligent",
+        "attend better schools and have more enrichment",
+        "be familiar with the information on IQ tests",
+        "take classes to prepare them for IQ tests"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】一個可能的原因是：為什麼較富裕家庭的孩子通常有較高的 IQ？\n\n【中譯選項】\nA. 在基因上較容易具有較高智力\nB. 就讀較好的學校並擁有更多學習資源與刺激\nC. 對 IQ 測驗內容較熟悉\nD. 參加課程準備 IQ 測驗\n\n【解析】富裕家庭 IQ 較高的『環境解釋』：較好的學校、更多認知刺激、書籍、課外活動、營養與健康等共同造就。\n本題問『可能的環境理由』，A（基因）是另一派解釋；B 是教科書通常給的環境答案。",
+      "concepts": [
+        "IQ 環境因素",
+        "社經地位"
+      ],
+      "scholars": [],
+      "school_of_thought": "intelligence",
+      "key_concepts": "IQ 環境因素, 社經地位",
+      "ai_hint": "富裕家庭 IQ 較高的『環境解釋』：較好的學校、更多認知刺激、書籍、課外活動、營養與健康等共同造就。\n本題問『可能的環境理由』，A（基因）是另一派解釋；B 是教科書通常給的環境答案。",
+      "common_mistakes": "誤以為基因是唯一原因（A）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。 若題意是『基因 vs 環境』比較題，可能答案 A／B 都可推；本題語境傾向 B（環境）。",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NCKU_114_26",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 26,
+        "title": "第13章 社會心理學"
+      },
+      "question": "The Stanford Prison Experiment demonstrates the power ______ has in shaping our behaviors.",
+      "options": [
+        "genetics",
+        "deprivation",
+        "personality",
+        "context"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】史丹佛監獄實驗顯示＿＿在塑造我們行為上的強大影響力。\n\n【中譯選項】\nA. 基因\nB. 剝奪\nC. 人格\nD. 情境\n\n【解析】Zimbardo 的史丹佛監獄實驗（1971）顯示：『情境』（角色、環境）對行為的塑造力遠大於個人特質。普通大學生在獄卒／囚犯角色下會表現出殘忍／順從。",
+      "concepts": [
+        "史丹佛監獄實驗",
+        "情境論"
+      ],
+      "scholars": [
+        "Zimbardo"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "史丹佛監獄實驗, 情境論",
+      "ai_hint": "Zimbardo 的史丹佛監獄實驗（1971）顯示：『情境』（角色、環境）對行為的塑造力遠大於個人特質。普通大學生在獄卒／囚犯角色下會表現出殘忍／順從。",
+      "common_mistakes": "選 C 人格 — 實驗的核心結論恰好是『情境壓過人格』",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_27",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 27,
+        "title": "第12章 性格"
+      },
+      "question": "Alfred Adler's theory of personality revolved around the ______",
+      "options": [
+        "centrality of Eros and libidinal pleasures.",
+        "attempts by people to overcome feelings of inferiority.",
+        "attempts by people to overcome feelings of superiority.",
+        "ego and its defenses."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】Adler 的人格理論主要圍繞在＿＿之上。\n\n【中譯選項】\nA. 性本能（Eros）與性慾快樂的核心地位\nB. 人們試圖克服自卑感的努力\nC. 人們試圖克服優越感的努力\nD. 自我（ego）及其防衛機制\n\n【解析】Adler 的個體心理學核心概念：『自卑感與超越』（inferiority and compensation）。每個人都從幼年的弱小無力出發，發展生活風格以克服自卑、追求優越。\n❌ A 是 Freud（性本能）。❌ D 自我與防衛是 Freud／Anna Freud。",
+      "concepts": [
+        "自卑情結",
+        "個體心理學",
+        "追求優越"
+      ],
+      "scholars": [
+        "Adler"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "自卑情結, 個體心理學, 追求優越",
+      "ai_hint": "Adler 的個體心理學核心概念：『自卑感與超越』（inferiority and compensation）。每個人都從幼年的弱小無力出發，發展生活風格以克服自卑、追求優越。\n❌ A 是 Freud（性本能）。❌ D 自我與防衛是 Freud／Anna Freud。",
+      "common_mistakes": "把 Adler 跟 Freud 的核心混淆",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NCKU_114_28",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 28,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "Although she has never been snowboarding, a girl feels she will not enjoy the sport because she does not like cross-country skiing. She is using the ______ heuristic.",
+      "options": [
+        "availability",
+        "anchoring",
+        "representativeness",
+        "framing"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】雖然她從未玩過單板滑雪（snowboarding），但因為她不喜歡越野滑雪（cross-country skiing），她認為自己也不會喜歡單板滑雪。她使用的是哪一種捷思法？\n\n【中譯選項】\nA. 可得性捷思法\nB. 錨定效應\nC. 代表性捷思法\nD. 框架效應\n\n【解析】代表性捷思法（representativeness heuristic）：以與某類別的相似度來判斷／預測。她把『單板滑雪』歸類為『滑雪類運動』（與越野滑雪相似），用越野的偏好來推斷單板偏好。\n❌ A 可得性是『腦中容易想起的訊息』。❌ B 錨定是用初始參考點調整。❌ D 框架是表述方式影響決策。",
+      "concepts": [
+        "代表性捷思法",
+        "判斷與決策"
+      ],
+      "scholars": [
+        "Kahneman",
+        "Tversky"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "代表性捷思法, 判斷與決策",
+      "ai_hint": "代表性捷思法（representativeness heuristic）：以與某類別的相似度來判斷／預測。她把『單板滑雪』歸類為『滑雪類運動』（與越野滑雪相似），用越野的偏好來推斷單板偏好。\n❌ A 可得性是『腦中容易想起的訊息』。❌ B 錨定是用初始參考點調整。❌ D 框架是表述方式影響決策。",
+      "common_mistakes": "選 A 可得性 — 那是『記憶提取容易度』，不是『分類相似度』",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NCKU_114_29",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 29,
+        "title": "第13章 社會心理學"
+      },
+      "question": "Students have been asked to leave the library and wait several blocks away. In which of the following situations would the students be most likely to want to wait together?",
+      "options": [
+        "there is a fire drill",
+        "there is a bomb threat",
+        "there has been an assault",
+        "no explanation has been given"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】學生被要求離開圖書館並在幾個街區外等待。在以下哪一種情況下，學生最有可能想要一起等待？\n\n【中譯選項】\nA. 發生消防演習\nB. 發生炸彈威脅\nC. 發生攻擊事件\nD. 沒有提供任何解釋\n\n【解析】Schachter（1959）研究：高焦慮情境下人們傾向 affiliate（與他人在一起）以進行社會比較、減少不確定性。炸彈威脅是高度威脅／不確定情境，最會引發 affiliation 動機。\n❌ A 消防演習常規低焦慮。❌ C 攻擊事件已過、訊息明確較不模糊。❌ D 沒解釋雖然不確定，但威脅感低於炸彈威脅。",
+      "concepts": [
+        "affiliation",
+        "社會比較",
+        "焦慮"
+      ],
+      "scholars": [
+        "Schachter"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "affiliation, 社會比較, 焦慮",
+      "ai_hint": "Schachter（1959）研究：高焦慮情境下人們傾向 affiliate（與他人在一起）以進行社會比較、減少不確定性。炸彈威脅是高度威脅／不確定情境，最會引發 affiliation 動機。\n❌ A 消防演習常規低焦慮。❌ C 攻擊事件已過、訊息明確較不模糊。❌ D 沒解釋雖然不確定，但威脅感低於炸彈威脅。",
+      "common_mistakes": "選 D 沒解釋 — 不確定性確實會增加 affiliation 但題意是『最有可能』，炸彈威脅同時具備不確定 + 高威脅",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。 選項 B vs D 都涉及不確定性；教科書經典答案為 B（高威脅）。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_30",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 30,
+        "title": "第3章 行為的生物基礎"
+      },
+      "question": "Motor-cortex neurons that fire (i.e., become active) in the same manner when you watch someone perform a task as when you perform that task yourself are called ______ neurons.",
+      "options": [
+        "Model",
+        "Secondary",
+        "Primary",
+        "Mirror"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】當你觀看他人執行某個動作時，與你自己執行該動作時以相同方式活化的運動皮質神經元，稱為＿＿神經元。\n\n【中譯選項】\nA. 模型神經元\nB. 次級神經元\nC. 初級神經元\nD. 鏡像神經元\n\n【解析】鏡像神經元（mirror neurons）由 Rizzolatti 等人在獼猴前運動皮質發現：當動物執行動作或觀察他人執行相同動作時都會放電。被認為與模仿學習、同理心、心智理論有關。",
+      "concepts": [
+        "鏡像神經元",
+        "模仿學習"
+      ],
+      "scholars": [
+        "Rizzolatti"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "鏡像神經元, 模仿學習",
+      "ai_hint": "鏡像神經元（mirror neurons）由 Rizzolatti 等人在獼猴前運動皮質發現：當動物執行動作或觀察他人執行相同動作時都會放電。被認為與模仿學習、同理心、心智理論有關。",
+      "common_mistakes": "把鏡像神經元誤認為『初級』或『次級』神經元",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_31",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 31,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "According to the theory of embodied cognition, which of the following best reflects its core viewpoint?",
+      "options": [
+        "Cognitive processes are completely independent of bodily sensations and motor systems.",
+        "Bodily states and interactions with the environment directly influence cognition and emotion.",
+        "Memory storage depends on neural connections in specific brain regions.",
+        "Language ability is the only determinant of cognitive development."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據具身認知理論，下列何者最能代表其核心觀點？\n\n【中譯選項】\nA. 認知歷程完全獨立於身體感覺與動作系統\nB. 身體狀態與與環境的互動會直接影響認知與情緒\nC. 記憶儲存依賴特定腦區的神經連結\nD. 語言能力是認知發展的唯一決定因素\n\n【解析】具身認知（embodied cognition）：認知並非完全發生在腦內、與身體無關的抽象計算；身體狀態（姿勢、感覺、動作）與環境互動會直接形塑認知與情緒。例如握溫熱的杯子使人對他人評價更溫暖。",
+      "concepts": [
+        "具身認知"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "具身認知",
+      "ai_hint": "具身認知（embodied cognition）：認知並非完全發生在腦內、與身體無關的抽象計算；身體狀態（姿勢、感覺、動作）與環境互動會直接形塑認知與情緒。例如握溫熱的杯子使人對他人評價更溫暖。",
+      "common_mistakes": "選 A — 那是『認知主義』（脫離身體的計算）的觀點，與具身認知相反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NCKU_114_32",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 32,
+        "title": "第9章 思考與創造力"
+      },
+      "question": "In dual-process theories of social cognition, what are the characteristics of System 1?",
+      "options": [
+        "Relies on logical analysis and step-by-step reasoning.",
+        "Fast, automatic, and easily influenced by heuristics.",
+        "Requires high levels of conscious control and attentional resources.",
+        "Specializes in complex mathematical calculations."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在社會認知的雙歷程理論中，System 1 具有哪些特徵？\n\n【中譯選項】\nA. 依賴邏輯分析與逐步推理\nB. 快速、自動，且容易受到捷思法影響\nC. 需要高度意識控制與注意力資源\nD. 專門處理複雜的數學計算\n\n【解析】Kahneman 的雙歷程理論：\n• System 1：快速、自動、直覺、無需努力、易受捷思法影響。\n• System 2：緩慢、控制、邏輯、需要注意力資源。\nB 描述 System 1。其餘選項描述 System 2 或無關。",
+      "concepts": [
+        "雙歷程理論",
+        "捷思法"
+      ],
+      "scholars": [
+        "Kahneman"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "雙歷程理論, 捷思法",
+      "ai_hint": "Kahneman 的雙歷程理論：\n• System 1：快速、自動、直覺、無需努力、易受捷思法影響。\n• System 2：緩慢、控制、邏輯、需要注意力資源。\nB 描述 System 1。其餘選項描述 System 2 或無關。",
+      "common_mistakes": "把 System 1 和 System 2 搞反",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NCKU_114_33",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 33,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In cognitive dissonance theory, how is a person most likely to reduce dissonance if they smoke despite knowing the health risks?",
+      "options": [
+        "Change their behavior (quit smoking)",
+        "Add new cognitions to justify smoking (e.g., \"It helps relieve stress\")",
+        "Downplay the importance of the contradictory cognition (e.g., \"The risks are exaggerated\")",
+        "All of the above"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在認知失調理論中，如果一個人明知吸菸有害健康卻仍吸菸，他最可能如何降低失調？\n\n【中譯選項】\nA. 改變行為（戒菸）\nB. 加入新的認知來合理化（例如「可以紓壓」）\nC. 降低衝突認知的重要性（例如「風險被誇大了」）\nD. 以上皆是\n\n【解析】認知失調的化解策略（Festinger）：\n（1）改變行為 → A 戒菸；\n（2）增加新認知合理化 → B『可以紓壓』；\n（3）降低衝突認知重要性 → C『風險被誇大』。\n三者皆是教科書標準策略，所以選 D。",
+      "concepts": [
+        "認知失調",
+        "失調化解"
+      ],
+      "scholars": [
+        "Festinger"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "認知失調, 失調化解",
+      "ai_hint": "認知失調的化解策略（Festinger）：\n（1）改變行為 → A 戒菸；\n（2）增加新認知合理化 → B『可以紓壓』；\n（3）降低衝突認知重要性 → C『風險被誇大』。\n三者皆是教科書標準策略，所以選 D。",
+      "common_mistakes": "只看到一個策略而忽略其他",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_34",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 34,
+        "title": "第11章 動機與情緒"
+      },
+      "question": "Which experiment most directly supports the cross-cultural universality of basic emotions?",
+      "options": [
+        "Milgram's obedience experiment",
+        "Ekman's facial expression recognition research",
+        "Asch's conformity experiment",
+        "Harlow's rhesus monkey experiment"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】哪一個實驗最直接支持「基本情緒具有跨文化普遍性」？\n\n【中譯選項】\nA. Milgram 的服從實驗\nB. Ekman 的臉部表情辨識研究\nC. Asch 的從眾實驗\nD. Harlow 的恆河猴實驗\n\n【解析】Ekman 跨文化研究：用照片在西方與新幾內亞 Fore 部落（無接觸西方媒體）測試情緒辨識。發現六種基本情緒（快樂、悲傷、憤怒、恐懼、驚訝、厭惡）跨文化一致，支持情緒的演化／普遍性。",
+      "concepts": [
+        "基本情緒",
+        "跨文化"
+      ],
+      "scholars": [
+        "Ekman"
+      ],
+      "school_of_thought": "emotion",
+      "key_concepts": "基本情緒, 跨文化",
+      "ai_hint": "Ekman 跨文化研究：用照片在西方與新幾內亞 Fore 部落（無接觸西方媒體）測試情緒辨識。發現六種基本情緒（快樂、悲傷、憤怒、恐懼、驚訝、厭惡）跨文化一致，支持情緒的演化／普遍性。",
+      "common_mistakes": "選 A／C／D — 那些不是情緒研究",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第11章 動機與情緒"
+    },
+    {
+      "id": "NCKU_114_35",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 35,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In attribution theory, the bias of underestimating situational factors and overestimating personal traits is called:",
+      "options": [
+        "Self-serving bias",
+        "Fundamental attribution error",
+        "Confirmation bias",
+        "Anchoring effect"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在歸因理論中，低估情境因素並高估個人特質的偏誤稱為：\n\n【中譯選項】\nA. 自利偏誤\nB. 基本歸因錯誤\nC. 確認偏誤\nD. 錨定效應\n\n【解析】基本歸因錯誤（Fundamental Attribution Error，FAE）= 解釋他人行為時，過度強調個人特質、低估情境因素。\n❌ A 自利偏誤是『成功歸己、失敗歸外』。❌ C 確認偏誤是只找支持證據。❌ D 錨定是判斷受初始值影響。",
+      "concepts": [
+        "基本歸因錯誤",
+        "歸因理論"
+      ],
+      "scholars": [
+        "Ross"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "基本歸因錯誤, 歸因理論",
+      "ai_hint": "基本歸因錯誤（Fundamental Attribution Error，FAE）= 解釋他人行為時，過度強調個人特質、低估情境因素。\n❌ A 自利偏誤是『成功歸己、失敗歸外』。❌ C 確認偏誤是只找支持證據。❌ D 錨定是判斷受初始值影響。",
+      "common_mistakes": "把 FAE 和自利偏誤搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_36",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 36,
+        "title": "第13章 社會心理學"
+      },
+      "question": "According to social impact theory, which of the following is NOT one of the three main factors influencing conformity?",
+      "options": [
+        "Immediacy of the group",
+        "Size of the group",
+        "Status of the group",
+        "Moral controversy of the issue"
+      ],
+      "answer": "D",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據社會影響理論，下列何者不是影響從眾的三大因素？\n\n【中譯選項】\nA. 群體的接近性\nB. 群體規模\nC. 群體地位\nD. 議題的道德爭議性\n\n【解析】Latané 社會影響理論三因素：\n• Strength（強度／重要性／地位）→ C\n• Immediacy（接近性）→ A\n• Number（人數／規模）→ B\nD 議題的道德爭議性不在三因素中。",
+      "concepts": [
+        "社會影響理論",
+        "Latané"
+      ],
+      "scholars": [
+        "Latané"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "社會影響理論, Latané",
+      "ai_hint": "Latané 社會影響理論三因素：\n• Strength（強度／重要性／地位）→ C\n• Immediacy（接近性）→ A\n• Number（人數／規模）→ B\nD 議題的道德爭議性不在三因素中。",
+      "common_mistakes": "選 C 地位 — 實際上 status 對應 strength，是三因素之一",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_37",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 37,
+        "title": "第10章 智力"
+      },
+      "question": "Which of the following best describes the difference between a fixed mindset and a growth mindset, according to Carol Dweck?",
+      "options": [
+        "Fixed mindset believes intelligence is malleable; growth mindset believes it is static.",
+        "Fixed mindset views abilities as unchangeable; growth mindset believes abilities can be developed through effort.",
+        "Fixed mindset leads to greater academic achievement; growth mindset leads to less motivation.",
+        "Fixed mindset is associated with higher self-esteem; growth mindset is associated with lower self-esteem."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據 Dweck，下列何者最能描述固定心態與成長心態的差異？\n\n【中譯選項】\nA. 固定心態認為智力可改變；成長心態認為不可改變\nB. 固定心態認為能力不可改變；成長心態認為能力可以透過努力發展\nC. 固定心態帶來較高成就；成長心態降低動機\nD. 固定心態自尊較高；成長心態自尊較低\n\n【解析】Carol Dweck 的心態（mindset）理論：\n• 固定心態（fixed）：能力是天生的、不變的 → 容易放棄、避免挑戰。\n• 成長心態（growth）：能力可透過努力培養 → 願意接受挑戰、堅持。\nA 把兩者敘述顛倒；C／D 也與實證相反。",
+      "concepts": [
+        "心態理論",
+        "成長心態"
+      ],
+      "scholars": [
+        "Dweck"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "心態理論, 成長心態",
+      "ai_hint": "Carol Dweck 的心態（mindset）理論：\n• 固定心態（fixed）：能力是天生的、不變的 → 容易放棄、避免挑戰。\n• 成長心態（growth）：能力可透過努力培養 → 願意接受挑戰、堅持。\nA 把兩者敘述顛倒；C／D 也與實證相反。",
+      "common_mistakes": "把 fixed 和 growth 的敘述顛倒（A）",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第10章 智力"
+    },
+    {
+      "id": "NCKU_114_38",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 38,
+        "title": "第14章 發展心理學"
+      },
+      "question": "According to Erikson's psychosocial theory, failure to resolve the \"identity vs. role confusion\" stage may result in:",
+      "options": [
+        "Guilt and shame",
+        "A lack of trust in others",
+        "Difficulty forming close relationships in adulthood",
+        "A sense of stagnation and unproductiveness"
+      ],
+      "answer": "C",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】根據 Erikson 理論，若無法解決「自我認同 vs 角色混亂」階段，會導致：\n\n【中譯選項】\nA. 罪惡感與羞愧\nB. 缺乏對他人的信任\nC. 在成人期難以建立親密關係\nD. 停滯與缺乏生產力\n\n【解析】Erikson 心理社會發展八階段。青春期『認同 vs 角色混亂』階段失敗 → 認同混亂 → 影響下一階段（成年早期『親密 vs 孤立』），導致難以建立穩定親密關係。\n❌ A 罪惡是 initiative vs guilt。❌ B 不信任是 trust vs mistrust（嬰兒）。❌ D 停滯是 generativity vs stagnation（中年）。",
+      "concepts": [
+        "Erikson 心理社會發展",
+        "認同危機"
+      ],
+      "scholars": [
+        "Erikson"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "Erikson 心理社會發展, 認同危機",
+      "ai_hint": "Erikson 心理社會發展八階段。青春期『認同 vs 角色混亂』階段失敗 → 認同混亂 → 影響下一階段（成年早期『親密 vs 孤立』），導致難以建立穩定親密關係。\n❌ A 罪惡是 initiative vs guilt。❌ B 不信任是 trust vs mistrust（嬰兒）。❌ D 停滯是 generativity vs stagnation（中年）。",
+      "common_mistakes": "把不同階段的失敗結果搞混",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。 嚴格來說，認同失敗本身的後果是『認同混亂』，C 是延伸到下一階段。考試上 C 仍是最佳答案。",
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "NCKU_114_39",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 39,
+        "title": "第13章 社會心理學"
+      },
+      "question": "In Solomon Asch's classic conformity experiments, which factor was found to most strongly decrease conformity?",
+      "options": [
+        "Increasing the size of the majority",
+        "The presence of a single ally who disagreed with the majority",
+        "Making the task more ambiguous",
+        "Increasing the number of trials"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】在 Asch 的經典從眾實驗中，下列哪一個因素最能降低從眾？\n\n【中譯選項】\nA. 增加多數人的人數\nB. 出現一位不同意多數意見的同伴\nC. 讓任務變得更模糊\nD. 增加試驗次數\n\n【解析】Asch 線段比較實驗的關鍵變項：\n• 增加多數人 → 從眾增加（但 4-5 人後飽和）。\n• 出現一個 dissenter（不同意多數的同伴）→ 從眾大幅下降（從 32% 降到 6%）。\nB 是降低從眾最有效的因素。",
+      "concepts": [
+        "從眾",
+        "Asch實驗",
+        "盟友效應"
+      ],
+      "scholars": [
+        "Asch"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "從眾, Asch實驗, 盟友效應",
+      "ai_hint": "Asch 線段比較實驗的關鍵變項：\n• 增加多數人 → 從眾增加（但 4-5 人後飽和）。\n• 出現一個 dissenter（不同意多數的同伴）→ 從眾大幅下降（從 32% 降到 6%）。\nB 是降低從眾最有效的因素。",
+      "common_mistakes": "選 A — 增加多數反而提高從眾",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "NCKU_114_40",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "選擇題",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "選擇題",
+        "number": 40,
+        "title": "第12章 性格"
+      },
+      "question": "Which of the following best illustrates the concept of \"reciprocal determinism\" as proposed by Albert Bandura?",
+      "options": [
+        "A person's genetic makeup determines their personality regardless of environment.",
+        "An individual's behavior, personal factors, and environment all influence each other.",
+        "Behavior is shaped solely by reinforcement and punishment.",
+        "Cognitive development occurs in fixed stages."
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "【中譯題目】下列何者最能說明 Bandura 所提出的「交互決定論」？\n\n【中譯選項】\nA. 一個人的基因完全決定其人格，與環境無關\nB. 個體行為、個人因素與環境彼此互相影響\nC. 行為完全由增強與懲罰塑造\nD. 認知發展以固定階段進行\n\n【解析】Bandura 的交互決定論（reciprocal determinism）：行為 ↔ 個人因素（認知、信念）↔ 環境，三者互相影響、雙向決定。社會認知學派核心概念。",
+      "concepts": [
+        "交互決定論",
+        "社會認知論"
+      ],
+      "scholars": [
+        "Bandura"
+      ],
+      "school_of_thought": "social-cognitive",
+      "key_concepts": "交互決定論, 社會認知論",
+      "ai_hint": "Bandura 的交互決定論（reciprocal determinism）：行為 ↔ 個人因素（認知、信念）↔ 環境，三者互相影響、雙向決定。社會認知學派核心概念。",
+      "common_mistakes": "選 A／C — 那分別是基因決定論／極端行為主義，都是『單向決定』",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷無提供答案，本題答案、章節、解析均由 AI 推導，請對照標準答案勘誤。",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NCKU_114_41",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "申論題",
+        "number": 1,
+        "title": "Part 2 簡答題（每題 5 分）"
+      },
+      "question": "請解釋「自我效能感」（self-efficacy）的意義，並說明它如何影響個體的行為。",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "自我效能感（self-efficacy）是 Bandura 社會認知論的核心概念，指個體對自己是否有能力成功完成某項特定任務的信念。它不是一般性的自信，而是針對特定情境／任務的能力評估。\n\n【自我效能感的四個來源】\n（1）成功經驗（mastery experiences）：最強烈來源，過去成功提升效能感。\n（2）替代經驗（vicarious experiences）：觀察他人成功（特別是條件相似者）會提升自身效能感。\n（3）言語說服（verbal persuasion）：他人鼓勵與肯定。\n（4）生理／情緒狀態：放鬆／焦慮的身體訊號會被解讀為能力訊號。\n\n【對行為的影響】\n（1）任務選擇：高效能者願意挑戰較難的任務，低效能者傾向避免。\n（2）努力程度：高效能者投入更多努力。\n（3）持續性：遭遇挫折時，高效能者堅持，低效能者放棄。\n（4）情緒反應：低效能者易焦慮、無助。\n（5）思維模式：影響歸因方式與心態。\n\n【應用】教育（鼓勵小成功）、健身、戒癮、職業諮商、組織管理等。",
+      "concepts": [
+        "自我效能感",
+        "Bandura 社會認知論"
+      ],
+      "scholars": [
+        "Bandura"
+      ],
+      "school_of_thought": "social-cognitive",
+      "key_concepts": "自我效能感 = 個體對自己能否成功完成任務的信念",
+      "ai_hint": "5 分小題：寫 1 段定義 + 1 段對行為的影響即可。本份試卷給的參考答案較簡短（約 200 字）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [
+        "自我效能感",
+        "Bandura",
+        "信念",
+        "任務",
+        "努力",
+        "持續",
+        "挑戰"
+      ],
+      "essay_outline": [
+        "破題：自我效能感定義 + Bandura",
+        "四個來源（成功經驗、替代經驗、言語說服、生理／情緒）",
+        "對行為的影響：任務選擇、努力、持續、情緒、思維",
+        "應用例子（教育／健康／工作）"
+      ],
+      "answer_note": "原試卷已提供範本答案（雙語版含）；keywords/outline 由 AI 補充以利批改。",
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "NCKU_114_42",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "申論題",
+        "number": 2,
+        "title": "Part 2 簡答題（每題 5 分）"
+      },
+      "question": "請舉兩例來說明行為主義在教育上的實際應用。",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "行為主義（behaviorism）強調可觀察的行為，主張透過環境中的增強（reinforcement）與懲罰（punishment）來塑造行為。Skinner 的操作制約是教育應用的主要理論基礎。常見應用包括：\n\n（1）正向增強（positive reinforcement）：教師在學生表現好（完成作業、上課專心）時給予讚美、貼紙、獎勵點數，增加該行為再次出現的機率。\n\n（2）塑造（shaping）：將複雜技能分解為小步驟，每完成一小步就給予增強，逐步逼近目標行為。例：教自閉症兒童社交，先增強眼神接觸、再增強簡單問候。\n\n其他例子：代幣制（token economy）、行為契約、消弱（extinction，忽略不當行為以減少其發生）、編序教學（programmed instruction，Skinner 提倡的小步驟自我學習法）。",
+      "concepts": [
+        "行為主義",
+        "增強",
+        "塑造",
+        "代幣制"
+      ],
+      "scholars": [
+        "Skinner",
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "行為主義 = 透過環境增強／懲罰塑造行為",
+      "ai_hint": "5 分小題：題目要求兩例。寫『正向增強』+『塑造』最穩。提到代幣制可加分。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [
+        "增強",
+        "塑造",
+        "操作制約",
+        "Skinner",
+        "獎勵",
+        "代幣制"
+      ],
+      "essay_outline": [
+        "破題：行為主義 = 透過環境增強／懲罰塑造行為",
+        "例 1：正向增強（教師讚美 / 獎勵）",
+        "例 2：塑造（小步驟強化複雜技能）",
+        "其他可提：代幣制、消弱、編序教學"
+      ],
+      "answer_note": "原試卷已提供範本答案（雙語版含）；keywords/outline 由 AI 補充以利批改。",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NCKU_114_43",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "申論題",
+        "number": 3,
+        "title": "Part 2 簡答題（每題 5 分）"
+      },
+      "question": "心理學中的「認知」指的是什麼樣的心理過程？",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "心理學中的『認知』（cognition）是指個體用來獲取、處理、儲存與使用資訊的一系列心理過程。認知學派將心智類比為『資訊處理系統』，研究訊息從感覺輸入到行為輸出之間的內在運算。\n\n【主要認知歷程】\n（1）知覺（perception）：對感官訊息的組織與解釋。\n（2）注意（attention）：選擇與分配認知資源。\n（3）記憶（memory）：編碼、儲存、提取訊息（感官／工作／長期記憶）。\n（4）思考（thinking）：推理、判斷、問題解決、決策。\n（5）語言（language）：理解與產生符號訊息。\n（6）後設認知（metacognition）：對自己認知歷程的監控。\n\n認知歷程是連結感覺輸入與行為反應的中介機制，使人類能理解世界、形成知識、做出決策。1950 年代『認知革命』後，認知心理學成為主流學派之一。",
+      "concepts": [
+        "認知",
+        "心理歷程",
+        "資訊處理"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "認知 = 獲取、處理、儲存、使用資訊的一系列心理過程",
+      "ai_hint": "5 分小題：寫定義 + 列舉主要歷程即可。簡答用『獲取、處理、儲存、使用』四動詞最精準。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [
+        "知覺",
+        "注意",
+        "記憶",
+        "思考",
+        "語言",
+        "問題解決",
+        "資訊處理"
+      ],
+      "essay_outline": [
+        "定義：認知 = 獲取／處理／儲存／使用資訊的心理歷程",
+        "資訊處理觀點（類比電腦）",
+        "主要歷程：知覺、注意、記憶、思考、語言",
+        "後設認知 + 認知革命的歷史背景"
+      ],
+      "answer_note": "原試卷已提供範本答案（雙語版含）；keywords/outline 由 AI 補充以利批改。",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NCKU_114_44",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "配合題",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "Part 2-Q4：諾貝爾獎心理學家配對（5 分）—— 將每位學者連到對應的成就"
+      },
+      "question": "Ivan Pavlov",
+      "options": [
+        "place cells（場所細胞，空間定位／導航）",
+        "split-brain（左右腦分工，胼胝體切除研究）",
+        "視覺皮質處理（邊緣與方向偵測神經元）",
+        "古典制約（條件反射，狗流口水實驗）",
+        "行為經濟學／決策心理（heuristics、快思慢想）"
+      ],
+      "answer": "D",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Pavlov（1849-1936）俄國生理學家，1904 年諾貝爾生理／醫學獎（消化生理研究）。其『古典制約』實驗（狗對鈴聲流口水）成為行為主義的奠基。",
+      "concepts": [
+        "古典制約"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "古典制約",
+      "ai_hint": "Pavlov（1849-1936）俄國生理學家，1904 年諾貝爾生理／醫學獎（消化生理研究）。其『古典制約』實驗（狗對鈴聲流口水）成為行為主義的奠基。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷已提供答案。",
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "NCKU_114_45",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "配合題",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "Part 2-Q4：諾貝爾獎心理學家配對（5 分）—— 將每位學者連到對應的成就"
+      },
+      "question": "Daniel Kahneman",
+      "options": [
+        "place cells（場所細胞，空間定位／導航）",
+        "split-brain（左右腦分工，胼胝體切除研究）",
+        "視覺皮質處理（邊緣與方向偵測神經元）",
+        "古典制約（條件反射，狗流口水實驗）",
+        "行為經濟學／決策心理（heuristics、快思慢想）"
+      ],
+      "answer": "E",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Kahneman（1934-2024）以色列／美國心理學家，2002 年諾貝爾經濟學獎（行為經濟學）。與 Tversky 提出 prospect theory、捷思法與偏誤。著作《快思慢想》。",
+      "concepts": [
+        "雙歷程理論／捷思法"
+      ],
+      "scholars": [
+        "Kahneman",
+        "Tversky"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "雙歷程理論／捷思法",
+      "ai_hint": "Kahneman（1934-2024）以色列／美國心理學家，2002 年諾貝爾經濟學獎（行為經濟學）。與 Tversky 提出 prospect theory、捷思法與偏誤。著作《快思慢想》。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷已提供答案。",
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "NCKU_114_46",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "配合題",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "Part 2-Q4：諾貝爾獎心理學家配對（5 分）—— 將每位學者連到對應的成就"
+      },
+      "question": "Roger W. Sperry",
+      "options": [
+        "place cells（場所細胞，空間定位／導航）",
+        "split-brain（左右腦分工，胼胝體切除研究）",
+        "視覺皮質處理（邊緣與方向偵測神經元）",
+        "古典制約（條件反射，狗流口水實驗）",
+        "行為經濟學／決策心理（heuristics、快思慢想）"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Sperry（1913-1994）美國神經生物學家，1981 年諾貝爾生理／醫學獎。對切除胼胝體（split-brain）患者的研究揭示左右腦的功能分工（左語言、右空間）。",
+      "concepts": [
+        "裂腦研究／半球側化"
+      ],
+      "scholars": [
+        "Sperry"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "裂腦研究／半球側化",
+      "ai_hint": "Sperry（1913-1994）美國神經生物學家，1981 年諾貝爾生理／醫學獎。對切除胼胝體（split-brain）患者的研究揭示左右腦的功能分工（左語言、右空間）。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷已提供答案。",
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "NCKU_114_47",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "配合題",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "Part 2-Q4：諾貝爾獎心理學家配對（5 分）—— 將每位學者連到對應的成就"
+      },
+      "question": "John O'Keefe",
+      "options": [
+        "place cells（場所細胞，空間定位／導航）",
+        "split-brain（左右腦分工，胼胝體切除研究）",
+        "視覺皮質處理（邊緣與方向偵測神經元）",
+        "古典制約（條件反射，狗流口水實驗）",
+        "行為經濟學／決策心理（heuristics、快思慢想）"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "O'Keefe（1939-）英美神經科學家，2014 年諾貝爾生理／醫學獎（與 Moser 夫婦共得）。發現海馬迴中的『場所細胞』（place cells），建立大腦的空間導航系統認知圖。",
+      "concepts": [
+        "認知圖／空間記憶"
+      ],
+      "scholars": [
+        "O'Keefe",
+        "Moser"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "認知圖／空間記憶",
+      "ai_hint": "O'Keefe（1939-）英美神經科學家，2014 年諾貝爾生理／醫學獎（與 Moser 夫婦共得）。發現海馬迴中的『場所細胞』（place cells），建立大腦的空間導航系統認知圖。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷已提供答案。",
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "NCKU_114_48",
+      "source": "NCKU",
+      "year": 114,
+      "year_ad": 2025,
+      "type": "配合題",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "配合題",
+        "number": 4,
+        "title": "Part 2-Q4：諾貝爾獎心理學家配對（5 分）—— 將每位學者連到對應的成就"
+      },
+      "question": "David Hubel & Torsten Wiesel",
+      "options": [
+        "place cells（場所細胞，空間定位／導航）",
+        "split-brain（左右腦分工，胼胝體切除研究）",
+        "視覺皮質處理（邊緣與方向偵測神經元）",
+        "古典制約（條件反射，狗流口水實驗）",
+        "行為經濟學／決策心理（heuristics、快思慢想）"
+      ],
+      "answer": "C",
+      "answer_confidence": "high",
+      "answer_source": "user_provided",
+      "reference_answer": "Hubel（1926-2013）& Wiesel（1924-）美瑞神經科學家，1981 年諾貝爾生理／醫學獎（與 Sperry 共得）。發現初級視覺皮質的特徵偵測細胞（簡單細胞、複雜細胞），偵測邊緣方向、運動。",
+      "concepts": [
+        "視覺皮質特徵偵測"
+      ],
+      "scholars": [
+        "Hubel",
+        "Wiesel"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "視覺皮質特徵偵測",
+      "ai_hint": "Hubel（1926-2013）& Wiesel（1924-）美瑞神經科學家，1981 年諾貝爾生理／醫學獎（與 Sperry 共得）。發現初級視覺皮質的特徵偵測細胞（簡單細胞、複雜細胞），偵測邊緣方向、運動。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "keywords_required": [],
+      "essay_outline": null,
+      "answer_note": "原試卷已提供答案。",
+      "topic": "第4章 感覺與知覺"
+    }
+  ]
+}

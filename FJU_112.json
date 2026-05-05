@@ -1,0 +1,953 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 112,
+    "year_ad": 2023,
+    "exam_name": "輔仁大學112學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 21,
+    "scoring": "是非題 20% (每題2分共10題) + 名詞解釋 30% (每題5分共6題) + 問答題 50% (每題10分共5題)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "notes": "是非題部分有多題涉及神經生理細節判斷，請特別注意第2、3、4、5題的細節是否與你教科書一致。"
+  },
+  "questions": [
+    {
+      "id": "FJU_112_01",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "在耳朵兩側腦區，是枕葉（occipital lobe）。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯。耳朵兩側的腦區是顳葉（temporal lobe），不是枕葉。枕葉位於後腦勺，主要處理視覺；顳葉位於側邊靠近耳朵，處理聽覺與語言理解。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "顳葉",
+        "枕葉",
+        "大腦皮質分區"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "顳葉=耳朵兩側=聽覺；枕葉=後腦=視覺",
+      "ai_hint": "這是基礎神經解剖題；顳葉 temporal 字根 = temple（太陽穴），位於側邊。",
+      "common_mistakes": "枕葉與顳葉位置易混淆。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_112_02",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "神經傳導物促進物（agonist）的功能之一，是透過加速回收的過程，來加速神經傳導物的分泌。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯。促進物（agonist）的功能是『增強』神經傳導物的作用，方式包括：模仿傳導物結合受體、促進釋放、抑制回收（reuptake）或抑制分解。『加速回收』反而會減少突觸間隙的傳導物濃度，是拮抗物（antagonist）才會做的事。例如 SSRI 抗鬱劑透過抑制血清素回收增強作用，屬於促進物機制。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "促進劑",
+        "拮抗劑",
+        "神經傳導物",
+        "回收"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "agonist 抑制回收（讓傳導物留在突觸更久）；不是加速回收",
+      "ai_hint": "口訣：增強作用 = agonist；抑制作用 = antagonist。SSRI 是經典 agonist 範例。",
+      "common_mistakes": "把『加速回收』與『加速分泌』混淆。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_112_03",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "神經元運作的全有全無論，意思是若神經衝動沒有超過一定的閾值，神經衝動就不會由軸突傳向樹突。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯。全有全無律（all-or-none law）是對的，但題目敘述中『由軸突傳向樹突』方向錯誤。神經衝動的傳遞方向是『樹突（dendrite）→ 細胞本體 → 軸突（axon）→ 軸突末梢』。神經衝動是沿著軸突傳出，不是『傳向樹突』。題目方向錯誤故為非。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "神經元",
+        "全有全無律",
+        "軸突",
+        "樹突"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "神經衝動方向：樹突 → 細胞本體 → 軸突；不是反過來",
+      "ai_hint": "口訣：樹突『接收』、軸突『傳出』。",
+      "common_mistakes": "全有全無律本身敘述正確，但題目把方向寫反了。陷阱題。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_112_04",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "一般來說，人與人之間，知覺（perceptual）運作的差異比較小、感覺（sensational）運作的差異比較大。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "教科書通常強調『感覺接收較一致、知覺解釋差異大』，故此題敘述顛倒，應為錯。但答案會視教科書版本而異。",
+      "reference_answer": "錯。一般教科書觀點：感覺（sensation）是感官接收外界刺激的歷程，受生理機制限制，個體間差異較小；知覺（perception）是大腦對感覺訊息的解釋與組織，受經驗、文化、預期、注意力影響，個體間差異較大。題目敘述順序顛倒，故為錯。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "感覺",
+        "知覺",
+        "知覺建構"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "感覺差異小（生理共通）；知覺差異大（經驗影響）",
+      "ai_hint": "口訣：感覺=接收（小差異）；知覺=解釋（大差異）。",
+      "common_mistakes": "輕易讀過題目沒看出敘述方向反了。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_05",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "聞香師之所以能夠區分不同的氣味，主因是因為他們大腦的嗅覺處理區比較發達。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "此題在於『主因』兩字。專業訓練後嗅球體積、皮質連結確會改變（神經可塑性），但更主要因素為訓練建立的『辨識基模』與語意標籤系統，主要差異在認知層次而非結構大小。故答錯較合理，但若教科書強調生理可塑性則可能為對。",
+      "reference_answer": "錯（更可能）。雖然研究顯示專業聞香師的嗅覺相關腦區有一定程度的神經可塑性變化，但區分氣味能力的『主因』在於：（一）長期訓練建立的氣味分類基模與語意標籤系統；（二）注意力分配與工作記憶能力；（三）語言對氣味的細緻分類。一般人也能聞到同樣的氣味，差別在於『辨識與命名』能力。腦區發達是訓練後的結果（果），不是區分能力的主因（因）。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "嗅覺",
+        "神經可塑性",
+        "專家知識",
+        "知覺學習"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "專家差異主要在認知層次（基模、標籤），不純然是結構",
+      "ai_hint": "此題考點是『因果關係』：腦區變化是訓練的『結果』而非『主因』。",
+      "common_mistakes": "如果教科書只講可塑性而沒區分『主因』，答案會不一致。建議勘誤確認。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_06",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "戴眼鏡和戴助聽器，都是透過影響感覺運作的過程，來讓人們可以更好的處理外在世界的訊息。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "對。眼鏡矯正光線在眼球的折射使影像清晰投射在視網膜上；助聽器放大聲音強度使聽覺受器接收。兩者皆作用於『感覺』（sensation）層次——感官訊息接收，幫助訊息更完整地進入感官系統，後續才能進行知覺處理。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "感覺",
+        "視覺",
+        "聽覺",
+        "感官輔具"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "輔具改善感覺（接收）層次，不是知覺（解釋）層次",
+      "ai_hint": "感覺=接收；知覺=解釋。輔具作用在前者。",
+      "common_mistakes": "",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_07",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "相較於直接讓消費者挑選喜歡的款式，業者透過盲盒的方式來銷售（消費者會得到隨意的款式，有可能不是他們最喜歡的），是希望透過古典制約來提升銷售量。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯。盲盒銷售模式運用的是『操作制約』中的『變動比率增強排程』（variable ratio schedule）——購買行為被『有機會抽到稀有款（增強）』所維持，類似賭博機制，最能抵抗消弱。此外亦運用『部分增強效果』、『不確定性誘發多巴胺釋放』。並非古典制約（古典制約是刺激-反應的學習，如鈴聲與食物）。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "操作制約",
+        "變動比率排程",
+        "古典制約",
+        "部分增強"
+      ],
+      "scholars": [
+        "Skinner"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "盲盒=操作制約變動比率，不是古典制約",
+      "ai_hint": "賭博、抽卡、盲盒都是變動比率最經典的應用。",
+      "common_mistakes": "古典制約 vs 操作制約是必考的辨識題；盲盒明顯是行為-後果學習（操作）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_112_08",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "在教學現場，各種獎懲規定，多數是透過固定比例（fixed ratio）的方式來制約行為，因為這個方式比起用變動比例（variable ratio）是更有效的。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "B",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯。在維持行為與抵抗消弱方面，『變動比率』（variable ratio）比『固定比率』（fixed ratio）更有效。變動比率排程下，行為消弱速度最慢、頻率最高（典型例子：吃角子老虎、賭博）。固定比率有『增強後暫停』（post-reinforcement pause）現象，效果遜於變動比率。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "增強排程",
+        "固定比率",
+        "變動比率",
+        "操作制約"
+      ],
+      "scholars": [
+        "Skinner"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "抵抗消弱效果：變動比率 > 固定比率 > 變動時距 > 固定時距",
+      "ai_hint": "口訣：『變動 > 固定』『比率 > 時距』，所以變動比率最強。",
+      "common_mistakes": "把『有效』理解成『學得快』，但這裡是維持與抵抗消弱。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_112_09",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "一個人在車禍之後，無法回憶起車禍前的事情，是所謂的逆向式失憶症（retrograde amnesia）。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "A",
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "對。逆向（順行性失憶 retrograde amnesia）指對受傷『前』事件的失憶，常見於頭部外傷、車禍。對應的順向失憶（anterograde amnesia）則指受傷『後』無法形成新記憶（如 H.M.）。題目敘述完全符合逆向失憶定義。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "逆向失憶症",
+        "順向失憶症",
+        "失憶症"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "逆向=忘記受傷前；順向=無法形成受傷後新記憶",
+      "ai_hint": "字根：retro=往後（受傷前）；antero=往前（受傷後）。",
+      "common_mistakes": "兩種失憶名稱常被混淆。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_112_10",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "是非題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "是非題",
+        "number": 1,
+        "title": "是非題"
+      },
+      "question": "你請 chatGPT 推薦你一些美食，結果它都推薦你吃一些美式食物，這是因為它對於美食的概念和你認定的是不同的。",
+      "options": [
+        "O 對",
+        "X 錯"
+      ],
+      "answer": "A",
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "此題為認知/概念表徵題。陷阱在於 chatGPT『沒有真正的概念』，但題目強調是『概念與你認定不同』，從『效果』層次來看仍可說對；若從『真正擁有概念』的哲學層次來看則錯。普心脈絡下答對較合理。",
+      "reference_answer": "對（從操作層次來看）。基模理論（schema theory, Piaget / Bartlett）指出每個個體對概念有自己的基模。chatGPT 的訓練資料偏向英文/美式內容，因此其『美食概念』的基模傾向美式食物；使用者的基模可能偏中式或台式。雙方基模不同導致推薦結果不符使用者期待。題目描述符合此認知層次的解釋。",
+      "keywords_required": [],
+      "essay_outline": null,
+      "concepts": [
+        "基模",
+        "概念",
+        "認知表徵",
+        "文化差異"
+      ],
+      "scholars": [
+        "Piaget",
+        "Bartlett"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "不同主體有不同基模／概念表徵",
+      "ai_hint": "從基模理論角度回答即可，不必糾結 AI 是否有意識。",
+      "common_mistakes": "陷入哲學爭論（AI 有沒有真正概念）反而失分。輔仁出題重點是基模/概念差異。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "FJU_112_11",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Second order conditioning",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_111_01 同題；答題重點注意『請舉例』。",
+      "reference_answer": "次級制約（高階制約）。古典制約延伸概念。在第一階段建立『中性刺激 NS₁ + UCS → CR』後（NS₁ 變成 CS₁），第二階段用 CS₁ 與另一個新的中性刺激 NS₂ 配對，使 NS₂ 也獲得引發 CR 的能力（成為 CS₂）。\n\n舉例：先建立鈴聲（CS₁）+ 食物（UCS） → 唾液（CR）；再讓燈光（NS₂）與鈴聲（CS₁）配對，最終燈光單獨也能引發唾液（CR）。次級制約的反應強度通常弱於初級制約且容易消弱，但對解釋複雜學習（如金錢這種次級增強物的習得價值）有重要意義。",
+      "keywords_required": [
+        "古典制約",
+        "CS",
+        "配對",
+        "次級",
+        "舉例"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "次級制約",
+        "古典制約",
+        "高階制約"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "用已建立的 CS 替代 UCS 與新刺激配對；定義 + 例子",
+      "ai_hint": "112 題型強調『舉例』，答案要明確分定義與例子兩段。",
+      "common_mistakes": "勿與『操作制約的次級增強物』混淆。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_112_12",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Antagonist",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_03 同題；題目要求加上舉例。",
+      "reference_answer": "拮抗劑。指能阻斷或抑制神經傳導物作用的物質，可透過佔據受體（receptor）使原本的傳導物無法結合，或抑制其釋放、加速回收與分解，最終降低突觸後神經元的反應。對應概念為促進劑（agonist）會增強傳導物作用。\n\n舉例：（一）抗精神病藥物（如 haloperidol）為多巴胺 D2 受體拮抗劑，可緩解思覺失調症的正性症狀；（二）箭毒（curare）為乙醯膽鹼受體拮抗劑，造成肌肉麻痺；（三）Naloxone 為鴉片類受體拮抗劑，用於海洛因過量急救。",
+      "keywords_required": [
+        "神經傳導物",
+        "受體",
+        "阻斷",
+        "舉例"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "拮抗劑",
+        "促進劑",
+        "神經傳導物",
+        "受體"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "拮抗劑阻斷神經傳導物作用；要附具體例子",
+      "ai_hint": "至少舉一個藥理例子。",
+      "common_mistakes": "拮抗劑不等於『抑制神經元』；它阻斷的是特定傳導物。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_112_13",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Illusion",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "錯覺。指物理刺激與知覺不一致的現象——個體對刺激的知覺與其客觀物理特性產生系統性偏差。錯覺反映知覺系統使用啟發式（heuristics）解讀世界，這些啟發式在多數情境下有效，但在特定條件下會誤導我們。\n\n舉例：（一）Müller-Lyer 錯覺：相同長度的線段因箭頭方向不同被知覺為長短不同；（二）Ponzo 錯覺：兩條等長橫線在透視線條中被知覺為遠近不同；（三）月亮錯覺：地平線附近的月亮看起來比天頂的大；（四）Ames 房間：扭曲房間使人看起來大小差異懸殊。\n\n錯覺與『知覺恆常性』相對：恆常性是維持真實知覺的能力，錯覺則是偏離物理現實的知覺。",
+      "keywords_required": [
+        "物理刺激",
+        "知覺",
+        "不一致",
+        "舉例",
+        "Müller-Lyer"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "錯覺",
+        "視覺錯覺",
+        "知覺恆常性",
+        "啟發式"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "知覺與物理刺激不一致；附經典錯覺例子",
+      "ai_hint": "至少舉 2 個經典視覺錯覺。",
+      "common_mistakes": "錯覺≠幻覺（hallucination）。錯覺是對真實刺激的錯誤知覺；幻覺是無刺激的知覺。",
+      "needs_image": true,
+      "images": [
+        {
+          "src": "img/q/FJU_112_13_muller_lyer.webp",
+          "caption": "Müller-Lyer 錯覺示意（自行補圖）"
+        }
+      ],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_14",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Deductive reasoning",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "演繹推理。從一般性前提推導出具體結論的邏輯思考歷程。若前提為真，且推理形式有效，則結論必然為真（保證有效性）。對比歸納推理：從具體事例推一般規則，結論具或然性。\n\n舉例：（一）三段論——前提一：『所有人都會死』；前提二：『蘇格拉底是人』；結論：『蘇格拉底會死』。（二）數學證明：從公理出發推導定理。（三）心理學中 Wason 選擇作業（選擇 4 張卡片驗證『若一面 D，則另一面 3』規則）研究人類演繹推理表現。\n\n常見錯誤：肯定後件（affirming the consequent）、否定前件（denying the antecedent）、信念偏誤（belief bias，傾向接受結論可信但邏輯無效的論證）。",
+      "keywords_required": [
+        "前提",
+        "結論",
+        "歸納推理",
+        "三段論",
+        "舉例"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "演繹推理",
+        "歸納推理",
+        "三段論",
+        "推理"
+      ],
+      "scholars": [
+        "Wason"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "從一般推具體；結論必然性；附三段論例子",
+      "ai_hint": "至少舉一個三段論例子；可加 Wason 選擇作業顯示心理學色彩。",
+      "common_mistakes": "勿混淆演繹（必然）與歸納（或然）的本質差異。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "FJU_112_15",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Negative punishment",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "負懲罰（移除式懲罰）。Skinner 操作制約四種後果之一，指『移除愉快刺激以減少不當行為頻率』。『負』指移除（subtraction），『懲罰』指降低行為頻率。對比正懲罰（給予厭惡刺激）。\n\n舉例：（一）孩子說髒話 → 沒收他喜歡的玩具一週（移除愉快物 → 行為減少）；（二）員工遲到 → 扣除全勤獎金（移除獎金 → 遲到行為減少）；（三）開車超速 → 吊銷駕照（移除特權 → 超速減少）；（四）打架的學生被禁足，不能參加最愛的校外教學。\n\n負懲罰常被認為比正懲罰副作用少，因為不直接施加痛苦刺激。但效果取決於『被移除物』對個體的價值。",
+      "keywords_required": [
+        "移除",
+        "愉快",
+        "減少",
+        "Skinner",
+        "舉例"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "負懲罰",
+        "操作制約",
+        "Skinner",
+        "懲罰",
+        "增強"
+      ],
+      "scholars": [
+        "Skinner"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "負=移除；懲罰=減少行為",
+      "ai_hint": "口訣：正/負 = 給予/移除；增強/懲罰 = 行為增加/減少。負懲罰 = 移除愉快物 → 行為減少。",
+      "common_mistakes": "最易與負增強混淆——負增強是『移除厭惡物』使行為『增加』；負懲罰是『移除愉快物』使行為『減少』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_112_16",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 2,
+        "title": "名詞解釋及舉例"
+      },
+      "question": "Top-down processing",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "由上而下處理。知覺處理的兩種方向之一，指運用既有知識、預期、脈絡、經驗來解釋感官訊息的歷程。對比『由下而上處理』（bottom-up processing），後者從感官原始資料逐步建構知覺。實際知覺通常兩種處理同時發生。\n\n舉例：（一）閱讀時即使字母順序錯亂或缺少，仍能根據上下文猜出字義（『顆學家』推 → 『科學家』）；（二）在嘈雜環境中聽不清對話，但根據談話脈絡能補出聽不清的部分；（三）期待看到熟悉的臉時，更容易在人群中找到對方（注意力導向）；（四）格式塔原則中『閉合性』，將不完整圖形補成完整形狀。\n\n相關理論：Gregory 建構主義知覺觀（強調 top-down）vs Gibson 直接知覺觀（強調 bottom-up）。當代主流認為兩者交互作用。",
+      "keywords_required": [
+        "既有知識",
+        "預期",
+        "脈絡",
+        "由下而上",
+        "舉例"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "由上而下處理",
+        "由下而上處理",
+        "知覺",
+        "格式塔"
+      ],
+      "scholars": [
+        "Gregory",
+        "Gibson"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "用既有知識/預期解釋感官訊息；舉例至少 2 個",
+      "ai_hint": "經典例子：閱讀錯字仍懂、雞尾酒派對效應、期待引導注意力。",
+      "common_mistakes": "勿把 top-down 等於『前額葉控制』。它是知覺策略的描述，不是腦區。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_17",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "有研究者認為，青少年之所以會有手機成癮的狀況，是因為多巴胺系統運作失控所造成的。請從生理運作的觀點來評論，面對這樣的狀況，有什麼樣的方法可以改善。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "手機成癮的多巴胺機制：手機應用（特別是社交媒體、遊戲）運用『不可預測獎勵』機制（變動比率排程、即時回饋、通知），高度激活中腦邊緣多巴胺路徑（VTA → nucleus accumbens）。多巴胺被誤解為『快樂分子』，更精確是『預期/動機分子』——驅動我們追逐獎勵。重複使用造成多巴胺受體下調（敏感度降低），需更多刺激維持相同感受（耐受），形成成癮循環。青少年前額葉尚未成熟（約 25 歲完成），自我調節能力較弱，更易受影響。\n\n生理觀點的改善方法：\n（一）多巴胺戒斷與重設：減少高刺激數位使用 24-72 小時，讓多巴胺受體敏感度回升（『多巴胺斷食』概念，但實證仍在發展）。\n（二）規律睡眠：睡眠不足會放大手機使用衝動；睡眠中前額葉恢復功能，且夜間使用手機抑制褪黑激素分泌。\n（三）規律運動：促進 BDNF（腦源性神經滋養因子）分泌，增強前額葉皮質可塑性，提升自我調節能力。\n（四）改變獎勵環境：移除手機通知（去除外部觸發）、用自然獎勵（社交、運動、創作）替代數位獎勵。\n（五）認知行為治療（CBT）+ 神經回饋訓練：搭配生理介入提升前額葉抑制控制。\n（六）對極端嚴重者，藥物治療（如抗鬱劑、ADHD 藥物）或可考慮，但須專業評估。\n\n但須注意：純生理觀點不足，手機成癮亦受心理（壓力因應）、社會（同儕壓力、家庭）因素影響，整合介入較有效。",
+      "keywords_required": [
+        "多巴胺",
+        "獎勵",
+        "前額葉",
+        "受體",
+        "睡眠"
+      ],
+      "essay_outline": [
+        "破題：說明手機成癮的多巴胺機制（VTA-NAc 路徑、變動比率獎勵）",
+        "青少年特殊性：前額葉發展未成熟",
+        "改善方法一：減少高刺激使用（受體敏感度恢復）",
+        "改善方法二：規律睡眠（前額葉恢復、褪黑激素）",
+        "改善方法三：規律運動（BDNF、前額葉可塑性）",
+        "改善方法四：環境設計（移除通知、自然獎勵替代）",
+        "結論：純生理介入不足，需整合心理社會層面"
+      ],
+      "concepts": [
+        "多巴胺",
+        "獎勵系統",
+        "成癮",
+        "前額葉",
+        "變動比率排程",
+        "睡眠",
+        "BDNF"
+      ],
+      "scholars": [],
+      "school_of_thought": "biological",
+      "key_concepts": "多巴胺機制（受體下調）+ 至少 3 個生理介入方法",
+      "ai_hint": "10 分：機制 4 分 + 方法 6 分（建議列 3-4 個）。每個方法要說明背後生理原理。",
+      "common_mistakes": "勿只列『不要用手機』；要說明為什麼從生理角度有效。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_112_18",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "因為2022年，高中成績差不多的學生，參加分科測驗的考生，普遍錄取的科系，比起透過個人申請管道來得好。這樣的現象，導致高中生對於個人申請的興致大幅下降。請用心理學的理論說明這樣的成因為何，以及要如何改善，才能讓不同人學管道發揮該有的效用。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "成因（心理學理論分析）：\n（一）社會比較理論（Festinger）：學生比較不同管道結果，產生『相對剝奪感』（relative deprivation）——成績相近但個人申請結果較差，引發負面情緒與動機降低。\n（二）期望-價值理論（Atkinson, Eccles）：行為動機 = 成功期望 × 結果價值。當學生預期『個人申請成功率低』且『結果不如分科』，動機自然下降。\n（三）公平理論（Adams）：學生比較投入（準備備審資料、面試）與產出（錄取結果）的比率，發現比個人申請的人投入多但回報少，覺得不公平。\n（四）習得無助感（Seligman）：若學生反覆觀察前輩個人申請結果不理想，可能形成『無論怎麼準備都沒用』的無助感。\n（五）損失規避（Tversky & Kahneman）：個人申請投入大量資源（金錢、時間、心力），若失敗成本高，學生風險規避傾向選分科。\n\n改善方法：\n（一）資訊透明：公開不同管道近年錄取數據，幫助學生理性判斷而非依靠模糊感受（對抗可得性捷思）。\n（二）調整選才比例與制度：增加個人申請對備審重視度避免完全用級分高低決定，使其發揮『多元適性』功能。\n（三）生涯輔導：協助學生釐清自身興趣與性向，使選擇基於『價值』而非『相對表現』。\n（四）改變比較框架：強調不同管道對應不同志向（學術 vs 多元發展），降低同學間的直接比較壓力。\n（五）對個人申請投入給予非結果性的肯定（如成長記錄）。",
+      "keywords_required": [
+        "社會比較",
+        "Festinger",
+        "期望價值",
+        "公平理論",
+        "改善"
+      ],
+      "essay_outline": [
+        "成因一：社會比較理論（Festinger）+ 相對剝奪感",
+        "成因二：期望-價值理論（Eccles）",
+        "成因三：公平理論（Adams）",
+        "可選成因四：習得無助感 / 損失規避",
+        "改善方法一：資訊透明",
+        "改善方法二：制度調整（個申強調適性）",
+        "改善方法三：生涯輔導與比較框架調整"
+      ],
+      "concepts": [
+        "社會比較理論",
+        "期望價值理論",
+        "公平理論",
+        "習得無助感",
+        "損失規避"
+      ],
+      "scholars": [
+        "Festinger",
+        "Atkinson",
+        "Eccles",
+        "Adams",
+        "Seligman",
+        "Tversky",
+        "Kahneman"
+      ],
+      "school_of_thought": "social_cognitive",
+      "key_concepts": "至少 2 個動機/社心理論解釋成因 + 對應改善",
+      "ai_hint": "10 分：成因 6 分 + 改善 4 分。每個成因都要連回題目情境。",
+      "common_mistakes": "勿純粹討論升學制度而沒援引心理學理論；理論連結是評分關鍵。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_112_19",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "你覺得聾人應該要學習手語，還是學習唇語來和其他人溝通，為什麼？請從語言發展的觀點來評論。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "此題涉及聾人文化與教育立場，需平衡論述。從語言發展科學觀點，手語有清楚優勢，但也應尊重個別需求。",
+      "reference_answer": "從語言發展觀點，手語有顯著優勢，但兩者非互斥，可採『雙語雙文化』取向。\n\n手語的發展優勢：\n（一）關鍵期假說（Lenneberg）：語言發展有關鍵期（約 0-7 歲，最遲到青春期前）。聾童若延遲接觸完整語言，認知與社會發展全面受損；手語是聾童最早能接觸的『完整、自然、母語式』語言。研究顯示越早接觸手語的聾童，學業與認知表現越佳。\n（二）手語是真正的自然語言：擁有完整語法（如美國手語 ASL、台灣手語 TSL），由 Stokoe（1960）證實具備音韻、構詞、句法層次。Petitto 等人研究顯示聾童學手語的階段（咿呀手勢、首字、雙字結合）與聽童學口語平行，證明大腦語言能力是模態獨立的。\n（三）腦神經基礎：手語使用者的左半球語言區（Broca / Wernicke）一樣活化，證明大腦對語言的處理不限於聽覺。\n\n唇語的限制：\n（一）只能讀到約 30% 訊息，其餘需推論，認知負擔大。\n（二）依賴對說話者的清晰可視性（口罩時代尤其困難）。\n（三）不是完整語言系統，只能輔助溝通。\n（四）強迫聾童學唇語可能延誤關鍵期，造成『語言剝奪』(language deprivation)。\n\n建議：以手語作為母語、發展認知與社會能力的基礎；唇語、口語、書面語作為與聽人世界溝通的補充工具。雙語教育（手語+書面語）是國際聾教育主流，配合聾人社群文化認同。\n\n結論：應優先學手語以保障語言發展關鍵期；唇語可作補充而非主要溝通方式。",
+      "keywords_required": [
+        "關鍵期",
+        "Lenneberg",
+        "手語",
+        "完整語言",
+        "Stokoe"
+      ],
+      "essay_outline": [
+        "破題：手語有發展優勢，但兩者非互斥",
+        "理由一：語言關鍵期（Lenneberg）",
+        "理由二：手語是完整自然語言（Stokoe / Petitto）",
+        "理由三：神經科學證據（左半球語言區活化）",
+        "唇語的限制（30% 訊息、認知負擔）",
+        "雙語雙文化取向（手語為母語 + 口語/書面為補充）",
+        "結論：優先手語，唇語輔助"
+      ],
+      "concepts": [
+        "語言關鍵期",
+        "Lenneberg假說",
+        "手語",
+        "雙語雙文化教育",
+        "聾人文化"
+      ],
+      "scholars": [
+        "Lenneberg",
+        "Stokoe",
+        "Petitto"
+      ],
+      "school_of_thought": "developmental",
+      "key_concepts": "關鍵期假說 + 手語是完整語言 + 雙語雙文化建議",
+      "ai_hint": "10 分：理論依據 6 分 + 立場與建議 4 分。Lenneberg 關鍵期是必引；Stokoe 證明手語為自然語言加分。",
+      "common_mistakes": "勿走入『手語比較簡單』『唇語比較融入社會』的迷思；要從發展科學論述。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第8章 語言與心智表徵"
+    },
+    {
+      "id": "FJU_112_20",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "在性別平權意識高漲的年代，用粉紅色來標記女廁、藍色來標記男廁的做法也受到抨擊。請從知覺運作的觀點來分析，該怎麼做，才能夠符合性別平權，又對知覺運作來說是友善的呢？（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "知覺觀點分析：\n\n顏色作為標記的優點與限制：\n（一）顏色辨識速度快、跨距離可見、跨語言可辨——符合『前注意處理』（pre-attentive processing）特性。\n（二）但『粉紅 = 女』『藍 = 男』是文化習得的『表徵符號』（symbolic representation），非天生，且強化性別刻板印象。\n（三）色盲（紅綠色盲為男性 8%）對藍粉區辨無問題，但其他色盲組合可能影響辨識。\n\n替代設計建議（同時友善知覺與性別平權）：\n（一）使用『圖示』（icon/symbol）而非顏色：通用人形剪影（不刻意分長褲/裙子），加上明確文字標示。圖示處理屬視覺處理的『腹側流』（What pathway），辨識直接。\n（二）使用『中性色』（如黑白、深淺灰）配合明確文字，仍能利用對比快速辨識。\n（三）增加多元洗手間選項：男廁、女廁、無性別洗手間（gender-neutral）並列，每個都有清楚標示。\n（四）一致性原則：建築物內統一系統，避免知覺混亂（格式塔『相似性原則』）。\n（五）對視障者：點字標示、語音指示。\n（六）保留『可辨識特徵』：男女廁可保留結構或設施差異作為輔助線索。\n\n從知覺角度，關鍵是維持『辨識速度』與『不依賴單一線索』兩個原則：用文字+圖示+結構共同傳達訊息，比僅用顏色更穩健。",
+      "keywords_required": [
+        "前注意",
+        "圖示",
+        "對比",
+        "刻板印象"
+      ],
+      "essay_outline": [
+        "破題：顏色標記知覺友善但強化刻板印象",
+        "顏色標記的知覺優勢（前注意處理）",
+        "顏色標記的限制（色盲、文化習得）",
+        "替代方案一：圖示（中性人形）+ 文字",
+        "替代方案二：對比強的中性色",
+        "替代方案三：多元洗手間選項",
+        "原則：多重線索共同傳達"
+      ],
+      "concepts": [
+        "前注意處理",
+        "色覺",
+        "格式塔原則",
+        "刻板印象",
+        "通用設計"
+      ],
+      "scholars": [],
+      "school_of_thought": "cognitive",
+      "key_concepts": "辨識速度 + 不依賴單一線索 + 性別中性",
+      "ai_hint": "10 分：知覺分析 5 分 + 替代設計 5 分。建議從『顏色 vs 圖示 vs 文字』多線索角度切入。",
+      "common_mistakes": "勿純粹談性別議題而忽略『知覺運作』的題目要求。每個建議要說明其知覺基礎。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_112_21",
+      "source": "FJU",
+      "year": 112,
+      "year_ad": 2023,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 3,
+        "title": "問答題"
+      },
+      "question": "伊莎白•羅芙特斯（Elizabeth Loftus）常在法庭中擔任專家證明，說明人的記憶很容易出錯，所以性侵受害者的控訴有可能是錯誤的。請問你怎麼看待這件事情？請從記憶運作的觀點出發，來舉證支持你的論述。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "此題涉及法庭心理學與性侵議題的爭議，需要平衡論述：承認記憶可重構，但不能輕率否定受害者控訴。可中立陳述兩個立場。",
+      "reference_answer": "我的立場：Loftus 的記憶研究科學上正確（記憶確實可被扭曲），但將其用以質疑性侵受害者的控訴需極為謹慎，否則可能造成『二次傷害』與司法不公。\n\n支持 Loftus 觀點的記憶研究：\n（一）記憶重構性（Bartlett, 1932）：記憶不是錄影帶式的精確重播，而是依基模重新建構。\n（二）誤導性提問效應（Loftus & Palmer, 1974）：『撞碎』vs『撞到』的提問用詞影響受試者對車速與玻璃碎片的回憶。\n（三）植入記憶研究（Loftus, 1995『商場走失實驗』）：透過家人暗示，可使約 25% 受試者『回憶起』實際未發生的童年事件。\n（四）目擊者證詞錯誤：DNA 證據已平反多起冤案，許多源於目擊者錯認嫌犯。\n（五）創傷記憶碎片化：高度創傷下，記憶可能片段、不連貫、時序錯亂——但這不代表記憶『不真實』。\n\n反駁濫用 Loftus 觀點的理由：\n（一）創傷記憶與一般記憶不同：性侵等強烈情緒事件透過杏仁核增強鞏固，核心記憶（who/what）通常較準，外圍細節較易扭曲。一般實驗室記憶研究的『中性事件』結論不能完全套用。\n（二）拒絕誣告假設：研究顯示性侵誣告率與其他重罪相當（約 2-10%），不應假設『大概是假的』。\n（三）DARVO 模式：加害者常用 Deny、Attack、Reverse Victim and Offender 策略反控受害者；輕信『記憶錯誤』恰恰落入此陷阱。\n（四）受害者報案與記憶呈現受『創傷反應』影響（解離、延遲報案、敘事不連貫），不應被視為說謊。\n\n建議司法立場：\n（一）使用 Loftus 研究時應強調適用範圍（誤判風險），而非用於否定特定控訴。\n（二）採取多方證據（物證、生理證據、行為證據）而非僅依記憶。\n（三）法庭詢問程序避免誘導性提問（採用認知晤談法 Cognitive Interview）。\n（四）創傷知情司法（trauma-informed approach）。\n\n結論：科學上承認記憶可錯，但應結合證據鏈評估，避免誤用記憶研究壓抑性侵受害者。",
+      "keywords_required": [
+        "Loftus",
+        "重構",
+        "誤導",
+        "創傷",
+        "杏仁核"
+      ],
+      "essay_outline": [
+        "立場破題：科學承認記憶可錯，但不應輕率否定特定控訴",
+        "支持 Loftus 觀點的證據（記憶重構、誤導效應、植入記憶、冤案）",
+        "反駁濫用觀點的理由（創傷記憶不同、誣告率低、DARVO、創傷反應）",
+        "建議司法立場（多重證據、認知晤談、創傷知情）",
+        "結論：科學知識應促進公義而非工具化"
+      ],
+      "concepts": [
+        "不實記憶",
+        "Loftus研究",
+        "Bartlett記憶重構",
+        "創傷記憶",
+        "目擊者證詞",
+        "認知晤談"
+      ],
+      "scholars": [
+        "Loftus",
+        "Bartlett",
+        "Palmer"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "承認記憶可錯但避免誤用 + 創傷記憶特殊性",
+      "ai_hint": "10 分：論述明確立場（不能模糊）+ 雙向援引研究 + 建議。這題評分重視論述深度與平衡度。",
+      "common_mistakes": "極端立場（『所以受害者都在說謊』或『絕對不能質疑』）都會失分；要兼顧科學與倫理。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    }
+  ]
+}

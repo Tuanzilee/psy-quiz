@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "source": "FJU",
+    "year": 111,
+    "year_ad": 2022,
+    "exam_name": "輔仁大學111學年度轉學生招生考試",
+    "subject": "普通心理學",
+    "total_questions": 13,
+    "scoring": "解釋名詞 40% (每題5分共8題) + 問答題 60% (10+10+10+15+15)",
+    "generated_by": "ai_initial_draft",
+    "needs_proofreading": true,
+    "notes": "第7題原 PDF 為『□曠症』，研判為 OCR 錯誤，依英文 (Agoraphobia) 修正為『懼曠症』。第13題為跨領域大題（烏俄戰爭分析），開放性高，提供多面向參考框架。"
+  },
+  "questions": [
+    {
+      "id": "FJU_111_01",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "Second order conditioning",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "次級制約（高階制約）。古典制約延伸概念。在第一階段建立『中性刺激 NS₁ + UCS → CR』後（NS₁ 變成 CS₁），第二階段用 CS₁ 與另一個新的中性刺激 NS₂ 配對，使 NS₂ 也獲得引發 CR 的能力（成為 CS₂）。例如：先建立鈴聲（CS₁）+ 食物（UCS） → 唾液（CR）；再讓燈光（NS₂）與鈴聲配對，最終燈光單獨也能引發唾液。次級制約的反應強度通常弱於初級制約且容易消弱，但在解釋複雜學習（如金錢這種次級增強物的習得價值）有重要意義。",
+      "keywords_required": [
+        "古典制約",
+        "CS",
+        "配對",
+        "次級",
+        "Pavlov"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "次級制約",
+        "古典制約",
+        "高階制約"
+      ],
+      "scholars": [
+        "Pavlov"
+      ],
+      "school_of_thought": "behaviorism",
+      "key_concepts": "用已建立的 CS 替代 UCS 與新刺激配對",
+      "ai_hint": "答題結構：定義 → 兩階段歷程 → 例子（鈴聲 → 燈光） → 反應強度較弱、易消弱 → 應用（金錢作為次級增強）。",
+      "common_mistakes": "勿與『操作制約的次級增強物』混淆；前者是古典制約刺激配對，後者是行為-後果學習。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_111_02",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "Absolute threshold",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_04 同題；答案結構保持一致。",
+      "reference_answer": "絕對閾。指在控制條件下，個體能夠偵測到刺激存在的最小刺激強度。實務操作上定義為 50% 試驗中能正確偵測的強度（因感官敏感度有變動，並非全有全無）。為心理物理學基本概念，由 Fechner 系統化。對應概念為差異閾（difference threshold / JND），指能察覺兩刺激不同的最小差異量；Weber 定律進一步指出 JND 與基準刺激強度成固定比例。",
+      "keywords_required": [
+        "最小",
+        "刺激",
+        "50%",
+        "心理物理學",
+        "差異閾"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "絕對閾",
+        "差異閾",
+        "心理物理學",
+        "Weber定律",
+        "Fechner"
+      ],
+      "scholars": [
+        "Fechner",
+        "Weber"
+      ],
+      "school_of_thought": "psychophysics",
+      "key_concepts": "絕對閾 = 50% 偵測率的最小刺激強度",
+      "ai_hint": "答題結構：定義 → 50% 操作型定義 → 心理物理學脈絡 → 與差異閾(JND)對比 → Weber 定律。",
+      "common_mistakes": "絕對閾並非『絕對固定』，會因疲勞、注意力、期望變動。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第4章 感覺與知覺"
+    },
+    {
+      "id": "FJU_111_03",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "Prospective memory",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "前瞻記憶。指『記得未來在特定時間或情境下要執行某項行動』的能力，例如：記得明天 9 點要吃藥、看到朋友要轉達一則消息。對比『回溯記憶』（記得過去事件）。前瞻記憶可分兩類：（一）時間基礎（time-based）：在特定時間執行（如『5 點要打電話』），需主動監控時間，難度高；（二）事件基礎（event-based）：遇特定線索觸發（如『看到藥盒就吃藥』），較容易。執行前瞻記憶涉及前額葉皮質參與。臨床意義：失智症、ADHD、思覺失調症患者前瞻記憶常顯著受損，影響日常功能。",
+      "keywords_required": [
+        "未來",
+        "回溯記憶",
+        "時間基礎",
+        "事件基礎",
+        "前額葉"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "前瞻記憶",
+        "回溯記憶",
+        "時間基礎前瞻記憶",
+        "事件基礎前瞻記憶"
+      ],
+      "scholars": [
+        "Einstein",
+        "McDaniel"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "記得『未來』要做的事；分時間與事件基礎",
+      "ai_hint": "答題結構：定義（與回溯記憶對比） → 兩類型（時間基礎 vs 事件基礎） → 神經基礎（前額葉） → 臨床意義（失智／ADHD）。",
+      "common_mistakes": "前瞻記憶≠『未來事件的想像』；它是執行性記憶，重點在『記得去做』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第7章 記憶"
+    },
+    {
+      "id": "FJU_111_04",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "en",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "Inductive reasoning",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "歸納推理。指從具體個別事例觀察中，推導出一般性規則或結論的思考歷程。例如：觀察過數十隻天鵝都是白的，歸納出『所有天鵝都是白的』結論（但此結論可被一隻黑天鵝推翻——黑天鵝事件）。特性：（一）結論具或然性（probabilistic），非必然真；（二）資料越多越能支持結論，但永遠無法絕對證明。對比演繹推理（deductive reasoning）：從一般前提推具體結論，若前提為真則結論必為真。歸納推理是科學研究的基礎，但也容易受確認偏誤、樣本偏誤影響。發展上，Piaget 認為歸納能力於具體運思期已有雛形，形式運思期更成熟。",
+      "keywords_required": [
+        "個別",
+        "一般",
+        "或然",
+        "演繹推理",
+        "黑天鵝"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "歸納推理",
+        "演繹推理",
+        "推理",
+        "確認偏誤"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "從具體事例推一般規則；結論具或然性",
+      "ai_hint": "答題結構：定義 → 例子（白天鵝） → 結論或然性 → 與演繹推理對比 → 科學研究的應用 → 偏誤風險。",
+      "common_mistakes": "歸納結論可被推翻；勿混淆與演繹（演繹結論若前提為真則必然為真）。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "FJU_111_05",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "戀母情結（Oedipus Complex）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "reference_answer": "戀母情結。Freud 在『性心理發展』理論中提出，指 3-6 歲性器期（phallic stage）男童對母親產生潛意識的性吸引，並視父親為競爭對手而欲取代之，但因對父親報復的恐懼產生『閹割焦慮』（castration anxiety）。最終男童透過認同父親（identification）解決此衝突，並內化父親的價值觀形成超我（superego）。命名源自希臘悲劇 Oedipus 弒父娶母的情節。對應女童的概念為『戀父情結』（Electra Complex，Jung 提出）。Freud 認為戀母情結的成功解決對人格發展與性別認同至關重要，未解決會導致成人神經症。此理論在當代心理學中爭議大、實證支持有限，但仍是精神分析史的重要概念。",
+      "keywords_required": [
+        "Freud",
+        "性器期",
+        "母親",
+        "父親",
+        "認同"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "戀母情結",
+        "性心理發展",
+        "性器期",
+        "Freud人格理論",
+        "認同"
+      ],
+      "scholars": [
+        "Freud"
+      ],
+      "school_of_thought": "psychodynamic",
+      "key_concepts": "性器期男童對母親的潛意識性吸引與對父親的競爭",
+      "ai_hint": "答題結構：定義 → 性器期（3-6歲） → 競爭與閹割焦慮 → 認同父親解決衝突 → 形成超我 → 對應 Electra Complex。",
+      "common_mistakes": "戀母情結是潛意識歷程，不是日常意義的『黏媽媽』；當代學界對此理論持保留態度，作答時可中性陳述。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第12章 性格"
+    },
+    {
+      "id": "FJU_111_06",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "保留概念（Conservation）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_107_15『守恆概念』為同一概念，譯名不同。",
+      "reference_answer": "保留概念（即守恆概念）。Piaget 認知發展理論提出，指理解物體的數量、質量、體積等屬性不因外觀變化而改變的能力。經典實驗：將相同水量從矮胖杯倒入高瘦杯，前運思期（2-7 歲）兒童因『集中化』於高度而誤認水量增加；具體運思期（7-11 歲）兒童則理解水量未變。守恆能力的發展具順序性：數量（6-7歲）→ 質量（7-8歲）→ 重量（9-10歲）→ 體積（11-12歲），稱為水平差距（horizontal décalage）。發展機制涉及：可逆性思考（reversibility）、去集中化（decentration）、補償概念（compensation）。",
+      "keywords_required": [
+        "Piaget",
+        "具體運思期",
+        "可逆性",
+        "去集中化",
+        "外觀"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "守恆概念",
+        "Piaget認知發展論",
+        "具體運思期",
+        "可逆性",
+        "去集中化"
+      ],
+      "scholars": [
+        "Piaget"
+      ],
+      "school_of_thought": "cognitive_developmental",
+      "key_concepts": "外觀改變但本質不變的理解；具體運思期發展",
+      "ai_hint": "答題結構：定義 → 經典杯水實驗 → 前運思期 vs 具體運思期表現 → 發展順序（水平差距） → 機制（可逆性、去集中化）。",
+      "common_mistakes": "守恆概念≠物體恆存性。物體恆存是嬰兒期，守恆是兒童期。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第14章 發展心理學"
+    },
+    {
+      "id": "FJU_111_07",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "easy",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "懼曠症（Agoraphobia）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "原 PDF OCR 為『□曠症』，依英文 Agoraphobia 修正為『懼曠症』。與 FJU_108_09 同題。",
+      "reference_answer": "懼曠症。DSM-5 焦慮疾患之一，指對特定情境產生強烈恐懼或焦慮，因擔心一旦出現恐慌或失能症狀，逃離困難或得不到協助。常見害怕情境包含：搭乘大眾運輸、處於開放空間（停車場、橋）、處於封閉空間（電影院、商店）、排隊或處於人群中、獨自離家。患者常採取逃避或需要陪伴的方式應對，嚴重者甚至無法離開家門。常與恐慌症共病，但 DSM-5 中已被列為獨立診斷。治療以認知行為治療（特別是暴露治療）與藥物治療為主。",
+      "keywords_required": [
+        "焦慮",
+        "恐懼",
+        "逃避",
+        "恐慌",
+        "DSM"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "懼曠症",
+        "焦慮疾患",
+        "恐慌症",
+        "DSM-5",
+        "暴露治療"
+      ],
+      "scholars": [],
+      "school_of_thought": "clinical",
+      "key_concepts": "對逃離困難情境的強烈恐懼，常致逃避行為",
+      "ai_hint": "答題結構：定義 → DSM 焦慮疾患 → 害怕情境列舉 → 與恐慌症的關係 → 治療（CBT/暴露/藥物）。",
+      "common_mistakes": "中文常被翻譯為『廣場恐懼症』，但 DSM-5 定義廣於『廣場』；中文教科書多用『懼曠症』。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_111_08",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "名詞解釋",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "名詞解釋",
+        "number": 1,
+        "title": "解釋名詞"
+      },
+      "question": "遺傳率（heritability）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "high",
+      "answer_source": "ai_generated",
+      "answer_note": "與 FJU_108_07 同題；答案結構保持一致。",
+      "reference_answer": "遺傳率（heritability，h²）。行為遺傳學概念，指特定族群中某特質的個體變異有多少比例可歸因於基因差異，數值介於 0 到 1（或 0% 到 100%）。常用雙生子研究（同卵 vs 異卵雙生子相關）或收養研究估計。重要警示：（一）遺傳率是族群層次概念，不能說某個體有多少比例由基因決定；（二）遺傳率高不代表環境介入無效（如身高遺傳率高，但營養介入仍可顯著影響）；（三）遺傳率隨族群與環境變動，非該特質的固有屬性。",
+      "keywords_required": [
+        "族群",
+        "變異",
+        "基因",
+        "雙生子",
+        "環境"
+      ],
+      "essay_outline": null,
+      "concepts": [
+        "遺傳率",
+        "行為遺傳學",
+        "雙生子研究",
+        "收養研究"
+      ],
+      "scholars": [],
+      "school_of_thought": "behavioral_genetics",
+      "key_concepts": "遺傳率是族群變異的歸因比例，非個體屬性",
+      "ai_hint": "答題結構：定義 → 0-1 區間 → 估計方法（雙生子／收養） → 三大警示（族群層次、不否定環境介入、隨情境變動）。",
+      "common_mistakes": "最常見錯誤：把『智力遺傳率 0.5』理解成『某人智力一半由基因決定』，這是錯的——應理解為族群中智力差異有 50% 可歸因於基因差異。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第3章 行為的生物基礎"
+    },
+    {
+      "id": "FJU_111_09",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "日前指揮中心在報導因為確診死亡的病例時，都會羅列這些人打了幾劑疫苗，以及這些人是否罹患慢性病。請問這樣的報導方式，是否能夠反映疫苗、及慢性病與確診死亡間的關係？是否又容易陷入哪些邏輯思維上的謬誤呢？請至少舉兩個點做說明，也需要說明是跟哪個理論有關係。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "情境推理題，可援引理論眾多。以下提供常見高分框架，可依個人理解選擇 2-3 個謬誤展開。",
+      "reference_answer": "此報導方式無法可靠反映疫苗或慢性病與確診死亡的因果關係，因為它只呈現『死亡者中有 X% 打疫苗 / 有慢性病』的次數分配，缺乏對照基準與統計檢定。常見邏輯謬誤包含：\n\n（一）相關不等於因果（correlation ≠ causation）：即使數據顯示死亡者中多有慢性病，也不能證明慢性病『導致』死亡——可能是慢性病者本身年齡較大、免疫力較弱等共同變項。理論依據：實驗設計與統計推論中對因果推論的條件（共變、時序、排除替代解釋），Hill 因果準則。\n\n（二）忽略基準率（base rate fallacy）：報導未提供母群體中『打疫苗者 vs 未打者』『有慢性病者 vs 無慢性病者』的比例。若全國 90% 人口已打疫苗，死亡者中 80% 打疫苗反而代表疫苗有保護力。理論依據：Tversky & Kahneman 啟發法與偏誤研究。\n\n（三）倖存者偏誤（survivorship bias）：報導只呈現死亡個案，未呈現未死亡的同條件對照組。\n\n（四）確認偏誤（confirmation bias）：閱聽人傾向選擇性記住符合既有信念的資料。\n\n（五）可得性捷思（availability heuristic）：印象深刻的個案使人高估其發生率。\n\n正確做法應呈現相對風險（relative risk）或勝算比（odds ratio），並控制年齡、性別、共病等混淆變項。",
+      "keywords_required": [
+        "相關不等於因果",
+        "基準率",
+        "混淆變項",
+        "Kahneman"
+      ],
+      "essay_outline": [
+        "破題：此報導方式只呈現次數分配，無法推因果",
+        "謬誤一：相關不等於因果（共變項問題）",
+        "謬誤二：忽略基準率（需對照母群體比例）",
+        "可選謬誤三：倖存者偏誤 / 確認偏誤 / 可得性捷思（任選）",
+        "理論依據：Tversky & Kahneman 啟發法與偏誤、因果推論條件",
+        "正確作法：相對風險、控制混淆變項"
+      ],
+      "concepts": [
+        "相關vs因果",
+        "基準率謬誤",
+        "Kahneman啟發法",
+        "因果推論",
+        "倖存者偏誤",
+        "確認偏誤"
+      ],
+      "scholars": [
+        "Tversky",
+        "Kahneman"
+      ],
+      "school_of_thought": "cognitive",
+      "key_concepts": "此題核心：『相關≠因果』+『基準率』兩大謬誤，必提",
+      "ai_hint": "10 分題，建議：謬誤一 4 分 + 謬誤二 4 分 + 理論依據 2 分。每個謬誤要連回題目情境（疫苗/慢性病）才能拿滿分。",
+      "common_mistakes": "勿只指出『不能推因果』而沒說為什麼；要明確點出『缺乏對照組』『缺乏基準率』等技術原因。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第9章 思考與創造力"
+    },
+    {
+      "id": "FJU_111_10",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "medium",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "在台灣有一個有趣的現象，就是當一件事情爆紅的時候，大家都想要去模仿。就像之前八百公尺、一百公尺降肉的九天玄女。請分析用這樣的方式來宣傳，有什麼樣的好處，以及壞處，這背後有有怎麼樣的心理基礎。另外，你覺得大家最後會記下來用這個梗的廣告嗎？為什麼？請從記憶運作的觀點來說明。（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "心理基礎與好處：\n（一）社會學習（Bandura）：人們透過觀察與模仿他人行為學習。\n（二）社會認同需求：模仿熱門行為可獲得群體歸屬感（Tajfel 社會認同理論）。\n（三）從眾（Asch 從眾實驗）：在不確定情境中採取多數人的行為以降低焦慮。\n（四）注意力效應：熱門梗自帶高知名度，易吸引注意。\n（五）情緒激發效果：歡樂情境激發正向情緒，與品牌建立情緒聯結（情緒制約）。\n\n壞處：\n（一）品牌訊息被梗吞沒：消費者記住梗本身，但忘記是哪個品牌（廣告效果衰減 / 消費者記住主角不記住產品）。\n（二）短暫性：梗的生命週期短，廣告快速過時。\n（三）品牌一致性受損：模仿熱門梗使品牌形象失焦。\n（四）模仿太多反而稀釋效果（飽和效應）。\n\n從記憶運作觀點：\n（一）梗本身有高情境記憶（episodic memory）強度（情緒、新奇），但廣告與品牌的『連結』需要編碼層次深的處理（Craik & Lockhart 處理層次論）；表淺娛樂處理不利品牌記憶。\n（二）干擾效應（interference）：眾多品牌套用同一梗，產生『追溯抑制』，後來看到的會干擾先前對特定品牌的記憶。\n（三）記憶提取線索效力：梗喚起的是『梗的整體印象』，不必然喚起『品牌名』；除非有顯著的品牌-梗連結（如周杰倫之於某品牌）。\n結論：大家會記得梗，但多半記不得是哪個品牌的廣告。",
+      "keywords_required": [
+        "Bandura",
+        "從眾",
+        "處理層次",
+        "干擾",
+        "社會學習"
+      ],
+      "essay_outline": [
+        "好處段：社會學習（Bandura）、從眾（Asch）、注意力、情緒制約",
+        "壞處段：品牌被梗淹沒、短暫性、模仿稀釋",
+        "記憶觀點：處理層次論（Craik & Lockhart）",
+        "干擾效應：眾多品牌用同一梗 → 追溯抑制",
+        "結論：記得梗、不記得品牌"
+      ],
+      "concepts": [
+        "社會學習",
+        "Bandura觀察學習",
+        "從眾",
+        "處理層次論",
+        "干擾理論",
+        "情緒制約"
+      ],
+      "scholars": [
+        "Bandura",
+        "Asch",
+        "Craik",
+        "Lockhart"
+      ],
+      "school_of_thought": "social_cognitive",
+      "key_concepts": "好處用社心解釋（學習/從眾），壞處用記憶解釋（編碼/干擾）",
+      "ai_hint": "10 分題：好處 3 分 + 壞處 3 分 + 記憶分析 4 分。記憶分析是題目重點要求，必須清楚運用理論。",
+      "common_mistakes": "勿只談『大家會跟風』而沒援引理論；每個論點要連到一個心理學概念。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第6章 學習"
+    },
+    {
+      "id": "FJU_111_11",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請問我們要怎麼證明，一個人有憂鬱症，是由於有生理上的因素，而不全然是心理上的因素？（10分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "從以下幾類證據可以支持憂鬱症具生理因素：\n\n（一）神經傳導物失衡：血清素（serotonin）、正腎上腺素、多巴胺水平異常與憂鬱症相關。SSRI 抗鬱劑（如百憂解）透過調節血清素改善症狀，是支持單胺假說（monoamine hypothesis）的藥理證據。\n\n（二）腦造影研究：憂鬱症患者前額葉（特別是前扣帶皮質、背外側前額葉）活性下降；杏仁核對負向刺激反應過強；海馬迴體積縮小（與壓力下皮質醇毒性相關）。\n\n（三）遺傳證據：雙生子研究顯示同卵雙生子共病率（約 40%）顯著高於異卵雙生子（約 20%），遺傳率約 30-40%。家族研究亦支持家族聚集性。\n\n（四）內分泌異常：HPA 軸（下視丘-腦下垂體-腎上腺軸）過度活化，皮質醇（cortisol）長期偏高，地塞米松抑制試驗（DST）異常。\n\n（五）生理節律與睡眠異常：REM 睡眠提前、深層睡眠減少；季節性憂鬱症（SAD）與光照不足相關，光照治療有效。\n\n（六）反應藥物治療有效：藥物治療能改善症狀（雖不能單獨證明因果，但與心理治療相比，藥物對重度憂鬱效果支持生理基礎）。\n\n方法論：採用『生物-心理-社會模型』（biopsychosocial model），將生理因素視為必要但非充分條件，搭配心理與社會因素共同解釋。Engel（1977）提出此整合觀點。",
+      "keywords_required": [
+        "血清素",
+        "雙生子",
+        "腦造影",
+        "HPA軸",
+        "藥物"
+      ],
+      "essay_outline": [
+        "破題：可從多種生理證據共同支持",
+        "證據一：神經傳導物（單胺假說、SSRI 療效）",
+        "證據二：腦造影（前額葉、杏仁核、海馬迴）",
+        "證據三：遺傳（雙生子研究、家族研究）",
+        "證據四：內分泌（HPA 軸、皮質醇）",
+        "證據五：生理節律與睡眠（季節性憂鬱、光照治療）",
+        "整合：生物-心理-社會模型（Engel）"
+      ],
+      "concepts": [
+        "憂鬱症",
+        "單胺假說",
+        "血清素",
+        "HPA軸",
+        "雙生子研究",
+        "生物心理社會模型"
+      ],
+      "scholars": [
+        "Engel"
+      ],
+      "school_of_thought": "biological",
+      "key_concepts": "至少三類生理證據（神經、遺傳、內分泌、藥物反應）",
+      "ai_hint": "10 分題：每類證據 2-3 分。建議答 3-4 類證據而非全列；每類要簡述機制。可用『生物-心理-社會模型』作結。",
+      "common_mistakes": "勿宣稱『憂鬱症完全是生理問題』；題目問的是『證明有生理因素』，不是否定心理因素。要保持平衡。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第16章 心智異常"
+    },
+    {
+      "id": "FJU_111_12",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "精神疾病在社會上常被汙名化得很嚴重，民眾還是對精神障礙者充滿偏見，請應用心理學的理論、概念，或研究成果，設計一個可以改善此一現象之方案。務請說明你所設計的方案根據什麼樣的心理學理論或概念，為何你認為這樣會有用。（15分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "reference_answer": "方案設計範例（以校園/社區衛教推廣為例）：\n\n方案內容：『與精神疾病者面對面』系列活動 — 邀請精神疾病康復者進入校園/社區，分享真實生活故事、進行小組對話、共同合作完成任務（如志工、藝術活動）。\n\n理論依據：\n（一）接觸假說（Contact Hypothesis, Allport, 1954）：偏見可透過特定條件下的群際接觸減低，條件為：①地位平等、②共同目標、③合作而非競爭、④制度支持。本方案符合四條件——平等對話（非階層）、共同任務（合作）、由學校/社區單位主辦（制度支持）。後設分析（Pettigrew & Tropp, 2006）支持接觸效果。\n（二）刻板印象內容模型（Fiske 等人）：偏見來自將外團體看為『不能力 + 不溫暖』。直接互動可挑戰這些刻板印象。\n（三）外團體同質性效應的反制：直接接觸個體化的精神疾病者，打破『他們都一樣』的概化。\n（四）情緒共鳴：故事敘說（narrative）激發同理心（Batson 同理利他假說），降低距離感。\n\n配套：\n（一）事前衛教（提供精神疾病的醫學知識，破除迷思）。\n（二）事後反思活動（鞏固態度改變）。\n（三）長期追蹤（一次接觸效果有限，需重複）。\n\n預期效果：透過 Allport 接觸條件 + 刻板印象挑戰 + 同理激發三重機制，預期能降低參與者對精神疾病者的污名認知與社會距離。\n\n限制與評估：可採用前後測（隱性聯結測驗 IAT、社會距離量表），並設置對照組（僅單純衛教無接觸）以驗證接觸效果。",
+      "keywords_required": [
+        "接觸假說",
+        "Allport",
+        "刻板印象",
+        "同理"
+      ],
+      "essay_outline": [
+        "方案內容（具體可執行）",
+        "核心理論：接觸假說（Allport）四條件",
+        "理論二：刻板印象內容模型（Fiske）",
+        "理論三：外團體同質性效應的反制",
+        "理論四：敘說與同理（Batson）",
+        "配套設計（衛教、反思、長期）",
+        "效果評估（前後測、對照組、IAT）"
+      ],
+      "concepts": [
+        "接觸假說",
+        "Allport偏見理論",
+        "刻板印象",
+        "外團體同質性",
+        "同理心",
+        "污名化"
+      ],
+      "scholars": [
+        "Allport",
+        "Pettigrew",
+        "Fiske",
+        "Batson"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "核心是接觸假說（Allport）四條件 + 至少一個輔助理論",
+      "ai_hint": "15 分大題：方案具體性 5 分 + 理論依據 7 分 + 評估設計 3 分。Allport 接觸假說是必引；建議再加 1-2 個輔助理論顯示廣度。",
+      "common_mistakes": "常見錯誤：方案太空泛（『多多宣導』），或只列理論名沒解釋為何適用。具體方案 + 理論連結是高分關鍵。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    },
+    {
+      "id": "FJU_111_13",
+      "source": "FJU",
+      "year": 111,
+      "year_ad": 2022,
+      "type": "申論題",
+      "language": "zh",
+      "difficulty": "hard",
+      "section": {
+        "type": "問答題",
+        "number": 2,
+        "title": "問答題"
+      },
+      "question": "請以心理學的角度來分析從今年2月份開打的烏俄戰爭。一個舉世注目的戰爭涉及許多層面，你可以依你自身的興趣分析某一個或某些特定層面，但請注意務必在你的分析中有使用到心理學的理論、概念，或研究成果。（15分）",
+      "options": [],
+      "answer": null,
+      "answer_confidence": "medium",
+      "answer_source": "ai_generated",
+      "answer_note": "極度開放題，無標準答案。以下提供四個常見分析切入點與對應理論作為參考框架。",
+      "reference_answer": "可從以下任一或多個面向切入，每面向援引適當理論：\n\n（一）群際衝突與內外團體偏誤：以社會認同理論（Tajfel & Turner）解釋俄烏雙方民族認同的強化；外團體同質化導致對對方的去人性化（dehumanization）。\n\n（二）服從權威與戰爭暴行：Milgram 服從實驗顯示一般人在權威指令下會執行傷害他人的行為；情境而非個性是關鍵。Zimbardo 史丹佛監獄實驗也指出情境的去人性化效應。可解釋戰爭中暴行非全為『邪惡個人』所為。\n\n（三）團體迷思（groupthink, Janis）：俄羅斯領導層可能因封閉決策圈、過度樂觀、不准異議導致誤判戰局。\n\n（四）創傷與 PTSD：戰爭暴露使大量平民與士兵發展創傷後壓力症候群（PTSD）；DSM-5 診斷標準包含侵入性記憶、迴避、認知情緒負面改變、過度警覺。兒童創傷影響特別深遠（依附理論、發展精神病理）。\n\n（五）宣傳與認知偏誤：戰爭資訊戰利用確認偏誤、可得性捷思（Tversky & Kahneman）影響民眾判斷。\n\n（六）韌性與復原（resilience）：經歷戰爭後群體展現的心理復原力，正向心理學概念。\n\n（七）全球目擊者的情感反應：媒體飽和導致同理疲勞（compassion fatigue）；旁觀者效應（Latané & Darley）解釋為何國際反應緩慢。\n\n建議選 2-3 個面向深入，而非廣泛羅列。",
+      "keywords_required": [
+        "社會認同",
+        "Milgram",
+        "PTSD",
+        "Tajfel"
+      ],
+      "essay_outline": [
+        "選 2-3 個分析面向（建議：群際衝突 + 服從權威 + PTSD）",
+        "面向一：社會認同理論（Tajfel）+ 去人性化",
+        "面向二：服從權威（Milgram / Zimbardo）",
+        "面向三：PTSD 對受害者的長期影響",
+        "可選：團體迷思 / 宣傳偏誤 / 韌性 / 旁觀者效應",
+        "結論：戰爭是多重心理機制交織的悲劇"
+      ],
+      "concepts": [
+        "社會認同理論",
+        "服從權威",
+        "Milgram實驗",
+        "Zimbardo實驗",
+        "PTSD",
+        "團體迷思",
+        "去人性化"
+      ],
+      "scholars": [
+        "Tajfel",
+        "Turner",
+        "Milgram",
+        "Zimbardo",
+        "Janis",
+        "Tversky",
+        "Kahneman",
+        "Latané",
+        "Darley"
+      ],
+      "school_of_thought": "social",
+      "key_concepts": "至少援引 2 個明確心理學理論並連回戰爭現象",
+      "ai_hint": "15 分大題：論述深度比廣度重要。選 2-3 個面向，每個面向講清楚『理論 → 機制 → 戰爭現象的對應』。最常見高分組合：群際衝突 + 服從權威 + 創傷。",
+      "common_mistakes": "勿純粹政治評論而無理論支持；勿羅列太多面向但每個都淺。理論扣連現象是評分關鍵。",
+      "needs_image": false,
+      "images": [],
+      "topic": "第13章 社會心理學"
+    }
+  ]
+}
