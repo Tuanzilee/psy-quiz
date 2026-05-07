@@ -484,6 +484,54 @@ html, body {
 .corr-entry { margin-bottom: 10px; }
 .corr-entry-id { color: var(--blue-light); font-weight: 700; }
 .corr-entry-line { padding-left: 10px; color: var(--text); }
+
+/* ── 進階編輯摺疊區 ── */
+.edit-advanced {
+  margin-top: 4px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.edit-advanced-toggle {
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 6px 0;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.edit-advanced-toggle:hover { color: var(--blue-light); }
+.edit-advanced-toggle::before {
+  content: '▶';
+  font-size: 9px;
+  transition: transform 0.15s;
+}
+.edit-advanced.open .edit-advanced-toggle::before { transform: rotate(90deg); }
+.edit-advanced-body { display: none; padding-top: 8px; }
+.edit-advanced.open .edit-advanced-body { display: block; }
+
+/* ── 個人備註顯示 ── */
+.personal-note-box {
+  background: rgba(80, 160, 255, 0.06);
+  border-left: 3px solid var(--blue);
+  padding: 10px 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.personal-note-label {
+  font-size: 10px;
+  color: var(--blue-light);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
 .q-badge {
   font-size: 11px;
   padding: 2px 8px;
@@ -1111,6 +1159,7 @@ let browseSearchQ = '';
 
 const RECORDS_KEY = 'psych_records_v1';
 const CORRECTIONS_KEY = 'psych_corrections_v1';
+const NOTES_KEY = 'psych_notes_v1';
 const CHAPTERS = [
   '第1章 緒論', '第2章 心理學方法', '第3章 行為的生物基礎', '第4章 感覺與知覺',
   '第5章 注意與意識', '第6章 學習', '第7章 記憶', '第8章 語言與心智表徵',
@@ -1118,14 +1167,21 @@ const CHAPTERS = [
   '第13章 社會心理學', '第14章 發展心理學', '第15章 壓力、適應與健康', '第16章 心智異常'
 ];
 let corrections = {};
+let personalNotes = {};
 
 function loadCorrections() {
   try { corrections = JSON.parse(localStorage.getItem(CORRECTIONS_KEY) || '{}'); }
   catch(e) { corrections = {}; }
+  try { personalNotes = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}'); }
+  catch(e) { personalNotes = {}; }
 }
 function saveCorrections() {
   localStorage.setItem(CORRECTIONS_KEY, JSON.stringify(corrections));
 }
+function savePersonalNotes() {
+  localStorage.setItem(NOTES_KEY, JSON.stringify(personalNotes));
+}
+function getPersonalNote(id) { return personalNotes[id] || ''; }
 
 // 把勘誤資料套用到 questions 陣列；若某勘誤值與原值相同（已被同步進 repo），自動清除
 function applyCorrectionsToQuestions() {
@@ -1174,9 +1230,10 @@ function openEditPanel() {
     <div class="modal-bg show" id="edit-modal" onclick="closeEditPanel(event)">
       <div class="modal" onclick="event.stopPropagation()">
         <div class="modal-handle"></div>
-        <div class="modal-title">編輯勘誤 — ${currentQ.id}</div>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:14px">
-          修改只存於本機。完成後到主頁「勘誤管理」匯出清單同步進 repo。
+        <div class="modal-title">編輯 — ${currentQ.id}</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.6">
+          <strong style="color:var(--blue-light)">勘誤</strong>（答案/章節/解析等）會進匯出清單以同步進 repo；
+          <strong style="color:var(--blue-light)">個人備註</strong>只存於本機，不會匯出。
         </div>
         ${isMultiChoice ? `
           <div class="filter-section">
@@ -1196,11 +1253,30 @@ function openEditPanel() {
           </select>
         </div>
         <div class="filter-section">
-          <div class="filter-section-label">註記（會覆寫 answer_note）</div>
-          <textarea id="edit-note" rows="3" class="edit-field" style="resize:vertical" placeholder="例：教科書 P.123 已確認">${(currentQ.answer_note || '').replace(/</g,'&lt;')}</textarea>
+          <div class="filter-section-label">註記${orig.answer_note !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-note" rows="2" class="edit-field" style="resize:vertical" placeholder="例：教科書 P.123 已確認">${(currentQ.answer_note || '').replace(/</g,'&lt;')}</textarea>
         </div>
+
+        <div class="edit-advanced" id="edit-advanced">
+          <div class="edit-advanced-toggle" onclick="toggleEditAdvanced()">進階編輯（解析 / 提示 / 個人備註）</div>
+          <div class="edit-advanced-body">
+            <div class="filter-section">
+              <div class="filter-section-label">解析（reference_answer）${orig.reference_answer !== undefined ? ' (已修改)' : ''}</div>
+              <textarea id="edit-ref" rows="5" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.reference_answer || '').replace(/</g,'&lt;')}</textarea>
+            </div>
+            <div class="filter-section">
+              <div class="filter-section-label">AI 提示（ai_hint）${orig.ai_hint !== undefined ? ' (已修改)' : ''}</div>
+              <textarea id="edit-hint" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.ai_hint || '').replace(/</g,'&lt;')}</textarea>
+            </div>
+            <div class="filter-section">
+              <div class="filter-section-label" style="color:var(--blue-light)">個人備註（不匯出，只存本機）</div>
+              <textarea id="edit-personal" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6" placeholder="記憶口訣、自己的思路、不懂的地方…">${getPersonalNote(currentQ.id).replace(/</g,'&lt;')}</textarea>
+            </div>
+          </div>
+        </div>
+
         <div class="action-row" style="flex-wrap:wrap">
-          ${isCorrected(currentQ.id) ? `<button class="btn btn-ghost" onclick="revertEdit()" style="color:var(--red);flex:1 1 100%;margin-bottom:6px">↶ 還原原始版本</button>` : ''}
+          ${isCorrected(currentQ.id) ? `<button class="btn btn-ghost" onclick="revertEdit()" style="color:var(--red);flex:1 1 100%;margin-bottom:6px">↶ 還原原始版本（保留個人備註）</button>` : ''}
           <button class="btn btn-outline" onclick="closeEditPanel()">取消</button>
           <button class="btn btn-primary" onclick="saveEdit()">儲存</button>
         </div>
@@ -1208,6 +1284,14 @@ function openEditPanel() {
     </div>
   `;
   document.body.insertAdjacentHTML('beforeend', html);
+  // 若已修改進階欄位，預設展開
+  if (orig.reference_answer !== undefined || orig.ai_hint !== undefined || getPersonalNote(currentQ.id)) {
+    document.getElementById('edit-advanced').classList.add('open');
+  }
+}
+
+function toggleEditAdvanced() {
+  document.getElementById('edit-advanced').classList.toggle('open');
 }
 
 function pickEditAnswer(letter, el) {
@@ -1222,6 +1306,9 @@ function saveEdit() {
   const newAnswer = _editAnswer;
   const newTopic = document.getElementById('edit-topic')?.value;
   const newNote = (document.getElementById('edit-note')?.value || '').trim();
+  const newRef = (document.getElementById('edit-ref')?.value || '').trim();
+  const newHint = (document.getElementById('edit-hint')?.value || '').trim();
+  const newPersonal = (document.getElementById('edit-personal')?.value || '').trim();
 
   if (!currentQ._original) currentQ._original = {};
   if (!corrections[currentQ.id]) corrections[currentQ.id] = {};
@@ -1243,6 +1330,21 @@ function saveEdit() {
   if (newNote !== (currentQ.answer_note || '').trim()) {
     setField('answer_note', newNote);
   }
+  if (newRef !== (currentQ.reference_answer || '').trim()) {
+    setField('reference_answer', newRef);
+  }
+  if (newHint !== (currentQ.ai_hint || '').trim()) {
+    setField('ai_hint', newHint);
+  }
+
+  // 個人備註：獨立 namespace、不進 corrections
+  if (newPersonal) {
+    personalNotes[currentQ.id] = newPersonal;
+  } else {
+    delete personalNotes[currentQ.id];
+  }
+  savePersonalNotes();
+
   // 整理：若沒有任何變更，移除空 entry
   const realFields = Object.keys(corrections[currentQ.id]).filter(k => !k.startsWith('_'));
   if (realFields.length === 0) {
@@ -1286,13 +1388,13 @@ function openCorrectionsModal() {
     const corr = corrections[id];
     const orig = q._original || {};
     const lines = [];
-    const labels = { answer: '答案', topic: '章節', answer_note: '註記', ai_hint: '提示' };
-    for (const f of ['answer', 'topic', 'answer_note', 'ai_hint']) {
+    const labels = { answer: '答案', topic: '章節', answer_note: '註記', ai_hint: '提示', reference_answer: '解析' };
+    for (const f of ['answer', 'topic', 'answer_note', 'ai_hint', 'reference_answer']) {
       if (!(f in corr)) continue;
       const o = orig[f] !== undefined ? orig[f] : '';
       const n = corr[f];
-      if (f === 'answer_note' || f === 'ai_hint') {
-        const np = n.length > 25 ? n.slice(0, 25) + '…' : n;
+      if (f === 'answer_note' || f === 'ai_hint' || f === 'reference_answer') {
+        const np = n.length > 30 ? n.slice(0, 30) + '…' : n;
         lines.push(`${labels[f]}: ${n ? `「${np}」` : '(清空)'}`);
       } else {
         lines.push(`${labels[f]}: ${o || '(空)'} → ${n}`);
@@ -1362,8 +1464,39 @@ function copyCorrectionsList() {
       const note = corr.answer_note.replace(/\n/g, ' ');
       fragments.push(`answer_note: ${note ? `「${note}」` : '(清空)'}`);
     }
-    if ('ai_hint' in corr) fragments.push(`ai_hint: 已修改`);
+    if ('ai_hint' in corr) {
+      const hint = corr.ai_hint.replace(/\n/g, ' ');
+      const short = hint.length > 60 ? hint.slice(0, 60) + '…' : hint;
+      fragments.push(`ai_hint: ${hint ? `「${short}」 (完整內容請看 app)` : '(清空)'}`);
+    }
+    if ('reference_answer' in corr) {
+      const ref = corr.reference_answer.replace(/\n/g, ' ');
+      const short = ref.length > 60 ? ref.slice(0, 60) + '…' : ref;
+      fragments.push(`reference_answer: ${ref ? `「${short}」 (完整內容請看 app)` : '(清空)'}`);
+    }
     if (fragments.length > 0) lines.push(`${id}  ${fragments.join('; ')}`);
+  }
+  // 若有解析或提示被改，附上完整內容區塊
+  const fullEdits = ids.filter(id => {
+    const c = corrections[id];
+    return ('reference_answer' in c) || ('ai_hint' in c);
+  });
+  if (fullEdits.length > 0) {
+    lines.push('');
+    lines.push('## 完整修改內容');
+    for (const id of fullEdits) {
+      const c = corrections[id];
+      lines.push('');
+      lines.push(`### ${id}`);
+      if ('reference_answer' in c) {
+        lines.push('reference_answer:');
+        lines.push(c.reference_answer || '(清空)');
+      }
+      if ('ai_hint' in c) {
+        lines.push('ai_hint:');
+        lines.push(c.ai_hint || '(清空)');
+      }
+    }
   }
   const text = lines.join('\n');
 
@@ -1875,9 +2008,14 @@ function renderSteps() {
   const note = currentQ.answer_note || '';
   const conf = currentQ.answer_confidence || '';
   const outline = currentQ.essay_outline || [];
+  const personal = getPersonalNote(currentQ.id);
   let html = '';
   if (conf === 'medium' || conf === 'low') {
     html += `<div style="font-size:11px;color:var(--yellow);background:var(--yellow-bg);border:1px solid rgba(245,200,66,0.3);border-radius:6px;padding:6px 10px;margin-bottom:10px">⚠ 答案信心度：${conf}　待勘誤</div>`;
+  }
+  if (personal) {
+    html += `<div class="personal-note-label">📝 我的備註</div>
+      <div class="personal-note-box">${personal.replace(/</g,'&lt;')}</div>`;
   }
   if (ref) {
     html += `<div class="key-box" style="margin-bottom:10px;line-height:1.7">${ref}</div>`;
