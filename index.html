@@ -533,6 +533,219 @@ html, body {
   text-transform: uppercase;
   margin-bottom: 4px;
 }
+
+/* ── 模考 ── */
+.exam-header {
+  background: linear-gradient(180deg, rgba(80,160,255,0.08), transparent);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.exam-header-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--blue-light);
+  font-weight: 700;
+}
+.exam-header-progress { font-size: 12px; color: var(--muted); }
+.exam-header-timer {
+  margin-left: auto;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  padding: 4px 10px;
+  background: var(--surface);
+  border-radius: 6px;
+  border: 1px solid var(--border2);
+}
+.exam-header-timer.warn { color: var(--yellow); border-color: rgba(245,200,66,0.4); }
+.exam-header-timer.danger {
+  color: var(--red);
+  border-color: rgba(247,95,95,0.4);
+  animation: pulse 1.2s infinite;
+}
+.exam-grid-toggle {
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--border2);
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  gap: 6px;
+  padding: 12px;
+  background: var(--bg-elevate);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.exam-grid-cell {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+}
+.exam-grid-cell.answered { background: var(--blue-glow); color: var(--blue-light); border-color: var(--blue); }
+.exam-grid-cell.current { outline: 2px solid var(--blue); outline-offset: 1px; }
+.exam-grid-cell.flagged::after {
+  content: '🚩';
+  position: absolute;
+  font-size: 8px;
+  margin-top: -16px;
+  margin-left: 16px;
+}
+
+.exam-essay-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.7;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.exam-essay-input:focus { outline: none; border-color: var(--blue); }
+
+/* 結果頁 */
+.exam-score-big {
+  text-align: center;
+  padding: 24px 0;
+  background: linear-gradient(180deg, var(--blue-glow), transparent);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.exam-score-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--blue-light);
+  line-height: 1;
+}
+.exam-score-label { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+.exam-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.exam-stat-cell {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.exam-stat-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+}
+.exam-stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+.chapter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+}
+.chapter-bar-label { width: 110px; color: var(--text); flex-shrink: 0; font-size: 11px; }
+.chapter-bar-track {
+  flex: 1;
+  height: 18px;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.chapter-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+  transition: width 0.3s;
+}
+.chapter-bar-fill.poor { background: linear-gradient(90deg, #d44, #f88); }
+.chapter-bar-fill.ok { background: linear-gradient(90deg, var(--yellow), #fc6); }
+.chapter-bar-text {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--text);
+  text-shadow: 0 0 4px var(--bg);
+}
+
+.exam-result-q {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: var(--surface);
+}
+.exam-result-q.correct { border-left: 3px solid var(--green); }
+.exam-result-q.wrong { border-left: 3px solid var(--red); }
+.exam-result-q.skip { border-left: 3px solid var(--muted); }
+.exam-result-q-header {
+  display: flex; gap: 8px; align-items: center; margin-bottom: 8px;
+  font-size: 12px;
+}
+.self-grade-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.self-grade-row input {
+  width: 60px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  color: var(--text);
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+}
+
+.exam-history-row {
+  display: flex; gap: 8px; align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--surface);
+  margin-bottom: 6px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+}
+.exam-history-row:hover { border-color: var(--blue); }
+.exam-history-date { font-size: 11px; color: var(--muted); flex: 1; }
+.exam-history-score {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--blue-light);
+}
+.exam-history-meta { font-size: 10px; color: var(--dim); }
 .q-badge {
   font-size: 11px;
   padding: 2px 8px;
@@ -1018,6 +1231,11 @@ html, body {
           <div class="label">章節學習</div>
           <div class="sub">按章節刷</div>
         </div>
+        <div class="quick-card" onclick="openExamSetup()" style="grid-column:span 2">
+          <div class="icon">📝</div>
+          <div class="label">模考練習</div>
+          <div class="sub" id="exam-card-sub">計時實戰、評分</div>
+        </div>
       </div>
     </div>
 
@@ -1031,6 +1249,15 @@ html, body {
       <div class="weak-list" id="weak-list">
         <div class="empty" style="padding:16px 0">
           <div style="font-size:11px;color:var(--dim)">刷完幾題後這裡會顯示你的弱點</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-section" style="padding-top:0">
+      <div class="section-label">模考歷史</div>
+      <div id="exam-history-list">
+        <div class="empty" style="padding:16px 0">
+          <div style="font-size:11px;color:var(--dim)">尚無模考紀錄</div>
         </div>
       </div>
     </div>
@@ -1102,6 +1329,35 @@ html, body {
     </div>
     <div style="overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch">
       <div class="quiz-body" id="quiz-body"></div>
+    </div>
+  </div>
+
+  <!-- EXAM (in-progress) -->
+  <div class="page" id="page-exam">
+    <div class="exam-header">
+      <div class="exam-header-title">模考中</div>
+      <div class="exam-header-progress" id="exam-progress">0/0</div>
+      <div class="exam-grid-toggle" onclick="toggleExamGrid()">📋 答題卡</div>
+      <div class="exam-header-timer" id="exam-timer">--:--</div>
+    </div>
+    <div style="overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch">
+      <div class="quiz-body">
+        <div id="exam-grid-panel" style="display:none">
+          <div class="exam-grid" id="exam-grid"></div>
+        </div>
+        <div id="exam-question-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXAM RESULT -->
+  <div class="page" id="page-exam-result">
+    <div class="quiz-header">
+      <div class="quiz-back" onclick="goPage('page-home')">←</div>
+      <div class="quiz-counter" style="margin-left:auto">模考結果</div>
+    </div>
+    <div style="overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch">
+      <div class="quiz-body" id="exam-result-body"></div>
     </div>
   </div>
 
@@ -1640,6 +1896,706 @@ async function exportModifiedQuestions() {
   alert(`已匯出 ${modifiedFiles.size} 個檔案、${correctionsCount()} 題修改。\n\n解壓 zip 後把 data/questions/ 蓋回 repo 並 push 即完成同步。`);
 }
 
+// ─── EXAM (模考) ──────────────────────────────────────────────────────────────
+const EXAMS_KEY = 'psych_exams_v1';
+const CURRENT_EXAM_KEY = 'psych_current_exam_v1';
+const TYPE_WEIGHTS = { '選擇題':1, '是非題':1, '配合題':1, '名詞解釋':3, '申論題':5 };
+let examState = null;
+let _examTimerHandle = null;
+
+function loadExamHistory() {
+  try { return JSON.parse(localStorage.getItem(EXAMS_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveExamHistory(arr) { localStorage.setItem(EXAMS_KEY, JSON.stringify(arr)); }
+function loadCurrentExam() {
+  try { return JSON.parse(localStorage.getItem(CURRENT_EXAM_KEY) || 'null'); } catch(e) { return null; }
+}
+function saveCurrentExam() {
+  if (examState) localStorage.setItem(CURRENT_EXAM_KEY, JSON.stringify(examState));
+}
+function clearCurrentExam() { localStorage.removeItem(CURRENT_EXAM_KEY); }
+
+function openExamSetup() {
+  // 若已有進行中的模考，問是否繼續
+  const cur = loadCurrentExam();
+  if (cur && !cur.submittedAt) {
+    const ageMin = Math.round((Date.now() - cur.startedAt) / 60000);
+    if (confirm(`你有一場進行中的模考（${ageMin} 分鐘前開始）。\n\n要繼續嗎？\n\n按【取消】則開始新的模考設定。`)) {
+      examState = cur;
+      goPage('page-exam');
+      renderExamPage();
+      startExamTimer();
+      return;
+    } else {
+      clearCurrentExam();
+    }
+  }
+
+  // 統計各學校／年度題數，用於 UI
+  const allSchools = [...new Set(questions.map(q => q.source))].sort();
+  const allYears = [...new Set(questions.map(q => q.year))].sort((a,b)=>b-a);
+
+  const html = `
+    <div class="modal-bg show" id="exam-setup-modal" onclick="closeExamSetup(event)">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-handle"></div>
+        <div class="modal-title">模考設定</div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">快速 preset</div>
+          <div class="filter-chips">
+            ${allSchools.map(s => allYears
+              .filter(y => questions.some(q => q.source === s && q.year === y))
+              .map(y => `<div class="filter-chip" onclick="applyExamPreset('${s}', ${y})">${s} ${y}</div>`).join('')
+            ).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">學校</div>
+          <div class="filter-chips" id="exam-school-chips">
+            ${allSchools.map(s => `<div class="filter-chip active" data-val="${s}" onclick="toggleExamFilter('school',this)">${s}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">年度</div>
+          <div class="filter-chips" id="exam-year-chips">
+            ${allYears.map(y => `<div class="filter-chip active" data-val="${y}" onclick="toggleExamFilter('year',this)">${y}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">題型</div>
+          <div class="filter-chips" id="exam-type-chips">
+            ${['選擇題','是非題','配合題','名詞解釋','申論題'].map(t => {
+              const n = questions.filter(q=>q.type===t).length;
+              return `<div class="filter-chip active" data-val="${t}" onclick="toggleExamFilter('type',this)">${t} (${n})</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">題數 <span id="exam-count-info" style="color:var(--blue-light);font-family:'Space Mono',monospace"></span></div>
+          <div class="filter-chips" id="exam-count-chips">
+            ${[10,20,30,50,'all'].map(n => {
+              const dataVal = n === 'all' ? 'all' : n;
+              const arg = n === 'all' ? "'all'" : n;
+              const lbl = n === 'all' ? '全部' : (n + ' 題');
+              return `<div class="filter-chip ${n===30?'active':''}" data-val="${dataVal}" onclick="pickExamCount(${arg},this)">${lbl}</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">時限（分鐘）</div>
+          <div class="filter-chips" id="exam-time-chips">
+            ${[30,60,90,100,'unlimited'].map(t => {
+              const dataVal = t === 'unlimited' ? 'unlimited' : t;
+              const arg = t === 'unlimited' ? "'unlimited'" : t;
+              const lbl = t === 'unlimited' ? '不限' : (t + ' min');
+              return `<div class="filter-chip ${t===100?'active':''}" data-val="${dataVal}" onclick="pickExamTime(${arg},this)">${lbl}</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn btn-outline" onclick="closeExamSetup()">取消</button>
+          <button class="btn btn-primary" onclick="startExam()">開始模考 →</button>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', html);
+  // 預設值
+  _examConfig = { schools: new Set(allSchools), years: new Set(allYears),
+    types: new Set(['選擇題','是非題','配合題','名詞解釋','申論題']), count: 30, timeLimit: 100 };
+  updateExamCountInfo();
+}
+
+let _examConfig = null;
+
+function closeExamSetup(e) {
+  if (e && e.target.id !== 'exam-setup-modal') return;
+  const m = document.getElementById('exam-setup-modal');
+  if (m) m.remove();
+}
+
+function applyExamPreset(school, year) {
+  // 套用 preset 到 UI 並準備整份試卷模式
+  const yearInt = parseInt(year);
+  const preset = questions.filter(q => q.source === school && q.year === yearInt);
+  if (preset.length === 0) { alert('找不到題目'); return; }
+  _examConfig = {
+    schools: new Set([school]),
+    years: new Set([yearInt]),
+    types: new Set(preset.map(q => q.type)),
+    count: 'all',
+    timeLimit: 100,
+    presetLabel: `${school} ${year} 整份`,
+  };
+  // 更新 UI chips
+  document.querySelectorAll('#exam-school-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === school));
+  document.querySelectorAll('#exam-year-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === year.toString()));
+  document.querySelectorAll('#exam-type-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', _examConfig.types.has(el.dataset.val)));
+  document.querySelectorAll('#exam-count-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === 'all'));
+  document.querySelectorAll('#exam-time-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === '100'));
+  updateExamCountInfo();
+}
+
+function toggleExamFilter(dim, el) {
+  el.classList.toggle('active');
+  const set = _examConfig[dim === 'school' ? 'schools' : (dim === 'year' ? 'years' : 'types')];
+  const val = dim === 'year' ? parseInt(el.dataset.val) : el.dataset.val;
+  if (el.classList.contains('active')) set.add(val); else set.delete(val);
+  updateExamCountInfo();
+}
+
+function pickExamCount(n, el) {
+  _examConfig.count = n;
+  document.querySelectorAll('#exam-count-chips .filter-chip').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  updateExamCountInfo();
+}
+
+function pickExamTime(t, el) {
+  _examConfig.timeLimit = t;
+  document.querySelectorAll('#exam-time-chips .filter-chip').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function getExamCandidates() {
+  return questions.filter(q =>
+    _examConfig.schools.has(q.source) &&
+    _examConfig.years.has(q.year) &&
+    _examConfig.types.has(q.type)
+  );
+}
+function updateExamCountInfo() {
+  const avail = getExamCandidates().length;
+  const want = _examConfig.count === 'all' ? avail : Math.min(_examConfig.count, avail);
+  document.getElementById('exam-count-info').textContent = `（符合 ${avail} 題，將取 ${want} 題）`;
+}
+
+function startExam() {
+  const candidates = getExamCandidates();
+  if (candidates.length === 0) {
+    alert('沒有符合條件的題目，請放寬設定');
+    return;
+  }
+  const want = _examConfig.count === 'all' ? candidates.length : Math.min(_examConfig.count, candidates.length);
+  // Shuffle and take N. 但若是 preset (整份試卷)，依原順序（id 排序）
+  let chosen;
+  if (_examConfig.presetLabel) {
+    chosen = candidates.slice().sort((a,b) => a.id.localeCompare(b.id));
+  } else {
+    chosen = candidates.slice().sort(() => Math.random() - 0.5).slice(0, want);
+  }
+
+  examState = {
+    id: 'exam_' + Date.now(),
+    startedAt: Date.now(),
+    submittedAt: null,
+    config: {
+      schools: [..._examConfig.schools],
+      years: [..._examConfig.years],
+      types: [..._examConfig.types],
+      count: want,
+      timeLimit: _examConfig.timeLimit,
+      presetLabel: _examConfig.presetLabel || null,
+    },
+    timeLimitSec: _examConfig.timeLimit === 'unlimited' ? null : _examConfig.timeLimit * 60,
+    questionIds: chosen.map(q => q.id),
+    answers: {},
+    selfScores: {},  // qid -> {score, max} for subjective
+    currentIdx: 0,
+  };
+  saveCurrentExam();
+  closeExamSetup();
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function getExamQuestion(idx) {
+  const id = examState.questionIds[idx];
+  return questions.find(q => q.id === id);
+}
+
+function renderExamPage() {
+  if (!examState) return;
+  const total = examState.questionIds.length;
+  const idx = examState.currentIdx;
+  const q = getExamQuestion(idx);
+  document.getElementById('exam-progress').textContent = `${idx+1}/${total}`;
+  // Render question body — like quiz but no edit btn, no markers, no solution
+  const isObj = ['選擇題','是非題','配合題'].includes(q.type);
+  const isMC = q.options && q.options.length > 0;
+  const userAns = examState.answers[q.id] || '';
+  const sectionTitle = q.section?.title;
+  const isPartOfGroup = sectionTitle && q.type === '配合題';
+
+  let html = `
+    <div class="q-meta">
+      <span class="q-badge school">${q.source}</span>
+      <span class="q-badge" style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted)">${q.id}</span>
+      <span class="q-badge type-${({'選擇題':'choice','是非題':'tf','配合題':'match','申論題':'essay','名詞解釋':'essay'}[q.type] || 'choice')}">${q.type}</span>
+    </div>
+    ${isPartOfGroup ? `<div style="font-size:11px;color:var(--muted);background:var(--surface);padding:8px 12px;border-radius:6px;margin-bottom:10px;border-left:3px solid var(--blue)">${q.section.title}</div>` : ''}
+    <div class="q-stem">${q.question || ''}</div>
+  `;
+
+  if (isMC) {
+    html += `<div class="options" id="exam-options">`;
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    q.options.forEach((opt, i) => {
+      const L = letters[i];
+      const sel = userAns === L ? 'selected' : '';
+      html += `<div class="option ${sel}" onclick="selectExamAnswer('${L}',this)">
+        <span class="option-letter">${L}</span><span>${opt}</span></div>`;
+    });
+    html += `</div>`;
+  } else if (q.type === '是非題') {
+    html += `<div class="options" id="exam-options">`;
+    ['O','X'].forEach(L => {
+      const sel = userAns === L ? 'selected' : '';
+      const label = L === 'O' ? '○ 對' : '✕ 錯';
+      html += `<div class="option ${sel}" onclick="selectExamAnswer('${L}',this)">
+        <span class="option-letter">${L}</span><span>${label}</span></div>`;
+    });
+    html += `</div>`;
+  } else {
+    // 申論題 / 名詞解釋
+    html += `<div style="margin:10px 0">
+      <div style="font-size:11px;color:var(--muted);margin-bottom:6px">在下方寫下答案（提交後可自評）</div>
+      <textarea class="exam-essay-input" id="exam-essay" oninput="onExamEssayInput()" placeholder="作答區...">${userAns.replace(/</g,'&lt;')}</textarea>
+    </div>`;
+  }
+
+  html += `
+    <div class="action-row" style="margin-top:16px;flex-wrap:wrap">
+      ${idx > 0 ? `<button class="btn btn-outline" onclick="examGoTo(${idx-1})">← 上一題</button>` : '<div></div>'}
+      ${idx < total-1
+        ? `<button class="btn btn-primary" onclick="examGoTo(${idx+1})">下一題 →</button>`
+        : `<button class="btn btn-primary" style="background:var(--green);border-color:var(--green)" onclick="submitExam()">提交模考 ✓</button>`
+      }
+    </div>
+  `;
+  document.getElementById('exam-question-body').innerHTML = html;
+  renderExamGrid();
+}
+
+function renderExamGrid() {
+  const grid = document.getElementById('exam-grid');
+  const total = examState.questionIds.length;
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    const id = examState.questionIds[i];
+    const answered = examState.answers[id] && examState.answers[id].toString().trim() !== '';
+    const cur = i === examState.currentIdx;
+    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''}" onclick="examGoTo(${i})">${i+1}</div>`;
+  }
+  grid.innerHTML = html;
+}
+
+function toggleExamGrid() {
+  const p = document.getElementById('exam-grid-panel');
+  p.style.display = p.style.display === 'none' ? 'block' : 'none';
+  if (p.style.display === 'block') renderExamGrid();
+}
+
+function selectExamAnswer(letter, el) {
+  if (!examState) return;
+  const q = getExamQuestion(examState.currentIdx);
+  examState.answers[q.id] = letter;
+  document.querySelectorAll('#exam-options .option').forEach(x => x.classList.remove('selected'));
+  el.classList.add('selected');
+  saveCurrentExam();
+  renderExamGrid();
+}
+
+function onExamEssayInput() {
+  if (!examState) return;
+  const q = getExamQuestion(examState.currentIdx);
+  examState.answers[q.id] = document.getElementById('exam-essay').value;
+  saveCurrentExam();
+  // 不重繪 grid 太頻繁，等切題時更新
+}
+
+function examGoTo(idx) {
+  if (!examState) return;
+  // Save current essay if any
+  const cur = getExamQuestion(examState.currentIdx);
+  const isText = !['選擇題','是非題','配合題'].includes(cur.type);
+  if (isText) {
+    const el = document.getElementById('exam-essay');
+    if (el) examState.answers[cur.id] = el.value;
+  }
+  examState.currentIdx = idx;
+  saveCurrentExam();
+  renderExamPage();
+  document.getElementById('page-exam').scrollTop = 0;
+}
+
+function startExamTimer() {
+  if (_examTimerHandle) clearInterval(_examTimerHandle);
+  if (!examState.timeLimitSec) {
+    document.getElementById('exam-timer').textContent = '∞';
+    _examTimerHandle = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - examState.startedAt) / 1000);
+      const mm = String(Math.floor(elapsed/60)).padStart(2,'0');
+      const ss = String(elapsed%60).padStart(2,'0');
+      document.getElementById('exam-timer').textContent = `${mm}:${ss}`;
+    }, 1000);
+    return;
+  }
+  _examTimerHandle = setInterval(() => {
+    if (!examState || examState.submittedAt) { clearInterval(_examTimerHandle); return; }
+    const elapsed = Math.floor((Date.now() - examState.startedAt) / 1000);
+    const remaining = Math.max(0, examState.timeLimitSec - elapsed);
+    const mm = String(Math.floor(remaining/60)).padStart(2,'0');
+    const ss = String(remaining%60).padStart(2,'0');
+    const el = document.getElementById('exam-timer');
+    if (el) {
+      el.textContent = `${mm}:${ss}`;
+      el.classList.toggle('warn', remaining > 60 && remaining <= 300);
+      el.classList.toggle('danger', remaining <= 60);
+    }
+    if (remaining === 0) {
+      clearInterval(_examTimerHandle);
+      alert('時間到！自動提交');
+      submitExam(true);
+    }
+  }, 1000);
+}
+
+function submitExam(auto) {
+  if (!examState) return;
+  const total = examState.questionIds.length;
+  const answered = examState.questionIds.filter(id =>
+    examState.answers[id] && examState.answers[id].toString().trim() !== ''
+  ).length;
+  if (!auto) {
+    if (!confirm(`確定提交？\n\n已答 ${answered}/${total} 題。\n提交後不能再修改答案。`)) return;
+  }
+  // Save essay one more time
+  const cur = getExamQuestion(examState.currentIdx);
+  const isText = !['選擇題','是非題','配合題'].includes(cur.type);
+  if (isText) {
+    const el = document.getElementById('exam-essay');
+    if (el) examState.answers[cur.id] = el.value;
+  }
+  examState.submittedAt = Date.now();
+  if (_examTimerHandle) clearInterval(_examTimerHandle);
+  // 主觀題初始 selfScore 設為「待評」(null)
+  for (const id of examState.questionIds) {
+    const q = questions.find(q => q.id === id);
+    if (!['選擇題','是非題','配合題'].includes(q.type)) {
+      if (!(id in examState.selfScores)) {
+        // 初始給 0，使用者去調整
+        examState.selfScores[id] = { score: 0, max: 100 };
+      }
+    }
+  }
+  saveCurrentExam();
+  goPage('page-exam-result');
+  renderExamResult();
+}
+
+// 計算單題對錯（客觀題）+ 主觀題分數
+function gradeQuestion(q) {
+  const ans = examState.answers[q.id];
+  const isObj = ['選擇題','是非題','配合題'].includes(q.type);
+  if (isObj) {
+    if (!ans) return { isObjective: true, status: 'skip', earned: 0, max: 1 };
+    const correct = (q.answer || '').toString().trim().toUpperCase() === ans.toString().trim().toUpperCase();
+    return { isObjective: true, status: correct ? 'correct' : 'wrong', earned: correct ? 1 : 0, max: 1 };
+  } else {
+    const ss = examState.selfScores[q.id] || { score: 0, max: 100 };
+    if (!ans) return { isObjective: false, status: 'skip', earned: 0, max: 1 };
+    return {
+      isObjective: false,
+      status: ss.score >= ss.max * 0.6 ? 'correct' : (ss.score > 0 ? 'wrong' : 'wrong'),
+      earned: ss.score / ss.max,
+      max: 1,
+    };
+  }
+}
+
+function computeExamScore() {
+  let totalWeight = 0, earnedWeight = 0;
+  let correct = 0, wrong = 0, skip = 0;
+  const byChapter = {};
+  for (const id of examState.questionIds) {
+    const q = questions.find(x => x.id === id);
+    const g = gradeQuestion(q);
+    const w = TYPE_WEIGHTS[q.type] || 1;
+    totalWeight += w;
+    earnedWeight += g.earned * w;
+    if (g.status === 'correct') correct++;
+    else if (g.status === 'wrong') wrong++;
+    else skip++;
+    const ch = q.topic || '未分類';
+    if (!byChapter[ch]) byChapter[ch] = { totalW: 0, earnedW: 0, count: 0 };
+    byChapter[ch].totalW += w;
+    byChapter[ch].earnedW += g.earned * w;
+    byChapter[ch].count++;
+  }
+  const score = totalWeight > 0 ? Math.round((earnedWeight / totalWeight) * 100) : 0;
+  return { score, totalWeight, earnedWeight, correct, wrong, skip, byChapter };
+}
+
+function renderExamResult() {
+  if (!examState) return;
+  const result = computeExamScore();
+  const usedSec = Math.floor((examState.submittedAt - examState.startedAt) / 1000);
+  const limitSec = examState.timeLimitSec;
+  const fmtTime = (s) => `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  const total = examState.questionIds.length;
+
+  let html = `
+    <div class="exam-score-big">
+      <div class="exam-score-num">${result.score}</div>
+      <div class="exam-score-label">滿分 100　|　用時 ${fmtTime(usedSec)}${limitSec ? ' / ' + fmtTime(limitSec) : ''}</div>
+    </div>
+
+    <div class="exam-stat-row">
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--green)">${result.correct}</div><div class="exam-stat-label">答對</div></div>
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--red)">${result.wrong}</div><div class="exam-stat-label">答錯</div></div>
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--muted)">${result.skip}</div><div class="exam-stat-label">未答</div></div>
+    </div>
+  `;
+
+  // 分章節長條圖
+  const chRows = Object.entries(result.byChapter)
+    .filter(([_, d]) => d.totalW > 0)
+    .sort(([a], [b]) => chapterNum(a) - chapterNum(b))
+    .map(([ch, d]) => {
+      const pct = Math.round((d.earnedW / d.totalW) * 100);
+      const cls = pct < 50 ? 'poor' : (pct < 75 ? 'ok' : '');
+      return `<div class="chapter-bar">
+        <div class="chapter-bar-label">${ch}</div>
+        <div class="chapter-bar-track">
+          <div class="chapter-bar-fill ${cls}" style="width:${pct}%"></div>
+          <div class="chapter-bar-text">${pct}% (${d.count}題)</div>
+        </div>
+      </div>`;
+    }).join('');
+  if (chRows) {
+    html += `<div class="slabel" style="margin-top:8px">分章節得分</div>${chRows}`;
+  }
+
+  // 主觀題自評區
+  const subjectiveQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => !['選擇題','是非題','配合題'].includes(q.type));
+  if (subjectiveQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">主觀題自評（影響總分）</div>`;
+    subjectiveQs.forEach(q => {
+      const ans = examState.answers[q.id] || '(未作答)';
+      const ss = examState.selfScores[q.id] || { score: 0, max: 100 };
+      const kw = (q.keywords_required || []);
+      const kwHits = kw.filter(k => ans.includes(k));
+      const outline = q.essay_outline || [];
+      html += `
+        <div class="exam-result-q">
+          <div class="exam-result-q-header">
+            <strong>${q.id}</strong>
+            <span class="q-badge">${q.type}</span>
+            <span class="q-badge" style="margin-left:auto">權重 ×${TYPE_WEIGHTS[q.type]}</span>
+          </div>
+          <div style="font-size:13px;margin-bottom:8px">${q.question || ''}</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">你的答案：</div>
+          <div style="background:var(--surface);padding:8px;border-radius:6px;font-size:12px;white-space:pre-wrap;line-height:1.6">${ans.replace(/</g,'&lt;')}</div>
+          ${kw.length > 0 ? `<div style="font-size:11px;margin-top:8px">關鍵字命中 ${kwHits.length}/${kw.length}：${kw.map(k => kwHits.includes(k) ? `<span style="color:var(--green)">${k}</span>` : `<span style="color:var(--red);text-decoration:line-through">${k}</span>`).join('、')}</div>` : ''}
+          ${outline.length > 0 ? `<details style="margin-top:8px"><summary style="font-size:11px;color:var(--muted);cursor:pointer">看答題骨架</summary><div style="font-size:12px;line-height:1.7;margin-top:6px">${outline.map((s,i)=>`<div>${i+1}. ${s}</div>`).join('')}</div></details>` : ''}
+          ${q.reference_answer ? `<details style="margin-top:6px"><summary style="font-size:11px;color:var(--muted);cursor:pointer">看參考解答</summary><div class="key-box" style="margin-top:6px;font-size:12px">${q.reference_answer}</div></details>` : ''}
+          <div class="self-grade-row">
+            <span style="font-size:12px;color:var(--muted)">自評：</span>
+            <input type="number" min="0" max="${ss.max}" value="${ss.score}" oninput="updateSelfScore('${q.id}', this.value)" />
+            <span style="font-size:12px;color:var(--muted)">/ ${ss.max} 分</span>
+            <span style="margin-left:auto;font-size:11px;color:var(--blue-light)">調整後總分會自動更新</span>
+          </div>
+        </div>`;
+    });
+  }
+
+  // 客觀錯題列表（解析現在解鎖）
+  const wrongQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => ['選擇題','是非題','配合題'].includes(q.type) && gradeQuestion(q).status === 'wrong');
+  if (wrongQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">客觀題錯題複習（${wrongQs.length} 題）</div>`;
+    wrongQs.forEach(q => {
+      const ans = examState.answers[q.id];
+      html += `
+        <div class="exam-result-q wrong">
+          <div class="exam-result-q-header">
+            <strong>${q.id}</strong>
+            <span class="q-badge">${q.type}</span>
+            <span style="margin-left:auto;font-size:11px;color:var(--red)">你選 ${ans}　正解 ${q.answer}</span>
+          </div>
+          <div style="font-size:13px;margin-bottom:8px">${q.question || ''}</div>
+          ${q.options ? `<div style="font-size:12px;line-height:1.8">${q.options.map((o,i) => {
+            const L = 'ABCDEFGHIJKLMNOP'[i];
+            const isAns = L === q.answer;
+            const isUser = L === ans;
+            return `<div style="${isAns?'color:var(--green);font-weight:600':''}${isUser&&!isAns?';color:var(--red)':''}">${L}. ${o} ${isAns?' ✓':(isUser?' ✗':'')}</div>`;
+          }).join('')}</div>` : ''}
+          ${q.reference_answer ? `<div class="key-box" style="margin-top:8px;font-size:12px">${q.reference_answer}</div>` : ''}
+        </div>`;
+    });
+  }
+
+  // 未答列表
+  const skipQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => gradeQuestion(q).status === 'skip');
+  if (skipQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">未作答（${skipQs.length} 題）</div>
+      <div style="font-size:11px;color:var(--muted);padding:6px 0">${skipQs.map(q => q.id).join('、')}</div>`;
+  }
+
+  html += `
+    <div class="action-row" style="margin-top:20px;flex-wrap:wrap">
+      ${wrongQs.length > 0 ? `<button class="btn btn-outline" onclick="redoWrong()" style="flex:1 1 100%;margin-bottom:6px">🔁 重做錯題（${wrongQs.length} 題）</button>` : ''}
+      <button class="btn btn-outline" onclick="finishExam()">完成（存進歷史）</button>
+      <button class="btn btn-primary" onclick="discardExam()" style="background:var(--red);border-color:var(--red)">捨棄不存</button>
+    </div>
+    <div style="height:30px"></div>
+  `;
+  document.getElementById('exam-result-body').innerHTML = html;
+}
+
+function updateSelfScore(qid, val) {
+  if (!examState) return;
+  const v = parseFloat(val) || 0;
+  if (!examState.selfScores[qid]) examState.selfScores[qid] = { score: 0, max: 100 };
+  examState.selfScores[qid].score = Math.max(0, Math.min(examState.selfScores[qid].max, v));
+  saveCurrentExam();
+  // 更新頂部分數但不整個 re-render（會重置滑鼠焦點）
+  const result = computeExamScore();
+  const num = document.querySelector('.exam-score-num');
+  if (num) num.textContent = result.score;
+}
+
+function finishExam() {
+  if (!examState) return;
+  const hist = loadExamHistory();
+  hist.unshift(examState);
+  // 最多保留 50 場
+  saveExamHistory(hist.slice(0, 50));
+  clearCurrentExam();
+  examState = null;
+  goPage('page-home');
+  alert('模考已存入歷史');
+}
+
+function discardExam() {
+  if (!confirm('確定捨棄這場模考？\n\n（不存入歷史，但已答內容仍可在【模考歷史】未出現中追蹤）')) return;
+  clearCurrentExam();
+  examState = null;
+  goPage('page-home');
+}
+
+function redoWrong() {
+  // 重啟一場新模考，題目只取錯題
+  const wrongIds = examState.questionIds
+    .filter(id => {
+      const q = questions.find(qq => qq.id === id);
+      if (!q) return false;
+      return ['選擇題','是非題','配合題'].includes(q.type) && gradeQuestion(q).status === 'wrong';
+    });
+  if (wrongIds.length === 0) { alert('沒有錯題'); return; }
+  // 把當前模考存起來再開新場
+  finishExam();
+  examState = {
+    id: 'exam_' + Date.now(),
+    startedAt: Date.now(),
+    submittedAt: null,
+    config: {
+      schools: [], years: [], types: [],
+      count: wrongIds.length,
+      timeLimit: 'unlimited',
+      presetLabel: '錯題重做',
+    },
+    timeLimitSec: null,
+    questionIds: wrongIds,
+    answers: {},
+    selfScores: {},
+    currentIdx: 0,
+  };
+  saveCurrentExam();
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function renderExamHistory() {
+  const hist = loadExamHistory();
+  const cur = loadCurrentExam();
+  const list = document.getElementById('exam-history-list');
+  if (!list) return;
+  if (hist.length === 0 && (!cur || cur.submittedAt)) {
+    list.innerHTML = `<div class="empty" style="padding:16px 0"><div style="font-size:11px;color:var(--dim)">尚無模考紀錄</div></div>`;
+    return;
+  }
+  let html = '';
+  if (cur && !cur.submittedAt) {
+    const ageMin = Math.round((Date.now() - cur.startedAt) / 60000);
+    const total = cur.questionIds.length;
+    const answered = cur.questionIds.filter(id => cur.answers[id] && cur.answers[id].toString().trim()).length;
+    html += `<div class="exam-history-row" onclick="resumeCurrentExam()" style="border-color:var(--yellow)">
+      <div>
+        <div style="font-size:12px;color:var(--yellow);font-weight:600">▶ 進行中</div>
+        <div class="exam-history-meta">${ageMin} 分鐘前開始 · ${answered}/${total}</div>
+      </div>
+      <div style="margin-left:auto;font-size:11px;color:var(--blue-light)">點擊繼續 →</div>
+    </div>`;
+  }
+  hist.slice(0, 5).forEach(e => {
+    examState = e; // 暫借 grade 用
+    const result = computeExamScore();
+    const date = new Date(e.startedAt);
+    const dateStr = `${date.getMonth()+1}/${date.getDate()} ${String(date.getHours()).padStart(2,'0')}:${String(date.getMinutes()).padStart(2,'0')}`;
+    const usedSec = Math.floor(((e.submittedAt || Date.now()) - e.startedAt) / 1000);
+    const meta = e.config.presetLabel || `${e.config.schools.join(',')} · ${e.questionIds.length} 題`;
+    html += `<div class="exam-history-row" onclick="reviewExam('${e.id}')">
+      <div>
+        <div class="exam-history-date">${dateStr}</div>
+        <div class="exam-history-meta">${meta} · ${Math.floor(usedSec/60)}分</div>
+      </div>
+      <div class="exam-history-score">${result.score}</div>
+    </div>`;
+  });
+  examState = null;
+  list.innerHTML = html;
+}
+
+function resumeCurrentExam() {
+  examState = loadCurrentExam();
+  if (!examState) return;
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function reviewExam(id) {
+  const hist = loadExamHistory();
+  const e = hist.find(x => x.id === id);
+  if (!e) return;
+  examState = e;
+  goPage('page-exam-result');
+  renderExamResult();
+}
+
+
+
 // Chapter ordering: 第1章, 第2章, ... 第16章
 function chapterNum(topic) {
   const m = (topic || '').match(/第(\d+)章/);
@@ -1684,17 +2640,18 @@ function updateHeaderSub() {
 }
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
-const pages = ['page-home','page-browse','page-chapters','page-quiz'];
-const navIds = ['nav-home','nav-browse','nav-chapters',null];
+const pages = ['page-home','page-browse','page-chapters','page-quiz','page-exam','page-exam-result'];
+const navIds = ['nav-home','nav-browse','nav-chapters',null,null,null];
 
 function goPage(pageId) {
   pages.forEach((p,i) => {
     document.getElementById(p).classList.toggle('active', p === pageId);
     if (navIds[i]) document.getElementById(navIds[i]).classList.toggle('active', p === pageId);
   });
-  // Hide bottom nav during quiz
-  document.querySelector('.bottom-nav').style.display = pageId === 'page-quiz' ? 'none' : 'flex';
-  document.querySelector('.header').style.display = pageId === 'page-quiz' ? 'none' : 'flex';
+  // Hide bottom nav during quiz/exam
+  const hideUI = pageId === 'page-quiz' || pageId === 'page-exam' || pageId === 'page-exam-result';
+  document.querySelector('.bottom-nav').style.display = hideUI ? 'none' : 'flex';
+  document.querySelector('.header').style.display = hideUI ? 'none' : 'flex';
   if (pageId === 'page-browse') renderBrowse();
   if (pageId === 'page-chapters') renderChapters();
   if (pageId === 'page-home') renderHome();
@@ -1714,6 +2671,19 @@ function renderHome() {
   const cc = correctionsCount();
   const ccEl = document.getElementById('corrections-count');
   if (ccEl) ccEl.textContent = cc === 0 ? '尚無勘誤' : `${cc} 筆 — 點此匯出`;
+  renderExamHistory();
+  // 模考 card sub
+  const cur = loadCurrentExam();
+  const examSub = document.getElementById('exam-card-sub');
+  if (examSub) {
+    if (cur && !cur.submittedAt) {
+      examSub.textContent = '⚡ 進行中（點此繼續）';
+      examSub.style.color = 'var(--yellow)';
+    } else {
+      examSub.textContent = '計時實戰、評分';
+      examSub.style.color = '';
+    }
+  }
 
   // Top chapters (by question count)
   const chCounts = {};
