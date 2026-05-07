@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#0a0a0f">
 <meta name="robots" content="noindex, nofollow">
 <title>普心刷題</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -969,6 +970,7 @@ html, body {
   <div class="header">
     <div class="header-title">普心刷題</div>
     <div class="header-sub" id="header-sub">載入中…</div>
+    <div class="header-btn" id="export-btn" onclick="exportModifiedQuestions()" title="匯出修改 (zip)" style="margin-right:6px">⬇</div>
     <div class="header-btn" id="filter-btn" onclick="openFilter()" title="篩選">⚙</div>
   </div>
 
@@ -1232,7 +1234,7 @@ function openEditPanel() {
         <div class="modal-handle"></div>
         <div class="modal-title">編輯 — ${currentQ.id}</div>
         <div style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.6">
-          <strong style="color:var(--blue-light)">勘誤</strong>（答案/章節/解析等）會進匯出清單以同步進 repo；
+          <strong style="color:var(--blue-light)">勘誤</strong>會進匯出 zip，下載後覆蓋 repo 的 JSON 即可同步；
           <strong style="color:var(--blue-light)">個人備註</strong>只存於本機，不會匯出。
         </div>
         ${isMultiChoice ? `
@@ -1253,26 +1255,24 @@ function openEditPanel() {
           </select>
         </div>
         <div class="filter-section">
+          <div class="filter-section-label">題目${orig.question !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-question" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.question || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
           <div class="filter-section-label">註記${orig.answer_note !== undefined ? ' (已修改)' : ''}</div>
           <textarea id="edit-note" rows="2" class="edit-field" style="resize:vertical" placeholder="例：教科書 P.123 已確認">${(currentQ.answer_note || '').replace(/</g,'&lt;')}</textarea>
         </div>
-
-        <div class="edit-advanced" id="edit-advanced">
-          <div class="edit-advanced-toggle" onclick="toggleEditAdvanced()">進階編輯（解析 / 提示 / 個人備註）</div>
-          <div class="edit-advanced-body">
-            <div class="filter-section">
-              <div class="filter-section-label">解析（reference_answer）${orig.reference_answer !== undefined ? ' (已修改)' : ''}</div>
-              <textarea id="edit-ref" rows="5" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.reference_answer || '').replace(/</g,'&lt;')}</textarea>
-            </div>
-            <div class="filter-section">
-              <div class="filter-section-label">AI 提示（ai_hint）${orig.ai_hint !== undefined ? ' (已修改)' : ''}</div>
-              <textarea id="edit-hint" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.ai_hint || '').replace(/</g,'&lt;')}</textarea>
-            </div>
-            <div class="filter-section">
-              <div class="filter-section-label" style="color:var(--blue-light)">個人備註（不匯出，只存本機）</div>
-              <textarea id="edit-personal" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6" placeholder="記憶口訣、自己的思路、不懂的地方…">${getPersonalNote(currentQ.id).replace(/</g,'&lt;')}</textarea>
-            </div>
-          </div>
+        <div class="filter-section">
+          <div class="filter-section-label">解析（reference_answer）${orig.reference_answer !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-ref" rows="5" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.reference_answer || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
+          <div class="filter-section-label">AI 提示（ai_hint）${orig.ai_hint !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-hint" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.ai_hint || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
+          <div class="filter-section-label" style="color:var(--blue-light)">個人備註（不匯出，只存本機）</div>
+          <textarea id="edit-personal" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6" placeholder="記憶口訣、自己的思路、不懂的地方…">${getPersonalNote(currentQ.id).replace(/</g,'&lt;')}</textarea>
         </div>
 
         <div class="action-row" style="flex-wrap:wrap">
@@ -1284,14 +1284,6 @@ function openEditPanel() {
     </div>
   `;
   document.body.insertAdjacentHTML('beforeend', html);
-  // 若已修改進階欄位，預設展開
-  if (orig.reference_answer !== undefined || orig.ai_hint !== undefined || getPersonalNote(currentQ.id)) {
-    document.getElementById('edit-advanced').classList.add('open');
-  }
-}
-
-function toggleEditAdvanced() {
-  document.getElementById('edit-advanced').classList.toggle('open');
 }
 
 function pickEditAnswer(letter, el) {
@@ -1305,6 +1297,7 @@ function saveEdit() {
   const isMultiChoice = currentQ.options && currentQ.options.length > 0;
   const newAnswer = _editAnswer;
   const newTopic = document.getElementById('edit-topic')?.value;
+  const newQuestion = (document.getElementById('edit-question')?.value || '').trim();
   const newNote = (document.getElementById('edit-note')?.value || '').trim();
   const newRef = (document.getElementById('edit-ref')?.value || '').trim();
   const newHint = (document.getElementById('edit-hint')?.value || '').trim();
@@ -1326,6 +1319,9 @@ function saveEdit() {
   }
   if (newTopic && newTopic !== currentQ.topic) {
     setField('topic', newTopic);
+  }
+  if (newQuestion && newQuestion !== (currentQ.question || '').trim()) {
+    setField('question', newQuestion);
   }
   if (newNote !== (currentQ.answer_note || '').trim()) {
     setField('answer_note', newNote);
@@ -1538,6 +1534,110 @@ function clearAllCorrections() {
   } else {
     renderHome();
   }
+}
+
+// ─── EXPORT MODIFIED QUESTIONS (ZIP) ──────────────────────────────────────────
+// id → 對應原始 JSON 檔名。Pattern: {SOURCE}_{YEAR}[A|B]_{N} → {SOURCE}_{YEAR}[A|B].json
+function idToFilename(id) {
+  const parts = id.split('_');
+  if (parts.length < 3) return null;
+  return parts.slice(0, parts.length - 1).join('_') + '.json';
+}
+
+// 把 question 物件複製、過濾掉內部欄位（_original 等）
+function cleanQuestion(q) {
+  const out = {};
+  for (const k of Object.keys(q)) {
+    if (k.startsWith('_')) continue;
+    out[k] = q[k];
+  }
+  return out;
+}
+
+async function exportModifiedQuestions() {
+  // 找出有勘誤的題目所屬的所有檔案
+  const modifiedFiles = new Set();
+  for (const id of Object.keys(corrections)) {
+    const fn = idToFilename(id);
+    if (fn) modifiedFiles.add(fn);
+  }
+
+  if (modifiedFiles.size === 0) {
+    alert('尚無修改可匯出。\n\n請先在刷題畫面點題目右上 ✏ 圖示編輯題目，再來這裡匯出。');
+    return;
+  }
+
+  if (typeof JSZip === 'undefined') {
+    alert('JSZip 載入失敗（網路問題？）。請重新整理再試。');
+    return;
+  }
+
+  const fileMetas = window.__FILE_METAS__ || {};
+  const zip = new JSZip();
+  const summary = [];
+
+  // 對每個有變動的檔，組裝完整內容
+  for (const fn of modifiedFiles) {
+    // 找出屬於此檔的所有題目（含未修改的，因為要還原完整檔案）
+    const fileQuestions = questions
+      .filter(q => idToFilename(q.id) === fn)
+      .map(cleanQuestion);
+
+    if (fileQuestions.length === 0) continue;
+
+    const content = {
+      meta: fileMetas[fn] || {},
+      questions: fileQuestions,
+    };
+
+    // 計算此檔有幾題被修改
+    const modifiedCount = fileQuestions.filter(q => corrections[q.id]).length;
+    summary.push(`${fn}（${modifiedCount} 題修改 / 共 ${fileQuestions.length} 題）`);
+
+    zip.file(`data/questions/${fn}`, JSON.stringify(content, null, 2));
+  }
+
+  // 加 README
+  const today = new Date().toISOString().slice(0, 10);
+  const readme = [
+    `# 普心題庫匯出 — ${today}`,
+    ``,
+    `## 變動摘要`,
+    `共 ${modifiedFiles.size} 個檔案、${correctionsCount()} 題有修改：`,
+    ``,
+    ...summary.map(s => `- ${s}`),
+    ``,
+    `## 套用方式`,
+    ``,
+    `1. 解壓縮這個 zip`,
+    `2. 把 \`data/questions/\` 整個資料夾覆蓋到 repo 對應位置`,
+    `3. \`python3 build_html.py\` 重 build`,
+    `4. \`git add data/questions/ index.html\``,
+    `5. \`git commit -m "fix: corrections from app"\``,
+    `6. \`git push\``,
+    ``,
+    `Pages 重新部署後，App 重新載入時，已同步的勘誤會自動從 localStorage 清除。`,
+  ].join('\n');
+  zip.file('README.md', readme);
+
+  // 觸發下載
+  try {
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `psych-quiz-export-${today}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 100);
+  } catch(e) {
+    console.error(e);
+    alert('匯出失敗：' + e.message);
+    return;
+  }
+
+  alert(`已匯出 ${modifiedFiles.size} 個檔案、${correctionsCount()} 題修改。\n\n解壓 zip 後把 data/questions/ 蓋回 repo 並 push 即完成同步。`);
 }
 
 // Chapter ordering: 第1章, 第2章, ... 第16章

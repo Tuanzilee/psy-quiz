@@ -39,14 +39,35 @@ def load_questions():
 
 def main():
     print('Loading questions ...')
-    questions = load_questions()
+    questions = []
+    metas = {}  # filename -> meta dict
+    for fn in FILE_ORDER:
+        p = DATA_DIR / fn
+        if not p.exists():
+            print(f'  SKIP missing: {fn}')
+            continue
+        d = json.loads(p.read_text(encoding='utf-8'))
+        if isinstance(d, dict):
+            metas[fn] = d.get('meta', {})
+            qs = d.get('questions', [])
+        else:
+            metas[fn] = {}
+            qs = d
+        questions.extend(qs)
+        print(f'  + {fn}: {len(qs)}')
     print(f'  TOTAL: {len(questions)}')
 
     print('Reading template ...')
     html = TEMPLATE.read_text(encoding='utf-8')
 
     payload = json.dumps(questions, ensure_ascii=False)
-    new_script = f'<script id="qdata">window.__QUESTIONS__ = {payload};</script>'
+    metas_payload = json.dumps(metas, ensure_ascii=False)
+    new_script = (
+        f'<script id="qdata">'
+        f'window.__QUESTIONS__ = {payload};'
+        f'window.__FILE_METAS__ = {metas_payload};'
+        f'</script>'
+    )
 
     pattern = re.compile(r'<script id="qdata">.*?</script>', re.DOTALL)
     if not pattern.search(html):
