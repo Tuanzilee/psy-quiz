@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#0a0a0f">
 <meta name="robots" content="noindex, nofollow">
 <title>普心刷題</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -532,6 +533,219 @@ html, body {
   text-transform: uppercase;
   margin-bottom: 4px;
 }
+
+/* ── 模考 ── */
+.exam-header {
+  background: linear-gradient(180deg, rgba(80,160,255,0.08), transparent);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.exam-header-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--blue-light);
+  font-weight: 700;
+}
+.exam-header-progress { font-size: 12px; color: var(--muted); }
+.exam-header-timer {
+  margin-left: auto;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  padding: 4px 10px;
+  background: var(--surface);
+  border-radius: 6px;
+  border: 1px solid var(--border2);
+}
+.exam-header-timer.warn { color: var(--yellow); border-color: rgba(245,200,66,0.4); }
+.exam-header-timer.danger {
+  color: var(--red);
+  border-color: rgba(247,95,95,0.4);
+  animation: pulse 1.2s infinite;
+}
+.exam-grid-toggle {
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--border2);
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  gap: 6px;
+  padding: 12px;
+  background: var(--bg-elevate);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.exam-grid-cell {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+}
+.exam-grid-cell.answered { background: var(--blue-glow); color: var(--blue-light); border-color: var(--blue); }
+.exam-grid-cell.current { outline: 2px solid var(--blue); outline-offset: 1px; }
+.exam-grid-cell.flagged::after {
+  content: '🚩';
+  position: absolute;
+  font-size: 8px;
+  margin-top: -16px;
+  margin-left: 16px;
+}
+
+.exam-essay-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.7;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.exam-essay-input:focus { outline: none; border-color: var(--blue); }
+
+/* 結果頁 */
+.exam-score-big {
+  text-align: center;
+  padding: 24px 0;
+  background: linear-gradient(180deg, var(--blue-glow), transparent);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.exam-score-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--blue-light);
+  line-height: 1;
+}
+.exam-score-label { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+.exam-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.exam-stat-cell {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.exam-stat-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+}
+.exam-stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+.chapter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+}
+.chapter-bar-label { width: 110px; color: var(--text); flex-shrink: 0; font-size: 11px; }
+.chapter-bar-track {
+  flex: 1;
+  height: 18px;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.chapter-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+  transition: width 0.3s;
+}
+.chapter-bar-fill.poor { background: linear-gradient(90deg, #d44, #f88); }
+.chapter-bar-fill.ok { background: linear-gradient(90deg, var(--yellow), #fc6); }
+.chapter-bar-text {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--text);
+  text-shadow: 0 0 4px var(--bg);
+}
+
+.exam-result-q {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: var(--surface);
+}
+.exam-result-q.correct { border-left: 3px solid var(--green); }
+.exam-result-q.wrong { border-left: 3px solid var(--red); }
+.exam-result-q.skip { border-left: 3px solid var(--muted); }
+.exam-result-q-header {
+  display: flex; gap: 8px; align-items: center; margin-bottom: 8px;
+  font-size: 12px;
+}
+.self-grade-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.self-grade-row input {
+  width: 60px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  color: var(--text);
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+}
+
+.exam-history-row {
+  display: flex; gap: 8px; align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--surface);
+  margin-bottom: 6px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+}
+.exam-history-row:hover { border-color: var(--blue); }
+.exam-history-date { font-size: 11px; color: var(--muted); flex: 1; }
+.exam-history-score {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--blue-light);
+}
+.exam-history-meta { font-size: 10px; color: var(--dim); }
 .q-badge {
   font-size: 11px;
   padding: 2px 8px;
@@ -1029,6 +1243,7 @@ html, body {
   <div class="header">
     <div class="header-title">普心刷題</div>
     <div class="header-sub" id="header-sub">載入中…</div>
+    <div class="header-btn" id="export-btn" onclick="exportModifiedQuestions()" title="匯出修改 (zip)" style="margin-right:6px">⬇</div>
     <div class="header-btn" id="filter-btn" onclick="openFilter()" title="篩選">⚙</div>
   </div>
 
@@ -1076,6 +1291,11 @@ html, body {
           <div class="label">章節學習</div>
           <div class="sub">按章節刷</div>
         </div>
+        <div class="quick-card" onclick="openExamSetup()" style="grid-column:span 2">
+          <div class="icon">📝</div>
+          <div class="label">模考練習</div>
+          <div class="sub" id="exam-card-sub">計時實戰、評分</div>
+        </div>
       </div>
     </div>
 
@@ -1089,6 +1309,15 @@ html, body {
       <div class="weak-list" id="weak-list">
         <div class="empty" style="padding:16px 0">
           <div style="font-size:11px;color:var(--dim)">刷完幾題後這裡會顯示你的弱點</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-section" style="padding-top:0">
+      <div class="section-label">模考歷史</div>
+      <div id="exam-history-list">
+        <div class="empty" style="padding:16px 0">
+          <div style="font-size:11px;color:var(--dim)">尚無模考紀錄</div>
         </div>
       </div>
     </div>
@@ -1163,6 +1392,35 @@ html, body {
     </div>
   </div>
 
+  <!-- EXAM (in-progress) -->
+  <div class="page" id="page-exam">
+    <div class="exam-header">
+      <div class="exam-header-title">模考中</div>
+      <div class="exam-header-progress" id="exam-progress">0/0</div>
+      <div class="exam-grid-toggle" onclick="toggleExamGrid()">📋 答題卡</div>
+      <div class="exam-header-timer" id="exam-timer">--:--</div>
+    </div>
+    <div style="overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch">
+      <div class="quiz-body">
+        <div id="exam-grid-panel" style="display:none">
+          <div class="exam-grid" id="exam-grid"></div>
+        </div>
+        <div id="exam-question-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXAM RESULT -->
+  <div class="page" id="page-exam-result">
+    <div class="quiz-header">
+      <div class="quiz-back" onclick="goPage('page-home')">←</div>
+      <div class="quiz-counter" style="margin-left:auto">模考結果</div>
+    </div>
+    <div style="overflow-y:auto;flex:1;-webkit-overflow-scrolling:touch">
+      <div class="quiz-body" id="exam-result-body"></div>
+    </div>
+  </div>
+
 
   <!-- ESSAY (申論準備) -->
   <div class="page" id="page-essay">
@@ -1172,238 +1430,36 @@ html, body {
       <button class="etab-btn" onclick="switchETab('p2',this)">普心二名詞</button>
       <button class="etab-btn" onclick="switchETab('eq',this)">問答示範</button>
     </div>
-
-    <!-- 框架 -->
     <div class="etab-content on" id="etab-fw">
-      <div class="efw-card">
-        <div class="efw-title">名詞解釋：DEE框架（5–10分通用）</div>
-        <div class="efw-row"><div class="efw-letter efl-b">D</div><div><div class="efw-name">Definition — 精確定義</div><div class="efw-desc">一句話，含英文術語，說清楚「是什麼」。5分題1–2句，10分題保持精確。</div><div class="efw-ex">例：「知覺恆常性（perceptual constancy）是指……」</div></div></div>
-        <div class="efw-row"><div class="efw-letter efl-g">E</div><div><div class="efw-name">Elaboration — 機制或類型</div><div class="efw-desc">2–3個關鍵點，說清楚「怎麼運作」或「有哪些分類」。</div><div class="efw-ex">例：「防衛機轉包括壓抑、合理化、投射……」</div></div></div>
-        <div class="efw-row"><div class="efw-letter efl-p">E</div><div><div class="efw-name">Example — 具體例子</div><div class="efw-desc">一個清楚的日常例子。輔仁非常重視例子，沒有例子直接扣分。</div><div class="efw-ex">例：「例如：考試不及格說『老師出題太難』（合理化）……」</div></div></div>
-        <div class="enote">⚑ 定義要精準（含英文）→ 說清楚機制不只列名稱 → 例子要具體，不能說「比如說日常生活中……」</div>
-      </div>
-      <div class="efw-card">
-        <div class="efw-title">問答題：PTER框架（應用／立場／設計型通用）</div>
-        <div class="efw-row"><div class="efw-letter efl-b">P</div><div><div class="efw-name">Point — 定位問題</div><div class="efw-desc">一句話點出這個情境涉及哪個心理學現象。先讓評分者知道你懂題目在問什麼。</div><div class="efw-ex">例：「這個現象涉及認知失調理論與合理化防衛機轉……」</div></div></div>
-        <div class="efw-row"><div class="efw-letter efl-p">T</div><div><div class="efw-name">Theory — 理論點名</div><div class="efw-desc">明確說出你要使用的理論，含提出者名字。</div><div class="efw-ex">例：「根據Festinger（1957）的認知失調理論……」</div></div></div>
-        <div class="efw-row"><div class="efw-letter efl-g">E</div><div><div class="efw-name">Explain — 解釋機制</div><div class="efw-desc">用理論解釋題目現象，要有因果邏輯。不能只說「符合XXX理論」，要說為什麼。</div><div class="efw-ex">例：「當…（情境），根據此理論，因為…所以…」</div></div></div>
-        <div class="efw-row"><div class="efw-letter efl-y">R</div><div><div class="efw-name">Response — 回應題目要求</div><div class="efw-desc">回答具體問的部分：建議、立場、評論或方案。這步不能漏，否則沒有回應題目。</div><div class="efw-ex">例：「因此，我認為……可以透過……方式來改善……」</div></div></div>
-        <div class="enote">⚑ 輔仁問答最大陷阱：只解釋理論，忘記回應題目要求的具體問題。</div>
-      </div>
+      <div class="efw-card"><div class="efw-title">名詞解釋：DEE框架（5–10分通用）</div><div class="efw-row"><div class="efw-letter efl-b">D</div><div><div class="efw-name">Definition — 精確定義</div><div class="efw-desc">一句話，含英文術語，說清楚「是什麼」。</div><div class="efw-ex">例：「知覺恆常性（perceptual constancy）是指……」</div></div></div><div class="efw-row"><div class="efw-letter efl-g">E</div><div><div class="efw-name">Elaboration — 機制或類型</div><div class="efw-desc">2–3個關鍵點，說清楚「怎麼運作」或「有哪些分類」。</div></div></div><div class="efw-row"><div class="efw-letter efl-p">E</div><div><div class="efw-name">Example — 具體例子</div><div class="efw-desc">一個清楚的日常例子。輔仁非常重視例子，沒有例子直接扣分。</div></div></div><div class="enote">⚑ 定義精準（含英文）→ 說清楚機制不只列名稱 → 例子要具體</div></div>
+      <div class="efw-card"><div class="efw-title">問答題：PTER框架（應用／立場／設計型通用）</div><div class="efw-row"><div class="efw-letter efl-b">P</div><div><div class="efw-name">Point — 定位問題</div><div class="efw-desc">一句話點出情境涉及哪個心理學現象。</div></div></div><div class="efw-row"><div class="efw-letter efl-p">T</div><div><div class="efw-name">Theory — 理論點名</div><div class="efw-desc">明確說出理論，含提出者名字。</div><div class="efw-ex">例：「根據Festinger（1957）的認知失調理論……」</div></div></div><div class="efw-row"><div class="efw-letter efl-g">E</div><div><div class="efw-name">Explain — 解釋機制</div><div class="efw-desc">用理論解釋題目現象，要有因果邏輯。</div></div></div><div class="efw-row"><div class="efw-letter efl-y">R</div><div><div class="efw-name">Response — 回應題目要求</div><div class="efw-desc">回答具體問的部分：建議、立場、評論或方案。這步不能漏。</div></div></div><div class="enote">⚑ 最大陷阱：只解釋理論，忘記回應題目要求的具體問題。</div></div>
     </div>
-
-    <!-- 普心一名詞 -->
     <div class="etab-content" id="etab-p1">
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Defense Mechanism 防衛機轉</span><span class="eterm-freq">出現4次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">防衛機轉（defense mechanism）由佛洛伊德提出，指個體面對焦慮或威脅自我的衝動時，自我（ego）在潛意識層面所採取的心理策略，目的是保護自我免受焦慮侵害。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 類型</div><div class="elayer-text"><ul><li>壓抑（repression）：將不被接受的想法推入潛意識</li><li>合理化（rationalization）：為不合理行為找合理藉口</li><li>投射（projection）：將自己的負面感受歸咎他人</li><li>反向作用（reaction formation）：表現與真實感受相反的行為</li><li>昇華（sublimation）：將衝動轉化為社會認可的行為</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">考試不及格說「老師出題太難，標準不公平」（合理化）。對上司有敵意的員工卻過度讚美上司（反向作用）。</div></div>
-          <div class="enote">⚑ 說明類型時要簡短說明每個的機制，不要只列名稱。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Perceptual Constancy 知覺恆常性</span><span class="eterm-freq">出現3次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">知覺恆常性（perceptual constancy）是指儘管到達感覺器官的物理刺激因距離、角度或光線改變，個體對物體的知覺（大小、形狀、顏色、亮度）仍保持相對穩定的現象。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 四種類型</div><div class="elayer-text"><ul><li>大小恆常性（size constancy）：遠處物體視網膜影像雖小，仍知覺為原本大小</li><li>形狀恆常性（shape constancy）：從不同角度看門，仍知覺為長方形</li><li>顏色恆常性（color constancy）：白紙在黃燈下仍被知覺為白色</li><li>亮度恆常性（brightness constancy）：煤炭在陽光下仍知覺為黑色</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">從高樓俯瞰行人，視覺影像很小，仍知覺為正常大小的成年人（大小恆常性）。關門時門板形狀改變，仍知覺為長方形的門（形狀恆常性）。</div></div>
-          <div class="enote">⚑ 114年直接考「請說明並舉兩個不同例子」→ 給兩種類型各一例，分數最穩。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Split-brain Patient 裂腦病人</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">裂腦病人（split-brain patient）是指因治療難治性癲癇而接受胼胝體（corpus callosum）切除手術的患者，術後左右大腦半球無法直接交換訊息。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 研究發現（Sperry & Gazzaniga）</div><div class="elayer-text"><ul><li>左腦：語言、邏輯、分析（控制右側視野）</li><li>右腦：空間、圖像、整體處理（控制左側視野）</li><li>右視野物體 → 病人能說出名稱（左腦處理語言）</li><li>左視野物體 → 病人說「什麼都沒有」，但左手能選出該物體</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">向左視野呈現蘋果，病人說看到「什麼都沒有」，但被要求從一堆物品中選出剛才看到的，左手正確選出蘋果。</div></div>
-          <div class="enote">⚑「研究讓我們了解什麼？」→ 答：大腦半球功能分工（lateralization）、語言中樞位於左腦、意識整合需要胼胝體。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Fluid Intelligence 流體智慧</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">流體智慧（fluid intelligence）是Cattell與Horn提出的智力模型中，指個體解決新奇問題時的推理能力、抽象思考能力和訊息處理速度，不依賴先前習得的知識或經驗。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 對比晶體智慧</div><div class="elayer-text"><ul><li>晶體智慧（crystallized）：從教育和經驗累積的知識，隨年齡持續增長</li><li>流體智慧：青年時期（約20–25歲）達到頂峰，中年後逐漸下降</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">初次接觸從未見過的邏輯謎題，需要從頭推理（流體）。快速回答「二次大戰何時結束」依賴過去知識（晶體）。</div></div>
-          <div class="enote">⚑ 一定要同時說流體和晶體的對比，以及各自的發展軌跡，才算答完整。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Absolute Threshold 絕對閾值</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">絕對閾值（absolute threshold）是指在50%的測試嘗試中，個體恰好能夠偵測到某刺激的最低物理強度，代表感覺系統對特定刺激的基本敏感度下限。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 相關概念</div><div class="elayer-text"><ul><li>差異閾（JND）：能被偵測到的兩刺激間最小差異（Weber定律）</li><li>訊號偵測理論：個體反應受警覺性、預期、動機影響，不只取決於刺激強度</li><li>閾下知覺：低於絕對閾值的刺激仍可能對行為產生影響</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">人類聽覺絕對閾值：完全安靜環境中，可以聽到約6公尺外一隻手錶的滴答聲。</div></div>
-          <div class="enote">⚑ 記住「50%的嘗試中」這個定義的關鍵細節。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Second Order Conditioning 高階制約</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">高階制約（second order conditioning）是在古典制約的基礎上，以已建立制約反應的制約刺激（CS1）充當非制約刺激，配對新的中性刺激（CS2），使CS2也能單獨引發制約反應的過程。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 流程</div><div class="elayer-text"><ul><li>第一階：鈴聲（CS1）+ 食物（US）→ 唾液（CR）已建立</li><li>第二階：燈光（CS2）+ 鈴聲（CS1）配對多次</li><li>結果：燈光（CS2）也能引發唾液分泌</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">廣告行銷：產品（CS2）配對美麗模特兒（CS1，已引發正面情緒）→ 消費者看到產品本身也產生正面感受。</div></div>
-          <div class="enote">⚑ 要畫出清楚的流程：US→UR建立 → CS1+US → CS1引發CR → CS2+CS1 → CS2引發CR。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Attachment Theory 依附理論</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">依附理論（attachment theory）由Bowlby提出，認為嬰兒天生具有與主要照顧者建立情感連結的需求，此連結具有演化上的生存意義，並深深影響個體日後的人際關係模式。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — Ainsworth陌生情境研究</div><div class="elayer-text"><ul><li>安全型（65%）：照顧者離開時哭泣，回來後立即安慰，積極探索</li><li>焦慮-矛盾型（15%）：離開時極度焦慮，回來後既想接近又抗拒安慰</li><li>焦慮-迴避型（20%）：離開時無明顯反應，回來後刻意迴避</li><li>紊亂型：無一致策略，常見於受虐或忽視兒童</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">安全型依附的嬰兒以照顧者為安全基地：在場時積極探索新環境，離開時哭泣，但回來後很快平靜並恢復探索。</div></div>
-          <div class="enote">⚑ 108年考「說明結果並說明學者對各依附類型的解釋」→ 四種類型的表現要說清楚，並指出成因（照顧者回應模式）。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Memory 記憶分類</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義架構</div><div class="elayer-text">心理學對記憶有多種分類方式，主要包括「時間長短」和「意識程度」兩大維度。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 依時間分類</div><div class="elayer-text"><ul><li>感官記憶（sensory）：極短暫（0.5–2秒），容量大</li><li>短期/工作記憶（short-term/working）：15–30秒，容量7±2個單位</li><li>長期記憶（long-term）：容量無限，可長久保存</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 依意識程度分類</div><div class="elayer-text"><ul><li>外顯記憶（explicit）：有意識回憶；含情節記憶（個人經歷）與語意記憶（一般知識）</li><li>內隱記憶（implicit）：無需有意識，如騎腳踏車、打字技巧</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">記得昨天晚餐（情節記憶）；知道台北是首都（語意記憶）；騎腳踏車不需要思考（內隱記憶）。</div></div>
-          <div class="enote">⚑「至少兩種分類方式」→ 給「時間長短」和「意識程度」兩種，各說清楚子類型並各舉一例。</div>
-        </div>
-      </div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Defense Mechanism 防衛機轉</span><span class="eterm-freq">4次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">防衛機轉（defense mechanism）由佛洛伊德提出，指自我（ego）在潛意識層面對焦慮的保護性心理策略。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 類型</div><div class="elayer-text"><ul><li>壓抑（repression）：將不被接受的想法推入潛意識</li><li>合理化（rationalization）：為不合理行為找合理藉口</li><li>投射（projection）：將自己的負面感受歸咎他人</li><li>反向作用（reaction formation）：表現與真實感受相反的行為</li><li>昇華（sublimation）：將衝動轉化為社會認可的行為</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">考試不及格說「老師出題太難」（合理化）。對上司有敵意卻過度讚美（反向作用）。</div></div><div class="enote">⚑ 說明類型時要簡短說明每個的機制，不要只列名稱。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Perceptual Constancy 知覺恆常性</span><span class="eterm-freq">3次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">知覺恆常性（perceptual constancy）是指儘管物理刺激因距離、角度或光線改變，個體對物體的知覺仍保持相對穩定。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 四種類型</div><div class="elayer-text"><ul><li>大小恆常性：遠處物體視網膜影像雖小，仍知覺為原本大小</li><li>形狀恆常性：從不同角度看門，仍知覺為長方形</li><li>顏色恆常性：白紙在黃燈下仍被知覺為白色</li><li>亮度恆常性：煤炭在陽光下仍知覺為黑色</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">從高樓俯瞰行人仍知覺為正常大小（大小恆常性）。關門時形狀改變仍知覺為長方形（形狀恆常性）。</div></div><div class="enote">⚑ 114年考「舉兩個不同例子」→ 給兩種類型各一例。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Split-brain Patient 裂腦病人</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">裂腦病人（split-brain patient）是指因治療癲癇而接受胼胝體（corpus callosum）切除手術的患者，術後左右大腦半球無法直接交換訊息。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — Sperry & Gazzaniga研究</div><div class="elayer-text"><ul><li>左腦：語言、邏輯（控制右側視野）</li><li>右腦：空間、圖像（控制左側視野）</li><li>左視野物體 → 說「什麼都沒有」但左手能正確選出</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">向左視野呈現蘋果，病人說看到「什麼都沒有」，但左手能正確選出蘋果。</div></div><div class="enote">⚑「研究讓我們了解什麼？」→ 大腦半球功能分工、語言中樞在左腦、意識整合需要胼胝體。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Fluid Intelligence 流體智慧</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">流體智慧（fluid intelligence）由Cattell與Horn提出，指解決新奇問題時的推理能力與抽象思考，不依賴先前習得的知識。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 對比晶體智慧</div><div class="elayer-text"><ul><li>晶體智慧（crystallized）：從教育和經驗累積，隨年齡持續增長</li><li>流體智慧：約20–25歲達頂峰，之後逐漸下降</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">初次接觸邏輯謎題需從頭推理（流體）。快速回答「二戰何時結束」靠過去知識（晶體）。</div></div><div class="enote">⚑ 一定要同時說兩者對比及各自的發展軌跡。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Absolute Threshold 絕對閾值</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">絕對閾值（absolute threshold）是指在50%的測試嘗試中，個體恰好能偵測到某刺激的最低物理強度。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 相關概念</div><div class="elayer-text"><ul><li>差異閾（JND）：能被偵測到的兩刺激間最小差異（Weber定律）</li><li>訊號偵測理論：反應受警覺性、預期、動機影響</li><li>閾下知覺：低於閾值的刺激仍可能影響行為</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">完全安靜環境中，可聽到約6公尺外手錶的滴答聲。</div></div><div class="enote">⚑ 「50%的嘗試中」這個細節很重要。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Second Order Conditioning 高階制約</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">高階制約（second order conditioning）是以已建立制約反應的CS1充當非制約刺激，配對新中性刺激CS2，使CS2也能引發制約反應。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 流程</div><div class="elayer-text"><ul><li>第一階：鈴聲（CS1）+ 食物（US）→ 唾液（CR）已建立</li><li>第二階：燈光（CS2）+ 鈴聲（CS1）配對</li><li>結果：燈光（CS2）也能引發唾液分泌</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">廣告中產品（CS2）配對美麗模特兒（CS1）→ 消費者看到產品本身也產生好感。</div></div><div class="enote">⚑ 流程：US→UR → CS1+US → CS1引發CR → CS2+CS1 → CS2引發CR。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Attachment Theory 依附理論</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">依附理論（attachment theory）由Bowlby提出，認為嬰兒天生具有與主要照顧者建立情感連結的需求，深深影響日後的人際關係模式。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — Ainsworth陌生情境研究</div><div class="elayer-text"><ul><li>安全型（65%）：離開時哭泣，回來後快速安慰，積極探索</li><li>焦慮矛盾型（15%）：極度焦慮，回來後既想接近又抗拒安慰</li><li>焦慮迴避型（20%）：離開時無明顯反應，回來後刻意迴避</li><li>紊亂型：無一致策略，常見於受虐或忽視兒童</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">安全型嬰兒以照顧者為安全基地：在場時積極探索，離開時哭泣，回來後快速平靜。</div></div><div class="enote">⚑ 四種類型的表現要說清楚，並指出成因（照顧者回應的一致性）。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc1">普心一</span><span class="eterm-name">Memory 記憶分類</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 兩大分類維度</div><div class="elayer-text">心理學對記憶有多種分類，主要包括「時間長短」和「意識程度」兩大維度。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 依時間分類</div><div class="elayer-text"><ul><li>感官記憶（sensory）：0.5–2秒，容量大</li><li>短期/工作記憶（short-term/working）：15–30秒，容量7±2單位</li><li>長期記憶（long-term）：容量無限，可長久保存</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 依意識程度分類</div><div class="elayer-text"><ul><li>外顯記憶（explicit）：情節記憶（個人經歷）+ 語意記憶（一般知識）</li><li>內隱記憶（implicit）：無需有意識，如騎腳踏車、打字</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">昨天晚餐（情節）；台北是首都（語意）；騎腳踏車（內隱）。</div></div><div class="enote">⚑「至少兩種分類方式」→ 給兩種，各說子類型並各舉一例。</div></div></div>
     </div>
-
-    <!-- 普心二名詞 -->
     <div class="etab-content" id="etab-p2">
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Self-fulfilling Prophecy 自證預言</span><span class="eterm-freq">出現4次 ★</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">自證預言（self-fulfilling prophecy）是指一個最初為錯誤的信念或預期，由於個人行為受這個預期影響，最終導致該預期成真的社會心理現象。由Robert Merton（1948）提出。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 機制</div><div class="elayer-text"><ul><li>錯誤信念 → 影響行為 → 引發他人相應反應 → 反應確認最初信念</li><li>Pygmalion效應：老師期望影響學生實際表現（Rosenthal & Jacobson研究）</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">老師認為某生很聰明（即使一開始只是隨機選擇）→ 給予更多關注和挑戰性問題 → 學生因此更努力 → 老師的預期「成真」。</div></div>
-          <div class="enote">⚑ 108、109、112、114都考過，必背。要給具體實例（Rosenthal實驗或日常例子），僅說定義不夠。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Heritability 遺傳率</span><span class="eterm-freq">出現4次 ★</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">遺傳率（heritability coefficient）是指在特定群體中，某一特質的個體間差異中，可以被基因差異解釋的比例，以0至1之間的數字表示。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 重要說明</div><div class="elayer-text"><ul><li>是「群體統計概念」，不代表單一個體的基因影響程度</li><li>遺傳率隨環境條件改變：環境差異越小，遺傳率越高</li><li>智力遺傳率約0.5–0.8：50–80%的智力差異可被基因解釋</li><li>研究方法：同卵/異卵雙胞胎比較、領養研究</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">身高遺傳率約0.8，代表群體中80%的身高差異可由基因解釋，但不代表你個人的身高有80%由基因決定。</div></div>
-          <div class="enote">⚑ 最常見誤解：「遺傳率0.8=個人80%由基因決定」，這是錯的，答案中必須澄清這個誤解。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Agoraphobia 懼曠症</span><span class="eterm-freq">出現3次 ★</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">懼曠症（agoraphobia）是一種焦慮症，特徵是對可能難以逃脫、或在緊急情況下難以得到協助的場所或情境產生顯著的恐懼與焦慮，包括開放空間、人群聚集場所、公共交通等。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — DSM-5特點</div><div class="elayer-text"><ul><li>對2種以上情境感到恐懼（公共交通、開放空間、人群、獨自外出等）</li><li>恐懼「逃脫困難」或「無法獲得幫助」而迴避</li><li>恐懼程度與實際威脅不成比例，持續6個月以上</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">患者因害怕在超市暈倒後沒有人協助，拒絕一切外出購物；嚴重者無法踏出家門。</div></div>
-          <div class="enote">⚑ 不是「對空曠場所的恐懼」，而是「對可能難以逃脫/得不到幫助的情境」——這個細微差異很重要。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Fundamental Attribution Error 基本歸因謬誤</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">基本歸因謬誤（fundamental attribution error）是指人們解釋他人行為時，傾向高估內部/個人因素（性格、能力），低估外部/情境因素的認知偏誤。由Lee Ross（1977）提出。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 相關概念</div><div class="elayer-text"><ul><li>行動者-觀察者不對稱：評斷自己時重視情境，評斷他人時重視個人特質</li><li>文化差異：集體主義文化中此謬誤程度較個人主義文化低</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">看到陌生人在路上跌倒 → 覺得「他走路不小心」（內部歸因），而非考慮可能是地面濕滑（外部歸因）。自己跌倒則說「這裡的地太滑了」。</div></div>
-          <div class="enote">⚑ 說明時要清楚點出「內部歸因」vs「外部歸因」這兩個對比概念。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Stereotype Threat 刻板印象威脅</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">刻板印象威脅（stereotype threat）是指個人面對可能確認某一負面社會刻板印象的情境時所產生的焦慮，而這種擔憂本身反而降低當事人實際表現的現象。由Steele & Aronson（1995）提出。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 機制</div><div class="elayer-text"><ul><li>意識到負面刻板印象 → 認知負荷增加（擔心印證刻板印象）</li><li>認知資源被佔用 → 焦慮升高 → 表現受損</li><li>惡性循環：表現受損 → 刻板印象似乎得到驗證</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">Steele & Aronson（1995）：告訴非裔美國大學生「這是一個測量智力的考試」時，表現明顯下降；被告知「只是練習」時，表現與白人學生無差異。</div></div>
-          <div class="enote">⚑ 一定要說出提出者（Steele & Aronson），以及「擔憂本身造成表現下降」這個核心機制。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Cognitive Dissonance 認知失調</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">認知失調（cognitive dissonance）由Festinger（1957）提出，指個人同時持有兩個相互矛盾的認知（信念、態度、行為）時，所產生的不舒適心理狀態；個人會被動機驅使採取行動以減少不一致感。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 三種減少失調方式</div><div class="elayer-text"><ul><li>改變行為：吸菸者因「抽菸有害健康」而戒菸</li><li>改變信念：說服自己「抽菸沒那麼危險，研究不可靠」</li><li>增加新認知：「雖然有害，但讓我放鬆，減少壓力反而對健康更好」</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">花大錢買了昂貴但不舒適的鞋，為了減少失調，說服自己「設計感很強，值得」（增加新認知），而非承認決策錯誤。</div></div>
-          <div class="enote">⚑ Festinger名字和年份（1957）要記；三種減少失調的方法是核心，要給各自例子。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">DSM 精神疾病診斷手冊</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">DSM（Diagnostic and Statistical Manual of Mental Disorders）是美國精神醫學學會出版的精神疾病診斷參考工具，目前為第五版修訂版（DSM-5-TR），提供精神疾病的標準化症狀描述與診斷準則。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 特色與優缺點</div><div class="elayer-text"><ul><li>優點：提高跨機構跨文化診斷一致性；便於研究溝通；利於保險給付</li><li>缺點：以症狀描述為主，未說明病因；分類邊界不清；受文化偏見影響</li><li>重要特色：描述性（descriptive）而非解釋性，每個診斷有明確的症狀數量、嚴重度和持續時間門檻</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">重鬱症（MDD）的DSM-5要求：至少5個特定症狀（含情緒低落或失去興趣之一）、持續超過2週、並導致功能損害。</div></div>
-          <div class="enote">⚑ 112考「診斷有什麼特色及優缺點」→ 優缺點各2–3點。記住DSM是「描述性」的，這是最重要的特色。</div>
-        </div>
-      </div>
-
-      <div class="eterm-card" onclick="this.classList.toggle('open')">
-        <div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Freud 佛洛伊德精神分析</span><span class="eterm-freq">出現2次</span><span class="eterm-arr">▾</span></div>
-        <div class="eterm-body">
-          <div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D — 定義</div><div class="elayer-text">佛洛伊德（Freud）的精神分析理論（psychoanalytic theory）認為，人類心理活動和行為主要受潛意識（unconscious）中的衝動、慾望和衝突所驅動，早期童年經驗對人格發展具有關鍵影響。</div></div>
-          <div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 三大核心架構</div><div class="elayer-text"><ul><li>意識層次：意識 → 前意識 → 潛意識</li><li>人格結構：本我（id，快樂原則）→ 自我（ego，現實原則）→ 超我（superego，道德原則）</li><li>發展階段：口腔期→肛門期→性蕾期（戀母情結）→潛伏期→生殖期；各階段若有未解決衝突會造成固著（fixation）</li></ul></div></div>
-          <div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 主要批評</div><div class="elayer-text">缺乏科學實證（概念難以檢驗）；以男性為中心；樣本過小；過度強調性驅力。</div></div>
-          <div class="enote">⚑ 114年考「請說明佛洛伊德精神分析理論要點（20分）」→ 三大架構全說，每個說清楚內部組成，再加上批評。</div>
-        </div>
-      </div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Self-fulfilling Prophecy 自證預言</span><span class="eterm-freq">4次 ★</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">自證預言（self-fulfilling prophecy）由Robert Merton（1948）提出，指一個最初錯誤的信念，因影響個人行為，最終導致該預期成真的社會心理現象。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 機制</div><div class="elayer-text"><ul><li>錯誤信念 → 影響行為 → 引發他人相應反應 → 反應確認最初信念</li><li>Pygmalion效應（Rosenthal & Jacobson）：老師期望影響學生實際表現</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">老師認為某生聰明 → 給予更多關注 → 學生更努力 → 老師的預期成真。</div></div><div class="enote">⚑ 108、109、112、114都考過。要給具體實例，僅說定義不夠。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Heritability 遺傳率</span><span class="eterm-freq">4次 ★</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">遺傳率（heritability coefficient）是指在特定群體中，某一特質的個體差異中，可以被基因差異解釋的比例（0–1）。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 重要說明</div><div class="elayer-text"><ul><li>群體統計概念，不代表單一個體有多少由基因決定</li><li>遺傳率隨環境條件改變：環境差異越小，遺傳率越高</li><li>研究方法：同卵/異卵雙胞胎比較、領養研究</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">身高遺傳率0.8代表群體中80%的身高差異可由基因解釋，但不代表你個人的身高有80%由基因決定。</div></div><div class="enote">⚑ 必須澄清「遺傳率0.8≠個人80%由基因決定」這個常見誤解。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Agoraphobia 懼曠症</span><span class="eterm-freq">3次 ★</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">懼曠症（agoraphobia）是一種焦慮症，對可能難以逃脫、或難以得到協助的場所產生顯著恐懼（開放空間、人群、公共交通等）。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — DSM-5特點</div><div class="elayer-text"><ul><li>對2種以上情境感到恐懼</li><li>因「逃脫困難」或「無法獲得幫助」而迴避</li><li>持續6個月以上，與實際威脅不成比例</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">患者因害怕在超市暈倒沒人協助，完全拒絕外出購物。</div></div><div class="enote">⚑ 核心是「難以逃脫/得不到幫助」，不是「害怕空曠場所」。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Fundamental Attribution Error 基本歸因謬誤</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">基本歸因謬誤（fundamental attribution error）由Lee Ross（1977）提出，指解釋他人行為時傾向高估內部因素（性格），低估外部情境因素。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 相關概念</div><div class="elayer-text"><ul><li>行動者-觀察者不對稱：評斷自己時重視情境，評斷他人時重視個人特質</li><li>集體主義文化中此謬誤程度較個人主義文化低</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">陌生人跌倒 → 覺得「他走路不小心」，而非「地面濕滑」。</div></div><div class="enote">⚑ 清楚點出「內部歸因」vs「外部歸因」。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Stereotype Threat 刻板印象威脅</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">刻板印象威脅（stereotype threat）由Steele & Aronson（1995）提出，指擔心印證負面刻板印象的焦慮本身反而降低當事人實際表現。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 機制</div><div class="elayer-text"><ul><li>意識到負面刻板印象 → 認知負荷增加 → 焦慮升高 → 表現受損</li><li>惡性循環：表現受損 → 刻板印象似乎得到驗證</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">告訴非裔美國大學生「這是智力測驗」時表現下降；告知「只是練習」時表現與白人學生無差異（Steele & Aronson, 1995）。</div></div><div class="enote">⚑ 「擔憂本身造成表現下降」是核心機制。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Cognitive Dissonance 認知失調</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">認知失調（cognitive dissonance）由Festinger（1957）提出，指同時持有相互矛盾的認知時，所產生的不舒適心理狀態，驅動人採取行動減少不一致感。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 三種減少失調方式</div><div class="elayer-text"><ul><li>改變行為：吸菸者因健康顧慮而戒菸</li><li>改變信念：說服自己「抽菸沒那麼危險」</li><li>增加新認知：「放鬆可以減少壓力，整體對健康更好」</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">花大錢買了不舒適的鞋，說服自己「設計感很強，值得」而非承認決策失誤。</div></div><div class="enote">⚑ Festinger（1957）要記；三種減少方式是核心。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">DSM 精神疾病診斷手冊</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">DSM（Diagnostic and Statistical Manual of Mental Disorders）是美國精神醫學學會出版的精神疾病診斷工具（目前DSM-5-TR），提供標準化症狀描述與診斷準則。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 優缺點</div><div class="elayer-text"><ul><li>優點：提高跨機構診斷一致性；便於研究溝通；利於保險給付</li><li>缺點：只描述症狀未說明病因；分類邊界不清；受文化偏見影響</li><li>特色：描述性（descriptive）而非解釋性</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 例子</div><div class="elayer-text">重鬱症（MDD）：至少5個特定症狀、持續超過2週、造成功能損害。</div></div><div class="enote">⚑ DSM是「描述性」的，這是最重要的特色。</div></div></div>
+      <div class="eterm-card" onclick="this.classList.toggle('open')"><div class="eterm-hdr"><span class="eterm-cat etc2">普心二</span><span class="eterm-name">Freud 佛洛伊德精神分析</span><span class="eterm-freq">2次</span><span class="eterm-arr">▾</span></div><div class="eterm-body"><div class="elayer"><div class="elayer-lbl ell-d"><span class="eldot" style="background:var(--blue-light)"></span>D</div><div class="elayer-text">佛洛伊德精神分析理論（psychoanalytic theory）認為人類行為主要受潛意識中的衝動和衝突所驅動，早期童年經驗對人格發展有決定性影響。</div></div><div class="elayer"><div class="elayer-lbl ell-e"><span class="eldot" style="background:var(--green)"></span>E — 三大核心架構</div><div class="elayer-text"><ul><li>意識層次：意識 → 前意識 → 潛意識</li><li>人格結構：本我（id，快樂原則）→ 自我（ego，現實原則）→ 超我（superego，道德原則）</li><li>發展階段：口腔期→肛門期→性蕾期（戀母情結）→潛伏期→生殖期；固著（fixation）</li></ul></div></div><div class="elayer"><div class="elayer-lbl ell-x"><span class="eldot" style="background:var(--yellow)"></span>E — 主要批評</div><div class="elayer-text">缺乏科學實證；以男性為中心；樣本過小；過度強調性驅力。</div></div><div class="enote">⚑ 三大架構全說，每個說清楚內部組成，再加批評。</div></div></div>
     </div>
-
-    <!-- 問答示範 -->
     <div class="etab-content" id="etab-eq">
       <div style="font-size:11px;color:var(--muted);background:var(--surface);border-radius:8px;padding:10px 12px;margin-bottom:10px;line-height:1.6">先看題目想自己怎麼寫，再展開對照 PTER 示範。</div>
-
-      <div class="eeq-card">
-        <div class="eeq-hdr"><span class="eeq-yr">111年 設計型</span><span class="eeq-q">精神疾病常被汙名化，請應用心理學理論設計一個可以改善此一現象之方案。（15分）</span><span class="eterm-arr">▾</span></div>
-        <div class="eeq-body">
-          <div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">精神疾病汙名化的核心是對外群體的刻板印象和偏見，涉及社會認知與群體間關係的心理機制。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">Allport的接觸假說（contact hypothesis）+ Tajfel的社會認同理論（social identity theory）。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">接觸假說：在平等地位、共同目標、機構支持的條件下，不同群體間的直接接觸可降低偏見。社會認同理論解釋了人們將精神障礙者歸為「外群體」的心理機制，需要打破「我們vs他們」的界線。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">方案：（1）在高中課程設計工作坊，邀請康復中的患者以平等身份分享經歷——直接接觸最能降低刻板印象。（2）媒體倡議採用「康復導向框架」而非強調危險性，因為媒體是形塑刻板印象的主要來源。</span></div>
-        </div>
-      </div>
-
-      <div class="eeq-card">
-        <div class="eeq-hdr"><span class="eeq-yr">112年 立場型</span><span class="eeq-q">Elizabeth Loftus 說明人的記憶容易出錯，所以性侵受害者的控訴有可能是錯誤的。你怎麼看待這件事？請從記憶運作的觀點舉證支持你的論述。（10分）</span><span class="eterm-arr">▾</span></div>
-        <div class="eeq-body">
-          <div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">這個問題涉及記憶可靠性的科學事實，與其在法律應用上的限制。Loftus的論點心理學上有科學基礎，但在法庭中的應用需要更謹慎的脈絡判斷。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">Loftus的錯誤記憶（misinformation effect）研究、建構性記憶理論（constructive memory），以及情緒對記憶的影響。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">支持Loftus：記憶是主動建構的，Loftus的研究顯示事後錯誤訊息（leading questions）可導致目擊者「記得」從未發生的細節。然而：情緒性創傷事件（如性侵）會啟動杏仁核，使核心細節記憶反而更加鮮明。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">記憶的易錯性是真實存在的，但不能全面否定受害者陳述。正確應用方式：評估案件中是否有可能引發錯誤記憶的因素（審訊方式、時間延誤、媒體影響），而非預設性侵控訴都不可信。</span></div>
-        </div>
-      </div>
-
-      <div class="eeq-card">
-        <div class="eeq-hdr"><span class="eeq-yr">114年 說明型</span><span class="eeq-q">請說明何謂不注意盲（inattentional blindness），是否是一種疾病？可以讓我們知道什麼事情？（25分）</span><span class="eterm-arr">▾</span></div>
-        <div class="eeq-body">
-          <div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">不注意盲是正常注意力機制的特性，而非疾病症狀，它揭示了意識知覺本質是選擇性的。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">Simons & Chabris（1999）的隱形大猩猩實驗；注意力的資源模型（attentional resource model）。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">全神貫注於某項任務時，即使視野中出現顯著刺激也可能完全無法注意到。實驗：受試者計算籃球傳球次數，約50%的人沒注意到路過的「大猩猩」。這不是疾病，而是大腦意識資源有限，集中於特定任務時，未獲注意力的訊息不會進入意識知覺。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">啟示：（1）交通安全：邊講電話開車時即使「眼睛看著路」也可能錯過行人；（2）醫療：讀X光片時可能錯過其他明顯異常；（3）眼見不為憑——意識知覺是主動選擇的結果，不是被動記錄。</span></div>
-        </div>
-      </div>
-
-      <div class="eeq-card">
-        <div class="eeq-hdr"><span class="eeq-yr">114年 應用型</span><span class="eeq-q">社群媒體使得持不同信念的人們益形分裂，幾乎難以彼此溝通。請用多個社會心理學理論來解釋此一現象。（20分）</span><span class="eterm-arr">▾</span></div>
-        <div class="eeq-body">
-          <div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">社群媒體加劇社會分裂，是確認偏誤、社會認同理論、回音室效應及去個人化的綜合產物。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">（1）確認偏誤（confirmation bias）（2）社會認同理論（Tajfel & Turner）（3）回音室效應（echo chamber）（4）去個人化（deindividuation, Zimbardo）（5）內外群體偏見。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">確認偏誤：演算法推送符合既有信念的內容，強化現有立場。社會認同：人們透過所屬群體建立自我認同，傾向貶低外群體。回音室：相似信念者聚集互相強化，觀點越來越極端。去個人化：匿名環境降低個人責任感，導致更激烈的群體行為。</span></div>
-          <div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">這些機制相互強化形成惡性循環。改善方向：平台設計上引入多元觀點；促進接觸假說精神的跨立場對話空間。</span></div>
-        </div>
-      </div>
+      <div class="eeq-card"><div class="eeq-hdr"><span class="eeq-yr">111年 設計型</span><span class="eeq-q">精神疾病常被汙名化，請應用心理學理論設計改善方案。（15分）</span><span class="eterm-arr">▾</span></div><div class="eeq-body"><div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">精神疾病汙名化涉及社會認知與群體間關係的心理機制。</span></div><div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">Allport的接觸假說 + Tajfel的社會認同理論。</span></div><div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">接觸假說：在平等地位、共同目標、機構支持條件下，直接接觸可降低偏見。社會認同理論解釋了「我們vs他們」的界線為何持續存在。</span></div><div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">方案一：高中設計工作坊，邀請康復中患者平等分享（直接接觸降低刻板印象）。方案二：推動媒體採用「康復導向框架」，改變社會大眾認知。</span></div></div></div>
+      <div class="eeq-card"><div class="eeq-hdr"><span class="eeq-yr">112年 立場型</span><span class="eeq-q">Elizabeth Loftus 說記憶容易出錯，所以性侵控訴可能是錯的。你怎麼看？（10分）</span><span class="eterm-arr">▾</span></div><div class="eeq-body"><div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">Loftus的論點有科學依據，但在法庭的應用需要更謹慎的脈絡判斷。</span></div><div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">錯誤記憶效應（misinformation effect）+ 建構性記憶理論 + 情緒對記憶的影響。</span></div><div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">支持：記憶是主動建構的，事後錯誤訊息可導致目擊者「記得」從未發生的細節。然而：創傷性事件強烈啟動杏仁核，核心細節反而更鮮明。</span></div><div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">記憶易錯性是真實的，但不能全面否定受害者陳述。應個案評估是否存在引發錯誤記憶的因素。</span></div></div></div>
+      <div class="eeq-card"><div class="eeq-hdr"><span class="eeq-yr">114年 說明型</span><span class="eeq-q">請說明不注意盲（inattentional blindness），是否是疾病？讓我們知道什麼？（25分）</span><span class="eterm-arr">▾</span></div><div class="eeq-body"><div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">不注意盲是正常注意力機制的特性，而非疾病，揭示意識知覺本質是選擇性的。</span></div><div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">Simons & Chabris（1999）隱形大猩猩實驗；注意力資源模型。</span></div><div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">全神貫注某任務時，視野中顯著刺激也可能完全無法注意到。50%受試者在計算傳球時沒注意到畫面中的「大猩猩」。這是大腦意識資源有限的結果。</span></div><div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">啟示：（1）交通安全：邊講電話開車可能錯過行人；（2）醫療：讀X光片可能錯過其他異常；（3）眼見不為憑。</span></div></div></div>
+      <div class="eeq-card"><div class="eeq-hdr"><span class="eeq-yr">114年 應用型</span><span class="eeq-q">社群媒體使不同信念的人益形分裂，請用多個社會心理學理論解釋。（20分）</span><span class="eterm-arr">▾</span></div><div class="eeq-body"><div class="epter-row"><span class="epter-badge epb-p">P</span><span class="epter-text">社群媒體加劇社會分裂，是確認偏誤、社會認同、回音室效應及去個人化的綜合產物。</span></div><div class="epter-row"><span class="epter-badge epb-t">T</span><span class="epter-text">確認偏誤 / 社會認同理論（Tajfel & Turner）/ 回音室效應 / 去個人化（Zimbardo）/ 內外群體偏見。</span></div><div class="epter-row"><span class="epter-badge epb-e">E</span><span class="epter-text">演算法推送符合既有信念的內容（確認偏誤）→ 透過立場建立社會認同、貶低外群體 → 相似信念者聚集強化極端觀點（回音室）→ 匿名降低責任感（去個人化）。</span></div><div class="epter-row"><span class="epter-badge epb-r">R</span><span class="epter-text">以上機制相互強化形成惡性循環。改善方向：平台引入多元觀點；創造跨立場對話空間。</span></div></div></div>
     </div>
   </div>
 
@@ -1540,7 +1596,7 @@ function openEditPanel() {
         <div class="modal-handle"></div>
         <div class="modal-title">編輯 — ${currentQ.id}</div>
         <div style="font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.6">
-          <strong style="color:var(--blue-light)">勘誤</strong>（答案/章節/解析等）會進匯出清單以同步進 repo；
+          <strong style="color:var(--blue-light)">勘誤</strong>會進匯出 zip，下載後覆蓋 repo 的 JSON 即可同步；
           <strong style="color:var(--blue-light)">個人備註</strong>只存於本機，不會匯出。
         </div>
         ${isMultiChoice ? `
@@ -1561,26 +1617,24 @@ function openEditPanel() {
           </select>
         </div>
         <div class="filter-section">
+          <div class="filter-section-label">題目${orig.question !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-question" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.question || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
           <div class="filter-section-label">註記${orig.answer_note !== undefined ? ' (已修改)' : ''}</div>
           <textarea id="edit-note" rows="2" class="edit-field" style="resize:vertical" placeholder="例：教科書 P.123 已確認">${(currentQ.answer_note || '').replace(/</g,'&lt;')}</textarea>
         </div>
-
-        <div class="edit-advanced" id="edit-advanced">
-          <div class="edit-advanced-toggle" onclick="toggleEditAdvanced()">進階編輯（解析 / 提示 / 個人備註）</div>
-          <div class="edit-advanced-body">
-            <div class="filter-section">
-              <div class="filter-section-label">解析（reference_answer）${orig.reference_answer !== undefined ? ' (已修改)' : ''}</div>
-              <textarea id="edit-ref" rows="5" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.reference_answer || '').replace(/</g,'&lt;')}</textarea>
-            </div>
-            <div class="filter-section">
-              <div class="filter-section-label">AI 提示（ai_hint）${orig.ai_hint !== undefined ? ' (已修改)' : ''}</div>
-              <textarea id="edit-hint" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.ai_hint || '').replace(/</g,'&lt;')}</textarea>
-            </div>
-            <div class="filter-section">
-              <div class="filter-section-label" style="color:var(--blue-light)">個人備註（不匯出，只存本機）</div>
-              <textarea id="edit-personal" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6" placeholder="記憶口訣、自己的思路、不懂的地方…">${getPersonalNote(currentQ.id).replace(/</g,'&lt;')}</textarea>
-            </div>
-          </div>
+        <div class="filter-section">
+          <div class="filter-section-label">解析（reference_answer）${orig.reference_answer !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-ref" rows="5" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.reference_answer || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
+          <div class="filter-section-label">AI 提示（ai_hint）${orig.ai_hint !== undefined ? ' (已修改)' : ''}</div>
+          <textarea id="edit-hint" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6">${(currentQ.ai_hint || '').replace(/</g,'&lt;')}</textarea>
+        </div>
+        <div class="filter-section">
+          <div class="filter-section-label" style="color:var(--blue-light)">個人備註（不匯出，只存本機）</div>
+          <textarea id="edit-personal" rows="3" class="edit-field" style="resize:vertical;font-size:12px;line-height:1.6" placeholder="記憶口訣、自己的思路、不懂的地方…">${getPersonalNote(currentQ.id).replace(/</g,'&lt;')}</textarea>
         </div>
 
         <div class="action-row" style="flex-wrap:wrap">
@@ -1592,14 +1646,6 @@ function openEditPanel() {
     </div>
   `;
   document.body.insertAdjacentHTML('beforeend', html);
-  // 若已修改進階欄位，預設展開
-  if (orig.reference_answer !== undefined || orig.ai_hint !== undefined || getPersonalNote(currentQ.id)) {
-    document.getElementById('edit-advanced').classList.add('open');
-  }
-}
-
-function toggleEditAdvanced() {
-  document.getElementById('edit-advanced').classList.toggle('open');
 }
 
 function pickEditAnswer(letter, el) {
@@ -1613,6 +1659,7 @@ function saveEdit() {
   const isMultiChoice = currentQ.options && currentQ.options.length > 0;
   const newAnswer = _editAnswer;
   const newTopic = document.getElementById('edit-topic')?.value;
+  const newQuestion = (document.getElementById('edit-question')?.value || '').trim();
   const newNote = (document.getElementById('edit-note')?.value || '').trim();
   const newRef = (document.getElementById('edit-ref')?.value || '').trim();
   const newHint = (document.getElementById('edit-hint')?.value || '').trim();
@@ -1634,6 +1681,9 @@ function saveEdit() {
   }
   if (newTopic && newTopic !== currentQ.topic) {
     setField('topic', newTopic);
+  }
+  if (newQuestion && newQuestion !== (currentQ.question || '').trim()) {
+    setField('question', newQuestion);
   }
   if (newNote !== (currentQ.answer_note || '').trim()) {
     setField('answer_note', newNote);
@@ -1848,6 +1898,810 @@ function clearAllCorrections() {
   }
 }
 
+// ─── EXPORT MODIFIED QUESTIONS (ZIP) ──────────────────────────────────────────
+// id → 對應原始 JSON 檔名。Pattern: {SOURCE}_{YEAR}[A|B]_{N} → {SOURCE}_{YEAR}[A|B].json
+function idToFilename(id) {
+  const parts = id.split('_');
+  if (parts.length < 3) return null;
+  return parts.slice(0, parts.length - 1).join('_') + '.json';
+}
+
+// 把 question 物件複製、過濾掉內部欄位（_original 等）
+function cleanQuestion(q) {
+  const out = {};
+  for (const k of Object.keys(q)) {
+    if (k.startsWith('_')) continue;
+    out[k] = q[k];
+  }
+  return out;
+}
+
+async function exportModifiedQuestions() {
+  // 找出有勘誤的題目所屬的所有檔案
+  const modifiedFiles = new Set();
+  for (const id of Object.keys(corrections)) {
+    const fn = idToFilename(id);
+    if (fn) modifiedFiles.add(fn);
+  }
+
+  if (modifiedFiles.size === 0) {
+    alert('尚無修改可匯出。\n\n請先在刷題畫面點題目右上 ✏ 圖示編輯題目，再來這裡匯出。');
+    return;
+  }
+
+  if (typeof JSZip === 'undefined') {
+    alert('JSZip 載入失敗（網路問題？）。請重新整理再試。');
+    return;
+  }
+
+  const fileMetas = window.__FILE_METAS__ || {};
+  const zip = new JSZip();
+  const summary = [];
+
+  // 對每個有變動的檔，組裝完整內容
+  for (const fn of modifiedFiles) {
+    // 找出屬於此檔的所有題目（含未修改的，因為要還原完整檔案）
+    const fileQuestions = questions
+      .filter(q => idToFilename(q.id) === fn)
+      .map(cleanQuestion);
+
+    if (fileQuestions.length === 0) continue;
+
+    const content = {
+      meta: fileMetas[fn] || {},
+      questions: fileQuestions,
+    };
+
+    // 計算此檔有幾題被修改
+    const modifiedCount = fileQuestions.filter(q => corrections[q.id]).length;
+    summary.push(`${fn}（${modifiedCount} 題修改 / 共 ${fileQuestions.length} 題）`);
+
+    zip.file(`data/questions/${fn}`, JSON.stringify(content, null, 2));
+  }
+
+  // 加 README
+  const today = new Date().toISOString().slice(0, 10);
+  const readme = [
+    `# 普心題庫匯出 — ${today}`,
+    ``,
+    `## 變動摘要`,
+    `共 ${modifiedFiles.size} 個檔案、${correctionsCount()} 題有修改：`,
+    ``,
+    ...summary.map(s => `- ${s}`),
+    ``,
+    `## 套用方式`,
+    ``,
+    `1. 解壓縮這個 zip`,
+    `2. 把 \`data/questions/\` 整個資料夾覆蓋到 repo 對應位置`,
+    `3. \`python3 build_html.py\` 重 build`,
+    `4. \`git add data/questions/ index.html\``,
+    `5. \`git commit -m "fix: corrections from app"\``,
+    `6. \`git push\``,
+    ``,
+    `Pages 重新部署後，App 重新載入時，已同步的勘誤會自動從 localStorage 清除。`,
+  ].join('\n');
+  zip.file('README.md', readme);
+
+  // 觸發下載
+  try {
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `psych-quiz-export-${today}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 100);
+  } catch(e) {
+    console.error(e);
+    alert('匯出失敗：' + e.message);
+    return;
+  }
+
+  alert(`已匯出 ${modifiedFiles.size} 個檔案、${correctionsCount()} 題修改。\n\n解壓 zip 後把 data/questions/ 蓋回 repo 並 push 即完成同步。`);
+}
+
+// ─── EXAM (模考) ──────────────────────────────────────────────────────────────
+const EXAMS_KEY = 'psych_exams_v1';
+const CURRENT_EXAM_KEY = 'psych_current_exam_v1';
+const TYPE_WEIGHTS = { '選擇題':1, '是非題':1, '配合題':1, '名詞解釋':3, '申論題':5 };
+let examState = null;
+let _examTimerHandle = null;
+
+function loadExamHistory() {
+  try { return JSON.parse(localStorage.getItem(EXAMS_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveExamHistory(arr) { localStorage.setItem(EXAMS_KEY, JSON.stringify(arr)); }
+function loadCurrentExam() {
+  try { return JSON.parse(localStorage.getItem(CURRENT_EXAM_KEY) || 'null'); } catch(e) { return null; }
+}
+function saveCurrentExam() {
+  if (examState) localStorage.setItem(CURRENT_EXAM_KEY, JSON.stringify(examState));
+}
+function clearCurrentExam() { localStorage.removeItem(CURRENT_EXAM_KEY); }
+
+function openExamSetup() {
+  // 若已有進行中的模考，問是否繼續
+  const cur = loadCurrentExam();
+  if (cur && !cur.submittedAt) {
+    const ageMin = Math.round((Date.now() - cur.startedAt) / 60000);
+    if (confirm(`你有一場進行中的模考（${ageMin} 分鐘前開始）。\n\n要繼續嗎？\n\n按【取消】則開始新的模考設定。`)) {
+      examState = cur;
+      goPage('page-exam');
+      renderExamPage();
+      startExamTimer();
+      return;
+    } else {
+      clearCurrentExam();
+    }
+  }
+
+  // 統計各學校／年度題數，用於 UI
+  const allSchools = [...new Set(questions.map(q => q.source))].sort();
+  const allYears = [...new Set(questions.map(q => q.year))].sort((a,b)=>b-a);
+
+  const html = `
+    <div class="modal-bg show" id="exam-setup-modal" onclick="closeExamSetup(event)">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-handle"></div>
+        <div class="modal-title">模考設定</div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">快速 preset</div>
+          <div class="filter-chips">
+            ${allSchools.map(s => allYears
+              .filter(y => questions.some(q => q.source === s && q.year === y))
+              .map(y => `<div class="filter-chip" onclick="applyExamPreset('${s}', ${y})">${s} ${y}</div>`).join('')
+            ).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">學校</div>
+          <div class="filter-chips" id="exam-school-chips">
+            ${allSchools.map(s => `<div class="filter-chip active" data-val="${s}" onclick="toggleExamFilter('school',this)">${s}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">年度</div>
+          <div class="filter-chips" id="exam-year-chips">
+            ${allYears.map(y => `<div class="filter-chip active" data-val="${y}" onclick="toggleExamFilter('year',this)">${y}</div>`).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">題型</div>
+          <div class="filter-chips" id="exam-type-chips">
+            ${['選擇題','是非題','配合題','名詞解釋','申論題'].map(t => {
+              const n = questions.filter(q=>q.type===t).length;
+              return `<div class="filter-chip active" data-val="${t}" onclick="toggleExamFilter('type',this)">${t} (${n})</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">題數 <span id="exam-count-info" style="color:var(--blue-light);font-family:'Space Mono',monospace"></span></div>
+          <div class="filter-chips" id="exam-count-chips">
+            ${[10,20,30,50,'all'].map(n => {
+              const dataVal = n === 'all' ? 'all' : n;
+              const arg = n === 'all' ? "'all'" : n;
+              const lbl = n === 'all' ? '全部' : (n + ' 題');
+              return `<div class="filter-chip ${n===30?'active':''}" data-val="${dataVal}" onclick="pickExamCount(${arg},this)">${lbl}</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-section-label">時限（分鐘）</div>
+          <div class="filter-chips" id="exam-time-chips">
+            ${[30,60,90,100,'unlimited'].map(t => {
+              const dataVal = t === 'unlimited' ? 'unlimited' : t;
+              const arg = t === 'unlimited' ? "'unlimited'" : t;
+              const lbl = t === 'unlimited' ? '不限' : (t + ' min');
+              return `<div class="filter-chip ${t===100?'active':''}" data-val="${dataVal}" onclick="pickExamTime(${arg},this)">${lbl}</div>`;
+            }).join('')}
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn btn-outline" onclick="closeExamSetup()">取消</button>
+          <button class="btn btn-primary" onclick="startExam()">開始模考 →</button>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', html);
+  // 預設值
+  _examConfig = { schools: new Set(allSchools), years: new Set(allYears),
+    types: new Set(['選擇題','是非題','配合題','名詞解釋','申論題']), count: 30, timeLimit: 100 };
+  updateExamCountInfo();
+}
+
+let _examConfig = null;
+
+function closeExamSetup(e) {
+  if (e && e.target.id !== 'exam-setup-modal') return;
+  const m = document.getElementById('exam-setup-modal');
+  if (m) m.remove();
+}
+
+function applyExamPreset(school, year) {
+  // 套用 preset 到 UI 並準備整份試卷模式
+  const yearInt = parseInt(year);
+  const preset = questions.filter(q => q.source === school && q.year === yearInt);
+  if (preset.length === 0) { alert('找不到題目'); return; }
+  _examConfig = {
+    schools: new Set([school]),
+    years: new Set([yearInt]),
+    types: new Set(preset.map(q => q.type)),
+    count: 'all',
+    timeLimit: 100,
+    presetLabel: `${school} ${year} 整份`,
+  };
+  // 更新 UI chips
+  document.querySelectorAll('#exam-school-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === school));
+  document.querySelectorAll('#exam-year-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === year.toString()));
+  document.querySelectorAll('#exam-type-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', _examConfig.types.has(el.dataset.val)));
+  document.querySelectorAll('#exam-count-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === 'all'));
+  document.querySelectorAll('#exam-time-chips .filter-chip').forEach(el =>
+    el.classList.toggle('active', el.dataset.val === '100'));
+  updateExamCountInfo();
+}
+
+function toggleExamFilter(dim, el) {
+  el.classList.toggle('active');
+  const set = _examConfig[dim === 'school' ? 'schools' : (dim === 'year' ? 'years' : 'types')];
+  const val = dim === 'year' ? parseInt(el.dataset.val) : el.dataset.val;
+  if (el.classList.contains('active')) set.add(val); else set.delete(val);
+  updateExamCountInfo();
+}
+
+function pickExamCount(n, el) {
+  _examConfig.count = n;
+  document.querySelectorAll('#exam-count-chips .filter-chip').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  updateExamCountInfo();
+}
+
+function pickExamTime(t, el) {
+  _examConfig.timeLimit = t;
+  document.querySelectorAll('#exam-time-chips .filter-chip').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function getExamCandidates() {
+  return questions.filter(q =>
+    _examConfig.schools.has(q.source) &&
+    _examConfig.years.has(q.year) &&
+    _examConfig.types.has(q.type)
+  );
+}
+function updateExamCountInfo() {
+  const avail = getExamCandidates().length;
+  const want = _examConfig.count === 'all' ? avail : Math.min(_examConfig.count, avail);
+  document.getElementById('exam-count-info').textContent = `（符合 ${avail} 題，將取 ${want} 題）`;
+}
+
+function startExam() {
+  const candidates = getExamCandidates();
+  if (candidates.length === 0) {
+    alert('沒有符合條件的題目，請放寬設定');
+    return;
+  }
+  const want = _examConfig.count === 'all' ? candidates.length : Math.min(_examConfig.count, candidates.length);
+  // Shuffle and take N. 但若是 preset (整份試卷)，依原順序（id 排序）
+  let chosen;
+  if (_examConfig.presetLabel) {
+    chosen = candidates.slice().sort((a,b) => a.id.localeCompare(b.id));
+  } else {
+    chosen = candidates.slice().sort(() => Math.random() - 0.5).slice(0, want);
+  }
+
+  examState = {
+    id: 'exam_' + Date.now(),
+    startedAt: Date.now(),
+    submittedAt: null,
+    config: {
+      schools: [..._examConfig.schools],
+      years: [..._examConfig.years],
+      types: [..._examConfig.types],
+      count: want,
+      timeLimit: _examConfig.timeLimit,
+      presetLabel: _examConfig.presetLabel || null,
+    },
+    timeLimitSec: _examConfig.timeLimit === 'unlimited' ? null : _examConfig.timeLimit * 60,
+    questionIds: chosen.map(q => q.id),
+    answers: {},
+    selfScores: {},  // qid -> {score, max} for subjective
+    currentIdx: 0,
+  };
+  saveCurrentExam();
+  closeExamSetup();
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function getExamQuestion(idx) {
+  const id = examState.questionIds[idx];
+  return questions.find(q => q.id === id);
+}
+
+function renderExamPage() {
+  if (!examState) return;
+  const total = examState.questionIds.length;
+  const idx = examState.currentIdx;
+  const q = getExamQuestion(idx);
+  document.getElementById('exam-progress').textContent = `${idx+1}/${total}`;
+  // Render question body — like quiz but no edit btn, no markers, no solution
+  const isObj = ['選擇題','是非題','配合題'].includes(q.type);
+  const isMC = q.options && q.options.length > 0;
+  const userAns = examState.answers[q.id] || '';
+  const sectionTitle = q.section?.title;
+  const isPartOfGroup = sectionTitle && q.type === '配合題';
+
+  let html = `
+    <div class="q-meta">
+      <span class="q-badge school">${q.source}</span>
+      <span class="q-badge" style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted)">${q.id}</span>
+      <span class="q-badge type-${({'選擇題':'choice','是非題':'tf','配合題':'match','申論題':'essay','名詞解釋':'essay'}[q.type] || 'choice')}">${q.type}</span>
+    </div>
+    ${isPartOfGroup ? `<div style="font-size:11px;color:var(--muted);background:var(--surface);padding:8px 12px;border-radius:6px;margin-bottom:10px;border-left:3px solid var(--blue)">${q.section.title}</div>` : ''}
+    <div class="q-stem">${q.question || ''}</div>
+  `;
+
+  if (isMC) {
+    html += `<div class="options" id="exam-options">`;
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    q.options.forEach((opt, i) => {
+      const L = letters[i];
+      const sel = userAns === L ? 'selected' : '';
+      html += `<div class="option ${sel}" onclick="selectExamAnswer('${L}',this)">
+        <span class="option-letter">${L}</span><span>${opt}</span></div>`;
+    });
+    html += `</div>`;
+  } else if (q.type === '是非題') {
+    html += `<div class="options" id="exam-options">`;
+    ['O','X'].forEach(L => {
+      const sel = userAns === L ? 'selected' : '';
+      const label = L === 'O' ? '○ 對' : '✕ 錯';
+      html += `<div class="option ${sel}" onclick="selectExamAnswer('${L}',this)">
+        <span class="option-letter">${L}</span><span>${label}</span></div>`;
+    });
+    html += `</div>`;
+  } else {
+    // 申論題 / 名詞解釋
+    html += `<div style="margin:10px 0">
+      <div style="font-size:11px;color:var(--muted);margin-bottom:6px">在下方寫下答案（提交後可自評）</div>
+      <textarea class="exam-essay-input" id="exam-essay" oninput="onExamEssayInput()" placeholder="作答區...">${userAns.replace(/</g,'&lt;')}</textarea>
+    </div>`;
+  }
+
+  html += `
+    <div class="action-row" style="margin-top:16px;flex-wrap:wrap">
+      ${idx > 0 ? `<button class="btn btn-outline" onclick="examGoTo(${idx-1})">← 上一題</button>` : '<div></div>'}
+      ${idx < total-1
+        ? `<button class="btn btn-primary" onclick="examGoTo(${idx+1})">下一題 →</button>`
+        : `<button class="btn btn-primary" style="background:var(--green);border-color:var(--green)" onclick="submitExam()">提交模考 ✓</button>`
+      }
+    </div>
+  `;
+  document.getElementById('exam-question-body').innerHTML = html;
+  renderExamGrid();
+}
+
+function renderExamGrid() {
+  const grid = document.getElementById('exam-grid');
+  const total = examState.questionIds.length;
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    const id = examState.questionIds[i];
+    const answered = examState.answers[id] && examState.answers[id].toString().trim() !== '';
+    const cur = i === examState.currentIdx;
+    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''}" onclick="examGoTo(${i})">${i+1}</div>`;
+  }
+  grid.innerHTML = html;
+}
+
+function toggleExamGrid() {
+  const p = document.getElementById('exam-grid-panel');
+  p.style.display = p.style.display === 'none' ? 'block' : 'none';
+  if (p.style.display === 'block') renderExamGrid();
+}
+
+function selectExamAnswer(letter, el) {
+  if (!examState) return;
+  const q = getExamQuestion(examState.currentIdx);
+  examState.answers[q.id] = letter;
+  document.querySelectorAll('#exam-options .option').forEach(x => x.classList.remove('selected'));
+  el.classList.add('selected');
+  saveCurrentExam();
+  renderExamGrid();
+}
+
+function onExamEssayInput() {
+  if (!examState) return;
+  const q = getExamQuestion(examState.currentIdx);
+  examState.answers[q.id] = document.getElementById('exam-essay').value;
+  saveCurrentExam();
+  // 不重繪 grid 太頻繁，等切題時更新
+}
+
+function examGoTo(idx) {
+  if (!examState) return;
+  // Save current essay if any
+  const cur = getExamQuestion(examState.currentIdx);
+  const isText = !['選擇題','是非題','配合題'].includes(cur.type);
+  if (isText) {
+    const el = document.getElementById('exam-essay');
+    if (el) examState.answers[cur.id] = el.value;
+  }
+  examState.currentIdx = idx;
+  saveCurrentExam();
+  renderExamPage();
+  document.getElementById('page-exam').scrollTop = 0;
+}
+
+function startExamTimer() {
+  if (_examTimerHandle) clearInterval(_examTimerHandle);
+  if (!examState.timeLimitSec) {
+    document.getElementById('exam-timer').textContent = '∞';
+    _examTimerHandle = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - examState.startedAt) / 1000);
+      const mm = String(Math.floor(elapsed/60)).padStart(2,'0');
+      const ss = String(elapsed%60).padStart(2,'0');
+      document.getElementById('exam-timer').textContent = `${mm}:${ss}`;
+    }, 1000);
+    return;
+  }
+  _examTimerHandle = setInterval(() => {
+    if (!examState || examState.submittedAt) { clearInterval(_examTimerHandle); return; }
+    const elapsed = Math.floor((Date.now() - examState.startedAt) / 1000);
+    const remaining = Math.max(0, examState.timeLimitSec - elapsed);
+    const mm = String(Math.floor(remaining/60)).padStart(2,'0');
+    const ss = String(remaining%60).padStart(2,'0');
+    const el = document.getElementById('exam-timer');
+    if (el) {
+      el.textContent = `${mm}:${ss}`;
+      el.classList.toggle('warn', remaining > 60 && remaining <= 300);
+      el.classList.toggle('danger', remaining <= 60);
+    }
+    if (remaining === 0) {
+      clearInterval(_examTimerHandle);
+      alert('時間到！自動提交');
+      submitExam(true);
+    }
+  }, 1000);
+}
+
+function submitExam(auto) {
+  if (!examState) return;
+  const total = examState.questionIds.length;
+  const answered = examState.questionIds.filter(id =>
+    examState.answers[id] && examState.answers[id].toString().trim() !== ''
+  ).length;
+  if (!auto) {
+    if (!confirm(`確定提交？\n\n已答 ${answered}/${total} 題。\n提交後不能再修改答案。`)) return;
+  }
+  // Save essay one more time
+  const cur = getExamQuestion(examState.currentIdx);
+  const isText = !['選擇題','是非題','配合題'].includes(cur.type);
+  if (isText) {
+    const el = document.getElementById('exam-essay');
+    if (el) examState.answers[cur.id] = el.value;
+  }
+  examState.submittedAt = Date.now();
+  if (_examTimerHandle) clearInterval(_examTimerHandle);
+  // 主觀題初始 selfScore 設為「待評」(null)
+  for (const id of examState.questionIds) {
+    const q = questions.find(q => q.id === id);
+    if (!['選擇題','是非題','配合題'].includes(q.type)) {
+      if (!(id in examState.selfScores)) {
+        // 初始給 0，使用者去調整
+        examState.selfScores[id] = { score: 0, max: 100 };
+      }
+    }
+  }
+  saveCurrentExam();
+  goPage('page-exam-result');
+  renderExamResult();
+}
+
+// 計算單題對錯（客觀題）+ 主觀題分數
+function gradeQuestion(q) {
+  const ans = examState.answers[q.id];
+  const isObj = ['選擇題','是非題','配合題'].includes(q.type);
+  if (isObj) {
+    if (!ans) return { isObjective: true, status: 'skip', earned: 0, max: 1 };
+    const correct = (q.answer || '').toString().trim().toUpperCase() === ans.toString().trim().toUpperCase();
+    return { isObjective: true, status: correct ? 'correct' : 'wrong', earned: correct ? 1 : 0, max: 1 };
+  } else {
+    const ss = examState.selfScores[q.id] || { score: 0, max: 100 };
+    if (!ans) return { isObjective: false, status: 'skip', earned: 0, max: 1 };
+    return {
+      isObjective: false,
+      status: ss.score >= ss.max * 0.6 ? 'correct' : (ss.score > 0 ? 'wrong' : 'wrong'),
+      earned: ss.score / ss.max,
+      max: 1,
+    };
+  }
+}
+
+function computeExamScore() {
+  let totalWeight = 0, earnedWeight = 0;
+  let correct = 0, wrong = 0, skip = 0;
+  const byChapter = {};
+  for (const id of examState.questionIds) {
+    const q = questions.find(x => x.id === id);
+    const g = gradeQuestion(q);
+    const w = TYPE_WEIGHTS[q.type] || 1;
+    totalWeight += w;
+    earnedWeight += g.earned * w;
+    if (g.status === 'correct') correct++;
+    else if (g.status === 'wrong') wrong++;
+    else skip++;
+    const ch = q.topic || '未分類';
+    if (!byChapter[ch]) byChapter[ch] = { totalW: 0, earnedW: 0, count: 0 };
+    byChapter[ch].totalW += w;
+    byChapter[ch].earnedW += g.earned * w;
+    byChapter[ch].count++;
+  }
+  const score = totalWeight > 0 ? Math.round((earnedWeight / totalWeight) * 100) : 0;
+  return { score, totalWeight, earnedWeight, correct, wrong, skip, byChapter };
+}
+
+function renderExamResult() {
+  if (!examState) return;
+  const result = computeExamScore();
+  const usedSec = Math.floor((examState.submittedAt - examState.startedAt) / 1000);
+  const limitSec = examState.timeLimitSec;
+  const fmtTime = (s) => `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  const total = examState.questionIds.length;
+
+  let html = `
+    <div class="exam-score-big">
+      <div class="exam-score-num">${result.score}</div>
+      <div class="exam-score-label">滿分 100　|　用時 ${fmtTime(usedSec)}${limitSec ? ' / ' + fmtTime(limitSec) : ''}</div>
+    </div>
+
+    <div class="exam-stat-row">
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--green)">${result.correct}</div><div class="exam-stat-label">答對</div></div>
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--red)">${result.wrong}</div><div class="exam-stat-label">答錯</div></div>
+      <div class="exam-stat-cell"><div class="exam-stat-num" style="color:var(--muted)">${result.skip}</div><div class="exam-stat-label">未答</div></div>
+    </div>
+  `;
+
+  // 分章節長條圖
+  const chRows = Object.entries(result.byChapter)
+    .filter(([_, d]) => d.totalW > 0)
+    .sort(([a], [b]) => chapterNum(a) - chapterNum(b))
+    .map(([ch, d]) => {
+      const pct = Math.round((d.earnedW / d.totalW) * 100);
+      const cls = pct < 50 ? 'poor' : (pct < 75 ? 'ok' : '');
+      return `<div class="chapter-bar">
+        <div class="chapter-bar-label">${ch}</div>
+        <div class="chapter-bar-track">
+          <div class="chapter-bar-fill ${cls}" style="width:${pct}%"></div>
+          <div class="chapter-bar-text">${pct}% (${d.count}題)</div>
+        </div>
+      </div>`;
+    }).join('');
+  if (chRows) {
+    html += `<div class="slabel" style="margin-top:8px">分章節得分</div>${chRows}`;
+  }
+
+  // 主觀題自評區
+  const subjectiveQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => !['選擇題','是非題','配合題'].includes(q.type));
+  if (subjectiveQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">主觀題自評（影響總分）</div>`;
+    subjectiveQs.forEach(q => {
+      const ans = examState.answers[q.id] || '(未作答)';
+      const ss = examState.selfScores[q.id] || { score: 0, max: 100 };
+      const kw = (q.keywords_required || []);
+      const kwHits = kw.filter(k => ans.includes(k));
+      const outline = q.essay_outline || [];
+      html += `
+        <div class="exam-result-q">
+          <div class="exam-result-q-header">
+            <strong>${q.id}</strong>
+            <span class="q-badge">${q.type}</span>
+            <span class="q-badge" style="margin-left:auto">權重 ×${TYPE_WEIGHTS[q.type]}</span>
+          </div>
+          <div style="font-size:13px;margin-bottom:8px">${q.question || ''}</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:4px">你的答案：</div>
+          <div style="background:var(--surface);padding:8px;border-radius:6px;font-size:12px;white-space:pre-wrap;line-height:1.6">${ans.replace(/</g,'&lt;')}</div>
+          ${kw.length > 0 ? `<div style="font-size:11px;margin-top:8px">關鍵字命中 ${kwHits.length}/${kw.length}：${kw.map(k => kwHits.includes(k) ? `<span style="color:var(--green)">${k}</span>` : `<span style="color:var(--red);text-decoration:line-through">${k}</span>`).join('、')}</div>` : ''}
+          ${outline.length > 0 ? `<details style="margin-top:8px"><summary style="font-size:11px;color:var(--muted);cursor:pointer">看答題骨架</summary><div style="font-size:12px;line-height:1.7;margin-top:6px">${outline.map((s,i)=>`<div>${i+1}. ${s}</div>`).join('')}</div></details>` : ''}
+          ${q.reference_answer ? `<details style="margin-top:6px"><summary style="font-size:11px;color:var(--muted);cursor:pointer">看參考解答</summary><div class="key-box" style="margin-top:6px;font-size:12px">${q.reference_answer}</div></details>` : ''}
+          <div class="self-grade-row">
+            <span style="font-size:12px;color:var(--muted)">自評：</span>
+            <input type="number" min="0" max="${ss.max}" value="${ss.score}" oninput="updateSelfScore('${q.id}', this.value)" />
+            <span style="font-size:12px;color:var(--muted)">/ ${ss.max} 分</span>
+            <span style="margin-left:auto;font-size:11px;color:var(--blue-light)">調整後總分會自動更新</span>
+          </div>
+        </div>`;
+    });
+  }
+
+  // 客觀錯題列表（解析現在解鎖）
+  const wrongQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => ['選擇題','是非題','配合題'].includes(q.type) && gradeQuestion(q).status === 'wrong');
+  if (wrongQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">客觀題錯題複習（${wrongQs.length} 題）</div>`;
+    wrongQs.forEach(q => {
+      const ans = examState.answers[q.id];
+      html += `
+        <div class="exam-result-q wrong">
+          <div class="exam-result-q-header">
+            <strong>${q.id}</strong>
+            <span class="q-badge">${q.type}</span>
+            <span style="margin-left:auto;font-size:11px;color:var(--red)">你選 ${ans}　正解 ${q.answer}</span>
+          </div>
+          <div style="font-size:13px;margin-bottom:8px">${q.question || ''}</div>
+          ${q.options ? `<div style="font-size:12px;line-height:1.8">${q.options.map((o,i) => {
+            const L = 'ABCDEFGHIJKLMNOP'[i];
+            const isAns = L === q.answer;
+            const isUser = L === ans;
+            return `<div style="${isAns?'color:var(--green);font-weight:600':''}${isUser&&!isAns?';color:var(--red)':''}">${L}. ${o} ${isAns?' ✓':(isUser?' ✗':'')}</div>`;
+          }).join('')}</div>` : ''}
+          ${q.reference_answer ? `<div class="key-box" style="margin-top:8px;font-size:12px">${q.reference_answer}</div>` : ''}
+        </div>`;
+    });
+  }
+
+  // 未答列表
+  const skipQs = examState.questionIds
+    .map(id => questions.find(q => q.id === id))
+    .filter(q => gradeQuestion(q).status === 'skip');
+  if (skipQs.length > 0) {
+    html += `<div class="slabel" style="margin-top:16px">未作答（${skipQs.length} 題）</div>
+      <div style="font-size:11px;color:var(--muted);padding:6px 0">${skipQs.map(q => q.id).join('、')}</div>`;
+  }
+
+  html += `
+    <div class="action-row" style="margin-top:20px;flex-wrap:wrap">
+      ${wrongQs.length > 0 ? `<button class="btn btn-outline" onclick="redoWrong()" style="flex:1 1 100%;margin-bottom:6px">🔁 重做錯題（${wrongQs.length} 題）</button>` : ''}
+      <button class="btn btn-outline" onclick="finishExam()">完成（存進歷史）</button>
+      <button class="btn btn-primary" onclick="discardExam()" style="background:var(--red);border-color:var(--red)">捨棄不存</button>
+    </div>
+    <div style="height:30px"></div>
+  `;
+  document.getElementById('exam-result-body').innerHTML = html;
+}
+
+function updateSelfScore(qid, val) {
+  if (!examState) return;
+  const v = parseFloat(val) || 0;
+  if (!examState.selfScores[qid]) examState.selfScores[qid] = { score: 0, max: 100 };
+  examState.selfScores[qid].score = Math.max(0, Math.min(examState.selfScores[qid].max, v));
+  saveCurrentExam();
+  // 更新頂部分數但不整個 re-render（會重置滑鼠焦點）
+  const result = computeExamScore();
+  const num = document.querySelector('.exam-score-num');
+  if (num) num.textContent = result.score;
+}
+
+function finishExam() {
+  if (!examState) return;
+  const hist = loadExamHistory();
+  hist.unshift(examState);
+  // 最多保留 50 場
+  saveExamHistory(hist.slice(0, 50));
+  clearCurrentExam();
+  examState = null;
+  goPage('page-home');
+  alert('模考已存入歷史');
+}
+
+function discardExam() {
+  if (!confirm('確定捨棄這場模考？\n\n（不存入歷史，但已答內容仍可在【模考歷史】未出現中追蹤）')) return;
+  clearCurrentExam();
+  examState = null;
+  goPage('page-home');
+}
+
+function redoWrong() {
+  // 重啟一場新模考，題目只取錯題
+  const wrongIds = examState.questionIds
+    .filter(id => {
+      const q = questions.find(qq => qq.id === id);
+      if (!q) return false;
+      return ['選擇題','是非題','配合題'].includes(q.type) && gradeQuestion(q).status === 'wrong';
+    });
+  if (wrongIds.length === 0) { alert('沒有錯題'); return; }
+  // 把當前模考存起來再開新場
+  finishExam();
+  examState = {
+    id: 'exam_' + Date.now(),
+    startedAt: Date.now(),
+    submittedAt: null,
+    config: {
+      schools: [], years: [], types: [],
+      count: wrongIds.length,
+      timeLimit: 'unlimited',
+      presetLabel: '錯題重做',
+    },
+    timeLimitSec: null,
+    questionIds: wrongIds,
+    answers: {},
+    selfScores: {},
+    currentIdx: 0,
+  };
+  saveCurrentExam();
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function renderExamHistory() {
+  const hist = loadExamHistory();
+  const cur = loadCurrentExam();
+  const list = document.getElementById('exam-history-list');
+  if (!list) return;
+  if (hist.length === 0 && (!cur || cur.submittedAt)) {
+    list.innerHTML = `<div class="empty" style="padding:16px 0"><div style="font-size:11px;color:var(--dim)">尚無模考紀錄</div></div>`;
+    return;
+  }
+  let html = '';
+  if (cur && !cur.submittedAt) {
+    const ageMin = Math.round((Date.now() - cur.startedAt) / 60000);
+    const total = cur.questionIds.length;
+    const answered = cur.questionIds.filter(id => cur.answers[id] && cur.answers[id].toString().trim()).length;
+    html += `<div class="exam-history-row" onclick="resumeCurrentExam()" style="border-color:var(--yellow)">
+      <div>
+        <div style="font-size:12px;color:var(--yellow);font-weight:600">▶ 進行中</div>
+        <div class="exam-history-meta">${ageMin} 分鐘前開始 · ${answered}/${total}</div>
+      </div>
+      <div style="margin-left:auto;font-size:11px;color:var(--blue-light)">點擊繼續 →</div>
+    </div>`;
+  }
+  hist.slice(0, 5).forEach(e => {
+    examState = e; // 暫借 grade 用
+    const result = computeExamScore();
+    const date = new Date(e.startedAt);
+    const dateStr = `${date.getMonth()+1}/${date.getDate()} ${String(date.getHours()).padStart(2,'0')}:${String(date.getMinutes()).padStart(2,'0')}`;
+    const usedSec = Math.floor(((e.submittedAt || Date.now()) - e.startedAt) / 1000);
+    const meta = e.config.presetLabel || `${e.config.schools.join(',')} · ${e.questionIds.length} 題`;
+    html += `<div class="exam-history-row" onclick="reviewExam('${e.id}')">
+      <div>
+        <div class="exam-history-date">${dateStr}</div>
+        <div class="exam-history-meta">${meta} · ${Math.floor(usedSec/60)}分</div>
+      </div>
+      <div class="exam-history-score">${result.score}</div>
+    </div>`;
+  });
+  examState = null;
+  list.innerHTML = html;
+}
+
+function resumeCurrentExam() {
+  examState = loadCurrentExam();
+  if (!examState) return;
+  goPage('page-exam');
+  renderExamPage();
+  startExamTimer();
+}
+
+function reviewExam(id) {
+  const hist = loadExamHistory();
+  const e = hist.find(x => x.id === id);
+  if (!e) return;
+  examState = e;
+  goPage('page-exam-result');
+  renderExamResult();
+}
+
+
+
 // Chapter ordering: 第1章, 第2章, ... 第16章
 function chapterNum(topic) {
   const m = (topic || '').match(/第(\d+)章/);
@@ -1892,17 +2746,18 @@ function updateHeaderSub() {
 }
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
-const pages = ['page-home','page-browse','page-chapters','page-essay','page-quiz'];
-const navIds = ['nav-home','nav-browse','nav-chapters','nav-essay',null];
+const pages = ['page-home','page-browse','page-chapters','page-essay','page-quiz','page-exam','page-exam-result'];
+const navIds = ['nav-home','nav-browse','nav-chapters','nav-essay',null,null,null];
 
 function goPage(pageId) {
   pages.forEach((p,i) => {
     document.getElementById(p).classList.toggle('active', p === pageId);
     if (navIds[i]) document.getElementById(navIds[i]).classList.toggle('active', p === pageId);
   });
-  // Hide bottom nav during quiz
-  document.querySelector('.bottom-nav').style.display = pageId === 'page-quiz' ? 'none' : 'flex';
-  document.querySelector('.header').style.display = pageId === 'page-quiz' ? 'none' : 'flex';
+  // Hide bottom nav during quiz/exam
+  const hideUI = pageId === 'page-quiz' || pageId === 'page-exam' || pageId === 'page-exam-result';
+  document.querySelector('.bottom-nav').style.display = hideUI ? 'none' : 'flex';
+  document.querySelector('.header').style.display = hideUI ? 'none' : 'flex';
   if (pageId === 'page-browse') renderBrowse();
   if (pageId === 'page-chapters') renderChapters();
   if (pageId === 'page-home') renderHome();
@@ -1922,6 +2777,19 @@ function renderHome() {
   const cc = correctionsCount();
   const ccEl = document.getElementById('corrections-count');
   if (ccEl) ccEl.textContent = cc === 0 ? '尚無勘誤' : `${cc} 筆 — 點此匯出`;
+  renderExamHistory();
+  // 模考 card sub
+  const cur = loadCurrentExam();
+  const examSub = document.getElementById('exam-card-sub');
+  if (examSub) {
+    if (cur && !cur.submittedAt) {
+      examSub.textContent = '⚡ 進行中（點此繼續）';
+      examSub.style.color = 'var(--yellow)';
+    } else {
+      examSub.textContent = '計時實戰、評分';
+      examSub.style.color = '';
+    }
+  }
 
   // Top chapters (by question count)
   const chCounts = {};
