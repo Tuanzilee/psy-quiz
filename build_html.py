@@ -18,7 +18,7 @@ FILE_ORDER = [
 ]
 
 ROOT = Path(__file__).parent
-DATA_DIR = ROOT / 'data' / 'questions'
+DATA_DIR = ROOT          # JSON 檔放在 repo 根目錄
 TEMPLATE = ROOT / 'psych_template.html'
 OUT = ROOT / 'index.html'
 
