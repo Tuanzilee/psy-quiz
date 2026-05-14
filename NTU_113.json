@@ -186,20 +186,20 @@
       "answer": "B",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "睡眠的階段結構（sleep architecture）、睡眠週期（sleep cycles）、以及年齡對睡眠型態的影響（developmental sleep patterns）\n\n• 嬰兒有較多的 REM睡眠 • 青少年進入深睡期時間延後（晚睡晚起） • 老年人深睡（N3）時間縮短、夜間醒來次數變多，這是典型的發展性睡眠變化 （developmental changes in sleep patterns)",
+      "reference_answer": "睡眠型態因年齡而異：\n• 嬰兒：REM 比例高、睡眠週期短\n• 老年人：深層睡眠（N3）減少、容易醒來\n→ ✔ B 正確。\n\n❌ A：睡眠階段順序其實相當固定，雖個體有差異，但一般流程為：\n  wakefulness → N1 → N2 → N3（深睡）→ REM，之後循環重複。\n\n❌ C：人不是前兩小時一路越睡越深。實際上約 90 分鐘一個 cycle，在 NREM 與 REM 間循環；後半夜 REM 比例增加，並非持續往深睡前進。",
       "concepts": [
         "睡眠的階段結構（sleep architecture）、睡眠週期（sleep cycles）、以及年齡對睡眠型態的影響（developmental sleep "
       ],
       "scholars": [],
       "school_of_thought": "",
       "key_concepts": "睡眠的階段結構（sleep architecture）、睡眠週期（sleep cycles）、以及年齡對睡眠型態的影響（developmental sleep patterns）",
-      "ai_hint": "• 嬰兒有較多的 REM睡眠 • 青少年進入深睡期時間延後（晚睡晚起） • 老年人深睡（N3）時間縮短、夜間醒來次數變多，這是典型的發展性睡眠變化 （developmental changes in sleep patterns)",
+      "ai_hint": "B 正確：睡眠型態隨年齡變化（嬰兒 REM 多、老人深睡少）。A 錯：階段順序固定；C 錯：90 分鐘循環，後半夜 REM↑，非持續深睡。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "詳解由使用者更新（2026-05）。",
       "topic": "第5章 注意與意識"
     },
     {
@@ -261,23 +261,23 @@
         "Getting kicked is a conditioned stimulus.",
         "The children’s rush to the door is an unconditioned response."
       ],
-      "answer": "B",
+      "answer": "D",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "古典制約的四大要素： • 非制約刺激（unconditioned stimulus, UCS） • 非制約反應（unconditioned response, UCR） • 制約刺激（conditioned stimulus, CS） • 制約反應（conditioned response, CR）\n\n嚎叫這個反應現在是對門鈴這個制約刺激（CS）產生的，是經由學習形成的行為，因此是制約反應（CR）。",
+      "reference_answer": "制約元素拆解：\n• US（非制約刺激）：被踢（getting kicked）\n• UR → CR：害怕、夾尾巴\n• CS（制約刺激）：門鈴\n• 嚎叫（howling）：題目描述為制約前就存在的舊有行為，非此次習得的 CR\n\n✔ D：children's rush to the door 是對門鈴的自然反應（題目 frame 中視為不需學習的背景事件），為 unconditioned response。\n\n❌ A：門鈴原為中性刺激，經配對後成為 CS，非 US。\n❌ B：howling 是制約前就有的行為（舊有反應），不是這次制約形成的 CR；此次習得的 CR 是「聽到門鈴就夾尾巴」。\n❌ C：被踢是 US，非 CS。\n（本題出題不夠精準，D 為四選項中最可辯護的答案。）",
       "concepts": [
         "古典制約的四大要素： • 非制約刺激（unconditioned stimulus, UCS） • 非制約反應（unconditioned response, "
       ],
       "scholars": [],
       "school_of_thought": "",
       "key_concepts": "古典制約的四大要素： • 非制約刺激（unconditioned stimulus, UCS） • 非制約反應（unconditioned response, UCR） • 制約刺激（conditioned stimulus, CS） • ",
-      "ai_hint": "嚎叫這個反應現在是對門鈴這個制約刺激（CS）產生的，是經由學習形成的行為，因此是制約反應（CR）。",
+      "ai_hint": "CR 是「夾尾巴」不是「嚎叫」；howling 是制約前舊有行為，故 B 錯。D：children rush = 自然背景反應 = UR。A/C 明確錯誤。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "原答案 B 有誤，使用者勘誤為 D（2026-05）。本題出題不精準，D 為最可辯護選項。",
       "topic": "第6章 學習"
     },
     {

@@ -588,20 +588,20 @@
       "answer": "B",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "Atkinson-Shiffrin 模型主張：\n ✅ 資訊先進入感覺（官）記憶\n ✅ 再進入短期記憶（working memory）\n ✅ 再由短期記憶進入長期記憶",
+      "reference_answer": "Stage theory = Atkinson & Shiffrin 多重記憶階段模型（multi-store model）。\n流程：sensory memory → working/short-term memory → long-term memory。\n\n✔ B：資訊須先進入 short-term/working memory，才有機會進入 long-term memory。\n\n❌ A：不是 stage theory 的核心敘述。\n❌ C：並非所有進入 working memory 的資訊都會進入 long-term memory；大部分會消失，只有經過 rehearsal（複誦）、elaboration（精緻化）、meaningful encoding（有意義編碼）的資訊才比較容易長期保存。\n❌ D：B + C 組合，因 C 錯故 D 也錯。",
       "concepts": [
         "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）"
       ],
       "scholars": [],
       "school_of_thought": "memory",
       "key_concepts": "Atkinson & Shiffrin  （1968）\n記憶階段理論（Stage Theory）中的多重儲存模型（Multi-store Model）",
-      "ai_hint": "Atkinson-Shiffrin 模型主張：\n ✅ 資訊先進入感覺（官）記憶\n ✅ 再進入短期記憶（working memory）\n ✅ 再由短期記憶進入長期記憶",
+      "ai_hint": "Stage theory = Atkinson & Shiffrin multi-store model。B 正確：需經 working memory 才能進 LTM。C 錯：不是全部都會轉入 LTM，需 rehearsal / elaboration。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "詳解由使用者更新（2026-05）。",
       "topic": "第7章 記憶"
     },
     {
@@ -1493,23 +1493,23 @@
         "Low correlations between measures of traits taken in different countries",
         "None of the above"
       ],
-      "answer": "C",
+      "answer": "B",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "Walter Mischel 的「人格悖論 (personality paradox)」 核心觀點：\n雖然我們覺得人有「穩定的人格特質」，但實際上人們在不同情境中行為表現的相關性很低，遠低於我們以為的穩定性。",
+      "reference_answer": "Walter Mischel（1968）批評人格特質論：行為的跨情境一致性遠低於特質論預測，此即 Personality Paradox（人格悖論）。\n\n研究發現：不同情境下的行為相關通常不高。\n例：在家外向、在學校安靜、在陌生人前害羞 → traits 對行為的預測力有限。\n\n此發現後來促成 interactionism（人格 × 情境交互作用觀點）的發展。\n→ ✔ B 正確。",
       "concepts": [
         "Walter Mischel（1968）提出的「人格悖論（Personality Paradox）"
       ],
       "scholars": [],
       "school_of_thought": "personality",
       "key_concepts": "Walter Mischel（1968）提出的「人格悖論（Personality Paradox）",
-      "ai_hint": "Walter Mischel 的「人格悖論 (personality paradox)」 核心觀點：\n雖然我們覺得人有「穩定的人格特質」，但實際上人們在不同情境中行為表現的相關性很低，遠低於我們以為的穩定性。",
+      "ai_hint": "Mischel 1968：Personality Paradox，行為跨情境一致性低，特質預測力有限，促成 person × situation interactionism。答案 B。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "原答案有誤，使用者勘誤為 B（2026-05）。",
       "topic": "第12章 性格"
     }
   ]

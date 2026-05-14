@@ -426,20 +426,20 @@
       "answer": "C",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "LeDoux  情緒神經訊號的雙路徑理論",
+      "reference_answer": "LeDoux Dual Pathway Theory：\n低徑（low road）：thalamus → amygdala｜快、粗略、非意識、生存導向\n  例：看到像蛇的東西瞬間跳開（可能只是繩子）\n高徑（high road）：thalamus → cortex → amygdala｜慢、精細分析、有意識判斷\n  例：仔細看後發現「是水管不是蛇」\n\n✔ C：完整情緒經驗需要認知評估、意識經驗與情境判斷，高徑（皮質路徑）才能形成；單靠低徑只能快速求生反應，不足以構成完整情緒經驗。\n\n❌ A：描述的路徑（視丘→皮質→杏仁核）其實是高徑，不是低徑。\n❌ B：描述的路徑（視丘直接→杏仁核）其實是低徑，不是高徑。\n❌ D：James-Lange 強調生理反應→情緒；Schachter-Singer 強調生理喚醒+認知詮釋；均與 LeDoux 高低徑對應無關。\n（本題出題稍不精準，但四選項中 C 最接近正確方向。）",
       "concepts": [
         "LeDoux  情緒神經訊號的雙路徑理論"
       ],
       "scholars": [],
       "school_of_thought": "",
       "key_concepts": "LeDoux  情緒神經訊號的雙路徑理論",
-      "ai_hint": "LeDoux  情緒神經訊號的雙路徑理論",
+      "ai_hint": "LeDoux 低徑：thalamus→amygdala（快速粗略）；高徑：thalamus→cortex→amygdala（慢、精細）。A/B 路徑標籤對調；C 正確：完整情緒需高徑皮質處理；D 混淆其他情緒理論。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "詳解由使用者更新（2026-05）。本題出題稍不精準，C 為最佳選項。",
       "topic": "第3章 行為的生物基礎"
     },
     {

@@ -266,23 +266,23 @@
         "Extinction does not erase original learning",
         "The effects of initial learning always outstrip subsequent learning"
       ],
-      "answer": "D",
+      "answer": "C",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "腳踏車技術沒消失，只是被封存了。再學很快，因為記憶還在。",
+      "reference_answer": "消弱後重新制約速度更快，這就是節省效應（savings effect）。它證明：消弱只是讓 CR 不再表現，並非刪除原始的 CS-US 連結——學習痕跡仍留在大腦中。腳踏車技術沒消失，只是被封存了，一碰就想起來。",
       "concepts": [
         "滅除後的快速再學習（Savings and Reconditioning）"
       ],
       "scholars": [],
       "school_of_thought": "learning",
       "key_concepts": "滅除後的快速再學習（Savings and Reconditioning）",
-      "ai_hint": "腳踏車技術沒消失，只是被封存了。再學很快，因為記憶還在。",
+      "ai_hint": "reconditioning 快 → savings effect → 原始學習未被清除（C）。D 的 always outstrip 太絕對，且描述的是優先性而非記憶保存。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "原答案 D 有誤，使用者勘誤為 C（2026-05）。",
       "topic": "第6章 學習"
     },
     {
@@ -974,23 +974,23 @@
         "Group therapy",
         "None of the above"
       ],
-      "answer": "E",
+      "answer": "D",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "CBT 是「結構化、目標導向、任務式」的心理健身房：你來練習新想法與行為，帶著功課回家反覆練，讓改變發生在生活裡。",
+      "reference_answer": "CBT 的核心特徵：結構化、目標導向、問題解決導向、homework（練習新思考與行為模式）。D（group therapy）是治療形式（format），不是 CBT 的定義要件——CBT 可個別進行也可團體進行，但 group therapy 本身不是 CBT 的特徵。",
       "concepts": [
         "認知行為治療（Cognitive-Behavioral Therapy, CBT） 的核心特徵辨識"
       ],
       "scholars": [],
       "school_of_thought": "clinical",
       "key_concepts": "認知行為治療（Cognitive-Behavioral Therapy, CBT） 的核心特徵辨識",
-      "ai_hint": "CBT 是「結構化、目標導向、任務式」的心理健身房：你來練習新想法與行為，帶著功課回家反覆練，讓改變發生在生活裡。",
+      "ai_hint": "except 題找「不是 CBT 特徵」的選項。A/B/C 都是 CBT 核心要素；D group therapy 是形式而非本質，故為例外。E（none of above）錯誤。",
       "common_mistakes": "",
       "needs_image": false,
       "images": [],
       "keywords_required": [],
       "essay_outline": null,
-      "answer_note": "",
+      "answer_note": "原答案 E 有誤，使用者勘誤為 D（2026-05）。",
       "topic": "第16章 心智異常"
     }
   ]
