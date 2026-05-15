@@ -2188,10 +2188,18 @@ function renderExamHistory() {
         <div class="exam-history-meta">${meta} · ${Math.floor(usedSec/60)}分</div>
       </div>
       <div class="exam-history-score">${result.score}</div>
+      <div onclick="event.stopPropagation(); deleteExamFromHistory('${e.id}')" style="cursor:pointer;color:var(--muted);font-size:16px;padding:4px 8px;margin-left:8px;user-select:none" title="刪除此筆">🗑</div>
     </div>`;
   });
   examState = null;
   list.innerHTML = html;
+}
+
+function deleteExamFromHistory(id) {
+  if (!confirm('確定刪除這場模考紀錄？無法復原')) return;
+  const hist = loadExamHistory().filter(e => e.id !== id);
+  saveExamHistory(hist);
+  renderExamHistory();
 }
 
 function resumeCurrentExam() {

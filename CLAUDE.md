@@ -122,3 +122,20 @@ GitHub Actions(`build.yml`)會在 push 後自動跑 build 並 commit `index.html
 ### 最近處理過 / 待處理
 
 - **模考重複出題**(已修,2026-05-15,commit `22fc513` + Actions `1b7782a`):`psych_template.html` 新增 `stratifiedExamPick()`,在 `startExam()` 非 preset 分支調用。分層邏輯:未做過 > 做錯/跳過 > 已答對,每層內洗牌;沒答 / 跳過視為 wrong(要重做);客觀題比對 `q.answer`、申論看 `selfScores.score >= max * 0.6`。`examState` + `redoWrong()` 同時新增 `wrongReasons: {}` 預留欄位(未來「錯因標記」feature 用)。
+
+### 已知 bug(2026-05-15 診斷,暫未修)
+
+兩個都跟 `reviewExam(id)` 把 `examState` 設為 history entry 的 **reference 而非 copy** 有關。
+
+- **Bug A:review 舊模考時按【完成(存進歷史)】會在 `EXAMS_KEY` 多塞一筆相同 id**
+  - 路徑:`reviewExam` → `examState = hist[i]` → 使用者按【完成】→ `finishExam()` 的 `hist.unshift(examState)` 把同一個物件再塞一次回 `EXAMS_KEY`
+  - 影響:歷史會有兩張外觀一樣的 card;`deleteExamFromHistory(id)` 用 `filter(e => e.id !== id)` 會**同時刪掉兩筆**(因為 id 相同)
+
+- **Bug B:review 模式做任何編輯(改自評分數、標錯因)只寫到 `CURRENT_EXAM_KEY`,沒人讀那裡**
+  - 路徑:`updateSelfScore` / `toggleWrongReason` → `saveCurrentExam()` → 寫 `CURRENT_EXAM_KEY`
+  - 但 `reviewExam` 下次進來是讀 `EXAMS_KEY`,不讀 `CURRENT_EXAM_KEY`(`submittedAt` 有值會跳過 resume 路徑)
+  - 影響:review 模式下的編輯永久遺失,回首頁再點開該模考會回到原狀
+
+- **修法方向(暫定 Option 2)**:reviewExam 進去時設 flag(例:`_isReviewing = true`),`updateSelfScore` / `toggleWrongReason` 偵測到 review 模式 → 改寫 `EXAMS_KEY` 對應 entry,不寫 `CURRENT_EXAM_KEY`;【完成】按鈕在 review 模式隱藏(或改文案「儲存更新」)
+
+- **緊急度:低**。線上版 `EXAMS_KEY` 目前空(新工作流剛建立、還沒累積使用者實戰場次),bug 在實際情境下尚未發作。等使用者開始累積模考紀錄、需要回頭補錯因時再修。
