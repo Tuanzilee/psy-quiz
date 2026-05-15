@@ -1,0 +1,111 @@
+# CLAUDE.md
+
+## Repo 用途
+
+收錄輔仁、臺大、成大三校共 632 題普通心理學轉學考試題的單頁刷題網站(純前端 + localStorage)。
+
+線上部署:**https://tuanzilee.github.io/psy-quiz/**(GitHub Pages)
+
+## 檔案結構
+
+```
+psy/
+├── index.html              ← Build 產物(約 800 KB,含全部題目 JSON)。GH Pages 服務這支
+├── psych_template.html     ← UI template(155 KB,不含資料)。改 UI / JS 邏輯改這裡
+├── build_html.py           ← 把 template + 根目錄的 JSON 組成 index.html
+├── .github/workflows/
+│   └── build.yml           ← GitHub Actions:push 後自動 build & commit index.html
+├── FJU_107.json … FJU_114B.json    ← 輔仁題庫(8 份)
+├── NTU_108.json … NTU_114.json     ← 臺大題庫(6 份)
+├── NCKU_107.json … NCKU_114.json   ← 成大題庫(7 份)
+├── concepts.json           ← 章節 / 概念清單
+├── FJU_questions.json      ← 舊單檔合併版(看起來已淘汰,別改)
+├── fujen_psych_prep.html   ← 舊版頁面(已淘汰)
+├── README.md
+└── 其他資料/                ← 原始 PDF / 講義,不影響 build
+```
+
+**21 份題庫 JSON 與 `concepts.json` 都在 repo 根目錄**(不在 `data/` 子目錄)。
+
+### 不能直接改的檔
+
+- **`index.html`** — build 產物。改 JS / UI 永遠改 `psych_template.html`,改題目改根目錄的 `*.json`,然後重 build。
+- **`FJU_questions.json`、`fujen_psych_prep.html`** — 看起來是舊版遺留,改了也不會被 build 採用。
+
+## 工作流(2026-05-15 起)
+
+- **2026-05-15 之前**:都用 GitHub Web UI 拖檔上傳源檔,Actions 接著自動 build。從沒在本機跑過 build,也沒從 CLI push 過。
+- **2026-05-15 起**:改用本機 git workflow——改檔 → 本機 build(雙保險) → commit → push → Actions 在遠端再 build 一次。
+- **源 vs 產物**:
+  - `psych_template.html` 是真正的源,改 UI / JS 改這裡
+  - 根目錄的 `*.json` 是真正的源,改題目改這裡
+  - `index.html` 是 build 產物,**永遠別手改**(手改會被下次 Actions build 蓋掉)
+
+## Build 流程
+
+```bash
+python3 build_html.py
+```
+
+會讀 `psych_template.html` + `build_html.py` 裡 `FILE_ORDER` 列出的 JSON(repo 根目錄),組出 `index.html`。
+
+新增學校試卷:把檔名加進 `build_html.py` 的 `FILE_ORDER` 再 build。
+
+## Commit / Push 流程
+
+改題庫:
+```bash
+# 1. 改根目錄的 X.json(如 NCKU_114.json)
+# 2. 跑 build
+python3 build_html.py
+# 3. commit
+git add NCKU_114.json index.html
+git commit -m "修正 NCKU_114 Q15 答案"
+git push
+```
+
+改 UI / JS:
+```bash
+# 1. 改 psych_template.html
+# 2. build
+python3 build_html.py
+# 3. commit
+git add psych_template.html index.html
+git commit -m "模考新增分層抽題邏輯"
+git push
+```
+
+**Commit message 風格:中文,動詞開頭,簡潔。**
+範例:「修正 NTU_113 Q24 答案」、「新增章節篩選」、「修 startExam 重複出題」。
+
+GitHub Actions(`build.yml`)會在 push 後自動跑 build 並 commit `index.html`,所以本地 build 算雙保險。
+
+## 與 Claude 的協作風格
+
+- **直接動手,做完再報。** 不需要逐步請示;只在「會動到大量檔案 / 不可逆操作 / 需求模糊」時才停下確認。
+- **改檔優先用 Edit(str_replace),少用 Write 整檔覆蓋。** 整檔覆蓋風險高、diff 難看。
+- **不要重複問同樣的事。** 已經問過或已寫進這份 CLAUDE.md 的事,直接照辦。
+- 改 JS 邏輯記得**改 `psych_template.html`,不是 `index.html`**。
+- 改完 template 後要記得跑 build,否則本地 `index.html` 不會更新。
+
+## 已知狀態(2026-05-15)
+
+### 題庫分布(共 632 題)
+
+| 學校 | 年度 | 題數 |
+|---|---|---|
+| FJU | 107、108、109、111、112、113、114A、114B | 119 |
+| NTU | 108、109、111、112、113、114 | 225 |
+| NCKU | 107、108、109、111、112、113、114 | 288 |
+
+題型:選擇、是非、配合、申論、名詞解釋。
+
+### 待勘誤
+
+- NCKU 107(50 題)、NCKU 108-114(278 題)— 多為 AI 推導答案,信心度 medium
+- NCKU 114 Q15、Q16、Q25、Q29、Q38(原試卷英文,出題詭異)
+- NTU 114 是非題、NTU 113 Q18 / Q24
+
+### 最近處理過 / 待處理
+
+- **模考重複出題**(未修):`psych_template.html:2191 startExam()` 跟 `index.html:2191` 都是舊版單純 `Math.random()` shuffle,沒有分層抽題。之前以為 index.html 有 35 行分層邏輯是上一份本機資料夾的 local-only 改動(沒 push 上 GitHub),這次重 clone 已消失。要修就直接在 `psych_template.html` 加分層抽題邏輯(未做過 > 做錯/跳過 > 已答對),再 build。
