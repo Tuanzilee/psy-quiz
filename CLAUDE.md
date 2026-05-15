@@ -35,11 +35,24 @@ psy/
 ## 工作流(2026-05-15 起)
 
 - **2026-05-15 之前**:都用 GitHub Web UI 拖檔上傳源檔,Actions 接著自動 build。從沒在本機跑過 build,也沒從 CLI push 過。
-- **2026-05-15 起**:改用本機 git workflow——改檔 → 本機 build(雙保險) → commit → push → Actions 在遠端再 build 一次。
+- **2026-05-15 起**:改用本機 git workflow——本機 build + commit index.html 一起 push(下述標準流程)。
 - **源 vs 產物**:
   - `psych_template.html` 是真正的源,改 UI / JS 改這裡
   - 根目錄的 `*.json` 是真正的源,改題目改這裡
   - `index.html` 是 build 產物,**永遠別手改**(手改會被下次 Actions build 蓋掉)
+
+### 標準 commit 流程(本機 build + commit index.html 一起 push)
+
+1. 改 `psych_template.html` 或根目錄 JSON
+2. `python3 build_html.py`(本機 build,順手驗證沒事)
+3. `git add psych_template.html / JSON / index.html`(三個一起 add)
+4. `git commit -m "..."`
+5. `git push origin main`
+6. Actions 會在 ubuntu 上重 build,因為 byte-identical 不會多 commit → pull 也不會卡
+
+**為什麼選這條**:本機 build 跟 Actions build 已驗證 byte-identical(commit `22fc513` → `1b7782a` 那次,diff 0 bytes)。若未來 Python 版本或 `build_html.py` 邏輯改變導致 drift,Actions 那邊還是會 auto-commit 補救 → 正常情況最簡潔,異常情況自動兜底。
+
+**反例**(別這樣做):只 commit template、不 commit index.html → push 後 Actions 會額外產一個 auto-build commit,本機 pull 前還得 stash 自己的 build artifact,徒增麻煩。
 
 ## Build 流程
 
@@ -108,4 +121,4 @@ GitHub Actions(`build.yml`)會在 push 後自動跑 build 並 commit `index.html
 
 ### 最近處理過 / 待處理
 
-- **模考重複出題**(未修):`psych_template.html:2191 startExam()` 跟 `index.html:2191` 都是舊版單純 `Math.random()` shuffle,沒有分層抽題。之前以為 index.html 有 35 行分層邏輯是上一份本機資料夾的 local-only 改動(沒 push 上 GitHub),這次重 clone 已消失。要修就直接在 `psych_template.html` 加分層抽題邏輯(未做過 > 做錯/跳過 > 已答對),再 build。
+- **模考重複出題**(已修,2026-05-15,commit `22fc513` + Actions `1b7782a`):`psych_template.html` 新增 `stratifiedExamPick()`,在 `startExam()` 非 preset 分支調用。分層邏輯:未做過 > 做錯/跳過 > 已答對,每層內洗牌;沒答 / 跳過視為 wrong(要重做);客觀題比對 `q.answer`、申論看 `selfScores.score >= max * 0.6`。`examState` + `redoWrong()` 同時新增 `wrongReasons: {}` 預留欄位(未來「錯因標記」feature 用)。
