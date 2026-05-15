@@ -1748,10 +1748,10 @@
         "\"All I want is to do the best job that I can on this test.\"",
         "\"I will talk to my friends about my problems more often, instead of keeping them bottled up inside.\""
       ],
-      "answer": "B",
+      "answer": "C",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "✅ 認知重組（cognitive restructuring）=挑戰消極自動思考，改以合理、積極、現實的想法取代。\n\n❌a是放棄（負向）\n❌b是行動計畫（較偏行為策略）\n❌d是情緒表達（支持性技巧）\n✅ c是理性積極自我對話 → 最符合認知重組。",
+      "reference_answer": "認知重建（cognitive restructuring）是認知行為治療（CBT）核心技巧,辨識並修正導致焦慮的不適應思考模式（如全有全無、災難化、過度概化）,替換成更平衡實際的想法。\n\n(A) 災難化＋逃避思考——這是要被修正的對象,不是 restructuring 的成果\n(B) 時間管理屬「行為策略」,不是認知層次的介入\n(C) ✓ 把「我必須考完美」這類焦慮製造型思考重建為「盡力就好」的合理目標,典型的認知重建成果\n(D) 尋求社會支持屬人際／情緒因應,不是認知重建\n\n關鍵辨識:認知重建必須動到「思考內容本身」,不是改變行為（B）或情緒處理方式（D）。",
       "concepts": [
         "認知治療（CBT）技術：認知重構（Cognitive Restructuring）"
       ],
