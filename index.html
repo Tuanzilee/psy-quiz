@@ -2188,6 +2188,46 @@ function updateExamCountInfo() {
   document.getElementById('exam-count-info').textContent = `（符合 ${avail} 題，將取 ${want} 題）`;
 }
 
+// 模考分層抽題：未做過 > 做錯/跳過 > 已答對，每層內洗牌
+// 讀模考歷史，以各題「最新一次」狀態分層；沒答 / 跳過 視為 wrong（要重做）
+function stratifiedExamPick(candidates, want) {
+  const byId = {};
+  for (const q of questions) byId[q.id] = q;
+  const latestStatus = {};  // qid -> 'correct' | 'wrong'
+  // loadExamHistory() 用 unshift 存，hist[0] 是最新一場 → 由新到舊掃，首次見到的狀態即最新
+  for (const exam of loadExamHistory()) {
+    if (!exam.submittedAt) continue;  // 只算已交卷
+    const answers = exam.answers || {};
+    const selfScores = exam.selfScores || {};
+    for (const qid of (exam.questionIds || [])) {
+      if (qid in latestStatus) continue;
+      const q = byId[qid];
+      if (!q) continue;
+      const ans = answers[qid];
+      let status;
+      if (!ans) {
+        status = 'wrong';  // 沒答 / 跳過 視為 wrong
+      } else if (['選擇題','是非題','配合題'].includes(q.type)) {
+        status = (q.answer || '').toString().trim().toUpperCase() === ans.toString().trim().toUpperCase()
+          ? 'correct' : 'wrong';
+      } else {
+        const ss = selfScores[qid] || { score: 0, max: 100 };
+        status = ss.score >= ss.max * 0.6 ? 'correct' : 'wrong';
+      }
+      latestStatus[qid] = status;
+    }
+  }
+  const unseen = [], wrong = [], correct = [];
+  for (const q of candidates) {
+    const s = latestStatus[q.id];
+    if (s === undefined) unseen.push(q);
+    else if (s === 'wrong') wrong.push(q);
+    else correct.push(q);
+  }
+  const shuffle = arr => arr.slice().sort(() => Math.random() - 0.5);
+  return [...shuffle(unseen), ...shuffle(wrong), ...shuffle(correct)].slice(0, want);
+}
+
 function startExam() {
   const candidates = getExamCandidates();
   if (candidates.length === 0) {
@@ -2195,12 +2235,12 @@ function startExam() {
     return;
   }
   const want = _examConfig.count === 'all' ? candidates.length : Math.min(_examConfig.count, candidates.length);
-  // Shuffle and take N. 但若是 preset (整份試卷)，依原順序（id 排序）
+  // 抽題：preset (整份試卷) 依 id 排序；否則用分層抽題
   let chosen;
   if (_examConfig.presetLabel) {
     chosen = candidates.slice().sort((a,b) => a.id.localeCompare(b.id));
   } else {
-    chosen = candidates.slice().sort(() => Math.random() - 0.5).slice(0, want);
+    chosen = stratifiedExamPick(candidates, want);
   }
 
   examState = {
@@ -2219,6 +2259,7 @@ function startExam() {
     questionIds: chosen.map(q => q.id),
     answers: {},
     selfScores: {},  // qid -> {score, max} for subjective
+    wrongReasons: {},  // qid -> reason tag（未來「錯因標記」feature 預留）
     currentIdx: 0,
   };
   saveCurrentExam();
@@ -2634,6 +2675,7 @@ function redoWrong() {
     questionIds: wrongIds,
     answers: {},
     selfScores: {},
+    wrongReasons: {},  // qid -> reason tag（未來「錯因標記」feature 預留）
     currentIdx: 0,
   };
   saveCurrentExam();
