@@ -602,12 +602,14 @@ html, body {
 }
 .exam-grid-cell.answered { background: var(--blue-glow); color: var(--blue-light); border-color: var(--blue); }
 .exam-grid-cell.current { outline: 2px solid var(--blue); outline-offset: 1px; }
+.exam-grid-cell { position: relative; }
+.exam-grid-cell.flagged { border-color: var(--yellow) !important; }
 .exam-grid-cell.flagged::after {
   content: '🚩';
   position: absolute;
-  font-size: 8px;
-  margin-top: -16px;
-  margin-left: 16px;
+  font-size: 7px;
+  top: -4px;
+  right: -4px;
 }
 
 .exam-essay-input {
@@ -707,6 +709,33 @@ html, body {
 .exam-result-q.correct { border-left: 3px solid var(--green); }
 .exam-result-q.wrong { border-left: 3px solid var(--red); }
 .exam-result-q.skip { border-left: 3px solid var(--muted); }
+.reason-row {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 10px; padding-top: 8px;
+  border-top: 1px dashed var(--border2);
+}
+.reason-label {
+  font-size: 11px; color: var(--muted);
+  align-self: center; margin-right: 2px;
+}
+.reason-chip {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 1px solid var(--border2);
+  color: var(--muted);
+  background: var(--surface);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s;
+}
+.reason-chip:hover { border-color: var(--blue-light); color: var(--text); }
+.reason-chip.active {
+  background: var(--blue-glow);
+  border-color: rgba(79,110,247,0.5);
+  color: var(--blue-light);
+  font-weight: 600;
+}
 .exam-result-q-header {
   display: flex; gap: 8px; align-items: center; margin-bottom: 8px;
   font-size: 12px;
@@ -1395,6 +1424,7 @@ html, body {
   <!-- EXAM (in-progress) -->
   <div class="page" id="page-exam">
     <div class="exam-header">
+      <div onclick="exitExam()" style="cursor:pointer;color:var(--muted);font-size:18px;line-height:1;user-select:none" title="退出模考">←</div>
       <div class="exam-header-title">模考中</div>
       <div class="exam-header-progress" id="exam-progress">0/0</div>
       <div class="exam-grid-toggle" onclick="toggleExamGrid()">📋 答題卡</div>
@@ -2259,7 +2289,8 @@ function startExam() {
     questionIds: chosen.map(q => q.id),
     answers: {},
     selfScores: {},  // qid -> {score, max} for subjective
-    wrongReasons: {},  // qid -> reason tag（未來「錯因標記」feature 預留）
+    flagged: {},     // qid -> true if uncertain
+    wrongReasons: {}, // qid -> ['沒看過','概念不熟/混淆','粗心/看錯']
     currentIdx: 0,
   };
   saveCurrentExam();
@@ -2324,9 +2355,11 @@ function renderExamPage() {
     </div>`;
   }
 
+  const isFlagged = examState.flagged && examState.flagged[q.id];
   html += `
     <div class="action-row" style="margin-top:16px;flex-wrap:wrap">
       ${idx > 0 ? `<button class="btn btn-outline" onclick="examGoTo(${idx-1})">← 上一題</button>` : '<div></div>'}
+      <button class="btn btn-outline" onclick="toggleExamFlag()" style="${isFlagged ? 'color:var(--yellow);border-color:var(--yellow);background:var(--yellow-bg)' : 'color:var(--muted)'}">🚩 ${isFlagged ? '已標記' : '不確定'}</button>
       ${idx < total-1
         ? `<button class="btn btn-primary" onclick="examGoTo(${idx+1})">下一題 →</button>`
         : `<button class="btn btn-primary" style="background:var(--green);border-color:var(--green)" onclick="submitExam()">提交模考 ✓</button>`
@@ -2345,9 +2378,19 @@ function renderExamGrid() {
     const id = examState.questionIds[i];
     const answered = examState.answers[id] && examState.answers[id].toString().trim() !== '';
     const cur = i === examState.currentIdx;
-    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''}" onclick="examGoTo(${i})">${i+1}</div>`;
+    const flagged = examState.flagged && examState.flagged[id];
+    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''} ${flagged?'flagged':''}" onclick="examGoTo(${i})">${i+1}</div>`;
   }
   grid.innerHTML = html;
+}
+
+function toggleExamFlag() {
+  if (!examState) return;
+  const q = getExamQuestion(examState.currentIdx);
+  if (!examState.flagged) examState.flagged = {};
+  examState.flagged[q.id] = !examState.flagged[q.id];
+  saveCurrentExam();
+  renderExamPage();
 }
 
 function toggleExamGrid() {
@@ -2580,6 +2623,8 @@ function renderExamResult() {
     html += `<div class="slabel" style="margin-top:16px">客觀題錯題複習（${wrongQs.length} 題）</div>`;
     wrongQs.forEach(q => {
       const ans = examState.answers[q.id];
+      const reasons = (examState.wrongReasons && examState.wrongReasons[q.id]) || [];
+      const REASON_OPTS = ['沒看過', '概念不熟/混淆', '粗心/看錯'];
       html += `
         <div class="exam-result-q wrong">
           <div class="exam-result-q-header">
@@ -2595,6 +2640,10 @@ function renderExamResult() {
             return `<div style="${isAns?'color:var(--green);font-weight:600':''}${isUser&&!isAns?';color:var(--red)':''}">${L}. ${o} ${isAns?' ✓':(isUser?' ✗':'')}</div>`;
           }).join('')}</div>` : ''}
           ${q.reference_answer ? `<div class="key-box" style="margin-top:8px;font-size:12px">${q.reference_answer}</div>` : ''}
+          <div class="reason-row">
+            <span class="reason-label">錯因：</span>
+            ${REASON_OPTS.map(r => `<span class="reason-chip${reasons.includes(r)?' active':''}" onclick="toggleWrongReason('${q.id}', '${r}', this)">${r}</span>`).join('')}
+          </div>
         </div>`;
     });
   }
@@ -2629,6 +2678,20 @@ function updateSelfScore(qid, val) {
   const result = computeExamScore();
   const num = document.querySelector('.exam-score-num');
   if (num) num.textContent = result.score;
+}
+
+function toggleWrongReason(qid, reason, el) {
+  if (!examState) return;
+  if (!examState.wrongReasons) examState.wrongReasons = {};
+  const list = examState.wrongReasons[qid] || [];
+  const i = list.indexOf(reason);
+  if (i >= 0) list.splice(i, 1);
+  else list.push(reason);
+  if (list.length === 0) delete examState.wrongReasons[qid];
+  else examState.wrongReasons[qid] = list;
+  saveCurrentExam();
+  // 只 toggle class 不重 render，避免滾動位置跑掉
+  if (el) el.classList.toggle('active');
 }
 
 function finishExam() {
@@ -2675,7 +2738,8 @@ function redoWrong() {
     questionIds: wrongIds,
     answers: {},
     selfScores: {},
-    wrongReasons: {},  // qid -> reason tag（未來「錯因標記」feature 預留）
+    flagged: {},
+    wrongReasons: {}, // qid -> ['沒看過','概念不熟/混淆','粗心/看錯']
     currentIdx: 0,
   };
   saveCurrentExam();
@@ -2731,6 +2795,15 @@ function resumeCurrentExam() {
   goPage('page-exam');
   renderExamPage();
   startExamTimer();
+}
+
+// 退出模考但保留進度：清 timer + 記憶體 examState，localStorage 不動。可從首頁繼續。
+function exitExam() {
+  if (!examState) { goPage('page-home'); return; }
+  if (!confirm('確定要退出模考？目前進度會保留，可從首頁繼續')) return;
+  if (_examTimerHandle) { clearInterval(_examTimerHandle); _examTimerHandle = null; }
+  examState = null;
+  goPage('page-home');
 }
 
 function reviewExam(id) {
