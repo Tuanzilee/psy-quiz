@@ -852,10 +852,10 @@
         "多元智力理論",
         "以上皆是"
       ],
-      "answer": "D",
+      "answer": "C",
       "answer_confidence": "high",
       "answer_source": "user_provided",
-      "reference_answer": "問誰是因素分析  → Spearman 問誰不是  → Sternberg、Gardner 問誰最偏教育／文化  → Gardner\n\n只有 g factor 來自因素分析，其他都是理論建構",
+      "reference_answer": "題目核心:辨識哪個智力理論「並非」透過因素分析建構。\n\n(A) g factor — Spearman 1904 年用因素分析發現各項心智測驗間高度正相關,歸納出一般智力因素（g）+ 特殊因素（s）。因素分析學派代表作。\n\n(B) 智力三元論 — Sternberg 提出分析性／創造性／實用性三種智力,理論核心是「資訊處理歷程」（認知取向）。雖有後續因素分析驗證,但理論本身的建構不是從因素分析推導出來的。\n\n(C) ✓ 多元智力理論 — Gardner 1983 年明確反對用因素分析定義智力,主張智力應從生物學基礎、發展心理學、跨文化觀察、特殊族群（神童／腦傷患者）等多角度建立,提出 8-9 種相對獨立的智力。Gardner 本人即批評過心理計量學派的局限。\n\n(D) 以上皆是 — 錯,g factor 明顯是因素分析的產物。\n\n關鍵辨識:g factor / Cattell 流體晶體智力 / Carroll 三層次理論 都是因素分析學派;Gardner 多元智力 / Sternberg 三元論 屬於非因素分析取向(但 Sternberg 比 Gardner 更兼容心理計量)。",
       "concepts": [
         "問誰是因素分析  → Spearman 問誰不是  → Sternberg、Gardner 問誰最偏教育／文化  → Gardner"
       ],
