@@ -602,14 +602,12 @@ html, body {
 }
 .exam-grid-cell.answered { background: var(--blue-glow); color: var(--blue-light); border-color: var(--blue); }
 .exam-grid-cell.current { outline: 2px solid var(--blue); outline-offset: 1px; }
-.exam-grid-cell { position: relative; }
-.exam-grid-cell.flagged { border-color: var(--yellow) !important; }
 .exam-grid-cell.flagged::after {
   content: '🚩';
   position: absolute;
-  font-size: 7px;
-  top: -4px;
-  right: -4px;
+  font-size: 8px;
+  margin-top: -16px;
+  margin-left: 16px;
 }
 
 .exam-essay-input {
@@ -2221,7 +2219,6 @@ function startExam() {
     questionIds: chosen.map(q => q.id),
     answers: {},
     selfScores: {},  // qid -> {score, max} for subjective
-    flagged: {},     // qid -> true if uncertain
     currentIdx: 0,
   };
   saveCurrentExam();
@@ -2286,11 +2283,9 @@ function renderExamPage() {
     </div>`;
   }
 
-  const isFlagged = examState.flagged && examState.flagged[q.id];
   html += `
     <div class="action-row" style="margin-top:16px;flex-wrap:wrap">
       ${idx > 0 ? `<button class="btn btn-outline" onclick="examGoTo(${idx-1})">← 上一題</button>` : '<div></div>'}
-      <button class="btn btn-outline" onclick="toggleExamFlag()" style="${isFlagged ? 'color:var(--yellow);border-color:var(--yellow);background:var(--yellow-bg)' : 'color:var(--muted)'}">🚩 ${isFlagged ? '已標記' : '不確定'}</button>
       ${idx < total-1
         ? `<button class="btn btn-primary" onclick="examGoTo(${idx+1})">下一題 →</button>`
         : `<button class="btn btn-primary" style="background:var(--green);border-color:var(--green)" onclick="submitExam()">提交模考 ✓</button>`
@@ -2301,15 +2296,6 @@ function renderExamPage() {
   renderExamGrid();
 }
 
-function toggleExamFlag() {
-  if (!examState) return;
-  const q = getExamQuestion(examState.currentIdx);
-  if (!examState.flagged) examState.flagged = {};
-  examState.flagged[q.id] = !examState.flagged[q.id];
-  saveCurrentExam();
-  renderExamPage();
-}
-
 function renderExamGrid() {
   const grid = document.getElementById('exam-grid');
   const total = examState.questionIds.length;
@@ -2318,8 +2304,7 @@ function renderExamGrid() {
     const id = examState.questionIds[i];
     const answered = examState.answers[id] && examState.answers[id].toString().trim() !== '';
     const cur = i === examState.currentIdx;
-    const flagged = examState.flagged && examState.flagged[id];
-    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''} ${flagged?'flagged':''}" onclick="examGoTo(${i})">${i+1}</div>`;
+    html += `<div class="exam-grid-cell ${answered?'answered':''} ${cur?'current':''}" onclick="examGoTo(${i})">${i+1}</div>`;
   }
   grid.innerHTML = html;
 }
