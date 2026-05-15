@@ -2029,7 +2029,7 @@ function renderExamResult() {
     wrongQs.forEach(q => {
       const ans = examState.answers[q.id];
       const reasons = (examState.wrongReasons && examState.wrongReasons[q.id]) || [];
-      const REASON_OPTS = ['沒看過', '概念不熟/混淆', '粗心/看錯'];
+      const REASON_OPTS = ['沒看過', '概念不熟/混淆', '粗心/看錯', '英文看不懂'];
       html += `
         <div class="exam-result-q wrong">
           <div class="exam-result-q-header">
