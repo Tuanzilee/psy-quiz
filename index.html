@@ -1188,6 +1188,16 @@ html, body {
 .ai-guide-btn:active { background:rgba(167,139,250,0.18); }
 .ai-wrong-btn { display:inline-block; padding:6px 12px; background:transparent; border:1px solid var(--purple); border-radius:8px; color:var(--purple); font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; margin-top:8px; }
 .ai-wrong-btn:active { background:var(--purple-bg); }
+
+/* chat overlay 內題幹 header (邊看題邊問) — psy first, 待 backport stats */
+.chat-question-header { background:var(--surface); border-bottom:1px solid var(--border); padding:12px 16px; max-height:35vh; overflow-y:auto; -webkit-overflow-scrolling:touch; font-size:14px; line-height:1.5; flex-shrink:0; }
+.chat-question-header .q-meta { font-size:11px; color:var(--muted); margin-bottom:6px; font-family:'Space Mono',monospace; }
+.chat-question-header .q-text { font-weight:600; color:var(--text); margin-bottom:8px; line-height:1.6; }
+.chat-question-header .q-options { font-size:13px; color:var(--muted); }
+.chat-question-header .q-options > div { line-height:1.7; }
+.chat-question-header .q-user-pick { font-size:13px; color:var(--red); margin-top:6px; font-weight:600; }
+.chat-question-header .q-correct { font-size:13px; color:var(--green); font-weight:600; margin-top:4px; }
+.chat-question-header .q-ref-ans { font-size:12px; color:var(--text); margin-top:8px; padding:8px 10px; background:var(--surface2); border-left:3px solid var(--green); border-radius:4px; line-height:1.6; }
 </style>
 </head>
 <body>
@@ -3159,6 +3169,39 @@ ${q.ai_hint ? '考點提示：' + q.ai_hint : ''}
 - 提到學者用「中文名（English Name）」格式`;
 }
 
+// 渲染 chat overlay 內的題幹 header (Step / Wrong 共用)
+function renderQuestionHeader(q, opts) {
+  const showAnswer = !!(opts && opts.showAnswer);
+  const userAns = opts && opts.userAns;
+  const keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const correctNorm = (q.answer || '').toUpperCase().trim();
+  const userNorm = (userAns || '').toString().toUpperCase().trim();
+  const optionsHtml = (q.options || []).map((o, i) => {
+    const L = keys[i];
+    const isAns = showAnswer && L === correctNorm;
+    const isUser = userNorm && L === userNorm;
+    const style = isAns ? 'color:var(--green);font-weight:600'
+                : (isUser && !isAns) ? 'color:var(--red)' : '';
+    const tag = isAns ? ' ✓' : (isUser ? ' ✗' : '');
+    return `<div${style ? ` style="${style}"` : ''}>${L}. ${o}${tag}</div>`;
+  }).join('');
+  const metaParts = [];
+  if (q.type) metaParts.push(q.type);
+  if (q.topic) metaParts.push(q.topic);
+  if (q.id) metaParts.push(q.id);
+  let extras = '';
+  if (userAns && !optionsHtml) extras += `<div class="q-user-pick">你的作答：${userAns}</div>`;
+  else if (userAns) extras += `<div class="q-user-pick">你選：${userAns}</div>`;
+  if (showAnswer && q.answer && !optionsHtml) extras += `<div class="q-correct">正解：${q.answer}</div>`;
+  if (showAnswer && q.reference_answer) extras += `<div class="q-ref-ans">參考答案：${q.reference_answer}</div>`;
+  return `<div class="chat-question-header">
+    ${metaParts.length ? `<div class="q-meta">${metaParts.join(' · ')}</div>` : ''}
+    <div class="q-text">${q.question || ''}</div>
+    ${optionsHtml ? `<div class="q-options">${optionsHtml}</div>` : ''}
+    ${extras}
+  </div>`;
+}
+
 function openStepAIChat(qid) {
   const q = questions.find(x => x.id === qid);
   if (!q) return;
@@ -3174,6 +3217,7 @@ function openStepAIChat(qid) {
       <div class="chat-topbar-title">💬 AI 引導</div>
       <div class="chat-topbar-sub">${q.id}</div>
     </div>
+    ${renderQuestionHeader(q, { showAnswer:false })}
     <div class="chat-messages" id="chat-messages"></div>
     <div class="chat-input-bar">
       <textarea class="chat-input" id="chat-input" placeholder="輸入你的想法或答案…" rows="1"
@@ -3196,6 +3240,8 @@ function openWrongAIChat(qid) {
   const q = questions.find(x => x.id === qid);
   if (!q) return;
   const key = getApiKey();
+  // 從 examState 取使用者選擇 (C3 觸發點 = 模考檢討頁; 其他 context 可能無)
+  const userAns = (typeof examState !== 'undefined' && examState && examState.answers) ? examState.answers[qid] : null;
 
   const overlay = document.createElement('div');
   overlay.className = 'chat-overlay';
@@ -3207,6 +3253,7 @@ function openWrongAIChat(qid) {
       <div class="chat-topbar-title">💬 錯題分析</div>
       <div class="chat-topbar-sub">${q.id}</div>
     </div>
+    ${renderQuestionHeader(q, { showAnswer:true, userAns })}
     <div class="chat-messages" id="chat-messages"></div>
     <div class="chat-input-bar">
       <textarea class="chat-input" id="chat-input" placeholder="說說你卡在哪裡…" rows="1"
