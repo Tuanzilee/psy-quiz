@@ -1182,6 +1182,12 @@ html, body {
 @keyframes ldot { 0%,80%,100% { opacity:.2; transform:scale(0.8); } 40% { opacity:1; transform:scale(1); } }
 .edit-field { background:var(--surface); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:9px 12px; font-family:inherit; outline:none; }
 .edit-field:focus { border-color:var(--purple); }
+
+/* C2/C3: AI 引導 / 錯題分析 觸發按鈕 */
+.ai-guide-btn { width:100%; padding:11px; background:var(--purple-bg); border:1px solid rgba(167,139,250,0.3); border-radius:10px; color:var(--purple); font-size:13px; font-weight:600; cursor:pointer; font-family:inherit; margin-bottom:12px; }
+.ai-guide-btn:active { background:rgba(167,139,250,0.18); }
+.ai-wrong-btn { display:inline-block; padding:6px 12px; background:transparent; border:1px solid var(--purple); border-radius:8px; color:var(--purple); font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; margin-top:8px; }
+.ai-wrong-btn:active { background:var(--purple-bg); }
 </style>
 </head>
 <body>
@@ -2077,6 +2083,7 @@ function renderExamResult() {
             return `<div style="${isAns?'color:var(--green);font-weight:600':''}${isUser&&!isAns?';color:var(--red)':''}">${L}. ${o} ${isAns?' ✓':(isUser?' ✗':'')}</div>`;
           }).join('')}</div>` : ''}
           ${q.reference_answer ? `<div class="key-box" style="margin-top:8px;font-size:12px">${q.reference_answer}</div>` : ''}
+          <button class="ai-wrong-btn" onclick="openWrongAIChat('${esc(q.id)}')">💬 AI 一起看</button>
           <div class="reason-row">
             <span class="reason-label">錯因：</span>
             ${REASON_OPTS.map(r => `<span class="reason-chip${reasons.includes(r)?' active':''}" onclick="toggleWrongReason('${q.id}', '${r}', this)">${r}</span>`).join('')}
@@ -2593,6 +2600,7 @@ function showQuestion() {
     </div>
 
     <div class="solution-panel" id="solution-panel">
+      <button class="ai-guide-btn" onclick="openStepAIChat('${esc(currentQ.id)}')">💬 AI 逐步引導</button>
       <div class="solution-tab-row">
         <div class="solution-tab active" onclick="switchTab('steps',this)">解析</div>
         <div class="solution-tab" onclick="switchTab('concept',this)">章節</div>
