@@ -1184,7 +1184,7 @@ html, body {
 .edit-field:focus { border-color:var(--purple); }
 
 /* C2/C3: AI 引導 / 錯題分析 觸發按鈕 */
-.ai-guide-btn { width:100%; padding:11px; background:var(--purple-bg); border:1px solid rgba(167,139,250,0.3); border-radius:10px; color:var(--purple); font-size:13px; font-weight:600; cursor:pointer; font-family:inherit; margin-bottom:12px; }
+.ai-guide-btn { width:100%; padding:9px 14px; background:var(--purple-bg); border:1px solid rgba(167,139,250,0.3); border-radius:10px; color:var(--purple); font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; margin:8px 0 4px; }
 .ai-guide-btn:active { background:rgba(167,139,250,0.18); }
 .ai-wrong-btn { display:inline-block; padding:6px 12px; background:transparent; border:1px solid var(--purple); border-radius:8px; color:var(--purple); font-size:12px; font-weight:600; cursor:pointer; font-family:inherit; margin-top:8px; }
 .ai-wrong-btn:active { background:var(--purple-bg); }
@@ -2599,8 +2599,9 @@ function showQuestion() {
       }
     </div>
 
+    <button class="ai-guide-btn" onclick="openStepAIChat('${esc(currentQ.id)}')">💬 AI 逐步引導（作答前/後都可問）</button>
+
     <div class="solution-panel" id="solution-panel">
-      <button class="ai-guide-btn" onclick="openStepAIChat('${esc(currentQ.id)}')">💬 AI 逐步引導</button>
       <div class="solution-tab-row">
         <div class="solution-tab active" onclick="switchTab('steps',this)">解析</div>
         <div class="solution-tab" onclick="switchTab('concept',this)">章節</div>
@@ -3119,6 +3120,7 @@ ${isEssay
 - 不用 markdown 符號（# *），重點用「【】」標題
 - 一次只問一件事，蘇格拉底式漸進
 - 不要直接給完整答案，引導學生自己想出來
+- ★ 使用者可能還在作答，第一輪絕對不要公布正確選項；用提問引導他思考
 - 提到學者用「中文名（English Name）」格式（如：Skinner、Piaget）`;
 }
 
