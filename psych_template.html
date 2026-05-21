@@ -1151,6 +1151,37 @@ html, body {
 .epb-e{background:var(--green-bg);color:var(--green);}
 .epb-r{background:var(--yellow-bg);color:var(--yellow);}
 .epter-text{font-size:13px;color:var(--text);line-height:1.6;}
+
+/* ─── AI chat overlay (Phase 1: full-screen modal; bottom sheet 待 Phase 1.5) ─── */
+.chat-overlay { position:fixed; inset:0; background:var(--bg); z-index:200; display:flex; flex-direction:column; max-width:680px; margin:0 auto; }
+.chat-topbar { display:flex; align-items:center; gap:10px; padding:10px 14px; padding-top:calc(10px + env(safe-area-inset-top)); border-bottom:1px solid var(--border); flex-shrink:0; background:var(--bg); }
+.chat-topbar-title { font-size:14px; font-weight:700; color:var(--purple); flex:1; }
+.chat-topbar-sub { font-size:11px; color:var(--muted); font-family:'Space Mono',monospace; }
+.chat-messages { flex:1; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; padding:14px 16px; display:flex; flex-direction:column; gap:12px; }
+.chat-msg { display:flex; flex-direction:column; gap:4px; }
+.chat-msg.user { align-items:flex-end; }
+.chat-msg.ai { align-items:flex-start; }
+.chat-bubble { max-width:88%; padding:10px 13px; border-radius:12px; font-size:13px; line-height:1.7; }
+.chat-msg.user .chat-bubble { background:var(--purple); color:#fff; border-bottom-right-radius:4px; }
+.chat-msg.ai .chat-bubble { background:var(--surface); border:1px solid var(--border); color:var(--text); border-bottom-left-radius:4px; }
+.chat-msg.ai .chat-bubble h3 { font-size:12px; font-weight:700; color:var(--purple); margin:10px 0 4px; letter-spacing:0.03em; }
+.chat-msg.ai .chat-bubble h3:first-child { margin-top:0; }
+.chat-msg.ai .chat-bubble p { margin:0 0 4px; }
+.chat-msg.ai .chat-bubble ul { margin:0 0 6px; padding-left:16px; }
+.chat-msg.ai .chat-bubble li { margin-bottom:2px; }
+.chat-msg.ai .chat-bubble .tip { background:var(--yellow-bg); border-radius:4px; padding:6px 10px; font-size:12px; color:var(--yellow); margin:4px 0; }
+.chat-input-bar { display:flex; align-items:flex-end; gap:8px; padding:10px 14px; padding-bottom:calc(10px + var(--safe-bottom)); border-top:1px solid var(--border); background:var(--bg); flex-shrink:0; }
+.chat-input { flex:1; background:var(--surface); border:1px solid var(--border2); border-radius:10px; color:var(--text); font-size:14px; line-height:1.5; padding:9px 12px; resize:none; font-family:'Noto Sans TC',sans-serif; max-height:100px; overflow-y:auto; }
+.chat-input:focus { outline:none; border-color:var(--purple); }
+.chat-send-btn { width:36px; height:36px; border-radius:50%; background:var(--purple); border:none; color:#fff; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:opacity .15s; }
+.chat-send-btn:disabled { opacity:0.4; cursor:default; }
+.chat-typing { display:flex; gap:4px; align-items:center; padding:4px 0; }
+.chat-typing span { width:6px; height:6px; border-radius:50%; background:var(--muted); animation:ldot .9s infinite; }
+.chat-typing span:nth-child(2){animation-delay:.2s}
+.chat-typing span:nth-child(3){animation-delay:.4s}
+@keyframes ldot { 0%,80%,100% { opacity:.2; transform:scale(0.8); } 40% { opacity:1; transform:scale(1); } }
+.edit-field { background:var(--surface); border:1px solid var(--border2); border-radius:8px; color:var(--text); padding:9px 12px; font-family:inherit; outline:none; }
+.edit-field:focus { border-color:var(--purple); }
 </style>
 </head>
 <body>
@@ -1165,6 +1196,7 @@ html, body {
   <div class="header">
     <div class="header-title">普心刷題</div>
     <div class="header-sub" id="header-sub">載入中…</div>
+    <div class="header-btn" id="apikey-btn" onclick="promptApiKey()" title="AI 金鑰">🔑</div>
     <div class="header-btn" id="filter-btn" onclick="openFilter()" title="篩選">⚙</div>
   </div>
 
@@ -2849,6 +2881,365 @@ function switchETab(id, el) {
   document.querySelectorAll('.etab-content').forEach(c => c.classList.remove('on'));
   el.classList.add('on');
   document.getElementById('etab-' + id).classList.add('on');
+}
+
+// ─── AI 引導 (Phase 1 / C1, 移植自 stats repo) ─────────────────────────────
+const API_KEY_STORAGE = 'psych_anthropic_api_key';
+const chatHistory = {};
+
+function esc(str) { return (str||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
+function esc2(str) { return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function getApiKey() {
+  return localStorage.getItem(API_KEY_STORAGE) || '';
+}
+
+let savedApiKeyCallback = null;
+
+function promptApiKey(onSuccess) {
+  const existing = getApiKey();
+  savedApiKeyCallback = onSuccess || null;
+  const html = `
+    <div class="modal-bg show" id="apikey-modal">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-handle"></div>
+        <div class="modal-title">設定 Anthropic API Key</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px">
+          AI 逐步引導 / 錯題分析需要 Anthropic API Key。<br>
+          Key 只存在你的裝置（localStorage），不會傳出去。<br>
+          <a href="https://console.anthropic.com/" target="_blank" style="color:var(--blue-light)">→ 前往 console.anthropic.com 取得 Key</a>
+        </div>
+        <input id="apikey-input" class="edit-field" type="password"
+          placeholder="sk-ant-..." value="${existing}"
+          style="width:100%;margin-bottom:14px;font-family:'Space Mono',monospace;font-size:12px">
+        <div class="action-row">
+          <button class="btn btn-outline" onclick="document.getElementById('apikey-modal').remove()">取消</button>
+          <button class="btn btn-primary" onclick="saveApiKey()">儲存</button>
+        </div>
+      </div>
+    </div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+  setTimeout(() => document.getElementById('apikey-input')?.focus(), 100);
+}
+
+function saveApiKey() {
+  const val = (document.getElementById('apikey-input')?.value || '').trim();
+  if (!val.startsWith('sk-')) { alert('請輸入正確的 API Key（以 sk- 開頭）'); return; }
+  localStorage.setItem(API_KEY_STORAGE, val);
+  document.getElementById('apikey-modal')?.remove();
+  if (savedApiKeyCallback) { savedApiKeyCallback(); savedApiKeyCallback = null; }
+}
+
+function appendUserMessage(text) {
+  const msgs = document.getElementById('chat-messages');
+  if (!msgs) return;
+  const div = document.createElement('div');
+  div.className = 'chat-msg user';
+  div.innerHTML = `<div class="chat-bubble">${esc2(text)}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function appendAiMessage(markdown) {
+  const msgs = document.getElementById('chat-messages');
+  if (!msgs) return;
+  const div = document.createElement('div');
+  div.className = 'chat-msg ai';
+  div.innerHTML = `<div class="chat-bubble">${parseMarkdown(markdown)}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function appendTyping(hintText) {
+  const msgs = document.getElementById('chat-messages');
+  if (!msgs) return;
+  document.getElementById('chat-typing')?.remove();
+  const div = document.createElement('div');
+  div.className = 'chat-msg ai';
+  div.id = 'chat-typing';
+  div.innerHTML = hintText
+    ? `<div class="chat-bubble" style="font-size:12px;color:var(--yellow);font-style:italic">${hintText}</div>`
+    : `<div class="chat-bubble"><div class="chat-typing"><span></span><span></span><span></span></div></div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function removeTyping() {
+  document.getElementById('chat-typing')?.remove();
+}
+
+function parseMarkdown(markdown) {
+  let html = '';
+  const lines = markdown.split('\n');
+  let inList = false;
+  for (const line of lines) {
+    let t = line.trim();
+    if (!t) { if (inList) { html += '</ul>'; inList = false; } continue; }
+    t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/\*(.+?)\*/g, '$1');
+    if (/^#{1,3} /.test(t)) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<h3>${t.replace(/^#{1,3} /, '')}</h3>`;
+    } else if (/^【.+】/.test(t)) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<h3>${t}</h3>`;
+    } else if (t.startsWith('- ') || t.startsWith('• ') || /^\d+\.\s/.test(t)) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      html += `<li>${t.replace(/^[-•]\s|^\d+\.\s/, '')}</li>`;
+    } else if (t.startsWith('⚠') || t.startsWith('💡') || t.startsWith('提醒') || t.startsWith('考試陷阱')) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<div class="tip">${t}</div>`;
+    } else {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<p>${t}</p>`;
+    }
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+
+function closeChatOverlay() {
+  document.getElementById('chat-overlay')?.remove();
+}
+
+// AI call with retry on overloaded_error (up to 3 retries, 2s/4s/8s delays)
+async function callAnthropicWithRetry(payload, apiKey, onRetry) {
+  const DELAYS = [2000, 4000, 8000];
+  let lastErr = null;
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (data.error) {
+        const err = new Error(data.error.message || 'unknown error');
+        err.errorType = data.error.type;
+        if (data.error.type !== 'overloaded_error') throw err;
+        lastErr = err;
+      } else {
+        return data;
+      }
+    } catch (e) {
+      if (!e.errorType && e instanceof TypeError) e.errorType = 'network_error';
+      if (e.errorType !== 'overloaded_error') throw e;
+      lastErr = e;
+    }
+    if (attempt < 4) {
+      if (onRetry) onRetry(attempt, 3);
+      await new Promise(r => setTimeout(r, DELAYS[attempt - 1]));
+    }
+  }
+  throw lastErr;
+}
+
+function friendlyAIError(err) {
+  const t = err && err.errorType;
+  if (t === 'overloaded_error')     return '⏰ Anthropic 伺服器忙碌，通常 30 秒內會恢復，請重新點 [💬 AI 引導]';
+  if (t === 'rate_limit_error')     return '⚡ 請求太頻繁，等 30 秒再試';
+  if (t === 'authentication_error') return '🔑 API Key 失效或未設，點右上角 🔑 重設';
+  if (t === 'network_error')        return '📡 網路連線失敗，請檢查網路後重試';
+  return `⚠ ${(err && err.message) || '連線失敗'}`;
+}
+
+async function callPsyAI(systemPrompt, messages, qid) {
+  const key = getApiKey();
+  if (!key) return;
+  try {
+    const data = await callAnthropicWithRetry(
+      { model: 'claude-haiku-4-5-20251001', max_tokens: 800, system: systemPrompt, messages },
+      key,
+      (n, t) => appendTyping(`⏳ Anthropic 忙碌，重試中 (${n}/${t})`)
+    );
+    const reply = data.content?.[0]?.text || '無回應';
+    removeTyping();
+    if (!chatHistory[qid]) chatHistory[qid] = [];
+    chatHistory[qid].push({ role: 'assistant', content: reply });
+    appendAiMessage(reply);
+  } catch(e) {
+    removeTyping();
+    appendAiMessage(friendlyAIError(e));
+  }
+}
+
+// ── Prompt builders (psy 富欄位特化: key_concepts / common_mistakes / scholars / school_of_thought / topic / essay_outline) ──
+function buildStepSystemPrompt(q) {
+  const opts = (q.options || []).map((o, i) => `(${String.fromCharCode(65+i)}) ${o}`).join('\n');
+  const isEssay = q.type === '申論題' || q.type === '名詞解釋';
+  const scholars = (q.scholars || []).join('、');
+  const concepts = (q.concepts || []).join('、');
+  return `你是普通心理學家教，引導學生用「概念辨析」的方式理解題目，不是算數學。
+
+【題目情境】
+章節：${q.topic || '（未標）'}
+題型：${q.type || '（未標）'}
+題目：${q.question}
+${opts ? '選項：\n' + opts : ''}
+正確答案：${q.answer || '見參考答案'}
+${q.reference_answer ? '參考答案：' + q.reference_answer : ''}
+
+【背景資訊】
+核心概念：${q.key_concepts || concepts || '（未標）'}
+相關學者：${scholars || '（無）'}
+學派：${q.school_of_thought || '（未標）'}
+${q.ai_hint ? '考點提示：' + q.ai_hint : ''}
+${isEssay && q.essay_outline ? '建議大綱：' + q.essay_outline : ''}
+
+【引導原則】
+${isEssay
+  ? `這是申論／名詞解釋題。引導學生用「描述 → 證據 → 限制 → 應用」結構鋪陳：
+1. 先問「這個概念的核心定義是什麼？」（鋪陳「描述」）
+2. 引導想到「有哪些經典實驗或學者支持？」（鋪陳「證據」）
+3. 提醒「這個理論的限制／批評是什麼？」（鋪陳「限制」）
+4. 最後問「實務上怎麼應用？跟其他理論怎麼比較？」（鋪陳「應用」）
+善用上述建議大綱，但讓學生自己想出來，不要直接念。`
+  : `這是選擇／是非／配合題。引導學生辨析選項背後的概念差異：
+1. 先問「你覺得這題在問哪個學派的主張？」或「哪個概念跟它容易搞混？」
+2. 用學派背景幫學生定位${q.school_of_thought ? `（本題屬 ${q.school_of_thought} 學派）` : ''}
+3. 引導對比正解跟其他選項的概念差別（用對比定義，不是死背）
+4. 最後請學生用自己的話複述正解`}
+
+【風格】
+- 口語、像朋友在解釋
+- 不用 markdown 符號（# *），重點用「【】」標題
+- 一次只問一件事，蘇格拉底式漸進
+- 不要直接給完整答案，引導學生自己想出來
+- 提到學者用「中文名（English Name）」格式（如：Skinner、Piaget）`;
+}
+
+function buildWrongSystemPrompt(q) {
+  const opts = (q.options || []).map((o, i) => `(${String.fromCharCode(65+i)}) ${o}`).join('\n');
+  const scholars = (q.scholars || []).join('、');
+  return `你是普通心理學家教，學生剛做錯這題，要用「概念對比」的方式幫他釐清。
+
+【題目情境】
+章節：${q.topic || '（未標）'}
+題型：${q.type || '（未標）'}
+題目：${q.question}
+${opts ? '選項：\n' + opts : ''}
+正確答案：${q.answer || '見參考答案'}
+${q.reference_answer ? '參考答案：' + q.reference_answer : ''}
+
+【背景資訊】
+核心概念：${q.key_concepts || (q.concepts||[]).join('、') || '（未標）'}
+相關學者：${scholars || '（無）'}
+學派：${q.school_of_thought || '（未標）'}
+${q.common_mistakes ? '★ 典型錯誤：' + q.common_mistakes : ''}
+${q.ai_hint ? '考點提示：' + q.ai_hint : ''}
+
+【引導流程】
+1. 先問「你選了哪個？選的時候在想什麼？」
+2. 從學生回答判斷他卡在「概念混淆」、「學派搞錯」還是「沒看清楚題目」
+3. 用「正解 vs 你的選擇」做明確對比（兩個概念的核心差別是什麼）
+4. ${q.common_mistakes ? '善用上述「典型錯誤」點出他可能踩了哪個雷' : '幫他歸納可能的混淆來源'}
+5. 鼓勵學生用自己的話複述正解（驗證真懂）
+6. 全程不要直接給完整解答，引導他自己想出來
+
+【風格】
+- 口語、有耐心、像朋友
+- 不用 markdown 符號（# *）
+- 一次只問一件事
+- 提到學者用「中文名（English Name）」格式`;
+}
+
+function openStepAIChat(qid) {
+  const q = questions.find(x => x.id === qid);
+  if (!q) return;
+  const key = getApiKey();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'chat-overlay';
+  overlay.id = 'chat-overlay';
+  overlay.innerHTML = `
+    <div class="chat-topbar">
+      <button class="header-btn" onclick="closeChatOverlay()" style="flex-shrink:0">←</button>
+      <button class="header-btn" onclick="promptApiKey()" title="AI 金鑰" style="flex-shrink:0">🔑</button>
+      <div class="chat-topbar-title">💬 AI 引導</div>
+      <div class="chat-topbar-sub">${q.id}</div>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-bar">
+      <textarea class="chat-input" id="chat-input" placeholder="輸入你的想法或答案…" rows="1"
+        onkeydown="psyChatKeydown(event,'${esc(qid)}')" oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'"></textarea>
+      <button class="chat-send-btn" id="chat-send-btn" onclick="sendStepMessage('${esc(qid)}')" disabled>↑</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('chat-input').addEventListener('input', () => {
+    document.getElementById('chat-send-btn').disabled = !document.getElementById('chat-input').value.trim();
+  });
+
+  if (!key) { appendAiMessage('請先設定 API Key（點上方 🔑 按鈕）'); return; }
+
+  chatHistory[qid] = [{ role: 'user', content: '我要開始看這題了，請先確認我對核心概念的理解' }];
+  appendTyping();
+  callPsyAI(buildStepSystemPrompt(q), chatHistory[qid], qid);
+}
+
+function openWrongAIChat(qid) {
+  const q = questions.find(x => x.id === qid);
+  if (!q) return;
+  const key = getApiKey();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'chat-overlay';
+  overlay.id = 'chat-overlay';
+  overlay.innerHTML = `
+    <div class="chat-topbar">
+      <button class="header-btn" onclick="closeChatOverlay()" style="flex-shrink:0">←</button>
+      <button class="header-btn" onclick="promptApiKey()" title="AI 金鑰" style="flex-shrink:0">🔑</button>
+      <div class="chat-topbar-title">💬 錯題分析</div>
+      <div class="chat-topbar-sub">${q.id}</div>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-bar">
+      <textarea class="chat-input" id="chat-input" placeholder="說說你卡在哪裡…" rows="1"
+        onkeydown="psyChatKeydown(event,'${esc(qid)}')" oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'"></textarea>
+      <button class="chat-send-btn" id="chat-send-btn" onclick="sendStepMessage('${esc(qid)}')" disabled>↑</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('chat-input').addEventListener('input', () => {
+    document.getElementById('chat-send-btn').disabled = !document.getElementById('chat-input').value.trim();
+  });
+
+  if (!key) { appendAiMessage('請先設定 API Key（點上方 🔑 按鈕）'); return; }
+
+  chatHistory[qid] = [{ role: 'user', content: '我剛做錯這題，幫我分析' }];
+  appendTyping();
+  callPsyAI(buildWrongSystemPrompt(q), chatHistory[qid], qid);
+}
+
+async function sendStepMessage(qid) {
+  const input = document.getElementById('chat-input');
+  const text = input.value.trim();
+  if (!text) return;
+  const key = getApiKey();
+  if (!key) return;
+  input.value = '';
+  input.style.height = 'auto';
+  document.getElementById('chat-send-btn').disabled = true;
+  appendUserMessage(text);
+  if (!chatHistory[qid]) chatHistory[qid] = [];
+  chatHistory[qid].push({ role: 'user', content: text });
+  appendTyping();
+  const q = questions.find(x => x.id === qid);
+  const sys = `你是普通心理學家教，正在用「概念辨析」幫學生理解題目。
+題目：${q?.question||''}　答案：${q?.answer||''}　學派：${q?.school_of_thought||''}　章節：${q?.topic||''}
+原則：對比學派／概念差別；提學者用中文名（English）格式；不用 markdown；一次只問一件事；不直接給完整答案。`;
+  callPsyAI(sys, chatHistory[qid], qid);
+}
+
+function psyChatKeydown(e, qid) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendStepMessage(qid);
+  }
 }
 
 init();
