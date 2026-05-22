@@ -3035,8 +3035,24 @@ const chatHistory = {};
 function esc(str) { return (str||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
 function esc2(str) { return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
+function cleanApiKey(s) {
+  // trim + 去零寬字元（手機複製貼上常帶到的隱形字元 U+200B-U+200D, U+FEFF）
+  return (s || '').trim().replace(/[\u200B-\u200D\uFEFF]/g, '');
+}
 function getApiKey() {
-  return localStorage.getItem(API_KEY_STORAGE) || '';
+  return cleanApiKey(localStorage.getItem(API_KEY_STORAGE));
+}
+function toggleApiKeyVisibility() {
+  const inp = document.getElementById('apikey-input');
+  const btn = document.getElementById('apikey-toggle');
+  if (!inp || !btn) return;
+  if (inp.type === 'password') {
+    inp.type = 'text';
+    btn.textContent = '🙈';
+  } else {
+    inp.type = 'password';
+    btn.textContent = '👁';
+  }
 }
 
 let savedApiKeyCallback = null;
@@ -3054,9 +3070,14 @@ function promptApiKey(onSuccess) {
           Key 只存在你的裝置（localStorage），不會傳出去。<br>
           <a href="https://console.anthropic.com/" target="_blank" style="color:var(--blue-light)">→ 前往 console.anthropic.com 取得 Key</a>
         </div>
-        <input id="apikey-input" class="edit-field" type="password"
-          placeholder="sk-ant-..." value="${existing}"
-          style="width:100%;margin-bottom:14px;font-family:'Space Mono',monospace;font-size:12px">
+        <div style="display:flex;gap:6px;margin-bottom:14px;align-items:stretch">
+          <input id="apikey-input" class="edit-field" type="password"
+            placeholder="sk-ant-..." value="${existing}"
+            style="flex:1;min-width:0;font-family:'Space Mono',monospace;font-size:12px">
+          <button type="button" id="apikey-toggle" class="btn btn-outline"
+            onclick="toggleApiKeyVisibility()" title="顯示／隱藏 Key"
+            style="padding:0 12px;flex-shrink:0;font-size:14px">👁</button>
+        </div>
         <div class="action-row">
           <button class="btn btn-outline" onclick="document.getElementById('apikey-modal').remove()">取消</button>
           <button class="btn btn-primary" onclick="saveApiKey()">儲存</button>
@@ -3068,7 +3089,7 @@ function promptApiKey(onSuccess) {
 }
 
 function saveApiKey() {
-  const val = (document.getElementById('apikey-input')?.value || '').trim();
+  const val = cleanApiKey(document.getElementById('apikey-input')?.value);
   if (!val.startsWith('sk-')) { alert('請輸入正確的 API Key（以 sk- 開頭）'); return; }
   localStorage.setItem(API_KEY_STORAGE, val);
   document.getElementById('apikey-modal')?.remove();
