@@ -1206,6 +1206,58 @@ html, body {
 .note-action-btn { width:24px; height:24px; border-radius:4px; border:1px solid var(--border2); background:var(--surface); color:var(--muted); font-size:11px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
 .notes-editor { width:100%; background:var(--surface); border:1px solid var(--border2); border-radius:6px; padding:8px 10px; color:var(--text); font-size:13px; line-height:1.5; resize:vertical; min-height:60px; font-family:'Noto Sans TC',sans-serif; margin-top:8px; box-sizing:border-box; }
 .notes-editor-actions { display:flex; gap:6px; justify-content:flex-end; margin-top:6px; }
+
+/* ── 輔大手寫練習紀錄 (page-handwrite) — 全 scope 在 #page-handwrite 底下避免碰撞 ── */
+#page-handwrite .hw-wrap{max-width:680px;margin:0 auto;padding:20px 16px 40px}
+#page-handwrite .hw-header{margin-bottom:16px}
+#page-handwrite .hw-h1{font-family:'Space Mono',monospace;font-weight:600;font-size:22px;margin:0 0 3px;letter-spacing:.01em}
+#page-handwrite .hw-h1 .hw-pen{color:var(--blue)}
+#page-handwrite .hw-sub{color:var(--muted);font-size:12.5px;margin:0}
+/* summary strip */
+#page-handwrite .hw-summary{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}
+#page-handwrite .hw-stat{flex:1;min-width:88px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:11px 13px}
+#page-handwrite .hw-stat .n{font-family:'Space Mono',monospace;font-size:22px;line-height:1;font-variant-numeric:tabular-nums}
+#page-handwrite .hw-stat .l{color:var(--muted);font-size:11px;margin-top:5px}
+#page-handwrite .hw-stat .n.ok{color:var(--green)}
+#page-handwrite .hw-stat .n.no{color:var(--red)}
+/* card */
+#page-handwrite .hw-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:15px;margin-bottom:18px}
+#page-handwrite .hw-card-h2{font-size:13px;font-weight:600;margin:0 0 12px;color:var(--blue);letter-spacing:.04em}
+#page-handwrite .hw-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#page-handwrite .hw-label{display:flex;flex-direction:column;gap:4px;font-size:11.5px;color:var(--muted)}
+#page-handwrite .hw-label.hw-full{grid-column:1/-1}
+#page-handwrite .hw-input{font-family:inherit;font-size:14px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:9px 10px;width:100%}
+#page-handwrite .hw-input:focus{outline:none;border-color:var(--blue)}
+#page-handwrite .hw-textarea{resize:vertical;min-height:38px}
+#page-handwrite .hw-select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b8a' stroke-width='2'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 10px center;padding-right:30px}
+#page-handwrite .hw-seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;width:fit-content}
+#page-handwrite .hw-seg-btn{appearance:none;border:0;background:var(--bg);color:var(--muted);font-family:inherit;font-size:13px;padding:9px 18px;cursor:pointer}
+#page-handwrite .hw-seg-btn.ok.on{background:var(--green-bg);color:var(--green);font-weight:600}
+#page-handwrite .hw-seg-btn.no.on{background:var(--red-bg);color:var(--red);font-weight:600}
+#page-handwrite .hw-add{appearance:none;border:0;background:var(--blue);color:#fff;font-family:inherit;font-size:14px;font-weight:600;padding:10px 20px;border-radius:9px;cursor:pointer;margin-top:4px}
+#page-handwrite .hw-add:active{transform:translateY(1px)}
+/* toolbar */
+#page-handwrite .hw-bar{display:flex;align-items:center;gap:10px;margin:0 0 10px}
+#page-handwrite .hw-bar-h2{font-family:'Space Mono',monospace;font-size:16px;margin:0;font-weight:600}
+#page-handwrite .hw-count{color:var(--muted);font-size:12px}
+#page-handwrite .hw-bar-right{margin-left:auto;display:flex;gap:8px}
+#page-handwrite .hw-ghost{appearance:none;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:inherit;font-size:12px;padding:6px 11px;border-radius:8px;cursor:pointer}
+#page-handwrite .hw-ghost.on{border-color:var(--blue);color:var(--blue)}
+/* entries */
+#page-handwrite .hw-entry{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:9px}
+#page-handwrite .hw-entry .top{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted);margin-bottom:5px}
+#page-handwrite .hw-badge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:999px}
+#page-handwrite .hw-badge.ok{background:var(--green-bg);color:var(--green)}
+#page-handwrite .hw-badge.no{background:var(--red-bg);color:var(--red)}
+#page-handwrite .hw-badge.type{background:var(--surface2);color:var(--muted)}
+#page-handwrite .hw-entry .time{font-variant-numeric:tabular-nums}
+#page-handwrite .hw-entry .q{font-size:15px;line-height:1.45;margin:0}
+#page-handwrite .hw-entry .stuck{font-size:13px;color:var(--text);margin-top:7px;padding-left:11px;border-left:2px solid var(--blue);line-height:1.5}
+#page-handwrite .hw-entry .stuck b{color:var(--blue);font-weight:600;font-size:11px}
+#page-handwrite .hw-del{margin-left:auto;appearance:none;border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:16px;line-height:1;opacity:.55;padding:2px 4px}
+#page-handwrite .hw-del:hover{opacity:1;color:var(--red)}
+#page-handwrite .hw-empty{color:var(--muted);font-size:13px;text-align:center;padding:30px 10px;border:1px dashed var(--border);border-radius:12px}
+@media(max-width:480px){ #page-handwrite .hw-grid{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -1434,6 +1486,49 @@ html, body {
     </div>
   </div>
 
+  <!-- 輔大手寫練習紀錄 -->
+  <div class="page" id="page-handwrite">
+    <div class="hw-wrap">
+      <header class="hw-header">
+        <h1 class="hw-h1"><span class="hw-pen">✍</span> 輔大手寫練習紀錄</h1>
+        <p class="hw-sub">普心全申論／名詞解釋 · 記錄每次手寫練習的用時、結果與卡點</p>
+      </header>
+
+      <div class="hw-summary" id="hw-summary"></div>
+
+      <div class="hw-card">
+        <h2 class="hw-card-h2">＋ 新增一筆</h2>
+        <div class="hw-grid">
+          <label class="hw-label">日期<input type="date" id="hw-f-date" class="hw-input"></label>
+          <label class="hw-label">用時（分鐘）<input type="number" id="hw-f-time" min="0" placeholder="20" class="hw-input"></label>
+          <label class="hw-label hw-full">題目
+            <select id="hw-f-q" class="hw-input hw-select"></select>
+          </label>
+          <label class="hw-label hw-full" id="hw-f-q-manual-wrap" style="display:none">自訂題幹
+            <textarea id="hw-f-q-manual" class="hw-input hw-textarea" placeholder="例：論述古典制約與操作制約的差異"></textarea>
+          </label>
+          <label class="hw-label">結果
+            <div class="hw-seg">
+              <button type="button" class="hw-seg-btn ok on" id="hw-f-ok">對</button>
+              <button type="button" class="hw-seg-btn no" id="hw-f-no">錯</button>
+            </div>
+          </label>
+          <label class="hw-label hw-full">卡點<textarea id="hw-f-stuck" class="hw-input hw-textarea" placeholder="例：理論提出者記不清、舉例舉不出來、時間不夠"></textarea></label>
+        </div>
+        <button class="hw-add" id="hw-addBtn">新增紀錄</button>
+      </div>
+
+      <div class="hw-bar">
+        <h2 class="hw-bar-h2">練習紀錄</h2><span class="hw-count" id="hw-cnt"></span>
+        <div class="hw-bar-right">
+          <button class="hw-ghost" id="hw-stuckOnly">只看有卡點</button>
+          <button class="hw-ghost" id="hw-exportBtn">匯出 Markdown</button>
+        </div>
+      </div>
+      <div id="hw-list"></div>
+    </div>
+  </div>
+
   <!-- BOTTOM NAV -->
   <div class="bottom-nav">
     <div class="nav-item active" id="nav-home" onclick="goPage('page-home')">
@@ -1451,6 +1546,10 @@ html, body {
     <div class="nav-item" id="nav-essay" onclick="goPage('page-essay')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
       申論
+    </div>
+    <div class="nav-item" id="nav-handwrite" onclick="goPage('page-handwrite')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2"/><path d="M9 10h6M9 14h6M9 18h3"/></svg>
+      手寫
     </div>
   </div>
 </div>
@@ -1494,6 +1593,7 @@ let browseSearchQ = '';
 
 const RECORDS_KEY = 'psych_records_v1';
 const NOTES_KEY = 'psych_notes_v1';
+const HANDWRITE_KEY = 'psych_handwrite_v1';   // 輔大手寫練習紀錄
 let userNotes = {};   // { qid: [{id, ts, text}, ...] }
 
 // ─── EXAM (模考) ──────────────────────────────────────────────────────────────
@@ -2308,6 +2408,7 @@ async function init() {
     renderHome();
     renderBrowse();
     renderChapters();
+    hwInit();
     updateHeaderSub();
   } catch(e) {
     document.querySelector('.loading-logo').textContent = '載入失敗';
@@ -2482,8 +2583,8 @@ function updateHeaderSub() {
 }
 
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
-const pages = ['page-home','page-browse','page-chapters','page-essay','page-quiz','page-exam','page-exam-result'];
-const navIds = ['nav-home','nav-browse','nav-chapters','nav-essay',null,null,null];
+const pages = ['page-home','page-browse','page-chapters','page-essay','page-handwrite','page-quiz','page-exam','page-exam-result'];
+const navIds = ['nav-home','nav-browse','nav-chapters','nav-essay','nav-handwrite',null,null,null];
 
 function goPage(pageId) {
   pages.forEach((p,i) => {
@@ -2497,6 +2598,7 @@ function goPage(pageId) {
   if (pageId === 'page-browse') renderBrowse();
   if (pageId === 'page-chapters') renderChapters();
   if (pageId === 'page-home') renderHome();
+  if (pageId === 'page-handwrite') hwRender();
 }
 
 // ─── HOME ────────────────────────────────────────────────────────────────────
@@ -3509,6 +3611,164 @@ function psyChatKeydown(e, qid) {
     e.preventDefault();
     sendStepMessage(qid);
   }
+}
+
+// ─── 輔大手寫練習紀錄 (page-handwrite) ────────────────────────────────────────
+// 紀錄結構: { id, date, q(題幹文字), qid(題庫id或null), type('申論題'|'名詞解釋'|'其他'), time, result:'ok'|'no', stuck }
+let hwState = { result: 'ok', stuckOnly: false, mem: [] };
+
+function hwLoad() {
+  try { const v = localStorage.getItem(HANDWRITE_KEY); return v ? JSON.parse(v) : hwState.mem; }
+  catch(e) { return hwState.mem; }
+}
+function hwSave(rows) {
+  hwState.mem = rows;   // in-memory fallback (沒有 localStorage 時也能用)
+  try { localStorage.setItem(HANDWRITE_KEY, JSON.stringify(rows)); } catch(e) {}
+}
+const hwEsc = s => (s || '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+// 從題庫帶出「輔大申論題 / 名詞解釋」建下拉 (optgroup 兩組 + 其他手打)
+function hwBuildSelect() {
+  const sel = document.getElementById('hw-f-q');
+  if (!sel) return;
+  const groups = { '申論題': [], '名詞解釋': [] };
+  (questions || []).forEach(q => {
+    if (q.source === 'FJU' && groups[q.type]) groups[q.type].push(q);
+  });
+  let html = '<option value="">— 選題目 —</option>';
+  ['申論題', '名詞解釋'].forEach(t => {
+    const arr = groups[t];
+    if (!arr.length) return;
+    html += `<optgroup label="${t}（${arr.length}）">`;
+    arr.forEach(q => {
+      const yr = q.year ? `${q.source}${q.year}` : q.source;
+      const txt = (q.question || '').replace(/\s+/g, ' ').trim();
+      const short = txt.length > 42 ? txt.slice(0, 42) + '…' : txt;
+      html += `<option value="${hwEsc(q.id)}" data-type="${t}">${hwEsc(yr + ' · ' + short)}</option>`;
+    });
+    html += '</optgroup>';
+  });
+  html += '<option value="__other__">其他（手打）</option>';
+  sel.innerHTML = html;
+}
+
+function hwOnSelectChange() {
+  const sel = document.getElementById('hw-f-q');
+  document.getElementById('hw-f-q-manual-wrap').style.display = sel.value === '__other__' ? 'flex' : 'none';
+}
+
+function hwInit() {
+  const dateEl = document.getElementById('hw-f-date');
+  if (!dateEl) return;
+  dateEl.value = new Date().toISOString().slice(0, 10);
+  hwBuildSelect();
+  document.getElementById('hw-f-q').onchange = hwOnSelectChange;
+  document.getElementById('hw-f-ok').onclick = () => {
+    hwState.result = 'ok';
+    document.getElementById('hw-f-ok').classList.add('on');
+    document.getElementById('hw-f-no').classList.remove('on');
+  };
+  document.getElementById('hw-f-no').onclick = () => {
+    hwState.result = 'no';
+    document.getElementById('hw-f-no').classList.add('on');
+    document.getElementById('hw-f-ok').classList.remove('on');
+  };
+  document.getElementById('hw-addBtn').onclick = hwAdd;
+  document.getElementById('hw-stuckOnly').onclick = () => {
+    hwState.stuckOnly = !hwState.stuckOnly;
+    document.getElementById('hw-stuckOnly').classList.toggle('on', hwState.stuckOnly);
+    hwRender();
+  };
+  document.getElementById('hw-exportBtn').onclick = hwExport;
+  hwRender();
+}
+
+function hwAdd() {
+  const sel = document.getElementById('hw-f-q');
+  let q = '', qid = null, type = null;
+  if (sel.value === '__other__') {
+    q = document.getElementById('hw-f-q-manual').value.trim();
+    type = '其他';
+    if (!q) { document.getElementById('hw-f-q-manual').focus(); return; }
+  } else if (sel.value) {
+    const opt = sel.options[sel.selectedIndex];
+    qid = sel.value;
+    type = opt.getAttribute('data-type');
+    const hit = (questions || []).find(x => x.id === qid);
+    q = hit ? (hit.question || '').trim() : opt.textContent;
+  } else {
+    sel.focus(); return;
+  }
+  const rows = hwLoad();
+  rows.push({
+    id: Date.now(),
+    date: document.getElementById('hw-f-date').value || new Date().toISOString().slice(0, 10),
+    q, qid, type,
+    time: parseInt(document.getElementById('hw-f-time').value) || 0,
+    result: hwState.result,
+    stuck: document.getElementById('hw-f-stuck').value.trim()
+  });
+  hwSave(rows);
+  sel.value = ''; hwOnSelectChange();
+  document.getElementById('hw-f-q-manual').value = '';
+  document.getElementById('hw-f-time').value = '';
+  document.getElementById('hw-f-stuck').value = '';
+  hwRender();
+}
+
+function hwDel(id) {
+  hwSave(hwLoad().filter(r => r.id !== id));
+  hwRender();
+}
+
+function hwExport() {
+  const rows = hwLoad().slice().sort((a, b) => a.date.localeCompare(b.date));
+  const cell = s => (s || '').replace(/\|/g, '／').replace(/\n/g, ' ');
+  let md = '# 輔大手寫練習紀錄\n\n| 日期 | 題型 | 題目 | 用時 | 對/錯 | 卡點 |\n|---|---|---|---|---|---|\n';
+  rows.forEach(r => {
+    md += `| ${r.date} | ${r.type || ''} | ${cell(r.q)} | ${r.time} 分 | ${r.result === 'ok' ? '對' : '錯'} | ${cell(r.stuck)} |\n`;
+  });
+  const btn = document.getElementById('hw-exportBtn');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(md).then(
+      () => { const t = btn.textContent; btn.textContent = '已複製 ✓'; setTimeout(() => btn.textContent = t, 1500); },
+      () => alert(md)
+    );
+  } else { alert(md); }
+}
+
+function hwRender() {
+  if (!document.getElementById('hw-summary')) return;
+  let rows = hwLoad().slice().sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
+  const n = rows.length, ok = rows.filter(r => r.result === 'ok').length;
+  const totT = rows.reduce((s, r) => s + (r.time || 0), 0);
+  const avg = n ? Math.round(totT / n) : 0;
+  const pct = n ? Math.round(ok / n * 100) : 0;
+  document.getElementById('hw-summary').innerHTML =
+    `<div class="hw-stat"><div class="n">${n}</div><div class="l">累計題數</div></div>` +
+    `<div class="hw-stat"><div class="n">${avg}<span style="font-size:13px"> 分</span></div><div class="l">平均用時</div></div>` +
+    `<div class="hw-stat"><div class="n ok">${ok}</div><div class="l">對（${pct}%）</div></div>` +
+    `<div class="hw-stat"><div class="n no">${n - ok}</div><div class="l">錯</div></div>`;
+  document.getElementById('hw-cnt').textContent = n ? `共 ${n} 筆` : '';
+
+  if (hwState.stuckOnly) rows = rows.filter(r => r.stuck);
+  const list = document.getElementById('hw-list');
+  if (!rows.length) {
+    list.innerHTML = `<div class="hw-empty">${hwState.stuckOnly ? '目前沒有標記卡點的紀錄' : '還沒有紀錄，從上面新增第一筆吧'}</div>`;
+    return;
+  }
+  list.innerHTML = rows.map(r => `
+    <div class="hw-entry">
+      <div class="top">
+        <span class="hw-badge ${r.result}">${r.result === 'ok' ? '對' : '錯'}</span>
+        ${r.type ? `<span class="hw-badge type">${hwEsc(r.type)}</span>` : ''}
+        <span>${r.date}</span>
+        ${r.time ? `<span class="time">· ${r.time} 分</span>` : ''}
+        <button class="hw-del" title="刪除" onclick="hwDel(${r.id})">✕</button>
+      </div>
+      <p class="q">${hwEsc(r.q)}</p>
+      ${r.stuck ? `<div class="stuck"><b>卡點</b><br>${hwEsc(r.stuck)}</div>` : ''}
+    </div>`).join('');
 }
 
 init();
