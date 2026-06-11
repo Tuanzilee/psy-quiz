@@ -3607,6 +3607,7 @@ async function sendStepMessage(qid) {
 }
 
 function psyChatKeydown(e, qid) {
+  if (e.isComposing || e.keyCode === 229) return;  // 中文輸入法組字中，Enter 是選字確認，不送出
   if (e.key === 'Enter' && !e.shiftKey) {
     e.preventDefault();
     sendStepMessage(qid);
