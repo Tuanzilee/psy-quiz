@@ -1593,6 +1593,8 @@ let browseSearchQ = '';
 
 const RECORDS_KEY = 'psych_records_v1';
 const NOTES_KEY = 'psych_notes_v1';
+const CUSTOM_KW_KEY = 'psych_custom_kw_v1';
+let customKW = {};
 const HANDWRITE_KEY = 'psych_handwrite_v1';   // 輔大手寫練習紀錄
 let userNotes = {};   // { qid: [{id, ts, text}, ...] }
 
@@ -2153,7 +2155,7 @@ function renderExamResult() {
     subjectiveQs.forEach(q => {
       const ans = examState.answers[q.id] || '(未作答)';
       const ss = examState.selfScores[q.id] || { score: 0, max: 100 };
-      const kw = (q.keywords_required || []);
+      const kw = getKW(q);
       const kwHits = kw.filter(k => ans.includes(k));
       const outline = q.essay_outline || [];
       html += `
@@ -2400,6 +2402,7 @@ function chapterNum(topic) {
 async function init() {
   loadRecords();
   loadNotes();
+  loadCustomKW();
   try {
     questions = window.__QUESTIONS__ || [];
     if (!questions.length) throw new Error('題庫未注入');
@@ -2540,6 +2543,24 @@ function rerenderNotesBlock(qid) {
   const tmp = document.createElement('div');
   tmp.innerHTML = renderNotesBlock(qid);
   old.replaceWith(tmp.firstElementChild);
+}
+
+// ─── CUSTOM KEYWORDS (psych_custom_kw_v1) ───────────────────────────────────
+function loadCustomKW() {
+  try { customKW = JSON.parse(localStorage.getItem(CUSTOM_KW_KEY) || '{}'); }
+  catch(e) { customKW = {}; }
+}
+function saveCustomKW() { localStorage.setItem(CUSTOM_KW_KEY, JSON.stringify(customKW)); }
+function getKW(q) {
+  if (!q) return [];
+  const c = customKW[q.id];
+  if (Array.isArray(c) && c.length > 0) return c;
+  return q.keywords_required || [];
+}
+function setCustomKW(qid, kws) {
+  const arr = (kws || []).map(s => s.trim()).filter(Boolean);
+  if (arr.length === 0) delete customKW[qid]; else customKW[qid] = arr;
+  saveCustomKW();
 }
 
 // ─── EXPORT NOTES (純讀, 不動既有 localStorage) ──────────────────────────────
@@ -2862,7 +2883,7 @@ function showQuestion() {
     <div class="action-row" id="action-row">
       ${isMultiChoice
         ? `<button class="btn btn-primary" id="submit-btn" onclick="submitAnswer()" disabled style="opacity:0.5">確認答案</button>`
-        : (currentQ.keywords_required && currentQ.keywords_required.length > 0)
+        : (getKW(currentQ).length > 0)
           ? `<div style="display:flex;flex-direction:column;gap:6px;width:100%">
                <button class="btn btn-primary" onclick="gradeAnswer()">批改（比對關鍵字）</button>
                <button class="btn btn-ghost" onclick="revealAnswer()" style="font-size:12px">直接看答案</button>
@@ -2922,16 +2943,53 @@ function renderOptions() {
 }
 
 function renderFreeAnswer() {
-  const kws = currentQ.keywords_required || [];
+  const kws = getKW(currentQ);
   const hasKeywords = kws.length > 0;
   return `<div class="answer-input-wrap">
     <textarea class="answer-input" id="free-answer" placeholder="${hasKeywords ? '寫下你的答案，按「批改」對照關鍵字' : '寫下你的思路或答案（選填）'}" rows="4"></textarea>
-    ${hasKeywords ? `
-      <div class="kw-hint">應包含 ${kws.length} 個關鍵字（批改後顯示）</div>
-      <div class="kw-chips" id="kw-chips">${kws.map((k, i) =>
-        `<span class="kw-chip" id="kw-${i}">${k}</span>`).join('')}</div>
-    ` : ''}
+    <div id="kw-area">${renderKWArea(currentQ)}</div>
   </div>`;
+}
+
+function renderKWArea(q) {
+  const kws = getKW(q);
+  const custom = Array.isArray(customKW[q.id]) && customKW[q.id].length > 0;
+  if (kws.length === 0) {
+    return `<div class="kw-hint"><a href="javascript:void(0)" onclick="startEditKW('${q.id}')" style="color:var(--blue-light)">＋ 設定我的批改關鍵字</a></div>`;
+  }
+  return `
+    <div class="kw-hint">應包含 ${kws.length} 個關鍵字（批改後顯示）・${custom ? '我的版本' : 'AI 預設'}
+      <a href="javascript:void(0)" onclick="startEditKW('${q.id}')" style="color:var(--blue-light);margin-left:6px">✏️ 改成我的</a></div>
+    <div class="kw-chips" id="kw-chips">${kws.map((k, i) => `<span class="kw-chip" id="kw-${i}">${k}</span>`).join('')}</div>`;
+}
+
+function startEditKW(qid) {
+  const area = document.getElementById('kw-area');
+  if (!area) return;
+  const cur = getKW(currentQ).join('、');
+  area.innerHTML = `
+    <div class="kw-hint">用「、」或逗號分隔（建議 5 個內）。存成你自己的批改標準；清空後存=還原 AI 預設。</div>
+    <textarea class="notes-editor" id="kw-editor" placeholder="例：Freud、焦慮、潛意識、自我、本我">${cur}</textarea>
+    <div class="notes-editor-actions">
+      <button class="btn btn-ghost" onclick="cancelEditKW()" style="font-size:12px">取消</button>
+      <button class="btn btn-primary" onclick="saveKW('${qid}')" style="font-size:12px">存成我的</button>
+    </div>`;
+  document.getElementById('kw-editor').focus();
+}
+
+function saveKW(qid) {
+  const ta = document.getElementById('kw-editor');
+  if (!ta) return;
+  const arr = ta.value.split(/[、,，\s]+/).map(s => s.trim()).filter(Boolean);
+  setCustomKW(qid, arr);
+  rerenderKWArea(qid);
+}
+
+function cancelEditKW() { rerenderKWArea(currentQ.id); }
+
+function rerenderKWArea(qid) {
+  const area = document.getElementById('kw-area');
+  if (area) area.innerHTML = renderKWArea(currentQ);
 }
 
 function gradeAnswer() {
@@ -2939,7 +2997,7 @@ function gradeAnswer() {
   const userText = (ta.value || '').toLowerCase().replace(/\s+/g, '');
   if (!userText) { alert('請先輸入答案再批改'); return; }
   answered = true;
-  const kws = currentQ.keywords_required || [];
+  const kws = getKW(currentQ);
   let hits = 0;
   kws.forEach((k, i) => {
     const norm = k.toLowerCase().replace(/\s+/g, '');
