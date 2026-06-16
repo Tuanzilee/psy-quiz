@@ -2798,6 +2798,13 @@ function renderChapters() {
 }
 
 // ─── QUIZ ENGINE ─────────────────────────────────────────────────────────────
+// 主題/題庫練習分層：沒做過 > 不懂 > 不確定 > 懂了，每層內洗牌（與 stats 一致）
+function stratifyByStatus(pool) {
+  const shuffle = arr => arr.slice().sort(() => Math.random() - 0.5);
+  const tier = { unmarked: [], wrong: [], unsure: [], correct: [] };
+  for (const q of pool) (tier[getStatus(q.id)] || tier.unmarked).push(q);
+  return [...shuffle(tier.unmarked), ...shuffle(tier.wrong), ...shuffle(tier.unsure), ...shuffle(tier.correct)];
+}
 function startQuiz(mode) {
   let pool;
   if (mode === 'all') {
@@ -2811,8 +2818,8 @@ function startQuiz(mode) {
     alert(mode === 'wrong' ? '目前沒有答錯的題目！' : mode === 'unsure' ? '目前沒有標記不確定的題目！' : '沒有符合條件的題目');
     return;
   }
-  // Shuffle
-  quizQueue = [...pool].sort(() => Math.random() - 0.5);
+  // 分層：沒做過 > 不懂 > 不確定 > 懂了（wrong/unsure 池同質時等同洗牌）
+  quizQueue = stratifyByStatus(pool);
   quizIdx = 0;
   goPage('page-quiz');
   showQuestion();
@@ -2821,7 +2828,7 @@ function startQuiz(mode) {
 function startChapterQuiz(chapter) {
   const pool = questions.filter(q => (q.topic || '其他') === chapter);
   if (pool.length === 0) return;
-  quizQueue = [...pool].sort(() => Math.random() - 0.5);
+  quizQueue = stratifyByStatus(pool);
   quizIdx = 0;
   goPage('page-quiz');
   showQuestion();
