@@ -1590,6 +1590,7 @@ let bf = { school: 'all', year: 'all', type: 'all', status: 'all' };
 let activeFilters = { school: 'all', diff: 'all', type: 'all' };
 let conceptFilter = '';
 let browseSearchQ = '';
+let quizOrigin = 'page-home';
 
 const RECORDS_KEY = 'psych_records_v1';
 const NOTES_KEY = 'psych_notes_v1';
@@ -2806,6 +2807,7 @@ function stratifyByStatus(pool) {
   return [...shuffle(tier.unmarked), ...shuffle(tier.wrong), ...shuffle(tier.unsure), ...shuffle(tier.correct)];
 }
 function startQuiz(mode) {
+  quizOrigin = 'page-home';
   let pool;
   if (mode === 'all') {
     pool = getFilteredPool();
@@ -2826,6 +2828,7 @@ function startQuiz(mode) {
 }
 
 function startChapterQuiz(chapter) {
+  quizOrigin = 'page-home';
   const pool = questions.filter(q => (q.topic || '其他') === chapter);
   if (pool.length === 0) return;
   quizQueue = stratifyByStatus(pool);
@@ -2835,6 +2838,7 @@ function startChapterQuiz(chapter) {
 }
 
 function openQuestion(id) {
+  quizOrigin = 'page-browse';
   const idx = questions.findIndex(q => q.id === id);
   if (idx < 0) return;
   quizQueue = [questions[idx]];
@@ -3173,8 +3177,7 @@ function prevQuestion() {
   if (quizIdx > 0) { quizIdx--; showQuestion(); }
 }
 function exitQuiz() {
-  goPage('page-home');
-  renderHome();
+  goPage(quizOrigin);
 }
 
 function showQuizDone() {
@@ -3189,7 +3192,7 @@ function showQuizDone() {
         <div class="stat-card"><div class="stat-num green">${correct}</div><div class="stat-label">答對</div></div>
         <div class="stat-card"><div class="stat-num red">${wrong}</div><div class="stat-label">答錯</div></div>
       </div>
-      <button class="btn btn-primary" onclick="exitQuiz()" style="width:100%;margin-bottom:8px">回到主頁</button>
+      <button class="btn btn-primary" onclick="exitQuiz()" style="width:100%;margin-bottom:8px">返回</button>
       <button class="btn btn-outline" onclick="startQuiz('wrong')" style="width:100%">複習錯題</button>
     </div>
   `;
