@@ -71,6 +71,8 @@ header p{margin:0;color:var(--muted);font-size:14px}
 .skel .sh{font-weight:700;color:var(--gold);font-size:12.5px;margin-top:8px}
 .skel .sh:first-child{margin-top:0}
 .skel .sl{font-size:14px;margin:2px 0 4px}
+.skel .smeta{font-size:12.5px;color:var(--pine-ink);font-weight:700;margin:1px 0 2px}
+.skel .sex{font-size:12px;color:var(--muted);margin:0 0 6px}
 .kref{margin-top:20px;font-size:12.5px;color:var(--muted)}
 .kref summary{cursor:pointer;color:var(--pine-ink);font-weight:700;font-size:13px}
 .kref table{border-collapse:collapse;margin-top:8px;width:100%}
@@ -447,7 +449,7 @@ function render(){
     $('#dfb').innerHTML=dGuess===dc?`✓ 答對，主線是 ${SHORT[dc]}`:`✗ 你選 ${SHORT[dGuess]}，正解是 ${SHORT[dc]}`;
     const ts=e4.terms.map(id=>`<span class="dterm">${byId(id).name.split(' ')[0]}</span>`).join('');
     let sk=`<div class="skel"><div class="sh">破題</div><div class="sl">${OPENERS[dc]}</div>`;
-    e4.terms.forEach((id,i)=>{const t=byId(id);sk+=`<div class="sh">理論${i+1}・${t.name.split(' ')[0]}</div><div class="sl">${t.def}</div>`;});
+    e4.terms.forEach((id,i)=>{const t=byId(id);sk+=`<div class="sh">理論${i+1}・${t.name.split(' ')[0]}</div><div class="smeta">學者／理論：${t.sch}</div><div class="sl">定義：${t.def}</div><div class="sex">例子：自行帶入一個生活例子</div>`;});
     sk+=`<div class="sh">收束</div><div class="sl">${CLOSERS[dc]}</div></div>`;
     $('#dans').innerHTML=`<div class="dstep">第二步 · 建議名詞群（核心一個＋支撐兩三個）</div><div class="dterms">${ts}</div><div class="dstep">第三步 · 答題骨架</div>${sk}`;
   }else{ $('#dfb').className='dfb'; $('#dfb').innerHTML='點上面九格其中一格，判這題的主線'; $('#dans').innerHTML=''; }
