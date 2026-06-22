@@ -119,7 +119,7 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
 <div class="wrap">
   <header>
     <h1>輔大普心 · 名詞模塊板</h1>
-    <p>73 名詞 × 七主線 × 28 申論題 —— 拖分類、丟題幹、對點</p>
+    <p>73 名詞 × 9 類 × 28 申論題 —— 拖分類、丟題幹、對點</p>
   </header>
 
   <div class="tabs">
@@ -166,8 +166,8 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
 
 <script>
 /* ====== 類別（短碼→顯示名）====== */
-const CATEGORIES=['接收','學習','記憶','發展','異常','社會','情治','生理'];
-const LABELS={接收:'① 人怎麼接收世界',學習:'② 人怎麼學會行為',記憶:'③ 人怎麼記住、遺忘與提取',發展:'④ 人怎麼發展',異常:'⑤ 人為什麼痛苦、焦慮或異常',社會:'⑥ 人在社會中被他人影響',情治:'⑦ 情緒、人格與治療怎麼串',生理:'⑧ 人的生理機制'};
+const CATEGORIES=['接收','學習','記憶','發展','異常','社會','情治','生理','思考'];
+const LABELS={接收:'① 人怎麼接收世界',學習:'② 人怎麼學會行為',記憶:'③ 人怎麼記住、遺忘與提取',發展:'④ 人怎麼發展',異常:'⑤ 人為什麼痛苦、焦慮或異常',社會:'⑥ 人在社會中被他人影響',情治:'⑦ 情緒、人格與治療怎麼串',生理:'⑧ 人的生理機制',思考:'⑨ 思考·判斷·推理'};
 
 /* ====== 73 名詞：name / sch學者 / def定義 / cat主類別 / alt可接受替代 ====== */
 const TERMS=[
@@ -181,7 +181,7 @@ const TERMS=[
 {id:'t8',name:'自證預言 Self-fulfilling Prophecy',sch:'Merton；Rosenthal',def:'對事情的期待影響行為，最後使期待成真。',cat:'社會'},
 {id:'t9',name:'次級制約 Second-order Conditioning',sch:'Pavlov',def:'已制約刺激再與新刺激配對，使新刺激也引發反應。',cat:'學習'},
 {id:'t10',name:'認知失調 Cognitive Dissonance',sch:'Festinger',def:'態度與行為不一致產生不適，促使調整以降低矛盾。',cat:'社會'},
-{id:'t11',name:'習得無助感 Learned Helplessness',sch:'Seligman',def:'長期經驗到不可控結果後，即使有機會也不再嘗試。',cat:'學習',alt:['異常']},
+{id:'t11',name:'習得無助感 Learned Helplessness',sch:'Seligman',def:'長期經驗到不可控結果後，即使有機會也不再嘗試。',cat:'學習',alt:['異常','情治']},
 {id:'t12',name:'近因效應 Recency Effect',sch:'Ebbinghaus',def:'一串訊息中，最後出現的項目較易被記住。',cat:'記憶'},
 {id:'t13',name:'順向失憶症 Anterograde Amnesia',sch:'H.M. 個案',def:'事件/腦傷後難以形成新的長期記憶。',cat:'記憶'},
 {id:'t14',name:'非制約刺激 UCS',sch:'Pavlov',def:'未經學習即自然引發反應的刺激。',cat:'學習'},
@@ -195,31 +195,31 @@ const TERMS=[
 {id:'t22',name:'依附理論 Attachment Theory',sch:'Bowlby；Ainsworth',def:'嬰兒與主要照顧者的早期情感連結，影響後續人際。',cat:'發展'},
 {id:'t23',name:'內外團體偏誤 In/Outgroup Bias',sch:'Tajfel',def:'偏愛自己所屬團體並貶低外團體。',cat:'社會'},
 {id:'t24',name:'前瞻記憶 Prospective Memory',sch:'記憶心理學',def:'記得未來要做某件事的能力。',cat:'記憶'},
-{id:'t25',name:'歸納推理 Inductive Reasoning',sch:'認知',def:'從具體例子推論出一般性規則（特殊到一般）。',cat:'記憶'},
-{id:'t26',name:'戀母情結 Oedipus Complex',sch:'Freud',def:'性器期對異性父母依戀、對同性父母競爭的衝突。',cat:'發展',alt:['情治']},
+{id:'t25',name:'歸納推理 Inductive Reasoning',sch:'認知',def:'從具體例子推論出一般性規則（特殊到一般）。',cat:'思考',alt:['記憶']},
+{id:'t26',name:'戀母情結 Oedipus Complex',sch:'Freud',def:'性器期對異性父母依戀、對同性父母競爭的衝突。',cat:'情治',alt:['發展']},
 {id:'t27',name:'保留概念 Conservation',sch:'Piaget',def:'物體外觀改變後，數量/體積等仍維持不變的理解。',cat:'發展'},
 {id:'t28',name:'錯覺 Illusion',sch:'知覺心理學',def:'對真實外在刺激產生錯誤知覺（如 Müller-Lyer）。',cat:'接收'},
-{id:'t29',name:'演繹推理 Deductive Reasoning',sch:'推理心理學',def:'從一般規則推導出特定結論（一般到特殊）。',cat:'記憶'},
+{id:'t29',name:'演繹推理 Deductive Reasoning',sch:'推理心理學',def:'從一般規則推導出特定結論（一般到特殊）。',cat:'思考',alt:['記憶']},
 {id:'t30',name:'負懲罰 Negative Punishment',sch:'Skinner',def:'移除喜歡的刺激，使某行為未來出現可能下降。',cat:'學習'},
 {id:'t31',name:'由上而下處理 Top-down',sch:'認知',def:'知覺受既有知識、期待與經驗影響。',cat:'接收'},
 {id:'t32',name:'終端紐扣 Terminal Buttons',sch:'神經科學',def:'軸突末端釋放神經傳導物的結構。',cat:'生理'},
-{id:'t33',name:'神經可塑性 Neuroplasticity',sch:'神經科學',def:'大腦因經驗、學習或損傷而改變結構與功能。',cat:'記憶',alt:['發展']},
+{id:'t33',name:'神經可塑性 Neuroplasticity',sch:'神經科學',def:'大腦因經驗、學習或損傷而改變結構與功能。',cat:'記憶',alt:['生理']},
 {id:'t34',name:'心智理論 Theory of Mind',sch:'Premack；Baron-Cohen',def:'知道他人具有不同於自己的信念、想法與情緒。',cat:'發展'},
 {id:'t35',name:'過度規則化 Overregularization',sch:'兒童語言習得',def:'兒童把語法規則過度套用到不規則情況（goed）。',cat:'發展'},
-{id:'t36',name:'後見之明偏誤 Hindsight Bias',sch:'判斷與決策',def:'事情發生後，高估自己早就知道結果的程度。',cat:'接收'},
-{id:'t37',name:'心向 Mental Set',sch:'認知',def:'傾向用過去成功方法解新問題，限制新解法。',cat:'接收'},
+{id:'t36',name:'後見之明偏誤 Hindsight Bias',sch:'判斷與決策',def:'事情發生後，高估自己早就知道結果的程度。',cat:'思考',alt:['接收']},
+{id:'t37',name:'心向 Mental Set',sch:'認知',def:'傾向用過去成功方法解新問題，限制新解法。',cat:'思考',alt:['接收']},
 {id:'t38',name:'無條件積極關懷 UPR',sch:'Rogers',def:'不因表現好壞而否定個體作為人的價值。',cat:'情治'},
 {id:'t39',name:'大五人格 Big Five',sch:'Costa & McCrae',def:'以 OCEAN 五向度描述人格差異的特質理論。',cat:'情治'},
 {id:'t39b',name:'Eysenck 三因素 PEN',sch:'Eysenck',def:'以 PEN（精神質、外向、神經質）描述人格。',cat:'情治'},
 {id:'t40',name:'思覺失調症 Schizophrenia',sch:'DSM',def:'思考、知覺、情緒與行為失調，有正/負性症狀。',cat:'異常'},
 {id:'t41',name:'DSM 診斷手冊',sch:'APA',def:'APA 編制的標準化分類與診斷系統。',cat:'異常'},
 {id:'t42',name:'創傷後壓力症候群 PTSD',sch:'DSM',def:'創傷後出現再經驗、逃避、過度警覺與負向認知情緒。',cat:'異常'},
-{id:'t43',name:'自我設障 Self-handicapping',sch:'Berglas & Jones',def:'預先製造失敗理由，以在失敗時保護自尊。',cat:'情治'},
+{id:'t43',name:'自我設障 Self-handicapping',sch:'Berglas & Jones',def:'預先製造失敗理由，以在失敗時保護自尊。',cat:'情治',alt:['社會']},
 {id:'t44',name:'史丹佛監獄實驗',sch:'Zimbardo',def:'角色分派與情境壓力強烈影響人的行為。',cat:'社會'},
 {id:'t45',name:'主題統覺測驗 TAT',sch:'Murray',def:'看模糊圖片編故事，推測內在需求與動機的投射測驗。',cat:'異常',alt:['情治']},
 {id:'t46',name:'邊緣性人格違常 BPD',sch:'DSM',def:'情緒、人際、自我形象不穩定與衝動。',cat:'異常'},
 {id:'t47',name:'移情作用 Transference',sch:'Freud',def:'把過去對重要他人的情感模式轉移到現在的人身上。',cat:'異常',alt:['情治']},
-{id:'t48',name:'自我效能 Self-efficacy',sch:'Bandura',def:'相信自己能否完成特定任務的信念。',cat:'學習',alt:['情治']},
+{id:'t48',name:'自我效能 Self-efficacy',sch:'Bandura',def:'相信自己能否完成特定任務的信念。',cat:'學習',alt:['異常','社會','情治']},
 {id:'t49',name:'基本歸因謬誤 FAE',sch:'Lee Ross',def:'解釋他人行為時高估內在、低估情境因素。',cat:'社會'},
 {id:'t50',name:'人眾無知 Pluralistic Ignorance',sch:'Darley & Latané',def:'私下都覺得有問題，卻因他人沒反應而以為沒事。',cat:'社會'},
 {id:'t51',name:'去個人化 Deindividuation',sch:'Zimbardo',def:'匿名或群體中自我覺察與責任感下降。',cat:'社會'},
@@ -234,7 +234,7 @@ const TERMS=[
 {id:'t60',name:'Piaget 認知發展四階段',sch:'Piaget',def:'依序經感覺動作、前運思、具體運思、形式運思期。',cat:'發展'},
 {id:'t61',name:'增強排程 Reinforcement Schedules',sch:'Skinner',def:'增強物依固定/變動、比率/時距規則出現，影響反應率。',cat:'學習'},
 {id:'t62',name:'感覺 vs 知覺',sch:'感知心理學',def:'感覺＝接收原始刺激；知覺＝組織、解釋與建構。',cat:'接收'},
-{id:'t63',name:'基模 Schema',sch:'Piaget',def:'組織知識、理解新訊息的認知結構或心理框架。',cat:'接收',alt:['發展']},
+{id:'t63',name:'基模 Schema',sch:'Piaget',def:'組織知識、理解新訊息的認知結構或心理框架。',cat:'接收',alt:['發展','記憶']},
 {id:'t64',name:'神經元傳導與全有全無律',sch:'神經科學',def:'動作電位超過閾值才產生且大小固定。',cat:'生理'},
 {id:'t65',name:'順向 vs 逆向失憶',sch:'H.M. 個案',def:'順向＝事件後新記憶存不進；逆向＝事件前舊記憶想不起。',cat:'記憶'},
 {id:'t66',name:'內隱記憶 Implicit Memory',sch:'Graf & Schacter',def:'不需有意識回憶，過去經驗仍影響現在表現（促發）。',cat:'記憶'},
@@ -290,7 +290,8 @@ const CLOSERS={
 異常:'心理異常不只是症狀集合，也可從診斷分類、認知偏誤、學習經驗、防衛機轉與早期關係模式等不同理論層次理解。',
 社會:'人的行為不能只用人格或道德解釋；期待、角色、群體、責任分散與社會分類，都會深刻影響個體行為。',
 情治:'情緒與人格不只是內在特質，也受生理喚起、認知解釋、文化規範、過去經驗與自我信念共同影響。',
-生理:'心理歷程有其生理基礎：從神經傳導、全有全無律到腦區分工與神經可塑性，都影響我們如何接收、處理與適應世界。'
+生理:'心理歷程有其生理基礎：從神經傳導、全有全無律到腦區分工與神經可塑性，都影響我們如何接收、處理與適應世界。',
+思考:'人的思考與判斷並非完全理性，會受心向、既有經驗與推理捷徑影響而出現系統性偏誤，因此推論時需區分相關與因果、並覺察自身的判斷偏誤。'
 };
 function essayTheme(e){
   if(e.th)return e.th;
