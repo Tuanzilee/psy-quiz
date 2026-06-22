@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>輔大普心 · 名詞模塊板</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f5efe3; --paper:#fbf7ee; --line:#e4d9c4;
+  --pine:#2f6f5e; --pine-soft:#e3ede9; --pine-ink:#1f4d41;
+  --gold:#b67b12; --gold-soft:#f6ecd6;
+  --brick:#b23a2b; --brick-soft:#f6e1dc;
+  --ink:#2a2622; --muted:#7d7567;
+  --shadow:0 1px 0 rgba(42,38,34,.04), 0 6px 18px rgba(42,38,34,.06);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--cream);color:var(--ink);
+  font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:1060px;margin:0 auto;padding:22px 16px 110px}
+header h1{font-family:"Noto Serif TC",serif;font-weight:700;
+  font-size:clamp(22px,5vw,30px);margin:0 0 4px;letter-spacing:.5px}
+header p{margin:0;color:var(--muted);font-size:14px}
+
+.tabs{display:flex;gap:6px;margin:18px 0 10px;background:var(--paper);
+  border:1px solid var(--line);border-radius:12px;padding:5px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--muted);
+  font-family:inherit;font-size:15px;font-weight:500;padding:9px;border-radius:8px;cursor:pointer}
+.tabs button.on{background:var(--pine);color:#fff;box-shadow:var(--shadow)}
+
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 14px}
+.bar .spacer{flex:1}
+.btn{font-family:inherit;font-size:14px;font-weight:500;cursor:pointer;
+  border-radius:9px;padding:8px 14px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn.ghost{background:transparent}
+.score{font-size:14px;color:var(--pine-ink);font-weight:700}
+
+.poolhead{display:flex;align-items:center;gap:8px;margin:0 0 6px}
+.poolhead .lbl{font-weight:700;color:var(--pine-ink);font-size:14px}
+.poolhead .n{font-size:12px;color:var(--muted)}
+.pool{background:var(--paper);border:1px dashed var(--line);border-radius:14px;
+  padding:12px;min-height:56px;max-height:38vh;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.filter{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 8px}
+.filter input{flex:1;min-width:150px;font-family:inherit;font-size:14px;
+  padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--ink)}
+.fchips{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px}
+.fchip{border:1px solid var(--line);background:var(--paper);color:var(--muted);
+  border-radius:16px;padding:5px 11px;font-size:13px;cursor:pointer;font-family:inherit;line-height:1}
+.fchip.on{background:var(--pine);color:#fff;border-color:var(--pine)}
+
+.zones{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:10px;margin-top:14px}
+.zone{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 10px 12px}
+.zone .ztitle{font-weight:700;font-size:14px;color:var(--ink);margin:0 0 8px;
+  display:flex;justify-content:space-between;align-items:center}
+.zone .ztitle .cnt{font-size:12px;color:var(--muted);font-weight:500}
+.zone .slot{display:flex;flex-wrap:wrap;gap:7px;min-height:38px;align-content:flex-start}
+.zone.hot{border-color:var(--gold);background:var(--gold-soft);box-shadow:0 0 0 2px rgba(182,123,18,.2)}
+.pool.hot{border-color:var(--gold);background:var(--gold-soft)}
+
+.term{display:inline-flex;flex-direction:column;gap:1px;
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:8px 11px;cursor:grab;user-select:none;-webkit-user-select:none;
+  touch-action:manipulation;-webkit-touch-callout:none;
+  box-shadow:var(--shadow);max-width:100%;transition:transform .06s ease}
+.term:active{cursor:grabbing}
+.term .nm{font-weight:500;font-size:14.5px;line-height:1.3}
+.term .sch{font-size:11px;color:var(--gold);line-height:1.2}
+.term .df{font-size:12px;color:var(--muted);line-height:1.45;display:none;max-width:250px;margin-top:2px}
+body.showdef .term .df{display:block}
+.term.sel{border-color:var(--gold);box-shadow:0 0 0 2px rgba(182,123,18,.35),var(--shadow)}
+.term.correct{border-color:var(--pine);background:var(--pine-soft)}
+.term.wrong{border-color:var(--brick);background:var(--brick-soft)}
+.term.extra{border-color:var(--gold);background:var(--gold-soft)}
+.term.dragsrc{opacity:.35}
+.term.ghost{position:fixed;z-index:999;pointer-events:none;margin:0;
+  box-shadow:0 10px 24px rgba(42,38,34,.22);transform:rotate(-1.5deg)}
+
+.hint{font-size:13px;color:var(--muted);margin:10px 2px}
+.hint b{color:var(--gold)}
+
+.eselrow{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10px;
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);flex:1;min-width:200px}
+.stem{background:var(--pine-soft);border-left:4px solid var(--pine);border-radius:0 12px 12px 0;
+  padding:12px 14px;margin:4px 0 14px;font-size:15px;line-height:1.7;color:var(--pine-ink)}
+.stem .tag{font-size:12px;color:#fff;background:var(--pine);border-radius:20px;
+  padding:1px 9px;font-weight:700;margin-right:8px;display:inline-block}
+.missing{margin-top:12px;font-size:13.5px;display:none;line-height:1.8}
+.missing.show{display:block}
+.missing .ok{color:var(--pine-ink)}
+.missing .no{color:var(--brick)}
+.missing b{font-weight:700}
+.formula{font-size:12.5px;color:#8a5d0c;background:var(--gold-soft);
+  border:1px solid #ecdcb8;border-radius:10px;padding:8px 12px;margin:0 0 12px;line-height:1.6}
+.formula b{color:#7a5208;font-weight:700}
+.missing .line{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.missing .mt{color:var(--pine-ink);font-weight:700;display:block;margin-bottom:3px}
+.missing .cz{color:var(--ink);line-height:1.8}
+.hide{display:none !important}
+#selbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;
+  align-items:center;gap:10px;background:var(--pine);color:#fff;
+  padding:11px 14px;padding-bottom:calc(11px + env(safe-area-inset-bottom));
+  box-shadow:0 -4px 16px rgba(42,38,34,.16)}
+#selbar.show{display:flex}
+#selbar .t{flex:1;font-size:14px;line-height:1.35}
+#selbar .t b{font-weight:700}
+#selbar button{background:#fff;color:var(--pine-ink);border:0;border-radius:8px;
+  padding:8px 14px;font-family:inherit;font-weight:700;font-size:13px;cursor:pointer}
+@media(max-width:560px){.zones{grid-template-columns:1fr 1fr}}
+@media(max-width:390px){.zones{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>輔大普心 · 名詞模塊板</h1>
+    <p>73 名詞 × 七主線 × 28 申論題 —— 拖分類、丟題幹、對點</p>
+  </header>
+
+  <div class="tabs">
+    <button id="tab1" class="on" onclick="setMode(1)">分類模式</button>
+    <button id="tab2" onclick="setMode(2)">申論組合</button>
+  </div>
+
+  <div class="bar">
+    <button class="btn ghost" id="defBtn" onclick="toggleDef()">顯示解釋</button>
+    <div class="spacer"></div>
+    <span class="score" id="score"></span>
+    <button class="btn" id="checkBtn" onclick="check()">對答案</button>
+    <button class="btn primary" onclick="resetCur()">重置</button>
+  </div>
+
+  <!-- MODE 1 -->
+  <section id="board1">
+    <div class="filter"><input id="f1" placeholder="搜尋名詞或學者…" oninput="setFilter(1,this.value)"></div>
+    <div class="poolhead"><span class="lbl">名詞池</span><span class="n" id="pool1n"></span></div>
+    <div class="pool zone" data-board="1" data-zone="pool" id="pool1"></div>
+    <p class="hint">手機/iPad：<b>點名詞 → 點類別</b>放入（或<b>長按拖曳</b>）。滑鼠可直接拖。跨章節名詞放到任一合理類別都算對。</p>
+    <div class="zones" id="cats"></div>
+  </section>
+
+  <!-- MODE 2 -->
+  <section id="board2" class="hide">
+    <div class="eselrow"><select class="esel" id="esel" onchange="pickEssay(this.value)"></select></div>
+    <div class="stem" id="stem"></div>
+    <div class="formula">答題四步：<b>① 定義　→　② 學者／理論　→　③ 例子　→　④ 觀點收束</b></div>
+    <div class="filter"><input id="f2" placeholder="搜尋名詞或學者…" oninput="setFilter(2,this.value)"></div>
+    <div class="fchips" id="fchips2"></div>
+    <div class="poolhead"><span class="lbl">名詞池</span><span class="n" id="pool2n"></span></div>
+    <div class="pool zone" data-board="2" data-zone="pool" id="pool2"></div>
+    <p class="hint">手機/iPad：<b>點名詞 → 點下方答案要點區</b>放入（或<b>長按拖曳</b>）。按「對照建議」看命中與遺漏。</p>
+    <div class="zone" data-board="2" data-zone="essay" id="essayzone" style="margin-top:12px">
+      <div class="ztitle">本題答案要點 <span class="cnt" id="essaycnt"></span></div>
+      <div class="slot" id="essayslot"></div>
+    </div>
+    <div class="missing" id="missing"></div>
+  </section>
+</div>
+
+<div id="selbar"><span class="t" id="selbarT"></span><button onclick="clearSel()">取消</button></div>
+
+<script>
+/* ====== 類別（短碼→顯示名）====== */
+const CATEGORIES=['接收','學習','記憶','發展','異常','社會','情治','生理'];
+const LABELS={接收:'① 人怎麼接收世界',學習:'② 人怎麼學會行為',記憶:'③ 人怎麼記住、遺忘與提取',發展:'④ 人怎麼發展',異常:'⑤ 人為什麼痛苦、焦慮或異常',社會:'⑥ 人在社會中被他人影響',情治:'⑦ 情緒、人格與治療怎麼串',生理:'⑧ 人的生理機制'};
+
+/* ====== 73 名詞：name / sch學者 / def定義 / cat主類別 / alt可接受替代 ====== */
+const TERMS=[
+{id:'t1',name:'遺傳率 Heritability',sch:'行為遺傳',def:'群體中個體差異有多少比例可由遺傳差異解釋。',cat:'發展'},
+{id:'t2',name:'懼曠症 Agoraphobia',sch:'DSM',def:'對難以逃離或求助的場所產生強烈恐懼與逃避。',cat:'異常'},
+{id:'t3',name:'防衛機轉 Defense Mechanism',sch:'Freud',def:'自我為降低焦慮，無意識扭曲、否認或重解現實。',cat:'異常',alt:['情治']},
+{id:'t4',name:'知覺恆常性 Perceptual Constancy',sch:'Gestalt',def:'感覺刺激改變時，仍知覺物體具穩定特徵。',cat:'接收'},
+{id:'t5',name:'流體智慧 Fluid Intelligence',sch:'Cattell',def:'處理新問題、抽象推理、適應陌生情境的能力。',cat:'發展'},
+{id:'t6',name:'拮抗劑 Antagonist',sch:'生理',def:'阻礙神經傳導物作用的物質。',cat:'生理'},
+{id:'t7',name:'絕對閾 Absolute Threshold',sch:'Fechner',def:'有 50% 機率能察覺刺激的最小強度。',cat:'接收'},
+{id:'t8',name:'自證預言 Self-fulfilling Prophecy',sch:'Merton；Rosenthal',def:'對事情的期待影響行為，最後使期待成真。',cat:'社會'},
+{id:'t9',name:'次級制約 Second-order Conditioning',sch:'Pavlov',def:'已制約刺激再與新刺激配對，使新刺激也引發反應。',cat:'學習'},
+{id:'t10',name:'認知失調 Cognitive Dissonance',sch:'Festinger',def:'態度與行為不一致產生不適，促使調整以降低矛盾。',cat:'社會'},
+{id:'t11',name:'習得無助感 Learned Helplessness',sch:'Seligman',def:'長期經驗到不可控結果後，即使有機會也不再嘗試。',cat:'學習',alt:['異常']},
+{id:'t12',name:'近因效應 Recency Effect',sch:'Ebbinghaus',def:'一串訊息中，最後出現的項目較易被記住。',cat:'記憶'},
+{id:'t13',name:'順向失憶症 Anterograde Amnesia',sch:'H.M. 個案',def:'事件/腦傷後難以形成新的長期記憶。',cat:'記憶'},
+{id:'t14',name:'非制約刺激 UCS',sch:'Pavlov',def:'未經學習即自然引發反應的刺激。',cat:'學習'},
+{id:'t15',name:'情緒表現規則 Display Rules',sch:'Ekman',def:'文化與社會規範影響何時、如何、對誰表達情緒。',cat:'情治'},
+{id:'t16',name:'旁觀者效應 Bystander Effect',sch:'Darley & Latané',def:'緊急情境中旁觀者越多，單一個體出手相助越少。',cat:'社會'},
+{id:'t17',name:'同化 Assimilation',sch:'Piaget',def:'用既有基模理解新經驗。',cat:'發展'},
+{id:'t18',name:'合理化 Rationalization',sch:'Freud',def:'用看似合理的理由解釋難以接受的行為或結果。',cat:'異常',alt:['情治']},
+{id:'t19',name:'刻板印象威脅 Stereotype Threat',sch:'Steele & Aronson',def:'擔心印證負面刻板印象時，表現可能下降。',cat:'社會'},
+{id:'t20',name:'裂腦病人 Split-brain',sch:'Sperry；Gazzaniga',def:'胼胝體被切斷，左右腦訊息無法正常整合。',cat:'生理'},
+{id:'t21',name:'操作制約 Operant Conditioning',sch:'Skinner',def:'行為依後果（增強/懲罰）改變出現頻率。',cat:'學習'},
+{id:'t22',name:'依附理論 Attachment Theory',sch:'Bowlby；Ainsworth',def:'嬰兒與主要照顧者的早期情感連結，影響後續人際。',cat:'發展'},
+{id:'t23',name:'內外團體偏誤 In/Outgroup Bias',sch:'Tajfel',def:'偏愛自己所屬團體並貶低外團體。',cat:'社會'},
+{id:'t24',name:'前瞻記憶 Prospective Memory',sch:'記憶心理學',def:'記得未來要做某件事的能力。',cat:'記憶'},
+{id:'t25',name:'歸納推理 Inductive Reasoning',sch:'認知',def:'從具體例子推論出一般性規則（特殊到一般）。',cat:'記憶'},
+{id:'t26',name:'戀母情結 Oedipus Complex',sch:'Freud',def:'性器期對異性父母依戀、對同性父母競爭的衝突。',cat:'發展',alt:['情治']},
+{id:'t27',name:'保留概念 Conservation',sch:'Piaget',def:'物體外觀改變後，數量/體積等仍維持不變的理解。',cat:'發展'},
+{id:'t28',name:'錯覺 Illusion',sch:'知覺心理學',def:'對真實外在刺激產生錯誤知覺（如 Müller-Lyer）。',cat:'接收'},
+{id:'t29',name:'演繹推理 Deductive Reasoning',sch:'推理心理學',def:'從一般規則推導出特定結論（一般到特殊）。',cat:'記憶'},
+{id:'t30',name:'負懲罰 Negative Punishment',sch:'Skinner',def:'移除喜歡的刺激，使某行為未來出現可能下降。',cat:'學習'},
+{id:'t31',name:'由上而下處理 Top-down',sch:'認知',def:'知覺受既有知識、期待與經驗影響。',cat:'接收'},
+{id:'t32',name:'終端紐扣 Terminal Buttons',sch:'神經科學',def:'軸突末端釋放神經傳導物的結構。',cat:'生理'},
+{id:'t33',name:'神經可塑性 Neuroplasticity',sch:'神經科學',def:'大腦因經驗、學習或損傷而改變結構與功能。',cat:'記憶',alt:['發展']},
+{id:'t34',name:'心智理論 Theory of Mind',sch:'Premack；Baron-Cohen',def:'知道他人具有不同於自己的信念、想法與情緒。',cat:'發展'},
+{id:'t35',name:'過度規則化 Overregularization',sch:'兒童語言習得',def:'兒童把語法規則過度套用到不規則情況（goed）。',cat:'發展'},
+{id:'t36',name:'後見之明偏誤 Hindsight Bias',sch:'判斷與決策',def:'事情發生後，高估自己早就知道結果的程度。',cat:'接收'},
+{id:'t37',name:'心向 Mental Set',sch:'認知',def:'傾向用過去成功方法解新問題，限制新解法。',cat:'接收'},
+{id:'t38',name:'無條件積極關懷 UPR',sch:'Rogers',def:'不因表現好壞而否定個體作為人的價值。',cat:'情治'},
+{id:'t39',name:'大五人格 Big Five',sch:'Costa & McCrae',def:'以 OCEAN 五向度描述人格差異的特質理論。',cat:'情治'},
+{id:'t39b',name:'Eysenck 三因素 PEN',sch:'Eysenck',def:'以 PEN（精神質、外向、神經質）描述人格。',cat:'情治'},
+{id:'t40',name:'思覺失調症 Schizophrenia',sch:'DSM',def:'思考、知覺、情緒與行為失調，有正/負性症狀。',cat:'異常'},
+{id:'t41',name:'DSM 診斷手冊',sch:'APA',def:'APA 編制的標準化分類與診斷系統。',cat:'異常'},
+{id:'t42',name:'創傷後壓力症候群 PTSD',sch:'DSM',def:'創傷後出現再經驗、逃避、過度警覺與負向認知情緒。',cat:'異常'},
+{id:'t43',name:'自我設障 Self-handicapping',sch:'Berglas & Jones',def:'預先製造失敗理由，以在失敗時保護自尊。',cat:'情治'},
+{id:'t44',name:'史丹佛監獄實驗',sch:'Zimbardo',def:'角色分派與情境壓力強烈影響人的行為。',cat:'社會'},
+{id:'t45',name:'主題統覺測驗 TAT',sch:'Murray',def:'看模糊圖片編故事，推測內在需求與動機的投射測驗。',cat:'異常',alt:['情治']},
+{id:'t46',name:'邊緣性人格違常 BPD',sch:'DSM',def:'情緒、人際、自我形象不穩定與衝動。',cat:'異常'},
+{id:'t47',name:'移情作用 Transference',sch:'Freud',def:'把過去對重要他人的情感模式轉移到現在的人身上。',cat:'異常',alt:['情治']},
+{id:'t48',name:'自我效能 Self-efficacy',sch:'Bandura',def:'相信自己能否完成特定任務的信念。',cat:'學習',alt:['情治']},
+{id:'t49',name:'基本歸因謬誤 FAE',sch:'Lee Ross',def:'解釋他人行為時高估內在、低估情境因素。',cat:'社會'},
+{id:'t50',name:'人眾無知 Pluralistic Ignorance',sch:'Darley & Latané',def:'私下都覺得有問題，卻因他人沒反應而以為沒事。',cat:'社會'},
+{id:'t51',name:'去個人化 Deindividuation',sch:'Zimbardo',def:'匿名或群體中自我覺察與責任感下降。',cat:'社會'},
+{id:'t52',name:'古典制約 Classical Conditioning',sch:'Pavlov',def:'中性刺激與能自然引發反應的刺激配對後也能引發反應。',cat:'學習'},
+{id:'t53',name:'不注意盲 Inattentional Blindness',sch:'Simons & Chabris',def:'注意力集中時，明顯刺激出現也可能沒意識到。',cat:'接收'},
+{id:'t54',name:'腦機介面 BCI',sch:'認知神經',def:'偵測腦活動並解碼成指令以控制外部裝置。',cat:'生理'},
+{id:'t55',name:'Beck 認知三角',sch:'Beck',def:'憂鬱與對自己、世界、未來的負向看法及認知扭曲有關。',cat:'異常',alt:['情治']},
+{id:'t56',name:'來源記憶 Source Memory',sch:'記憶心理學',def:'記得資訊來自何時、何地、何人或何情境的能力。',cat:'記憶'},
+{id:'t57',name:'反制約與消弱',sch:'Pavlov／行為治療',def:'消弱＝不再配對使反應變弱；反制約＝建立相反反應蓋過原反應。',cat:'學習'},
+{id:'t58',name:'大腦皮質分區',sch:'神經心理學',def:'皮質依功能分為額、顳、頂、枕葉。',cat:'生理'},
+{id:'t59',name:'情緒四理論 Theories of Emotion',sch:'James-Lange 等',def:'說明生理反應、情緒與認知解釋之先後關係。',cat:'情治'},
+{id:'t60',name:'Piaget 認知發展四階段',sch:'Piaget',def:'依序經感覺動作、前運思、具體運思、形式運思期。',cat:'發展'},
+{id:'t61',name:'增強排程 Reinforcement Schedules',sch:'Skinner',def:'增強物依固定/變動、比率/時距規則出現，影響反應率。',cat:'學習'},
+{id:'t62',name:'感覺 vs 知覺',sch:'感知心理學',def:'感覺＝接收原始刺激；知覺＝組織、解釋與建構。',cat:'接收'},
+{id:'t63',name:'基模 Schema',sch:'Piaget',def:'組織知識、理解新訊息的認知結構或心理框架。',cat:'接收',alt:['發展']},
+{id:'t64',name:'神經元傳導與全有全無律',sch:'神經科學',def:'動作電位超過閾值才產生且大小固定。',cat:'生理'},
+{id:'t65',name:'順向 vs 逆向失憶',sch:'H.M. 個案',def:'順向＝事件後新記憶存不進；逆向＝事件前舊記憶想不起。',cat:'記憶'},
+{id:'t66',name:'內隱記憶 Implicit Memory',sch:'Graf & Schacter',def:'不需有意識回憶，過去經驗仍影響現在表現（促發）。',cat:'記憶'},
+{id:'t67',name:'工作記憶 Working Memory',sch:'Baddeley & Hitch',def:'暫時保存並主動操作資訊的系統。',cat:'記憶'},
+{id:'t68',name:'語意記憶 Semantic Memory',sch:'Tulving',def:'對世界知識、概念與語言意義的記憶。',cat:'記憶'},
+{id:'t69',name:'短期記憶 Short-Term Memory',sch:'Atkinson；Miller',def:'暫存少量訊息，容量有限（7±2）、維持短。',cat:'記憶'},
+{id:'t70',name:'情境記憶 Episodic Memory',sch:'Tulving',def:'對個人親身經歷事件（含時地人脈絡）的記憶。',cat:'記憶'},
+{id:'t71',name:'社會促進 Social Facilitation',sch:'Zajonc',def:'他人在場提高喚起，使簡單任務變好、困難任務變差。',cat:'社會'},
+{id:'t72',name:'社會懈怠 Social Loafing',sch:'Latané 等',def:'團體中因責任分散，個人努力程度下降。',cat:'社會'}
+];
+
+/* ====== 28 申論題：stem / pts分數 / terms建議名詞(草稿) ====== */
+const ESSAYS=[
+{id:'e1',pts:10,stem:'請分享一個記憶心理學的研究，以及它對我們了解人類記憶有什麼貢獻。',terms:['t13','t65','t66','t12']},
+{id:'e2',pts:10,stem:'請用兩個證據說明「眼見為憑」是錯誤的。',terms:['t28','t53','t31','t56']},
+{id:'e3',pts:10,stem:'請說明 Ainsworth 以陌生情境研究依附關係的結果，並說明學者提出哪些解釋。',terms:['t22']},
+{id:'e4',pts:10,stem:'請以一例說明何謂自證預言。',terms:['t8','t19']},
+{id:'e5',pts:20,stem:'請說明心理學對記憶有哪些分類，以及這些記憶類別的特性。',terms:['t69','t67','t68','t70','t66','t24','t56']},
+{id:'e6',pts:10,stem:'指揮中心報導確診死亡病例時羅列疫苗劑數與慢性病。這能否反映三者關係？容易陷入哪些邏輯謬誤？舉兩點並說明理論。',terms:['t25','t36']},
+{id:'e7',pts:10,stem:'事情爆紅時大家爭相模仿（如降肉九天玄女）。分析這種宣傳的好處壞處與心理基礎，並從記憶運作說明大家最後記不記得是哪個廣告。',terms:['t56','t66','t63']},
+{id:'e8',pts:10,stem:'我們要怎麼證明一個人的憂鬱症是由生理因素，而非全然心理因素？',terms:['t64','t6','t11','t55']},
+{id:'e9',pts:15,stem:'精神疾病常被汙名化。請應用心理學理論設計改善方案，並說明根據什麼理論、為何有用。',terms:['t19','t23','t10','t49']},
+{id:'e10',pts:15,stem:'請以心理學角度分析烏俄戰爭，務必使用理論、概念或研究。',terms:['t23','t51','t44','t49']},
+{id:'e11',pts:10,stem:'有研究者認為青少年手機成癮是多巴胺系統失控。請從生理運作評論，並提出改善方法。',terms:['t64','t61','t21','t6']},
+{id:'e12',pts:10,stem:'2022 分科測驗錄取普遍優於個人申請，使高中生對個人申請興致大降。請用心理學理論說明成因與改善。',terms:['t11','t48','t10']},
+{id:'e13',pts:10,stem:'你覺得聾人應學手語還是唇語？請從語言發展觀點評論。',terms:['t35','t33'],th:'發展'},
+{id:'e14',pts:10,stem:'粉紅標女廁、藍標男廁受批評。請從知覺運作分析，怎麼做才能符合性別平權又對知覺友善？',terms:['t31','t63','t19']},
+{id:'e15',pts:10,stem:'Loftus 常在法庭證明記憶易出錯，故性侵控訴可能有誤。你怎麼看？請從記憶運作舉證支持。',terms:['t56','t63']},
+{id:'e16',pts:10,stem:'根據 Beck 的理論，憂鬱症患者容易有哪些思考偏誤？',terms:['t55']},
+{id:'e17',pts:15,stem:'目前精神疾病的診斷有什麼特色？有什麼優缺點？',terms:['t41']},
+{id:'e18',pts:10,stem:'請說明腦機介面如何運作，並舉一例。',terms:['t54','t64']},
+{id:'e19',pts:10,stem:'請舉兩例說明服飾店透過哪些技巧混淆我們的感官運作，進而促進消費。',terms:['t62','t31','t28']},
+{id:'e20',pts:10,stem:'花東大地震時某生正在複習微積分，之後讀微積分就聯想到地震。請說明背後機制，以及如何協助他不再聯想。',terms:['t52','t57','t14']},
+{id:'e21',pts:10,stem:'為什麼有些政治人物要說謊、混淆是非？請從記憶運作說明。',terms:['t56','t66','t63']},
+{id:'e22',pts:10,stem:'你覺得目前訓練人工智慧的方式，和人類嬰兒學習知識有哪些相同、相異之處？',terms:['t17','t63','t60','t35','t21']},
+{id:'e23',pts:25,stem:'請說明何謂知覺恆常性，並至少舉兩個不同例子。',terms:['t4']},
+{id:'e24',pts:25,stem:'請說明何謂不注意盲，這是否是疾病的症狀？這現象讓我們知道什麼？',terms:['t53']},
+{id:'e25',pts:25,stem:'請說明何謂裂腦病人，這些病人有何特性？研究讓我們了解什麼？',terms:['t20']},
+{id:'e26',pts:25,stem:'人類記憶有不同分類方式。請舉至少兩種分類方式，以及其下的記憶種類與特性。',terms:['t69','t68','t70','t66','t67','t56']},
+{id:'e27',pts:20,stem:'請說明佛洛伊德精神分析理論的要點。',terms:['t3','t26','t47','t18'],th:'情治'},
+{id:'e28',pts:20,stem:'社群媒體使持不同意見者益形分裂、難以溝通。請用『多個』社會心理學理論或概念解釋此現象。',terms:['t23','t10','t51','t49','t8']}
+];
+/* ============================================================ */
+
+const $=s=>document.querySelector(s);
+const byId=id=>TERMS.find(t=>t.id===id);
+const okCat=(t,loc)=> loc===t.cat || (t.alt&&t.alt.includes(loc));
+const CLOSERS={
+接收:'人的知覺與判斷不是客觀世界的直接複製，而是受感覺閾限、注意力、基模、期待與過去經驗共同影響的建構歷程。',
+學習:'行為受刺激聯結、行為後果、增強規則與控制感影響；人是否持續行動，不只取決於能力，也取決於過去經驗如何塑造期待與自我效能。',
+記憶:'記憶不是單一倉庫，而是暫存、操作、語意、個人經驗、來源判斷與內隱學習等多系統的建構與提取歷程，因此可能遺忘或混淆來源。',
+發展:'發展不是單純成熟，而是生物基礎、認知基模、語言規則、親子依附、社會經驗與文化學習共同作用的歷程。',
+異常:'心理異常不只是症狀集合，也可從診斷分類、認知偏誤、學習經驗、防衛機轉與早期關係模式等不同理論層次理解。',
+社會:'人的行為不能只用人格或道德解釋；期待、角色、群體、責任分散與社會分類，都會深刻影響個體行為。',
+情治:'情緒與人格不只是內在特質，也受生理喚起、認知解釋、文化規範、過去經驗與自我信念共同影響。',
+生理:'心理歷程有其生理基礎：從神經傳導、全有全無律到腦區分工與神經可塑性，都影響我們如何接收、處理與適應世界。'
+};
+function essayTheme(e){
+  if(e.th)return e.th;
+  const cnt={}; e.terms.forEach(id=>{const t=byId(id);if(t)cnt[t.cat]=(cnt[t.cat]||0)+1;});
+  let best=CATEGORIES[0],bn=-1;
+  CATEGORIES.forEach(c=>{ if((cnt[c]||0)>bn){bn=cnt[c]||0;best=c;} });
+  return best;
+}
+let mode=1, m1={}, m2={}, curEssay=ESSAYS[0].id, sel=null, checked1=false, checked2=false;
+let ft1='',ft2='',fc2='';
+function hay(t,q){ if(!q)return true; q=q.trim().toLowerCase(); return (t.name+' '+t.sch).toLowerCase().includes(q); }
+function fmatch(t,c){ return !c || t.cat===c || (t.alt&&t.alt.includes(c)); }
+function setFilter(b,v){ if(b===1)ft1=v; else ft2=v; render(); }
+function setFcat(c){ fc2=c; render(); }
+TERMS.forEach(t=>{m1[t.id]='pool';m2[t.id]='pool';});
+
+function cardHTML(t,extra=''){
+  return `<div class="term ${extra}" data-id="${t.id}"><span class="nm">${t.name}</span><span class="sch">${t.sch}</span><span class="df">${t.def}</span></div>`;
+}
+function init(){
+  $('#esel').innerHTML = ESSAYS.map((e,i)=>`<option value="${e.id}">第 ${i+1} 題（${e.pts}分）｜${e.stem.slice(0,16)}…</option>`).join('');
+  render();
+}
+function render(){
+  const p1=TERMS.filter(t=>m1[t.id]==='pool'), p1s=p1.filter(t=>hay(t,ft1));
+  $('#pool1').innerHTML = p1s.map(t=>cardHTML(t,markCls(t,1))).join('');
+  $('#cats').innerHTML = CATEGORIES.map(c=>{
+    const items=TERMS.filter(t=>m1[t.id]===c);
+    return `<div class="zone" data-board="1" data-zone="${c}">
+      <div class="ztitle">${LABELS[c]||c}<span class="cnt">${items.length||''}</span></div>
+      <div class="slot">${items.map(t=>cardHTML(t,markCls(t,1))).join('')}</div></div>`;
+  }).join('');
+  $('#pool1n').textContent = ft1?`顯示 ${p1s.length} / 池中 ${p1.length}`:`池中 ${p1.length} / ${TERMS.length}`;
+
+  const e=ESSAYS.find(x=>x.id===curEssay);
+  $('#esel').value=curEssay;
+  $('#stem').innerHTML = `<span class="tag">${e.pts}分</span>${e.stem}`;
+  const p2=TERMS.filter(t=>m2[t.id]==='pool'), p2s=p2.filter(t=>hay(t,ft2)&&fmatch(t,fc2));
+  $('#pool2').innerHTML = p2s.map(t=>cardHTML(t,markCls(t,2))).join('');
+  const inE=TERMS.filter(t=>m2[t.id]==='essay');
+  $('#essayslot').innerHTML = inE.map(t=>cardHTML(t,markCls(t,2))).join('');
+  $('#essaycnt').textContent = inE.length?`${inE.length} 個`:'';
+  $('#pool2n').textContent = (ft2||fc2)?`顯示 ${p2s.length} / 池中 ${p2.length}`:`池中 ${p2.length} / ${TERMS.length}`;
+  $('#fchips2').innerHTML = `<span class="fchip ${fc2===''?'on':''}" onclick="setFcat('')">全部</span>`+
+    CATEGORIES.map(c=>`<span class="fchip ${fc2===c?'on':''}" title="${LABELS[c]}" onclick="setFcat('${c}')">${LABELS[c].charAt(0)}</span>`).join('');
+
+  if(sel){const el=document.querySelector(`#board${sel.board} .term[data-id="${sel.id}"]`);if(el)el.classList.add('sel');}
+  updateBanner();
+  updateScore();
+}
+function updateBanner(){
+  const bar=$('#selbar');
+  if(sel){
+    const nm=byId(sel.id).name.split(' ')[0];
+    $('#selbarT').innerHTML = mode===1
+      ? `已選 <b>${nm}</b>　→ 點一個類別放入`
+      : `已選 <b>${nm}</b>　→ 點下方「答案要點」放入`;
+    bar.classList.add('show');
+  }else bar.classList.remove('show');
+}
+function clearSel(){sel=null;render();}
+function markCls(t,board){
+  if(board===1){ if(!checked1)return''; const loc=m1[t.id]; if(loc==='pool')return''; return okCat(t,loc)?'correct':'wrong'; }
+  if(!checked2)return''; if(m2[t.id]!=='essay')return'';
+  return ESSAYS.find(x=>x.id===curEssay).terms.includes(t.id)?'correct':'extra';
+}
+function updateScore(){
+  if(mode===1&&checked1){
+    const placed=TERMS.filter(t=>m1[t.id]!=='pool');
+    const ok=placed.filter(t=>okCat(t,m1[t.id])).length;
+    $('#score').textContent=`答對 ${ok} / ${placed.length}`;
+  }else if(mode===2&&checked2){
+    const e=ESSAYS.find(x=>x.id===curEssay);
+    const got=e.terms.filter(id=>m2[id]==='essay').length;
+    $('#score').textContent=`命中 ${got} / ${e.terms.length}`;
+  }else $('#score').textContent='';
+}
+function place(board,id,zone){ if(board===1)m1[id]=zone; else m2[id]=(zone==='essay'?'essay':'pool'); sel=null; render(); }
+function pickEssay(id){ curEssay=id; TERMS.forEach(t=>m2[t.id]='pool'); checked2=false; $('#missing').classList.remove('show'); sel=null; render(); }
+function check(){
+  if(mode===1)checked1=true;
+  else{
+    checked2=true;
+    const e=ESSAYS.find(x=>x.id===curEssay);
+    const got=e.terms.filter(id=>m2[id]==='essay').map(id=>byId(id).name.split(' ')[0]);
+    const miss=e.terms.filter(id=>m2[id]!=='essay').map(id=>byId(id).name.split(' ')[0]);
+    const box=$('#missing');
+    const th=essayTheme(e);
+    box.innerHTML = `<div class="ok">命中建議：<b>${got.length?got.join('、'):'（無）'}</b></div>`+
+      (miss.length?`<div class="no">還沒放到：<b>${miss.join('、')}</b></div>`:`<div class="ok">建議名詞已全數命中 ✓</div>`)+
+      `<div class="line"><span class="mt">主線：${LABELS[th]}</span><div class="cz">收束句範本：${CLOSERS[th]}</div></div>`;
+    box.classList.add('show');
+  }
+  render();
+}
+function resetCur(){
+  if(mode===1){TERMS.forEach(t=>m1[t.id]='pool');checked1=false;}
+  else{TERMS.forEach(t=>m2[t.id]='pool');checked2=false;$('#missing').classList.remove('show');}
+  sel=null;render();
+}
+function toggleDef(){document.body.classList.toggle('showdef');
+  $('#defBtn').textContent=document.body.classList.contains('showdef')?'隱藏解釋':'顯示解釋';}
+function setMode(m){
+  mode=m;sel=null;
+  $('#tab1').classList.toggle('on',m===1);$('#tab2').classList.toggle('on',m===2);
+  $('#board1').classList.toggle('hide',m!==1);$('#board2').classList.toggle('hide',m!==2);
+  $('#checkBtn').textContent=m===1?'對答案':'對照建議';
+  render();
+}
+
+/* === 互動：滑鼠拖曳 + 觸控長按拖曳 + 點選指派（iPad/手機）=== */
+let gx=0,gy=0,drag=null,lpTimer=null,lx=0,ly=0;
+function zoneUnder(x,y){const el=document.elementFromPoint(x,y);return el?el.closest('.zone'):null;}
+function hot(z){clearHot();if(z)z.classList.add('hot');}
+function clearHot(){document.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));}
+function tapSelect(board,id){ if(sel&&sel.id===id&&sel.board===board){sel=null;}else{sel={board,id};} render(); }
+
+function startDrag(x,y){
+  drag.mode='drag';
+  const r=drag.src.getBoundingClientRect();
+  const g=drag.src.cloneNode(true);g.classList.add('ghost');g.style.width=r.width+'px';
+  document.body.appendChild(g);drag.ghost=g;
+  drag.ox=x-r.left;drag.oy=y-r.top;
+  g.style.left=(x-drag.ox)+'px';g.style.top=(y-drag.oy)+'px';
+  drag.src.classList.add('dragsrc');
+  sel=null;$('#selbar').classList.remove('show');
+}
+function endDrag(){ if(drag&&drag.ghost)drag.ghost.remove();
+  document.querySelectorAll('.dragsrc').forEach(n=>n.classList.remove('dragsrc'));clearHot(); }
+
+document.addEventListener('pointerdown',e=>{
+  gx=e.clientX;gy=e.clientY;lx=e.clientX;ly=e.clientY;
+  const card=e.target.closest('.term');
+  if(!card)return;                               // 空白/類別區的點擊在 pointerup 處理
+  const board=+card.closest('[data-board]').dataset.board;
+  drag={id:card.dataset.id,board,src:card,sx:e.clientX,sy:e.clientY,
+        touch:e.pointerType==='touch',mode:'pending',ghost:null,ox:0,oy:0};
+  if(drag.touch){ lpTimer=setTimeout(()=>{ if(drag&&drag.mode==='pending')startDrag(lx,ly); },220); }
+},{passive:true});
+
+document.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  lx=e.clientX;ly=e.clientY;
+  const dist=Math.hypot(e.clientX-drag.sx,e.clientY-drag.sy);
+  if(drag.mode==='pending'){
+    if(drag.touch){ if(dist>10){drag.mode='cancel';clearTimeout(lpTimer);} } // 視為捲動
+    else if(dist>5){ startDrag(e.clientX,e.clientY); }                       // 滑鼠：移動即拖
+  }
+  if(drag.mode==='drag'){
+    drag.ghost.style.left=(e.clientX-drag.ox)+'px';
+    drag.ghost.style.top=(e.clientY-drag.oy)+'px';
+    hot(zoneUnder(e.clientX,e.clientY));
+    e.preventDefault();
+  }
+},{passive:false});
+
+// 拖曳中阻止頁面捲動（iOS 需要 touchmove 這層保險）
+document.addEventListener('touchmove',e=>{ if(drag&&drag.mode==='drag')e.preventDefault(); },{passive:false});
+
+document.addEventListener('pointerup',e=>{
+  const rx=e.clientX,ry=e.clientY;
+  if(drag){
+    clearTimeout(lpTimer);
+    if(drag.mode==='drag'){
+      const z=zoneUnder(rx,ry);
+      endDrag();
+      if(z)place(+z.dataset.board,drag.id,z.dataset.zone);
+    }else if(drag.mode==='pending'){
+      tapSelect(drag.board,drag.id);            // 輕點名詞 → 選取/取消
+    }                                            // 'cancel' = 捲動，不處理
+    drag=null;return;
+  }
+  // 按下處不是名詞：若已選名詞，輕點類別/答案要點區即放入
+  if(sel){
+    if(Math.hypot(rx-gx,ry-gy)<10){
+      const z=zoneUnder(rx,ry);
+      if(z&&+z.dataset.board===sel.board)place(sel.board,sel.id,z.dataset.zone);
+    }
+  }
+});
+document.addEventListener('pointercancel',()=>{ clearTimeout(lpTimer);endDrag();drag=null; });
+
+init();
+</script>
+</body>
+</html>
