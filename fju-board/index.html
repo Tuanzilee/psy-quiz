@@ -57,6 +57,27 @@ header p{margin:0;color:var(--muted);font-size:14px}
 .gitem .gn{font-weight:500;font-size:15px;line-height:1.4}
 .gitem .gs{font-size:12px;color:var(--gold);margin:1px 0 4px}
 .gitem .gd{font-size:13.5px;color:var(--ink);line-height:1.75}
+.dstep{font-weight:700;color:var(--pine-ink);font-size:14px;margin:16px 2px 8px;font-family:"Noto Serif TC",serif}
+.dbtns{display:flex;flex-wrap:wrap;gap:7px}
+.dbtn{border:1px solid var(--line);background:var(--paper);color:var(--ink);
+  border-radius:10px;padding:9px 12px;font-size:13.5px;cursor:pointer;font-family:inherit}
+.dbtn.correct{background:var(--pine-soft);border-color:var(--pine);color:var(--pine-ink);font-weight:700}
+.dbtn.wrong{background:var(--brick-soft);border-color:var(--brick);color:var(--brick)}
+.dfb{font-size:14px;margin:10px 2px;font-weight:700;min-height:0}
+.dfb.ok{color:var(--pine-ink)} .dfb.no{color:var(--brick)}
+.dterms{display:flex;flex-wrap:wrap;gap:6px}
+.dterm{background:#fff;border:1px solid var(--line);border-radius:9px;padding:6px 10px;font-size:13px;box-shadow:var(--shadow)}
+.skel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:4px;line-height:1.75}
+.skel .sh{font-weight:700;color:var(--gold);font-size:12.5px;margin-top:8px}
+.skel .sh:first-child{margin-top:0}
+.skel .sl{font-size:14px;margin:2px 0 4px}
+.kref{margin-top:20px;font-size:12.5px;color:var(--muted)}
+.kref summary{cursor:pointer;color:var(--pine-ink);font-weight:700;font-size:13px}
+.kref table{border-collapse:collapse;margin-top:8px;width:100%}
+.kref td{border:1px solid var(--line);padding:5px 8px;font-size:12.5px;vertical-align:top}
+.kref td:last-child{color:var(--pine-ink);white-space:nowrap;font-weight:700}
+.dnav{display:flex;gap:8px;margin-top:20px}
+.dnav .btn{flex:1;text-align:center}
 
 .zones{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:10px;margin-top:14px}
 .zone{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 10px 12px}
@@ -128,9 +149,10 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
   </header>
 
   <div class="tabs">
-    <button id="tab1" class="on" onclick="setMode(1)">分類模式</button>
-    <button id="tab2" onclick="setMode(2)">申論組合</button>
+    <button id="tab1" class="on" onclick="setMode(1)">分類</button>
+    <button id="tab2" onclick="setMode(2)">申論</button>
     <button id="tab3" onclick="setMode(3)">詳解</button>
+    <button id="tab4" onclick="setMode(4)">判題</button>
   </div>
 
   <div class="bar" id="topbar">
@@ -172,6 +194,36 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
     <div class="filter"><input id="f3" placeholder="搜尋名詞或學者…" oninput="setFilter(3,this.value)"></div>
     <div class="fchips" id="fchips3"></div>
     <div id="glossary"></div>
+  </section>
+
+  <!-- MODE 4 -->
+  <section id="board4" class="hide">
+    <div class="eselrow">
+      <select class="esel" id="dsel" onchange="pickD(this.value)"></select>
+      <button class="btn" onclick="nextD()">下一題（隨機）</button>
+    </div>
+    <div class="stem" id="dstem"></div>
+    <div class="dstep">第一步 · 判主線：這題在問哪個心理功能？</div>
+    <div class="dbtns" id="dbtns"></div>
+    <div class="dfb" id="dfb"></div>
+    <div id="dans"></div>
+    <details class="kref"><summary>關鍵字 → 主線 對照（卡住時打開）</summary>
+      <table>
+        <tr><td>看見、注意、察覺、誤判、眼見為憑</td><td>① 接收世界</td></tr>
+        <tr><td>學會、形成、改變行為、增強、懲罰、害怕</td><td>② 學會行為</td></tr>
+        <tr><td>記得、忘記、回憶、錯認、來源、經驗影響</td><td>③ 記憶</td></tr>
+        <tr><td>兒童、嬰兒、成長、語言、親子、安全感</td><td>④ 發展</td></tr>
+        <tr><td>焦慮、憂鬱、創傷、症狀、診斷</td><td>⑤ 異常</td></tr>
+        <tr><td>群體、旁觀者、角色、偏見、責任、他人在場</td><td>⑥ 社會</td></tr>
+        <tr><td>情緒、身體反應、人格、治療、接納</td><td>⑦ 情緒人格治療</td></tr>
+        <tr><td>腦區、神經元、傳導物、左右腦、皮質</td><td>⑧ 生理機制</td></tr>
+        <tr><td>推論、判斷、解題、偏誤、事後才知道</td><td>⑨ 思考判斷</td></tr>
+      </table>
+    </details>
+    <div class="dnav">
+      <button class="btn" onclick="stepD(-1)">← 上一題</button>
+      <button class="btn" onclick="stepD(1)">下一題 →</button>
+    </div>
   </section>
 </div>
 
@@ -306,6 +358,18 @@ const CLOSERS={
 生理:'心理歷程有其生理基礎：從神經傳導、全有全無律到腦區分工與神經可塑性，都影響我們如何接收、處理與適應世界。',
 思考:'人的思考與判斷並非完全理性，會受心向、既有經驗與推理捷徑影響而出現系統性偏誤，因此推論時需區分相關與因果、並覺察自身的判斷偏誤。'
 };
+const OPENERS={
+接收:'人的知覺不是照相機，而是會受注意力、基模與期待影響的建構歷程。',
+學習:'學習不只是背誦，而是刺激聯結、行為後果與控制感共同塑造行為。',
+記憶:'記憶不是單一倉庫，而是多系統的建構與提取歷程。',
+發展:'發展不是突然成熟，而是基模、語言、依附與社會理解逐步形成。',
+異常:'心理異常不是單純的怪，而是診斷、認知、創傷、人格與關係模式交互作用。',
+社會:'人的行為不能只看人格，也要看情境、角色、群體與責任分散。',
+情治:'情緒與人格不只是內在特質，也受身體、認知、文化與自我信念影響。',
+生理:'心理歷程有其生理基礎，從神經元傳導到腦區分工都影響行為。',
+思考:'人的思考與判斷並非全然理性，會受心向與系統性偏誤影響。'
+};
+const SHORT={接收:'① 接收世界',學習:'② 學會行為',記憶:'③ 記憶',發展:'④ 發展',異常:'⑤ 異常',社會:'⑥ 社會',情治:'⑦ 情緒人格治療',生理:'⑧ 生理機制',思考:'⑨ 思考判斷'};
 function essayTheme(e){
   if(e.th)return e.th;
   const cnt={}; e.terms.forEach(id=>{const t=byId(id);if(t)cnt[t.cat]=(cnt[t.cat]||0)+1;});
@@ -315,11 +379,16 @@ function essayTheme(e){
 }
 let mode=1, m1={}, m2={}, curEssay=ESSAYS[0].id, sel=null, checked1=false, checked2=false;
 let ft1='',ft2='',fc2='',ft3='',fc3='';
+let curD=ESSAYS[0].id, dGuess=null;
 function hay(t,q){ if(!q)return true; q=q.trim().toLowerCase(); return (t.name+' '+t.sch).toLowerCase().includes(q); }
 function fmatch(t,c){ return !c || t.cat===c || (t.alt&&t.alt.includes(c)); }
 function setFilter(b,v){ if(b===1)ft1=v; else if(b===2)ft2=v; else ft3=v; render(); }
 function setFcat(c){ fc2=c; render(); }
 function setGcat(c){ fc3=c; render(); }
+function pickD(id){ curD=id; dGuess=null; render(); }
+function nextD(){ curD=ESSAYS[Math.floor(Math.random()*ESSAYS.length)].id; dGuess=null; render(); }
+function guessD(c){ dGuess=c; render(); }
+function stepD(d){ const i=ESSAYS.findIndex(e=>e.id===curD); curD=ESSAYS[(i+d+ESSAYS.length)%ESSAYS.length].id; dGuess=null; render(); }
 TERMS.forEach(t=>{m1[t.id]='pool';m2[t.id]='pool';});
 
 function cardHTML(t,extra=''){
@@ -327,6 +396,7 @@ function cardHTML(t,extra=''){
 }
 function init(){
   $('#esel').innerHTML = ESSAYS.map((e,i)=>`<option value="${e.id}">第 ${i+1} 題（${e.pts}分）｜${e.stem.slice(0,16)}…</option>`).join('');
+  $('#dsel').innerHTML = ESSAYS.map((e,i)=>`<option value="${e.id}">第 ${i+1} 題（${e.pts}分）｜${e.stem.slice(0,16)}…</option>`).join('');
   render();
 }
 function render(){
@@ -362,6 +432,25 @@ function render(){
   $('#glossary').innerHTML = gh || '<div class="hint">沒有符合的名詞。</div>';
   $('#fchips3').innerHTML = `<span class="fchip ${fc3===''?'on':''}" onclick="setGcat('')">全部</span>`+
     CATEGORIES.map(c=>`<span class="fchip ${fc3===c?'on':''}" title="${LABELS[c]}" onclick="setGcat('${c}')">${LABELS[c].charAt(0)}</span>`).join('');
+
+  // 判題模式
+  const e4=ESSAYS.find(x=>x.id===curD);
+  $('#dsel').value=curD;
+  $('#dstem').innerHTML=`<span class="tag">${e4.pts}分</span>${e4.stem}`;
+  const dc=essayTheme(e4);
+  $('#dbtns').innerHTML=CATEGORIES.map(c=>{
+    let cl=''; if(dGuess){ if(c===dc)cl='correct'; else if(c===dGuess)cl='wrong'; }
+    return `<button class="dbtn ${cl}" onclick="guessD('${c}')">${SHORT[c]}</button>`;
+  }).join('');
+  if(dGuess){
+    $('#dfb').className='dfb '+(dGuess===dc?'ok':'no');
+    $('#dfb').innerHTML=dGuess===dc?`✓ 答對，主線是 ${SHORT[dc]}`:`✗ 你選 ${SHORT[dGuess]}，正解是 ${SHORT[dc]}`;
+    const ts=e4.terms.map(id=>`<span class="dterm">${byId(id).name.split(' ')[0]}</span>`).join('');
+    let sk=`<div class="skel"><div class="sh">破題</div><div class="sl">${OPENERS[dc]}</div>`;
+    e4.terms.forEach((id,i)=>{const t=byId(id);sk+=`<div class="sh">理論${i+1}・${t.name.split(' ')[0]}</div><div class="sl">${t.def}</div>`;});
+    sk+=`<div class="sh">收束</div><div class="sl">${CLOSERS[dc]}</div></div>`;
+    $('#dans').innerHTML=`<div class="dstep">第二步 · 建議名詞群（核心一個＋支撐兩三個）</div><div class="dterms">${ts}</div><div class="dstep">第三步 · 答題骨架</div>${sk}`;
+  }else{ $('#dfb').className='dfb'; $('#dfb').innerHTML='點上面九格其中一格，判這題的主線'; $('#dans').innerHTML=''; }
 
   if(sel){const el=document.querySelector(`#board${sel.board} .term[data-id="${sel.id}"]`);if(el)el.classList.add('sel');}
   updateBanner();
@@ -421,10 +510,10 @@ function toggleDef(){document.body.classList.toggle('showdef');
   $('#defBtn').textContent=document.body.classList.contains('showdef')?'隱藏解釋':'顯示解釋';}
 function setMode(m){
   mode=m;sel=null;
-  $('#tab1').classList.toggle('on',m===1);$('#tab2').classList.toggle('on',m===2);$('#tab3').classList.toggle('on',m===3);
-  $('#board1').classList.toggle('hide',m!==1);$('#board2').classList.toggle('hide',m!==2);$('#board3').classList.toggle('hide',m!==3);
-  $('#topbar').classList.toggle('hide',m===3);
-  if(m!==3)$('#checkBtn').textContent=m===1?'對答案':'對照建議';
+  [1,2,3,4].forEach(i=>$('#tab'+i).classList.toggle('on',m===i));
+  [1,2,3,4].forEach(i=>$('#board'+i).classList.toggle('hide',m!==i));
+  $('#topbar').classList.toggle('hide',m>=3);
+  if(m<=2)$('#checkBtn').textContent=m===1?'對答案':'對照建議';
   render();
 }
 
