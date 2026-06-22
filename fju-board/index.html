@@ -52,6 +52,11 @@ header p{margin:0;color:var(--muted);font-size:14px}
 .fchip{border:1px solid var(--line);background:var(--paper);color:var(--muted);
   border-radius:16px;padding:5px 11px;font-size:13px;cursor:pointer;font-family:inherit;line-height:1}
 .fchip.on{background:var(--pine);color:#fff;border-color:var(--pine)}
+.gcat{margin:16px 2px 8px;font-weight:700;color:var(--pine-ink);font-size:15px;font-family:"Noto Serif TC",serif}
+.gitem{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 13px;margin:0 0 8px}
+.gitem .gn{font-weight:500;font-size:15px;line-height:1.4}
+.gitem .gs{font-size:12px;color:var(--gold);margin:1px 0 4px}
+.gitem .gd{font-size:13.5px;color:var(--ink);line-height:1.75}
 
 .zones{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:10px;margin-top:14px}
 .zone{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 10px 12px}
@@ -125,9 +130,10 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
   <div class="tabs">
     <button id="tab1" class="on" onclick="setMode(1)">分類模式</button>
     <button id="tab2" onclick="setMode(2)">申論組合</button>
+    <button id="tab3" onclick="setMode(3)">詳解</button>
   </div>
 
-  <div class="bar">
+  <div class="bar" id="topbar">
     <button class="btn ghost" id="defBtn" onclick="toggleDef()">顯示解釋</button>
     <div class="spacer"></div>
     <span class="score" id="score"></span>
@@ -159,6 +165,13 @@ select.esel{font-family:inherit;font-size:14px;padding:9px 12px;border-radius:10
       <div class="slot" id="essayslot"></div>
     </div>
     <div class="missing" id="missing"></div>
+  </section>
+
+  <!-- MODE 3 -->
+  <section id="board3" class="hide">
+    <div class="filter"><input id="f3" placeholder="搜尋名詞或學者…" oninput="setFilter(3,this.value)"></div>
+    <div class="fchips" id="fchips3"></div>
+    <div id="glossary"></div>
   </section>
 </div>
 
@@ -301,11 +314,12 @@ function essayTheme(e){
   return best;
 }
 let mode=1, m1={}, m2={}, curEssay=ESSAYS[0].id, sel=null, checked1=false, checked2=false;
-let ft1='',ft2='',fc2='';
+let ft1='',ft2='',fc2='',ft3='',fc3='';
 function hay(t,q){ if(!q)return true; q=q.trim().toLowerCase(); return (t.name+' '+t.sch).toLowerCase().includes(q); }
 function fmatch(t,c){ return !c || t.cat===c || (t.alt&&t.alt.includes(c)); }
-function setFilter(b,v){ if(b===1)ft1=v; else ft2=v; render(); }
+function setFilter(b,v){ if(b===1)ft1=v; else if(b===2)ft2=v; else ft3=v; render(); }
 function setFcat(c){ fc2=c; render(); }
+function setGcat(c){ fc3=c; render(); }
 TERMS.forEach(t=>{m1[t.id]='pool';m2[t.id]='pool';});
 
 function cardHTML(t,extra=''){
@@ -337,6 +351,17 @@ function render(){
   $('#pool2n').textContent = (ft2||fc2)?`顯示 ${p2s.length} / 池中 ${p2.length}`:`池中 ${p2.length} / ${TERMS.length}`;
   $('#fchips2').innerHTML = `<span class="fchip ${fc2===''?'on':''}" onclick="setFcat('')">全部</span>`+
     CATEGORIES.map(c=>`<span class="fchip ${fc2===c?'on':''}" title="${LABELS[c]}" onclick="setFcat('${c}')">${LABELS[c].charAt(0)}</span>`).join('');
+
+  let gh='';
+  CATEGORIES.forEach(c=>{
+    const its=TERMS.filter(t=>t.cat===c && hay(t,ft3) && (!fc3||c===fc3));
+    if(!its.length)return;
+    gh+=`<div class="gcat">${LABELS[c]}（${its.length}）</div>`;
+    its.forEach(t=>{ gh+=`<div class="gitem"><div class="gn">${t.name}</div><div class="gs">${t.sch}</div><div class="gd">${t.def}</div></div>`; });
+  });
+  $('#glossary').innerHTML = gh || '<div class="hint">沒有符合的名詞。</div>';
+  $('#fchips3').innerHTML = `<span class="fchip ${fc3===''?'on':''}" onclick="setGcat('')">全部</span>`+
+    CATEGORIES.map(c=>`<span class="fchip ${fc3===c?'on':''}" title="${LABELS[c]}" onclick="setGcat('${c}')">${LABELS[c].charAt(0)}</span>`).join('');
 
   if(sel){const el=document.querySelector(`#board${sel.board} .term[data-id="${sel.id}"]`);if(el)el.classList.add('sel');}
   updateBanner();
@@ -396,9 +421,10 @@ function toggleDef(){document.body.classList.toggle('showdef');
   $('#defBtn').textContent=document.body.classList.contains('showdef')?'隱藏解釋':'顯示解釋';}
 function setMode(m){
   mode=m;sel=null;
-  $('#tab1').classList.toggle('on',m===1);$('#tab2').classList.toggle('on',m===2);
-  $('#board1').classList.toggle('hide',m!==1);$('#board2').classList.toggle('hide',m!==2);
-  $('#checkBtn').textContent=m===1?'對答案':'對照建議';
+  $('#tab1').classList.toggle('on',m===1);$('#tab2').classList.toggle('on',m===2);$('#tab3').classList.toggle('on',m===3);
+  $('#board1').classList.toggle('hide',m!==1);$('#board2').classList.toggle('hide',m!==2);$('#board3').classList.toggle('hide',m!==3);
+  $('#topbar').classList.toggle('hide',m===3);
+  if(m!==3)$('#checkBtn').textContent=m===1?'對答案':'對照建議';
   render();
 }
 
